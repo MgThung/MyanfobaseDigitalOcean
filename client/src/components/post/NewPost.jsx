@@ -91,8 +91,8 @@ export default function NewPost(props) {
   };
 
   useEffect(() => {
-    Axios.get("https://desolate-hollows-16342.herokuapp.com/readcate")
-      // Axios.get("http://localhost:8080/readcate")
+    // Axios.get("https://desolate-hollows-16342.herokuapp.com/readcate")
+      Axios.get("http://localhost:8080/readcate")
       .then((response) => {
         setListOfCate(response.data);
         console.log("categories inside", response.data);

@@ -44,7 +44,7 @@ const LoginCompo = () => {
 
     if (isSuccess || user) {
       setIsContainerActive(false);
-      navigate("/login");
+      navigate("/");
     }
 
     dispatch(reset());
