@@ -62,7 +62,7 @@ app.get("/detailwithview/:id", async (req, res) => {
       return res.status(400).send(error);
     }
     res.send(result);
-    console.log("view count rsult", result.viewcount);
+    // console.log("view count rsult", result.viewcount);
   });
 
   // res.send(result);
