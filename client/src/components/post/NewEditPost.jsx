@@ -104,8 +104,8 @@ export default function NewEditPost() {
   console.log("desc ref is", descRef.current);
 
   useEffect(() => {
-    Axios.get("https://desolate-hollows-16342.herokuapp.com/api/category")
-      // Axios.get("http://localhost:8080/api/category")
+    // Axios.get("https://desolate-hollows-16342.herokuapp.com/api/category")
+    Axios.get("http://localhost:8080/api/category")
       .then((response) => {
         setListOfCate(response.data);
         // console.log("categories inside", response.data);
