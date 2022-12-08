@@ -24,6 +24,8 @@ mongoose.connect(keys.mongoURI, {
 }); //
 
 // fileRoutes(app);
+app.use(express.static(path.join(__dirname, "/client/build")));
+
 app.use(cors());
 app.use(express.json()); // to get data with json format
 app.use(bodyParser.json());
