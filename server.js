@@ -83,7 +83,7 @@ app.delete("/delete/:id", async (req, res) => {
   const id = req.params.id;
 
   await PostModel.findByIdAndRemove(id).exec();
-  res.send("item deleted");
+  res.send("item is deleted");
 });
 
 const PORT = process.env.PORT || 8000;

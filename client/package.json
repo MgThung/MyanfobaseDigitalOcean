@@ -26,6 +26,7 @@
     "moment": "^2.29.4",
     "mongoose": "^6.5.0",
     "morgan": "^1.10.0",
+    "node": "^16.13.2",
     "nodemon": "^2.0.19",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
