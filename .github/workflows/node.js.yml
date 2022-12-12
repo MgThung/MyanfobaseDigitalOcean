@@ -22,8 +22,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
-      - run: sudo npm install -g n
-      - run: sudo n 18.7.0
+      - run: npm ci
+      - run: npm run build --if-present
       - run: cd client
-      - run: sudo npm install -g react-scripts
-      - run: sudo npm run build
+      - run: npm ci
+      - run: npm run build
