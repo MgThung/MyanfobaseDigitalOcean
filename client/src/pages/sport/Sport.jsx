@@ -4,7 +4,6 @@ import PopularNews from "../../components/catepagerightbar/PopularNews";
 import Sportbanner from "../../components/sport/Sportbanner";
 import Sportheader from "../../components/sport/Sportheader";
 import SportMain from "../../components/sport/SportMain";
-import SportPopular from "../../components/sport/SportPopular";
 import "./sport.css";
 import { Grid } from "@mui/material";
 export default function Sport() {
