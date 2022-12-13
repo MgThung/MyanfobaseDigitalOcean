@@ -1,5 +1,4 @@
 import Latestbar from "../../components/catepagerightbar/Latestbar";
-import Footer from "../../components/footer/Footer";
 import Yoga from "../../components/health/healthsetcat/yoga/yoga";
 import YogaBanner from "../../components/health/healthsetcat/yoga/yogabanner";
 import YogaPopular from "../../components/health/healthsetcat/yoga/yogaPopular";

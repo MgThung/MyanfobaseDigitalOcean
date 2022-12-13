@@ -1,5 +1,4 @@
 import Latestbar from "../../components/catepagerightbar/Latestbar";
-import Footer from "../../components/footer/Footer";
 import Hfoods from "../../components/health/healthsetcat/healthyFood/Hfood";
 import HfoodsBanner from "../../components/health/healthsetcat/healthyFood/Hfoodsbanner";
 import Hfoodspopular from "../../components/health/healthsetcat/healthyFood/HfoodsPopular";
@@ -19,7 +18,6 @@ export default function Hfoodspage() {
           </div>
         </section>
       </section>
-     
     </>
   );
 }

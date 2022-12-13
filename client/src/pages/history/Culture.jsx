@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../../components/footer/Footer";
 import Culbanner from "../../components/history/Culture/Culbanner";
 import Culhead from "../../components/history/Culture/Culhead";
 import HistRight from "../../components/history/HistRight";

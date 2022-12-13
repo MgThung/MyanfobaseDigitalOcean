@@ -1,5 +1,4 @@
 import Latestbar from "../../components/catepagerightbar/Latestbar";
-import Footer from "../../components/footer/Footer";
 import Medicine from "../../components/health/healthsetcat/Medicine/medicine";
 import MedicineBanner from "../../components/health/healthsetcat/Medicine/medicinebanner";
 import MedicinePopular from "../../components/health/healthsetcat/Medicine/medicinePopular";

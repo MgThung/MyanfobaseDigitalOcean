@@ -1,5 +1,4 @@
 import Latestbar from "../../components/catepagerightbar/Latestbar";
-import Footer from "../../components/footer/Footer";
 import Modern from "../../components/lifestyle/lifestyleSetmenu/modern/modern";
 import ModernBanner from "../../components/lifestyle/lifestyleSetmenu/modern/modernBanner";
 import ModernPopular from "../../components/lifestyle/lifestyleSetmenu/modern/modernpopular";

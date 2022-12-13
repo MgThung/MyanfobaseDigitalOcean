@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../../components/footer/Footer";
 import Dynabanner from "../../components/history/Dynasty/Dynabanner";
 import Dynahead from "../../components/history/Dynasty/Dynahead";
 import HistRight from "../../components/history/HistRight";

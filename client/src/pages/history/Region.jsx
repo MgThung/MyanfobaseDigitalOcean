@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../../components/footer/Footer";
 import HistRight from "../../components/history/HistRight";
 import HistSide from "../../components/history/HistSide";
 import Regionbanner from "../../components/history/Region/Regionbanner";

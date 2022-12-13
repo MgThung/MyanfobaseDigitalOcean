@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../../components/footer/Footer";
 import GoverLeft from "../../components/goverment/GoverLeft";
 import GoverRide from "../../components/goverment/GoverRide";
 import Leadbanner from "../../components/goverment/Leader/Leadbanner";
@@ -14,7 +13,6 @@ export default function Leader() {
         <GoverLeft />
         <GoverRide />
       </section>
-    
     </>
   );
 }

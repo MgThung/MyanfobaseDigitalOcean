@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../../components/footer/Footer";
 import GoverLeft from "../../components/goverment/GoverLeft";
 import GoverRide from "../../components/goverment/GoverRide";
 import Polbanner from "../../components/goverment/Police_Station/Polbanner";

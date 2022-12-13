@@ -1,10 +1,8 @@
 import Latestbar from "../../components/catepagerightbar/Latestbar";
-import Footer from "../../components/footer/Footer";
 import Exercise from "../../components/lifestyle/lifestyleSetmenu/exercise/exercise";
 import ExerciseBanner from "../../components/lifestyle/lifestyleSetmenu/exercise/exerciseBanner";
 import ExercisePopular from "../../components/lifestyle/lifestyleSetmenu/exercise/exercisePopular";
 import ExerciseSidebar from "../../components/lifestyle/lifestyleSetmenu/exercise/exerciseSidebar";
-
 
 export default function ExercisePage() {
   return (
@@ -20,7 +18,6 @@ export default function ExercisePage() {
           </div>
         </section>
       </section>
-    
     </>
   );
 }

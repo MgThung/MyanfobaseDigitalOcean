@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../../components/footer/Footer";
 import Goverbanner from "../../components/goverment/Goverbanner";
 import Goverhead from "../../components/goverment/Goverhead";
 import GoverLeft from "../../components/goverment/GoverLeft";

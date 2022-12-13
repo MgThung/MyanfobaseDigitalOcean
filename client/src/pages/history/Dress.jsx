@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../../components/footer/Footer";
 import Dressbanner from "../../components/history/Dress-code/Dressbanner";
 import Dresshead from "../../components/history/Dress-code/Dresshead";
 import HistRight from "../../components/history/HistRight";
@@ -14,7 +13,6 @@ export default function Dress() {
         <HistSide />
         <HistRight />
       </section>
-     
     </>
   );
 }

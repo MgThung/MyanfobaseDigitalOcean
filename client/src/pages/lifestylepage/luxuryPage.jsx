@@ -1,5 +1,4 @@
 import Latestbar from "../../components/catepagerightbar/Latestbar";
-import Footer from "../../components/footer/Footer";
 import Luxury from "../../components/lifestyle/lifestyleSetmenu/luxury/luxury";
 import LuxuryBanner from "../../components/lifestyle/lifestyleSetmenu/luxury/luxuryBanner";
 import LuxuryPopular from "../../components/lifestyle/lifestyleSetmenu/luxury/luxurypopular";
