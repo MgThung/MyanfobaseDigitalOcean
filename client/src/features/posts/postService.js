@@ -1,8 +1,8 @@
 import axios from "axios";
 
 // const API_URL = "https://desolate-hollows-16342.herokuapp.com/api/post/";
-// const API_URL = "http://localhost:8080/api/post/";
-const API_URL = "http://178.128.56.127/api/post/";
+const API_URL = "http://localhost:8080/api/post/";
+// const API_URL = "http://178.128.56.127/api/post/";
 
 //Create new Post
 const creatPosts = async (postData, token) => {

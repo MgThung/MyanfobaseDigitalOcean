@@ -44,7 +44,6 @@ const LoginCompo = () => {
 
     if (isSuccess || user) {
       setIsContainerActive(false);
-      navigate("/");
     }
 
     dispatch(reset());
@@ -68,7 +67,11 @@ const LoginCompo = () => {
         email,
         password,
       };
-      dispatch(register(userData)).then(navigate("/login"));
+      dispatch(register(userData))
+        .then(() => navigate("/login"))
+        .catch((error) => {
+          setIsContainerActive(true);
+        });
     }
   };
   /* login data */
@@ -91,7 +94,9 @@ const LoginCompo = () => {
       loginemail,
       loginpassword,
     };
-    dispatch(login(userData));
+    dispatch(login(userData)).then(() => {
+      navigate("/");
+    });
     // .then((res, err) => {
     //   if (err) {
     //     alert(err);

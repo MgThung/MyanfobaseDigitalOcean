@@ -6,8 +6,8 @@ import "./profile.css";
 const Savepost = () => {
   const { user } = useSelector((state) => state.auth);
   // const API_URL = "https://desolate-hollows-16342.herokuapp.com/api/";
-  // const API_URL = "http://localhost:8080/api/";
-  const API_URL = "http://178.128.56.127/api/";
+  const API_URL = "http://localhost:8080/api/";
+  // const API_URL = "http://178.128.56.127/api/";
   const [favData, setFavdata] = useState([]);
 
   const config = {

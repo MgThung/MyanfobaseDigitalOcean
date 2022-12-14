@@ -3,6 +3,7 @@ const fs = require("fs");
 const mainPath = require("../routes/baseFilepath");
 const asyncHandler = require("express-async-handler");
 const PostModel = require("../models/Posts");
+const FavModel = require("../models/Favourite");
 const User = require("../models/User");
 const path = require("path");
 const multer = require("multer");
@@ -240,6 +241,20 @@ const updatepost = asyncHandler(async (req, res) => {
       },
     }
   );
+  //if someone update post , the favorite data also need to update
+  await FavModel.updateMany(
+    { postId: id },
+    {
+      $set: {
+        title: title,
+        cateId: cateId,
+        cateName: cateName,
+        files: filesArray[0].filePath,
+      },
+    }
+  );
+  // const updatedFav = await FavModel.find({ postId: _id });
+  // console.log("upd favorite result is", updatedFav);
 
   const updatedData = await PostModel.findById(id);
   res.status(200).json(updatedData);
@@ -294,6 +309,7 @@ const updAdminAccept = asyncHandler(async (req, res) => {
       },
     }
   );
+
   const updatedData = await PostModel.findById(_id);
   res.status(200).json(updatedData);
   console.log("updated data result is", updatedData);
@@ -349,6 +365,8 @@ const deletepost = async (req, res) => {
           // });
         });
   });
+  //if someone delete post , the favorite data also need to delete
+  await FavModel.deleteMany({ postId: id }).exec();
 
   await PostModel.findByIdAndRemove(id).exec();
   res.status(200).json({ id: id });
