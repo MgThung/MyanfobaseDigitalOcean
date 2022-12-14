@@ -13,13 +13,6 @@ export default function UserDetail() {
 
   const { id } = useParams();
   const { cate } = useParams();
-
-  useEffect(() => {
-    editpostid().then((data) => {
-      setPostDetail(data);
-    });
-  }, []);
-
   const editpostid = async () => {
     // const reqdata = await fetch(
     //   `https://desolate-hollows-16342.herokuapp.com/detailwithview/${id}`
@@ -30,6 +23,12 @@ export default function UserDetail() {
     console.log("res data is ", res);
     return res;
   };
+  useEffect(() => {
+    editpostid().then((data) => {
+      setPostDetail(data);
+    });
+  }, []);
+
   console.log("detail form viewcount is", postDetail.viewcount);
   return (
     <>
