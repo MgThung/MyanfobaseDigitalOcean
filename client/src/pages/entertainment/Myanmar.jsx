@@ -3,7 +3,6 @@ import Latestbar from "../../components/catepagerightbar/Latestbar";
 import Tecmain from "../../components/catepagerightbar/Tecmain";
 import Myanmarbanner from "../../components/enterment/entermentsetmenu/myanmar/Myanmarbanner";
 import Myanmarheader from "../../components/enterment/entermentsetmenu/myanmar/Myanmarheader";
-import Footer from "../../components/footer/Footer";
 import TechnologyPopular from "../../components/technology/TechnologyPopular";
 
 export default function Myanmar() {
