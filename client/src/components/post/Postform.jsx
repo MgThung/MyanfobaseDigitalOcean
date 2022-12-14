@@ -14,10 +14,11 @@ export default function Postform() {
   const navigate = useNavigate();
   const { user } = useSelector((state) => state.auth);
   useEffect(() => {
+    // if (user === null || (user && !user._id)) {
     if (!user) {
       navigate("/login");
     }
-  }, [user, navigate]);
+  }, [user]);
   /* end of checking */
   // const [listofPost, setListofPost] = useState([]);
 
