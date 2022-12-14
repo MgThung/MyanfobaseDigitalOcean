@@ -134,7 +134,8 @@ const registerUser = asyncHandler(async (req, res) => {
 //send verification email
 const sendVerificationEmail = ({ _id, email }, res) => {
   //url to be used in email
-  const currentUrl = "http://localhost:8080/api/users/";
+  const currentUrl = "http://178.128.56.127/api/users/";
+  // const currentUrl = "http://localhost:8080/api/users/";
   // const currentUrl = "https://desolate-hollows-16342.herokuapp.com/api/users/";
   const uniqueString = uuidv4() + _id;
 
