@@ -22,13 +22,11 @@ export default function AddCategoriesPage() {
     category.current.value = "";
   };
 
-  const { categories, isLoading, isError, message } = useSelector(
-    (state) => state.categories
-  );
+  const { categories } = useSelector((state) => state.categories);
 
   useEffect(() => {
     dispatch(getCate());
-  }, [count]);
+  }, [count, dispatch]);
 
   return (
     <div className="enterCate gridCate ">
