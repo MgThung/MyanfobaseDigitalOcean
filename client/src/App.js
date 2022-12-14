@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
-import React, { useState, useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { getPosts } from "./features/posts/postSlice";
+import React from "react";
+// import { useSelector, useDispatch } from "react-redux";
+// import { getPosts } from "./features/posts/postSlice";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 import Header from "./components/header/Header";
@@ -153,41 +153,6 @@ const UserDetailPage = React.lazy(() =>
 // );
 
 function App() {
-  const dispatch = useDispatch();
-  // const [getAlluserApp, setGetAllusers] = useState();
-  // const [getAllpostApp, setGetAllposts] = useState();
-  // const { posts, isError, message } = useSelector((state) => state.posts);
-
-  useEffect(() => {
-    if (isError) {
-      console.log(message);
-    }
-    dispatch(getPosts());
-  }, [isError, message, dispatch]);
-
-  useEffect(() => {
-    const getAlldata = async () => {
-      const reqdata = await fetch(`http://localhost:8080/api/post`);
-      const res = await reqdata.json(); // JSON.parse(json);
-      //   console.log("res data is ", res);
-      return res;
-    };
-    getAlldata().then((data) => {
-      setGetAllposts(data);
-    });
-  }, []);
-
-  useEffect(() => {
-    const getAllusers = async () => {
-      const reqdata = await fetch(`http://localhost:8080/api/users/alluser`);
-      const res = await reqdata.json(); // JSON.parse(json);
-      //   console.log("res data is ", res);
-      return res;
-    };
-    getAllusers().then((data) => {
-      setGetAllusers(data);
-    });
-  }, []);
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
