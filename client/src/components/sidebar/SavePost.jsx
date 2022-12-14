@@ -4,7 +4,8 @@ import { useSelector, useDispatch } from "react-redux";
 import axios from "axios";
 
 export default function SavePost(props) {
-  const API_URL = "http://localhost:8080/api/";
+  // const API_URL = "http://localhost:8080/api/";
+  const API_URL = "http://178.128.56.127/api/";
   // const API_URL = "https://desolate-hollows-16342.herokuapp.com/api/";
   const { user: User } = useSelector((state) => state.auth);
   const navigate = useNavigate();

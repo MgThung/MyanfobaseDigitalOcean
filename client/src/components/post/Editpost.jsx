@@ -67,7 +67,8 @@ export default function EditPost() {
   useEffect(() => {
     const editpostid = async () => {
       // const reqdata = await fetch( `https://desolate-hollows-16342.herokuapp.com/editpost/${id}` );
-      const reqdata = await fetch(`http://localhost:8080/editpost/${id}`);
+      // const reqdata = await fetch(`http://localhost:8080/editpost/${id}`);
+      const reqdata = await fetch(`http://178.128.56.127/editpost/${id}`);
       const res = await reqdata.json(); // JSON.parse(json);
       console.log("res data is ", res);
       return res;

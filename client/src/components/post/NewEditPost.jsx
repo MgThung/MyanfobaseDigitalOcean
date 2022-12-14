@@ -67,7 +67,8 @@ export default function NewEditPost() {
 
   useEffect(() => {
     const editpostid = async () => {
-      const reqdata = await fetch(`http://localhost:8080/editpost/${id}`);
+      const reqdata = await fetch(`http://178.128.56.127/editpost/${id}`);
+      // const reqdata = await fetch(`http://localhost:8080/editpost/${id}`);
       // const reqdata = await fetch(
       //   `https://desolate-hollows-16342.herokuapp.com/editpost/${id}`
       // );
@@ -105,7 +106,8 @@ export default function NewEditPost() {
 
   useEffect(() => {
     // Axios.get("https://desolate-hollows-16342.herokuapp.com/api/category")
-    Axios.get("http://localhost:8080/api/category")
+    // Axios.get("http://localhost:8080/api/category")
+    Axios.get("http://178.128.56.127/api/category")
       .then((response) => {
         setListOfCate(response.data);
         // console.log("categories inside", response.data);

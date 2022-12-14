@@ -11,7 +11,8 @@ export default function LatestArticle(props) {
     // const reqdata = await fetch(
     //   `https://desolate-hollows-16342.herokuapp.com/api/lastposts`
     // );
-    const reqdata = await fetch(`http://localhost:8080/api/lastposts`);
+    const reqdata = await fetch(`http://178.128.56.127/api/lastposts`);
+    // const reqdata = await fetch(`http://localhost:8080/api/lastposts`);
     const res = await reqdata.json(); // JSON.parse(json);
     //   console.log("res data is ", res);
     return res;

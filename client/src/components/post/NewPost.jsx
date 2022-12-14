@@ -92,14 +92,15 @@ export default function NewPost(props) {
 
   useEffect(() => {
     // Axios.get("https://desolate-hollows-16342.herokuapp.com/readcate")
-      Axios.get("http://localhost:8080/readcate")
-      .then((response) => {
-        setListOfCate(response.data);
-        console.log("categories inside", response.data);
-      })
-      .catch(() => {
-        alert("Awww, it didn't work at getting categories data");
-      });
+      // Axios.get("http://localhost:8080/readcate")
+      Axios.get("http://178.128.56.127/readcate")
+        .then((response) => {
+          setListOfCate(response.data);
+          console.log("categories inside", response.data);
+        })
+        .catch(() => {
+          alert("Awww, it didn't work at getting categories data");
+        });
   }, []);
 
   return (
