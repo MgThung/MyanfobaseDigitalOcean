@@ -3,7 +3,6 @@ import Latestbar from "../../components/catepagerightbar/Latestbar";
 import PopularNews from "../../components/catepagerightbar/PopularNews";
 import Literature from "../../components/literature/Literature";
 import LiteratureMain from "../../components/literature/LiteratureMain";
-import LiteraturePopular from "../../components/literature/LiteraturePopular";
 import { Grid } from "@mui/material";
 import "./literaturebody.css";
 

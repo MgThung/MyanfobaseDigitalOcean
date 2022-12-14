@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Addcategory, getCategory } from "../../data/api";
+// import { Addcategory, getCategory } from "../../data/api";
 import { useSelector, useDispatch } from "react-redux";
 import "./addcategories.css";
 import {

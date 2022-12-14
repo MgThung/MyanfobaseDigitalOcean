@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import Latestbar from "../../components/catepagerightbar/Latestbar";
+// import Latestbar from "../../components/catepagerightbar/Latestbar";
 
 import Detailbanner from "../../components/detailpagecompo/Detailbanner";
 import Detailhead from "../../components/detailpagecompo/Detailhead";

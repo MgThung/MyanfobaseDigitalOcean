@@ -2,7 +2,6 @@ import React from "react";
 import "./sciencebody.css";
 import Latestbar from "../../components/catepagerightbar/Latestbar";
 import Science from "../../components/science/Science";
-
 import ScienceMain from "../../components/science/ScienceMain";
 import ScienceBanner from "../../components/science/ScienceBanner";
 import { Grid } from "@mui/material";

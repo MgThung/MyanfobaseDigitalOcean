@@ -4,7 +4,6 @@ import PopularNews from "../../components/catepagerightbar/PopularNews";
 import Entermentbanner from "../../components/enterment/Entermentbanner";
 import Entermentheader from "../../components/enterment/Entermentheader";
 import Entertainmentmain from "../../components/enterment/Entertainmentmain";
-import Entertainmentpopular from "../../components/enterment/Entertainmentpopular";
 import "../tecnology/tecnologyPage.css";
 import { Grid } from "@mui/material";
 export default function Entertainment() {
