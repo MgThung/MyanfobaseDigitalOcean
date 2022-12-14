@@ -1,9 +1,9 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { updatePosts, getPostDetail, UpdateData } from "../../data/api";
+// import { updatePosts, getPostDetail, UpdateData } from "../../data/api";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import Axios from "axios";
+// import Axios from "axios";
 import "./textform.css";
 import "./postform.css";
 import "./dropdowncate.css";

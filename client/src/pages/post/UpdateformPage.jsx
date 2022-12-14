@@ -1,6 +1,6 @@
 import React from "react";
 import EditPost from "../../components/post/Editpost";
-import NewEditPost from "../../components/post/NewEditPost";
+// import NewEditPost from "../../components/post/NewEditPost";
 
 import "./postformpage.css";
 
