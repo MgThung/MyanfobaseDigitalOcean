@@ -5,7 +5,6 @@ import Science from "../../components/science/Science";
 
 import ScienceMain from "../../components/science/ScienceMain";
 import ScienceBanner from "../../components/science/ScienceBanner";
-import SciencePopular from "../../components/science/SciencePopular";
 import { Grid } from "@mui/material";
 import PopularNews from "../../components/catepagerightbar/PopularNews";
 export default function SciencePage() {

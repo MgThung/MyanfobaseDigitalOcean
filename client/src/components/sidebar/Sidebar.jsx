@@ -2,14 +2,12 @@ import { Pagination, Grid } from "@mui/material";
 
 import { Link, useNavigate, useParams } from "react-router-dom";
 import React, { useState, useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
 import Moment from "react-moment";
 import "./sidebar.css";
 import "../../App.css";
-import Spinner from "../login/Spinner";
+// import Spinner from "../login/Spinner";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
-import SavePost from "./SavePost";
 
 export default function Sidebar(props) {
   const theme = useContext(themeContext);

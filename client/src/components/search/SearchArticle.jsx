@@ -1,6 +1,5 @@
 import "./search.css";
 import { Link } from "react-router-dom";
-import Paginate from "../catepagerightbar/Paginate";
 import { getMultipleFiles } from "../../data/api";
 
 import "../post/postform.css";
