@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
@@ -154,9 +154,9 @@ const UserDetailPage = React.lazy(() =>
 
 function App() {
   const dispatch = useDispatch();
-  const [getAlluserApp, setGetAllusers] = useState();
-  const [getAllpostApp, setGetAllposts] = useState();
-  const { posts, isError, message } = useSelector((state) => state.posts);
+  // const [getAlluserApp, setGetAllusers] = useState();
+  // const [getAllpostApp, setGetAllposts] = useState();
+  // const { posts, isError, message } = useSelector((state) => state.posts);
 
   useEffect(() => {
     if (isError) {
