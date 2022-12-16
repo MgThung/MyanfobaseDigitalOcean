@@ -59,6 +59,14 @@ export default function PopularHome() {
                           variant="p"
                           color="white"
                           className="bignewsdesc"
+                          sx={{
+                            fontSize: {
+                              xs: "15px",
+                              sm: "15px",
+                              md: "20px",
+                              lg: "20px",
+                            },
+                          }}
                         >
                           {lastposts[0].description.substring(0, 80)}...
                         </Typography>
@@ -100,7 +108,18 @@ export default function PopularHome() {
                                     className={`whiteColor ${lastposts[1].cateName}hover`}
                                   >
                                     <br></br>
-                                    <Typography variant="p" color="white">
+                                    <Typography
+                                      variant="p"
+                                      color="white"
+                                      sx={{
+                                        fontSize: {
+                                          xs: "15px",
+                                          sm: "15px",
+                                          md: "12px",
+                                          lg: "15px",
+                                        },
+                                      }}
+                                    >
                                       {lastposts[1].title.substring(0, 80)}...
                                     </Typography>
                                   </Link>
@@ -144,7 +163,18 @@ export default function PopularHome() {
                                       >
                                         <br></br>
 
-                                        <Typography variant="p" color="white">
+                                        <Typography
+                                          variant="p"
+                                          color="white"
+                                          sx={{
+                                            fontSize: {
+                                              xs: "15px",
+                                              sm: "15px",
+                                              md: "12px",
+                                              lg: "15px",
+                                            },
+                                          }}
+                                        >
                                           {lastposts[2].title.substring(0, 50)}
                                           ...
                                         </Typography>
@@ -185,7 +215,18 @@ export default function PopularHome() {
                                       >
                                         <br></br>
 
-                                        <Typography variant="p" color="white">
+                                        <Typography
+                                          variant="p"
+                                          color="white"
+                                          sx={{
+                                            fontSize: {
+                                              xs: "15px",
+                                              sm: "15px",
+                                              md: "12px",
+                                              lg: "15px",
+                                            },
+                                          }}
+                                        >
                                           {lastposts[3].title.substring(0, 50)}
                                           ...
                                         </Typography>

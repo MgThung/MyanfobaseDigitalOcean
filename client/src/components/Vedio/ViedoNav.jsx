@@ -7,7 +7,7 @@ const ViedoNav = () => {
       <div className="Vedionav">
         <h2>Video</h2>
 
-        <div className="Viedo_nav">
+        {/* <div className="Viedo_nav">
           <ul>
             <li>
               <Link to="">Beauty</Link>
@@ -28,7 +28,7 @@ const ViedoNav = () => {
               <Link to="">Entertainment</Link>
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
     </div>
   );

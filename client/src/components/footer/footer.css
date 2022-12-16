@@ -88,3 +88,9 @@ ul li {
 .TagInfo {
   padding-top: 2rem;
 }
+@media screen and (max-width: 1200px) {
+  .fotpayment{
+gap: .2rem;
+margin-left: -2rem;
+  }
+}

@@ -1,18 +1,18 @@
 .sponsered {
   width: 100%;
 }
-.sponsered-1,
+/* .sponsered-1,
 .sponsered-2,
 .sponsered-3 {
   display: grid;
   grid-template-columns: 50% 50%;
   margin-bottom: 6px;
-}
+} */
 .sponsered-1 img,
 .sponsered-2 img,
 .sponsered-3 img {
   display: block;
-  width: 95%;
+  width: 100%;
   height: 100%;
 }
 .beauty-photo,
@@ -20,6 +20,12 @@
 .foodies-photo {
   width: 100%;
   height: 120px;
+}
+.beauty-photo img,
+.phone-photo img,
+.foodies-photo img {
+  width: 100%;
+  height: 100%;
 }
 
 .sponserAll p {
@@ -45,4 +51,18 @@
 .sponserBy .sponserBefore {
   font-size: 14px;
   margin-left: 0.6rem;
+}
+@media screen and (max-width: 1200px) {
+.beauty-photo,
+.phone-photo,
+.foodies-photo {
+  height: 200px;
+}
+}
+@media screen and (max-width: 600px) {
+.beauty-photo,
+.phone-photo,
+.foodies-photo {
+  height: 120px;
+}
 }
