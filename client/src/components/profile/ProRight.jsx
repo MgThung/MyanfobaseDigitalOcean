@@ -1,6 +1,6 @@
 import Paginate from "../catepagerightbar/Paginate";
 import { Stack, Button } from "@mui/material";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import "../travelling/travside.css";
@@ -15,8 +15,16 @@ import {
   getPosts,
   reset,
 } from "../../features/posts/postSlice";
+import Dialog from "./Dialog";
+
 
 function ProRight() {
+  const [product, setProducts] = useState(false);
+  const [dialog, setDialog] = useState({
+    message: "",
+    isLoading: false,
+    Postname: "",
+  })
   const navigate = useNavigate();
   const dispatch = useDispatch();
   Moment.globalFormat = "D MMM YYYY";
@@ -35,6 +43,36 @@ function ProRight() {
     }
     dispatch(getPosts());
   }, [user._id, navigate, isError, message, dispatch]);
+
+
+    const idProductRef = useRef();
+    const handleDialog = (message, isLoading, Postname) => {
+      setDialog({
+        message,
+        isLoading,
+        Postname,
+      });
+    };
+    const handleDelete = (_id) => {
+      console.log("id from delete", _id);
+      const index = posts.findIndex((element) => element._id === _id);
+      console.log("index data ", index);
+      handleDialog("Are you sure want to delete", true, posts[index].title);
+      idProductRef.current = _id;
+    };
+    console.log("dialog is", dialog);
+    const areUSureDelete = (choose) => {
+      if (choose) {
+        // setProducts(
+        //   posts.filter((element) => element._id !== idProductRef.current)
+        // );
+        dispatch(deletePost(idProductRef.current)).then(() =>
+          handleDialog("", false)
+        );
+      } else {
+        handleDialog("", false);
+      }
+    };
 
   if (isLoading) {
     return <Spinner />;
@@ -138,13 +176,21 @@ function ProRight() {
                               <div className="posticon1">
                                 <div className="tooltip1 topdel">Delete</div>
                                 <button
-                                  onClick={() =>
-                                    dispatch(deletePost(element._id))
-                                  }
+                                  // onClick={() =>
+                                  //   dispatch(deletePost(element._id))
+                                  // }
+                                  onClick={() => handleDelete(element._id)}
                                   className="DeleteP "
                                 >
                                   <i className=" uil uil-trash-alt"></i>
                                 </button>
+                                {dialog.isLoading && (
+                                  <Dialog
+                                    Postname={dialog.Postname}
+                                    onDialog={areUSureDelete}
+                                    message={dialog.message}
+                                  />
+                                )}
                               </div>
 
                               <div className="posticon1">
