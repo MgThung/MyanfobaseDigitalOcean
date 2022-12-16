@@ -54,7 +54,7 @@
   font-family: "Merriweather", serif;
   color: white;
   /* font-family: "Bowlby One"; */
-  font-size: 70px;
+  /* font-size: 70px; */
   padding-top: 4rem;
 }
 .home-banner-detail h3 {
@@ -106,11 +106,11 @@
   border-top: black 3px solid;
 }
 
-.popular-header {
+/* .popular-header {
   display: grid;
   grid-template-columns: 20% 80%;
   max-width: 1600px;
-}
+} */
 .popular-now-line {
   display: block;
   width: 185px;
@@ -167,13 +167,14 @@
   transform: perspective(1000px) translateZ(150px);
 }
 .mask-div .popular-bignew {
-  position: absolute;
-  bottom: 0rem;
-  /* left: 40px; */
-  padding-top: 1rem;
-  box-shadow: inset 29px -106px 49px -28px rgb(14 13 13 / 81%);
-  padding-bottom: 1rem;
-  padding-left: 40px;
+    position: absolute;
+    bottom: 0rem;
+    width: 100%;
+    /* left: 40px; */
+    padding-top: 1rem;
+    box-shadow: inset -11px -103px 52px -29px rgb(14 13 13 / 81%);
+    padding-bottom: 1rem;
+    padding-left: 20px;
 }
 
 .popular-bignew p {
@@ -185,11 +186,11 @@
   position: absolute;
   bottom: 0rem;
   /* left: 20px; */
-  width: 97%;
+  width: 100%;
   padding-top: 1rem;
   box-shadow: inset 5px -134px 56px -77px rgb(14 13 13 / 81%);
   padding-bottom: 1rem;
-  padding-left: 30px;
+  padding-left: 8px;
 }
 .popularsec-bg {
   width: 100%;
@@ -243,7 +244,11 @@
   width: 100%;
   height: 100%;
 }
-
+.secondGrid3rdphoto .culture-img{
+  overflow: hidden;
+   width: 100%;
+  height: 100%;
+}
 /* 
 .popular-secnew p:hover {
   color: var(--health-bg);
@@ -256,7 +261,7 @@
   padding-top: 0.5rem;
   box-shadow: inset 5px -134px 56px -77px rgb(14 13 13 / 81%);
   padding-bottom: 0.5rem;
-  padding-left: 30px;
+  padding-left: 8px;
 }
 .popular-thirdnew p {
   color: white;
@@ -272,7 +277,7 @@
   padding-top: 0.5rem;
   box-shadow: inset 5px -134px 56px -77px rgb(14 13 13 / 81%);
   padding-bottom: 0.5rem;
-  padding-left: 30px;
+  padding-left: 8px;
 }
 .popular-fouthnew p {
   color: white;
@@ -356,5 +361,14 @@
  
   height: 10rem;
 
+}
+.home-banner{
+  height: 20rem;
+}
+#searchinput {
+    padding: 0.6rem 1rem 0.6rem 1rem;
+}
+.banner-botton{
+  display: none;
 }
 }

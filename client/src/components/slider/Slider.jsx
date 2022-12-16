@@ -21,11 +21,11 @@ export default function Slider() {
   const { categories } = useSelector((state) => state.categories);
 
   return (
-    <>
+    <div className="sliderall">
       <span className="swipper-bottom-line"></span>
       <Swiper
         id="SliderTop"
-        slidesPerView={8}
+        slidesPerView={7}
         spaceBetween={0}
         loop={true}
         pagination={{
@@ -57,6 +57,6 @@ export default function Slider() {
         )}
       </Swiper>
       <span className="swipper-bottom-line"></span>
-    </>
+    </div>
   );
 }

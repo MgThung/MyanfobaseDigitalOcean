@@ -215,7 +215,7 @@ const LoginCompo = () => {
                   id="password"
                   placeholder="Password"
                   name="password"
-                  pattern="^(?=.*[0-9])(?=.*[a-zA-Z])(?=\S+$).{8,20}$"
+                  pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,20}$"
                   value={password}
                   onChange={onChange}
                   focused={focused.toString()}

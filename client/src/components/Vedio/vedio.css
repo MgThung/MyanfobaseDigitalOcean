@@ -7,8 +7,8 @@
 }
 .Viedosec {
   padding-top: 2rem;
-  display: grid;
-  grid-template-columns: 60% 40%;
+  /* display: grid;
+  grid-template-columns: 60% 40%; */
 }
 .main-video {
   /* min-height: 87%; */
@@ -30,9 +30,9 @@
   background: #c9dce7;
 }
 .Video {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 40% 60%;
-  gap: 5px;
+  gap: 5px; */
   /* margin: 10px 0; */
   /* padding: 10px 3px 10px 4px; */
   margin: 10px 10px 10px 0;
@@ -86,4 +86,12 @@
 .Video-playlist::-webkit-scrollbar-thumb {
   background-color: rgb(186, 179, 179);
   border-radius: 50px;
+}
+@media screen and (max-width: 800px){
+  .main-video {
+  
+  height: 300px;
+}
+
+
 }

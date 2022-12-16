@@ -1,4 +1,6 @@
 import React from "react";
+import { Box, Grid, Typography } from "@mui/material";
+
 import AdvertiseEducation from "./AdvertiseEducation";
 
 import "./homeeducation.css";
@@ -9,15 +11,30 @@ export default function HomeEducation() {
   return (
     <section className="container EducSect">
       <div className="titleEducation">
-        <h2>Technology Trainning Class</h2>
+        <Typography variant="h4" fontWeight="bold">Education </Typography>
         <span className="headerline"></span>
       </div>
-      <div className="educationHOme">
+      <Box maxWidth="xl">
+        <div className="educationHOme">
+          {/* <div id="homeeducation" className="edusection"> */}
+          <Grid container direction="row" spacing={2}>
+            <Grid item lg={8}>
+              <TrainingClass />
+            </Grid>
+            <Grid item lg={4}>
+              <AdvertiseEducation />
+            </Grid>
+          </Grid>
+          {/* </div> */}
+        </div>
+      </Box>
+
+      {/* <div className="educationHOme">
         <div id="homeeducation" className="edusection">
           <TrainingClass />
           <AdvertiseEducation />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
