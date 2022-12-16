@@ -182,3 +182,18 @@ body {
 .maskimgdiv {
   height: 100%;
 }
+@media screen and (min-width: 600px){
+  .swiper-container{
+width: 600px;
+  }
+}
+@media screen and (min-width: 1000px){
+  .swiper-container{
+width: 1000px;
+  }
+}
+@media screen and (min-width: 1200px){
+  .swiper-container{
+width: 1200px;
+  }
+}
