@@ -94,6 +94,11 @@ export default function Detailbanner({ detailid }) {
             src="../images/technology/techhyperx.jpg"
             alt=""
           />
+          <img
+            className="imgbanner"
+            src="../images/technology/techhyperx.jpg"
+            alt=""
+          />
         </Grid>
       </Grid>
     </div>
