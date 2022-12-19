@@ -159,11 +159,14 @@ export default function Sidebar(props) {
                       <Grid
                         container
                         my={2}
-                        sx={{ margin: "0px", width: "100%" }}
-                        spacing={3}
+                        sx={{
+                          margin: "0 0 1rem 0",
+                          width: "100%",
+                          gap: "1rem",
+                        }}
                         id={darkMode ? "sidebar-white" : "sidebar-black"}
                       >
-                        <Grid item xs={12} sm={3} xl={2} md={3}>
+                        <Grid item xs={12} sm={3} md={3} xl={3}>
                           <div className="Trav_img">
                             <img
                               src={data.files[0].filePath}
@@ -178,7 +181,7 @@ export default function Sidebar(props) {
                             </Link>
                           </div>
                         </Grid>
-                        <Grid item xs={12} sm={9} xl={9} md={9}>
+                        <Grid item xs={12} sm={8.6} xl={8.6} md={8.6}>
                           <div className="postTrav_info">
                             <Link
                               to={`/${category}/${data._id}`}

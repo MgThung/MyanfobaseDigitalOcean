@@ -10,6 +10,9 @@ import RelatedA from "../../components/detailpagecompo/RelatedA";
 import DetailMustRead from "../../components/detailpagecompo/DetailMustRead";
 
 import "./detailpage.css";
+import PopularNews from "../../components/catepagerightbar/PopularNews";
+import Advtecbar from "../../components/catepagerightbar/Advtecbar";
+import LatestArticle from "../../components/catepagerightbar/LatestArticle";
 
 export default function DetailPage() {
   const detailid = useParams();
@@ -22,9 +25,10 @@ export default function DetailPage() {
         <Detailbanner detailid={detailid} />
 
         <div className="allRightBar detailcontainer">
-          <RelatedA />
-          <Latestpho />
-          <Latestdetail />
+          <PopularNews />
+          <span className="lastestbottomline "></span>
+          <Advtecbar />
+          <LatestArticle />
         </div>
       </section>
       <div className="container">

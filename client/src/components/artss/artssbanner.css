@@ -34,7 +34,7 @@
   margin-top: 1rem;
 }
 
-.datepara {
+.datepara p {
   z-index: 7;
   white-space: normal;
   font-size: 16px;
@@ -57,7 +57,7 @@
   margin-top: 3rem;
 }
 @media screen and (max-width: 810px) {
-  .datepara {
+  .datepara p {
     font-size: 14px;
     margin-left: 5rem;
     margin-top: 0.5rem;
@@ -78,6 +78,6 @@
   .artphoto {
     width: 80%;
     height: 400px;
-    margin: auto;
+    margin: 0 auto 1rem;
   }
 }

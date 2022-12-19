@@ -1,7 +1,6 @@
-import React from 'react'
-import "./latestdetail.css"
-
-
+import React from "react";
+import "./latestdetail.css";
+import "../catepagerightbar/latestbar.css";
 
 export default function Latestdetail() {
   return (
@@ -26,8 +25,8 @@ export default function Latestdetail() {
           <p className="adv-size"> 300*250 Ad</p>
         </div>
           </div> */}
-          
-          {/* start latested */}
+
+      {/* start latested */}
       <div className="lastArt">
         <div className="lastnewbar-title">
           <h2>Latest Articles</h2>

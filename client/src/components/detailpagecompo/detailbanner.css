@@ -174,3 +174,7 @@ span.writerName::before {
   height: 210px;
   /* height: max-content; */
 }
+.imgbanner {
+  width: 100%;
+  height: 100%;
+}

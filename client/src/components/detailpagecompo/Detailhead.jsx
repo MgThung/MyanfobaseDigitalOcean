@@ -1,30 +1,59 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "./detail.css";
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import Moment from "react-moment";
+import { Box, Breadcrumbs, Typography, Stack } from "@mui/material";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 // import Socialbar from "./Socialbar";
 export default function Detailhead() {
+  Moment.globalFormat = "D MMM YYYY";
+  const [postDetail, setPostDetail] = useState({
+    title: "",
+    description: "",
+    cateName: "",
+    cateId: "",
+    createdAt: "",
+    username: "",
+    userprofile: "",
+    files: [],
+  });
+  const { id } = useParams();
+  const editpostid = async () => {
+    const reqdata = await fetch(
+      `https://desolate-hollows-16342.herokuapp.com/editpost/${id}`
+    );
+    // const reqdata = await fetch(`http://localhost:8080/editpost/${id}`);
+    const res = await reqdata.json(); // JSON.parse(json);
+    console.log("res data is ", res);
+    return res;
+  };
+  useEffect(() => {
+    editpostid().then((data) => {
+      setPostDetail(data);
+    });
+  }, [id]);
   return (
     <section className="detailhead container">
-      <div className="top">
-        <div className="homelink">
-          <ul>
-            <li>
-              <Link to="/" className="link1">
-                <h4>Home</h4>
-              </Link>
-            </li>
-          </ul>
-        </div>
-
-        <div className="iconRightArrow">
-          <i className="uil uil-angle-right-b"></i>
-        </div>
-        <Link to="/technology" className="link1">
-          <h4>Technology</h4>
-        </Link>
-      </div>
+      <Box sx={{ marginButtom: "10px" }}>
+        <Breadcrumbs
+          aria-aria-label="breadcrumb"
+          separator={<NavigateNextIcon fontSize="small" />}
+        >
+          <Link to="/" className="link1" fontSize="25px">
+            <Typography color={"black"}>Home</Typography>
+          </Link>
+          <Link to="/${postDetail.cateName}" className="link1">
+            <Typography>{postDetail.cateName}</Typography>
+          </Link>
+        </Breadcrumbs>
+      </Box>
       <div>
-        <button className="cateTechnology detailcategory">Technology</button>
+        <Link to={`/${postDetail.cateName}`} className="link1">
+          <button className={` cate${postDetail.cateName}`}>
+            {postDetail.cateName}
+          </button>
+        </Link>
         <h1>How My Phone’s Most Annoying Feature Saved My Life</h1>
       </div>
       <div className="para">
