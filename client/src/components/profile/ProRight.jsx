@@ -59,10 +59,10 @@ function ProRight() {
                         margin: "auto",
                         boxShadow: "rgb(177 195 209) -2px 2px 8px 5px",
                         borderRadius: "5px",
-                        heigh: "100%",
+                        gap: { sm: "1rem", md: "1.2rem", lg: "1.3rem" },
                       }}
                     >
-                      <Grid item xs={12} sm={4.2}>
+                      <Grid item xs={12} sm={4}>
                         <div className="Profile_img">
                           <img
                             src={`${element.files[0].filePath}`}
@@ -78,7 +78,7 @@ function ProRight() {
                           </Link>
                         </div>
                       </Grid>
-                      <Grid item xs={12} sm={7.8}>
+                      <Grid item xs={12} sm={7.6}>
                         <div className="postProfile_info">
                           <Link
                             to={`/${element.cateName}/${element._id}`}

@@ -207,3 +207,72 @@ a .hoverclor:hover {
 .homeMenu {
   position: relative;
 }
+.css-10hburv-MuiTypography-root {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #555;
+}
+@media screen and (max-width: 900px) {
+  .login {
+    margin-left: 40%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #dropdown-menu::before {
+    right: 30%;
+  }
+  #dropdown-menu {
+    right: 0;
+    width: 150px;
+  }
+  #dropdown-menu h3 {
+    font-size: 14px;
+    line-height: 1rem;
+  }
+  .dropdownItem a,
+  .dropdownItem button {
+    font-size: 12px;
+  }
+  .headerwrap i,
+  .dropdownItem i {
+    font-size: 18px;
+    width: 18px;
+  }
+  .login {
+    margin-left: 20%;
+  }
+  .nav-logo img {
+    width: 80px;
+    height: 70px;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1000px) {
+  .navli {
+    padding: 0rem;
+  }
+
+  .headericon {
+    display: none;
+  }
+  .flex {
+    gap: 0;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .navli {
+    padding: 1rem;
+  }
+
+  .headericon {
+    display: none;
+  }
+  .flex {
+    gap: 0;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+  .navli {
+    padding: 0 1.3rem;
+  }
+}

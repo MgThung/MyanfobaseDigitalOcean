@@ -211,7 +211,7 @@ ul {
     gap: 1.5rem;
   }
 }
-@media screen and (min-width: 1050px) and (max-width: 1400px) {
+@media screen and (min-width: 1050px) and (max-width: 1450px) {
   .css-sr5gqk-MuiGrid-root {
     gap: 2.2rem;
   }

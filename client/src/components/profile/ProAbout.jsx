@@ -8,6 +8,7 @@ import {
   CardActions,
   Button,
 } from "@mui/material";
+import "./profile.css";
 const ProAbout = () => {
   const { user } = useSelector((state) => state.auth);
   return (
@@ -27,10 +28,22 @@ const ProAbout = () => {
         </div>
       </div> */}
 
-      <Box width="320px">
+      <Box width="95%" className="profileBox">
         <Card>
           <CardContent>
-            <Typography gutterBottom variant="h3" component="div">
+            <Typography
+              gutterBottom
+              variant="h3"
+              sx={{
+                fontSize: {
+                  xs: "2.5rem",
+                  sm: "3rem",
+                  md: "2rem",
+                  lg: "2.5rem",
+                },
+              }}
+              component="div"
+            >
               About Profile
             </Typography>
             <Typography variant="h5">{user.username}</Typography>
