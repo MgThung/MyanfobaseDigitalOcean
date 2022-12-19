@@ -39,3 +39,20 @@ ul .catgitems:hover h5 {
   /* padding: 3px 2px; */
   color: rgb(220, 137, 43) !important;
 }
+
+@media screen and (max-width: 900px) {
+  .categoriessub {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    height: calc(250px - 0px);
+    overflow-y: scroll;
+    position: sticky;
+    width: 150px;
+    justify-items: center;
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    margin: auto;
+  }
+}

@@ -4,8 +4,16 @@
   gap: 4rem;
   max-width: 1600px;
 }
-@media screen and (max-width: 600px) {
-  .leftbar {
+@media screen and (max-width: 1000px) {
+  .proFiledet {
+    display: none;
+  }
+  .proFilemobile {
+    display: block;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .proFilemobile {
     display: none;
   }
 }

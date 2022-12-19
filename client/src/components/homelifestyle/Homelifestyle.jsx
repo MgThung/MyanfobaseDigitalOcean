@@ -1,4 +1,4 @@
-import { Box, Container, Grid } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import "./homelifestyle.css";
 import Lifestylenew from "./Lifestylenew";
 import SponserContent from "./SponserContent";
@@ -6,7 +6,7 @@ import SponserContent from "./SponserContent";
 export default function Homelifestyle() {
   return (
     <section className="container LifestyleSect">
-      <h2>Lifestyle News</h2>
+      <Typography variant="h4" fontWeight="bold">Lifestyle News</Typography>
       <span className="Lifeline"></span>
       <Box>
         <div id="lifestyles-New">

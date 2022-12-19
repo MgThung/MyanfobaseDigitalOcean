@@ -137,6 +137,8 @@ a.instagram {
   color: var(--technology-bg);
 }
 .tec-mustread1 {
+  width: 100%;
+  height: auto;
   transition: 1s;
 }
 .tec-mustread1:hover {

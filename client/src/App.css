@@ -57,6 +57,8 @@ a {
 .container {
   width: var(--container-width-lg);
   margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
 }
 .capital {
   text-transform: uppercase;
@@ -354,7 +356,7 @@ dl {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   .container {
     width: var(--container-width-md);
     margin: 0 auto;
