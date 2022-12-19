@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 import "./categories.css";
 
 // import required modules
-import { Pagination, Navigation } from "swiper";
+import { Pagination, Navigation, A11y } from "swiper";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
@@ -96,14 +96,27 @@ export default function CategoryCount() {
           </div>
           <Swiper
             id="swiperdiv"
-            slidesPerView={4}
             spaceBetween={20}
+            breakpoints={{
+              600: {
+                slidesPerView: 2,
+                spaceBetween:10
+              },
+              1000: {
+                slidesPerView: 3,
+                spaceBetween:10
+              },
+              1200: {
+                slidesPerView: 4,
+                spaceBetween: 20
+              }
+            }}
             loop={true}
             pagination={{
               clickable: true,
             }}
             navigation={true}
-            modules={[Pagination, Navigation]}
+            modules={[Pagination, Navigation, A11y]}
             className="cates-swiper"
           >
             {categories.length !== 0 ? (

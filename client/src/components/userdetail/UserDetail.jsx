@@ -27,9 +27,9 @@ export default function UserDetail() {
     editpostid().then((data) => {
       setPostDetail(data);
     });
-  }, []);
+  }, [id]);
 
-  console.log("detail form viewcount is", postDetail.viewcount);
+  console.log("detail form postdetail is", postDetail);
   return (
     <>
       {postDetail && postDetail.length !== 0 ? (

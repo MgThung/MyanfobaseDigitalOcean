@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 import "./categories.css";
 
 // import required modules
-import { Pagination, Navigation } from "swiper";
+import { Pagination, Navigation, A11y } from "swiper";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
@@ -124,8 +124,8 @@ export default function Categorieslider() {
           </div>
           <Swiper
             id="swiperdiv"
-            slidesPerView={4}
-            spaceBetween={20}
+            slidesPerView={2}
+            spaceBetween={0}
             loop={true}
             pagination={{
               clickable: true,

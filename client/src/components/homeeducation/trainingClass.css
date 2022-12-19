@@ -9,11 +9,11 @@ img {
   margin: 0 auto;
 } */
 
-.classTop {
+/* .classTop {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-}
+} */
 
 .classTop .classimg {
   width: 100%;
