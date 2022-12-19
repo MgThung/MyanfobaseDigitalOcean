@@ -348,6 +348,7 @@ input:invalid[focused="true"] {
   width: 95%;
   padding: 20px 0;
   position: relative;
+  margin: auto;
 }
 .proFilebottom {
   display: grid;
@@ -482,7 +483,7 @@ input:invalid[focused="true"] {
 .css-13xfq8m-MuiTabPanel-root {
   padding: 24px 0;
 }
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 500px) and (max-width: 600px) {
   .proFilebottom {
     position: initial;
     margin: 2rem auto 0;
@@ -504,4 +505,21 @@ input:invalid[focused="true"] {
     width: 100%;
     /* background: rgb(223, 217, 217); */
   }
+}
+@media screen and (max-width: 500px) {
+  .proFilebottom {
+    display: flex;
+    flex-direction: column;
+    position: initial;
+    margin: 2rem auto 0;
+    padding-bottom: 0rem;
+    gap: 1rem;
+  }
+}
+.Probuttom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0;
+  width: 100%;
 }
