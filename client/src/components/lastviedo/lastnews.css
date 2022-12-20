@@ -89,7 +89,7 @@ span.headerline {
   /* font-size: 12px; */
 }
 .news_info {
-  width: 100%;
+  width: 90%;
 }
 /* .news_info h4:hover {
   color: var(--entertainment-bg);
@@ -247,9 +247,8 @@ span.headerline {
   margin-bottom: 1rem;
 } */
 
-
 /* favlist */
 
-.addfav{
+.addfav {
   font-size: 1rem;
 }
