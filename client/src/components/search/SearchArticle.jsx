@@ -1,26 +1,45 @@
 import "./search.css";
 import { Link } from "react-router-dom";
-import { getMultipleFiles } from "../../data/api";
+// import { getMultipleFiles } from "../../data/api";
 
 import "../post/postform.css";
 import "../post/textform.css";
 import React, { useState, useEffect } from "react";
-
+import {
+  Box,
+  Card,
+  CardContent,
+  Typography,
+  CardMedia,
+  Grid,
+} from "@mui/material";
 function SearchArticle() {
   const [multipleFiles, setMultipleFiles] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
 
-  const getMultipleFilesList = async () => {
-    try {
-      const fileslist = await getMultipleFiles();
-      setMultipleFiles(fileslist);
-      console.log(multipleFiles);
-    } catch (error) {
-      console.log(error);
-    }
+  // const getMultipleFilesList = async () => {
+  //   try {
+  //     const fileslist = await getMultipleFiles();
+  //     setMultipleFiles(fileslist);
+  //     console.log(multipleFiles);
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
+  const getAlldata = async () => {
+    const reqdata = await fetch(
+      // `https://desolate-hollows-16342.herokuapp.com/api/postcate/${category}`
+      // `http://localhost:8080/api/postcate/${category}`
+      `http://178.128.56.127/api/post`
+    );
+    const res = await reqdata.json(); // JSON.parse(json);
+    //   console.log("res data is ", res);
+    return res;
   };
   useEffect(() => {
-    getMultipleFilesList();
+    getAlldata().then((data) => {
+      setMultipleFiles(data);
+    });
   }, []);
 
   // const findOneByimage = function (image, done) {
@@ -67,24 +86,29 @@ function SearchArticle() {
                 return val;
               }
             })
-
             .map((element, index) => (
-              <div className="product" key={element._id}>
-                <div className="product-img">
-                  {/* {element.files.map((file,index)=>( */}
-                  <img
-                    src={element.files[0].filePath}
-                    // src={`http://localhost:8080/${element.files[0].filePath}`}
-                    className="card-img-top img-responsive "
-                    alt="img"
+              <Box width="95%" height="300px" key={element._id}>
+                <Card className="carddesign">
+                  <CardMedia
+                    className="cardImg"
+                    component="img"
+                    image={element.files[0].filePath}
                   />
-                  {/* ))} */}
-                </div>
-                <div className="title_desc">
-                  <h4>Title: {element.title}</h4>
-                  <h6>Descriptions: {element.description}</h6>
-                </div>
-              </div>
+                  <CardContent className="cardInfo" component="div">
+                    <Typography
+                      gutterBottom
+                      variant="h5"
+                      fontSize="1.3rem"
+                      component="div"
+                    >
+                      {element.title.substring(0, 40)}...
+                    </Typography>
+                    <Typography variant="body2">
+                      {element.description.substring(0, 40)}...
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Box>
             ))}
         </div>
       </div>
