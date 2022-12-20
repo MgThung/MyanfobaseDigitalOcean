@@ -54,7 +54,7 @@ function SearchArticle() {
 
   return (
     <>
-      <div className="searchpage">
+      <div className="searchpage container">
         <input
           type="text"
           placeholder=""
@@ -98,12 +98,29 @@ function SearchArticle() {
                     <Typography
                       gutterBottom
                       variant="h5"
-                      fontSize="1.3rem"
+                      sx={{
+                        fontSize: {
+                          xs: "0.9rem",
+                          sm: "1rem",
+                          md: "1.2rem",
+                          lg: "1.3rem",
+                        },
+                      }}
                       component="div"
                     >
                       {element.title.substring(0, 40)}...
                     </Typography>
-                    <Typography variant="body2">
+                    <Typography
+                      variant="body2"
+                      sx={{
+                        fontSize: {
+                          xs: "0.5rem",
+                          sm: "0.6rem",
+                          md: "0.7rem",
+                          lg: "0.8rem",
+                        },
+                      }}
+                    >
                       {element.description.substring(0, 40)}...
                     </Typography>
                   </CardContent>

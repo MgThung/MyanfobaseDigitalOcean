@@ -4,7 +4,7 @@ import "./search.css";
 const Search = () => {
   return (
     <>
-      <div className="searchpage">
+      <div className="searchpage container">
         <input type="text" placeholder="" id="searchinputpage" />
         <Link to="./search" className="searchbutton">
           <i className="uil uil-search"></i>

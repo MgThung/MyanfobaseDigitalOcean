@@ -195,10 +195,26 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
   }
+  #searchinputpage {
+    max-width: 450px;
+    padding: 0.6rem 20rem 0.6rem 4rem;
+  }
+  .searchpage {
+    max-width: fit-content;
+    margin: auto;
+  }
 }
 @media screen and (max-width: 600px) {
   .searchbox {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+  }
+  #searchinputpage {
+    max-width: 300px;
+    padding: 0.6rem 10rem 0.6rem 4rem;
+  }
+  .searchpage {
+    max-width: fit-content;
+    margin: auto;
   }
 }
