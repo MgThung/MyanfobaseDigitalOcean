@@ -260,6 +260,13 @@ form.sign-up-form {
   opacity: 1;
 }
 
+.resultnoticolor {
+  color: #d52bd0;
+}
+.resultnoticolor .warningcol {
+  color: #f50d42;
+}
+
 @media screen and (max-width: 820px) {
   .login-con {
     max-height: 800px;

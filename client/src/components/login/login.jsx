@@ -1,21 +1,35 @@
 import React, { useState, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import "./login.css";
 import { login, register, reset } from "../../features/auth/authSlice";
 import { useEffect } from "react";
 import Spinner from "./Spinner";
+import { FiLock, FiMail } from "react-icons/fi";
+
+const ErrorShow = (prop) => {
+  return (
+    <p className="resultnoticolor">
+      <span className="warningcol">Warrning:</span>
+      <b> {prop.errormessage}</b> <br />
+    </p>
+  );
+};
 
 const LoginCompo = () => {
   const [isContainerActive, setIsContainerActive] = useState(false);
   const [focused, setFocused] = useState(false);
 
+  const [errormessage, setErrormessage] = useState("");
+
   const signUpButton = () => {
     setIsContainerActive(true);
+    setErrormessage("");
   };
   const signInButton = () => {
     setIsContainerActive(false);
+    setErrormessage("");
   };
   const handleFocus = (e) => {
     setFocused(true);
@@ -39,11 +53,17 @@ const LoginCompo = () => {
 
   useEffect(() => {
     if (isError) {
-      toast.error(message);
+      // toast.error(message);
+      setErrormessage(message);
     }
 
-    if (isSuccess || user) {
-      setIsContainerActive(false);
+    if (isSuccess && user && user._id) {
+      console.log(" i am true time wit two");
+      console.log("isSuccess", isSuccess, "user is", user);
+      // setIsContainerActive(false);
+      return navigate("/");
+    } else {
+      navigate("/login");
     }
 
     dispatch(reset());
@@ -67,11 +87,10 @@ const LoginCompo = () => {
         email,
         password,
       };
-      dispatch(register(userData))
-        .then(() => navigate("/login"))
-        .catch((error) => {
-          setIsContainerActive(true);
-        });
+      dispatch(register(userData)).then(() => {
+        navigate("/login");
+        toast.success("Your Account successfully created");
+      });
     }
   };
   /* login data */
@@ -80,6 +99,7 @@ const LoginCompo = () => {
     password: "",
   });
   const { email: loginemail, password: loginpassword } = loginData;
+
   /* login data onChange */
   const onChangelogin = (e) => {
     setLoginData((prevState) => ({
@@ -95,8 +115,12 @@ const LoginCompo = () => {
       loginpassword,
     };
     dispatch(login(userData)).then(() => {
-      navigate("/");
+      if (isSuccess) {
+        console.log("is success ful ?", isSuccess);
+        navigate("/");
+      }
     });
+
     // .then((res, err) => {
     //   if (err) {
     //     alert(err);
@@ -135,6 +159,8 @@ const LoginCompo = () => {
                   name="email"
                   value={loginemail}
                   onChange={onChangelogin}
+                  required
+                  icon={<FiMail />}
                 />
               </div>
               <div className="input-field">
@@ -146,9 +172,17 @@ const LoginCompo = () => {
                   name="password"
                   value={loginpassword}
                   onChange={onChangelogin}
+                  icon={<FiLock />}
                 />
               </div>
               <input type="submit" value="Login" className="logbtn solid" />
+              {errormessage ? <ErrorShow errormessage={errormessage} /> : ""}
+              <p>
+                Forget Password?
+                <Link to="/forgetpassword">
+                  <span> reset it</span>
+                </Link>
+              </p>
               <p className="social-text">Or Sign in with social platforms</p>
               <div className="social-media">
                 <a href="#" className="social-icon">
@@ -181,6 +215,7 @@ const LoginCompo = () => {
                   placeholder="Username"
                   name="username"
                   id="username"
+                  required
                   focused={focused.toString()}
                   onBlur={handleFocus}
                   value={username}
@@ -200,9 +235,11 @@ const LoginCompo = () => {
                   id="email"
                   name="email"
                   value={email}
+                  required
                   focused={focused.toString()}
                   onBlur={handleFocus}
                   onChange={onChange}
+                  icon={<FiMail />}
                 />
                 <span className="singupusermsg">
                   It should be a vaild email address!
@@ -217,9 +254,11 @@ const LoginCompo = () => {
                   name="password"
                   pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,20}$"
                   value={password}
+                  required
                   onChange={onChange}
                   focused={focused.toString()}
                   onBlur={handleFocus}
+                  icon={<FiLock />}
                 />
                 <span className="singupusermsg">
                   Password should be 8-20 characters and include at least 1
@@ -233,16 +272,20 @@ const LoginCompo = () => {
                   placeholder="Confirm Password"
                   id="password2"
                   name="password2"
+                  required
                   pattern={formData.password}
                   value={password2}
                   onChange={onChange}
                   focused={focused.toString()}
                   onBlur={handleFocus}
+                  icon={<FiLock />}
                 />
                 <span className="singupusermsg">Passwords don't match!</span>
               </div>
 
               <input type="submit" value="Sign Up" className="logbtn solid" />
+              {errormessage ? <ErrorShow errormessage={errormessage} /> : ""}
+
               <p className="social-text">Or Sign Up with social platforms</p>
               <div className="social-media">
                 <a href="#" className="social-icon">
