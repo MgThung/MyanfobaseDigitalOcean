@@ -52,7 +52,8 @@ export default function Header() {
   return (
     <>
       <AppBar
-        position="static"
+        position="fixed"
+        z-index="999"
         style={{ backgroundColor: "#15568e", padding: "0 30px" }}
       >
         <Toolbar color="#15568e">

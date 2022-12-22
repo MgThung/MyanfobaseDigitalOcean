@@ -58,8 +58,6 @@ const LoginCompo = () => {
     }
 
     if (isSuccess && user && user._id) {
-      console.log(" i am true time wit two");
-      console.log("isSuccess", isSuccess, "user is", user);
       // setIsContainerActive(false);
       return navigate("/");
     } else {
@@ -116,7 +114,6 @@ const LoginCompo = () => {
     };
     dispatch(login(userData)).then(() => {
       if (isSuccess) {
-        console.log("is success ful ?", isSuccess);
         navigate("/");
       }
     });

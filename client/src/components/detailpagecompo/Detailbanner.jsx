@@ -1,12 +1,14 @@
 import React from "react";
 import "./detailbanner.css";
 import { Grid } from "@mui/material";
-export default function Detailbanner({ detailid }) {
+export default function Detailbanner(props) {
+  const postDetail = props.postDetail;
+  console.log("post detail from banner", postDetail.files);
   return (
     <div className="bannerSection detailcontainer ">
       {/* <h1>This is the detalil page {detailid.id}</h1> */}
       <div className="detailbannerimg">
-        <img src="../images/technology/techhyperx.jpg" />
+        <img src={postDetail && postDetail.files[0].filePath} />
       </div>
       <Grid
         container
@@ -78,27 +80,26 @@ export default function Detailbanner({ detailid }) {
         <Grid item xs={10.5} sm={10.5}>
           <div>
             <p className="firstLetter justify">
-              Good web design has visual weight, is optimized for various
-              devices, and has content that is prioritized for the medium. The
-              most important elements of a web page should have more visual
-              weight to
-              <strong>“naturally attract”</strong> a visitor’s attention.
+              {postDetail && postDetail.description}
             </p>
           </div>
         </Grid>
       </Grid>
       <Grid container sx={{ margin: "auto" }}>
         <Grid item xs="12" sm="6" md="4">
-          <img
-            className="imgbanner"
-            src="../images/technology/techhyperx.jpg"
-            alt=""
-          />
-          <img
-            className="imgbanner"
-            src="../images/technology/techhyperx.jpg"
-            alt=""
-          />
+          {postDetail &&
+            postDetail.files.length >= 2 &&
+            postDetail.files.slice(1, postDetail.files.length).map((data) => {
+              return (
+                <>
+                  <img
+                    className="imgbanner"
+                    src={data.filePath}
+                    alt="detailimage 2"
+                  />
+                </>
+              );
+            })}
         </Grid>
       </Grid>
     </div>
