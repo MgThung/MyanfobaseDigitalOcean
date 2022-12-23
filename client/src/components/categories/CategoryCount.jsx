@@ -19,55 +19,60 @@ export default function CategoryCount() {
 
   const images = [
     {
-      cateimage: "./images/homeimgs/k-artical4.jpg",
+      id: "Entertainment",
+      cateimage: "./images/categoryimages/entertainment.jpg",
     },
     {
-      cateimage: "./images/homeimgs/techhyperx.jpg",
+      id: "Technology",
+      cateimage: "./images/categoryimages/technology.jpg",
     },
     {
-      cateimage: "./images/homeimgs/viedo3.jpg",
+      id: "Beauty",
+      cateimage: "./images/categoryimages/beauty.jpg",
     },
     {
-      cateimage: "./images/homeimgs/political.jpg",
+      id: "Government",
+      cateimage: "./images/categoryimages/government.jpg",
     },
     {
-      cateimage: "./images/homeimgs/bg3.jpg",
+      id: "Travel",
+      cateimage: "./images/categoryimages/travel.jpg",
     },
     {
-      cateimage: "./images/homeimgs/school5.jpg",
+      id: "History",
+      cateimage: "./images/categoryimages/history.jpg",
     },
     {
-      cateimage: "./images/homeimgs/school3.jpg",
+      id: "Health",
+      cateimage: "./images/categoryimages/health.jpg",
     },
     {
-      cateimage: "./images/homeimgs/lifestyle.jpeg",
+      id: "Literature",
+      cateimage: "./images/categoryimages/literature.jpg",
     },
     {
-      cateimage: "./images/homeimgs/c19.jpg",
+      id: "Lifestyles",
+      cateimage: "./images/categoryimages/lifestyle.jpg",
     },
     {
-      cateimage: "./images/homeimgs/sport.jpg",
+      id: "Science",
+      cateimage: "./images/categoryimages/science.jpg",
     },
     {
-      cateimage: "./images/homeimgs/art.jpg",
+      id: "Sports",
+      cateimage: "./images/categoryimages/sport.jpg",
     },
     {
-      cateimage: "./images/homeimgs/k-artical4.jpg",
+      id: "Arts",
+      cateimage: "./images/categoryimages/arts.jpg",
     },
     {
-      cateimage: "./images/homeimgs/c19.jpg",
+      id: "Education",
+      cateimage: "./images/categoryimages/education.jpg",
     },
     {
-      cateimage: "./images/homeimgs/lifestyle.jpeg",
-    },
-    {
-      cateimage: "./images/homeimgs/k-artical4.jpg",
-    },
-    {
-      cateimage: "./images/homeimgs/k-artical4.jpg",
-    },
-    {
-      cateimage: "./images/homeimgs/k-artical4.jpg",
+      id: "Business",
+      cateimage: "./images/categoryimages/business.jpeg",
     },
   ];
 
@@ -126,7 +131,11 @@ export default function CategoryCount() {
                   <SwiperSlide className="cate-swiper">
                     <div className="per-cate">
                       <div className="cate-image">
-                        <img src={images[index].cateimage} alt="" />
+                        {/* {console.log("cate id", cate._id)} */}
+                        {images.map((data, index) => {
+                          if (data.id == cate._id)
+                            return <img src={data.cateimage} alt="" />;
+                        })}
                       </div>
 
                       <div className="swiperbody">

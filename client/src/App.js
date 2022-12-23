@@ -145,6 +145,12 @@ const UsereditForm = React.lazy(() => import("./pages/profile/userEditForm"));
 
 const LazyHome = React.lazy(() => import("./pages/home/Home"));
 const LazySearch = React.lazy(() => import("./pages/searchpage/SearchPage"));
+const ForgetPasswordPage = React.lazy(() =>
+  import("./pages/loginPage/ForgetpasswordPage")
+);
+const PasswordResetPage = React.lazy(() =>
+  import("./pages/loginPage/PasswordResetPage")
+);
 const UserDetailPage = React.lazy(() =>
   import("./pages/userdetailPage/UserDetailPage")
 );
@@ -972,6 +978,23 @@ function App() {
           element={
             <React.Suspense fallback="Loading....">
               <AddCategoriesPage />
+            </React.Suspense>
+          }
+        />
+
+        <Route
+          path="/forgetpassword"
+          element={
+            <React.Suspense fallback="Loading....">
+              <ForgetPasswordPage />
+            </React.Suspense>
+          }
+        />
+        <Route
+          path="/passwordreset/:userId/:resetString"
+          element={
+            <React.Suspense fallback="Loading....">
+              <PasswordResetPage />
             </React.Suspense>
           }
         />
