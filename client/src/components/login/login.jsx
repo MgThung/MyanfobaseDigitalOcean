@@ -58,8 +58,6 @@ const LoginCompo = () => {
     }
 
     if (isSuccess && user && user._id) {
-      console.log(" i am true time wit two");
-      console.log("isSuccess", isSuccess, "user is", user);
       // setIsContainerActive(false);
       return navigate("/");
     } else {
@@ -116,7 +114,6 @@ const LoginCompo = () => {
     };
     dispatch(login(userData)).then(() => {
       if (isSuccess) {
-        console.log("is success ful ?", isSuccess);
         navigate("/");
       }
     });
@@ -192,7 +189,7 @@ const LoginCompo = () => {
                   <i className="fab fa-twitter"></i>
                 </a>
                 <a
-                  href="https://desolate-hollows-16342.herokuapp.com/auth/google"
+                  href="http://178.128.56.127/auth/google"
                   className="social-icon"
                 >
                   <i className="fab fa-google"></i>

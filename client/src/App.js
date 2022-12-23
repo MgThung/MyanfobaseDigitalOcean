@@ -882,14 +882,14 @@ function App() {
           }
         />
 
-        <Route
+        {/* <Route
           path="/detail"
           element={
             <React.Suspense fallback="Loading....">
               <DetailPage />
             </React.Suspense>
           }
-        />
+        /> */}
         <Route
           path="/login"
           element={
@@ -953,10 +953,11 @@ function App() {
           path="/:cate/:id"
           element={
             <React.Suspense fallback="Loading....">
-              <UserDetailPage />
-            </React.Suspense>
-          }
-        /> */}
+              {/* <UserDetailPage /> */}
+        {/* <DetailPage />
+            </React.Suspense> */}
+
+        {/* /> */}
         <Route
           path="/:cate/:id"
           element={

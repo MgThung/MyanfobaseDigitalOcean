@@ -1,8 +1,7 @@
 .searchpage {
   max-width: fit-content;
-  margin: 1rem auto;
+  padding-top: 6rem;
   position: relative;
-  margin-top: 3rem;
 }
 .searchbutton {
   position: absolute;

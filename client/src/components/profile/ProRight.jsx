@@ -17,14 +17,13 @@ import {
 } from "../../features/posts/postSlice";
 import Dialog from "./Dialog";
 
-
 function ProRight() {
   const [product, setProducts] = useState(false);
   const [dialog, setDialog] = useState({
     message: "",
     isLoading: false,
     Postname: "",
-  })
+  });
   const navigate = useNavigate();
   const dispatch = useDispatch();
   Moment.globalFormat = "D MMM YYYY";
@@ -33,7 +32,7 @@ function ProRight() {
   const { posts, isLoading, isError, message } = useSelector(
     (state) => state.posts
   );
-  console.log("admin posts", user);
+  // console.log("admin posts", user);
   useEffect(() => {
     if (isError) {
       console.log(message);
@@ -44,35 +43,33 @@ function ProRight() {
     dispatch(getPosts());
   }, [user._id, navigate, isError, message, dispatch]);
 
-
-    const idProductRef = useRef();
-    const handleDialog = (message, isLoading, Postname) => {
-      setDialog({
-        message,
-        isLoading,
-        Postname,
-      });
-    };
-    const handleDelete = (_id) => {
-      console.log("id from delete", _id);
-      const index = posts.findIndex((element) => element._id === _id);
-      console.log("index data ", index);
-      handleDialog("Are you sure want to delete", true, posts[index].title);
-      idProductRef.current = _id;
-    };
-    console.log("dialog is", dialog);
-    const areUSureDelete = (choose) => {
-      if (choose) {
-        // setProducts(
-        //   posts.filter((element) => element._id !== idProductRef.current)
-        // );
-        dispatch(deletePost(idProductRef.current)).then(() =>
-          handleDialog("", false)
-        );
-      } else {
-        handleDialog("", false);
-      }
-    };
+  const idProductRef = useRef();
+  const handleDialog = (message, isLoading, Postname) => {
+    setDialog({
+      message,
+      isLoading,
+      Postname,
+    });
+  };
+  const handleDelete = (_id) => {
+    // console.log("id from delete", _id);
+    const index = posts.findIndex((element) => element._id === _id);
+    // console.log("index data ", index);
+    handleDialog("Are you sure want to delete", true, posts[index].title);
+    idProductRef.current = _id;
+  };
+  const areUSureDelete = (choose) => {
+    if (choose) {
+      // setProducts(
+      //   posts.filter((element) => element._id !== idProductRef.current)
+      // );
+      dispatch(deletePost(idProductRef.current)).then(() =>
+        handleDialog("", false)
+      );
+    } else {
+      handleDialog("", false);
+    }
+  };
 
   if (isLoading) {
     return <Spinner />;
