@@ -11,7 +11,7 @@ const Homelifestyle = React.lazy(() =>
 const HomeEducation = React.lazy(() =>
   import("../../components/homeeducation/homeEducation")
 );
-const Viedo = React.lazy(() => import("../../components/Vedio/Viedo"));
+// const Viedo = React.lazy(() => import("../../components/Vedio/Viedo"));
 
 // const Categorieslider = React.lazy(() =>
 //   import("../../components/categories/Categorieslider")
@@ -32,9 +32,9 @@ const Home = () => {
       <Suspense fallback={<div>Loading...</div>}>
         <HomeEducation />
       </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+      {/* <Suspense fallback={<div>Loading...</div>}>
         <Viedo />
-      </Suspense>
+      </Suspense> */}
       <Suspense fallback={<div>Loading...</div>}>
         {/* <Categorieslider /> */}
         <CategoryCount />
