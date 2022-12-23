@@ -139,7 +139,7 @@ const EditForm = () => {
       );
     }
     // const resultData = Object.fromEntries(formData.entries(id));
-    // console.log("form data transform is", resultData.id);
+    console.log("form data transform is", formData);
 
     dispatch(updateUser(formData)).then(() => navigate("/profile"));
   };
