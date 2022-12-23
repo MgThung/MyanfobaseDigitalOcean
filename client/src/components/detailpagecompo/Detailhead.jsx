@@ -3,8 +3,9 @@ import "./detail.css";
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Moment from "react-moment";
-import { Box, Breadcrumbs, Typography, Stack } from "@mui/material";
+import { Box, Breadcrumbs, Typography } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import SavePost from "../sidebar/SavePost";
 // import Socialbar from "./Socialbar";
 export default function Detailhead() {
   Moment.globalFormat = "D MMM YYYY";
@@ -19,10 +20,9 @@ export default function Detailhead() {
     files: [],
   });
   const { id } = useParams();
+  const { cate } = useParams();
   const editpostid = async () => {
-    const reqdata = await fetch(
-      `https://desolate-hollows-16342.herokuapp.com/editpost/${id}`
-    );
+    const reqdata = await fetch(`http://178.128.56.127/detailwithview/${id}`);
     // const reqdata = await fetch(`http://localhost:8080/editpost/${id}`);
     const res = await reqdata.json(); // JSON.parse(json);
     console.log("res data is ", res);
@@ -43,37 +43,41 @@ export default function Detailhead() {
           <Link to="/" className="link1" fontSize="25px">
             <Typography color={"black"}>Home</Typography>
           </Link>
-          <Link to="/${postDetail.cateName}" className="link1">
-            <Typography>{postDetail.cateName}</Typography>
+          <Link to={`"/${cate}"`} className="link1">
+            <Typography>{cate}</Typography>
           </Link>
         </Breadcrumbs>
       </Box>
-      <div>
+      <div key={id}>
         <Link to={`/${postDetail.cateName}`} className="link1">
           <button className={` cate${postDetail.cateName}`}>
             {postDetail.cateName}
           </button>
         </Link>
-        <h1>How My Phone’s Most Annoying Feature Saved My Life</h1>
+        <h1 className="detail_title">{postDetail.title}</h1>
       </div>
-      <div className="para">
-        <p className="detailpara">
-          Modern technology has become a total phenomenon for civilization, the
-          defining force of a new social order in which efficiency is no longer
-          an option but a necessity imposed on all human activity.
-        </p>
-      </div>
+
       <div className="postName1">
-        <img src="../images/homeimgs/viedo4.jpg" alt="" />
+        <div className="postmanProfile">
+          {postDetail.userprofile === "" ||
+          postDetail.userprofile[0] === "" ||
+          postDetail.userprofile.length === 0 ? (
+            <img src="./images/userprofile/defaultuserprofile.png" alt="" />
+          ) : (
+            <img src={postDetail.userprofile} alt="" />
+          )}
+        </div>
+
         <div className="postwrite">
-          <p>
-            <span className="pName">Paina Ta Kon</span> - Senior EditorOct 1,
-            2021
-          </p>
-          <span className="pDate">Updated 2022/02/15 at 3:38 AM</span>
+          <div>
+            <span className="profileName">{postDetail.username}</span>
+            <span className="profileDate">
+              <Moment format="DD/MMM/YYYY">{postDetail.createdAt}</Moment>
+            </span>
+          </div>
+          {/* <SavePost getCateData={postDetail} /> */}
         </div>
       </div>
-      {/* <Socialbar /> */}
     </section>
   );
 }

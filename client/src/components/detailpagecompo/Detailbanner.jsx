@@ -1,12 +1,33 @@
-import React from "react";
 import "./detailbanner.css";
 import { Grid } from "@mui/material";
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 export default function Detailbanner({ detailid }) {
+  const [postDetail, setPostDetail] = useState("");
+  const { id } = useParams();
+  const { cate } = useParams();
+  const editpostid = async () => {
+    // const reqdata = await fetch(
+    //   `https://desolate-hollows-16342.herokuapp.com/detailwithview/${id}`
+    // );
+    const reqdata = await fetch(`http://178.128.56.127/detailwithview/${id}`);
+    // const reqdata = await fetch(`http://localhost:8080/detailwithview/${id}`);
+    const res = await reqdata.json(); // JSON.parse(json);
+    console.log("res data is ", res);
+    return res;
+  };
+  useEffect(() => {
+    editpostid().then((data) => {
+      setPostDetail(data);
+    });
+  }, [id]);
+
   return (
     <div className="bannerSection detailcontainer ">
       {/* <h1>This is the detalil page {detailid.id}</h1> */}
+
       <div className="detailbannerimg">
-        <img src="../images/technology/techhyperx.jpg" />
+        <img src={postDetail.files[0].filePath} alt="" />
       </div>
       <Grid
         container
@@ -77,29 +98,20 @@ export default function Detailbanner({ detailid }) {
         </Grid>
         <Grid item xs={10.5} sm={10.5}>
           <div>
-            <p className="firstLetter justify">
-              Good web design has visual weight, is optimized for various
-              devices, and has content that is prioritized for the medium. The
-              most important elements of a web page should have more visual
-              weight to
-              <strong>“naturally attract”</strong> a visitor’s attention.
-            </p>
+            <p className="firstLetter justify">{postDetail.description}</p>
           </div>
         </Grid>
       </Grid>
-      <Grid container sx={{ margin: "auto" }}>
-        <Grid item xs="12" sm="6" md="4">
-          <img
-            className="imgbanner"
-            src="../images/technology/techhyperx.jpg"
-            alt=""
-          />
-          <img
-            className="imgbanner"
-            src="../images/technology/techhyperx.jpg"
-            alt=""
-          />
-        </Grid>
+      <Grid container sx={{ margin: "2rem 0" }}>
+        {postDetail.files === [] || postDetail.files.length === 0
+          ? console.log("your image is empty")
+          : postDetail.files.map((file, index) => {
+              return (
+                <Grid item xs="12" sm="6" md="4">
+                  <img className="imgbanner" src={file.filePath} alt="" />
+                </Grid>
+              );
+            })}
       </Grid>
     </div>
   );
