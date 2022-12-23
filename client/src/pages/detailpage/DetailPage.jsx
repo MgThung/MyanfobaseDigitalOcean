@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 // import Latestbar from "../../components/catepagerightbar/Latestbar";
 
@@ -15,14 +15,30 @@ import Advtecbar from "../../components/catepagerightbar/Advtecbar";
 import LatestArticle from "../../components/catepagerightbar/LatestArticle";
 
 export default function DetailPage() {
-  const detailid = useParams();
-  console.log("detalid is ", detailid);
+  const [postDetail, setPostDetail] = useState("");
+  const { id } = useParams();
+  const { cate } = useParams();
+  const editpostid = async () => {
+    // const reqdata = await fetch(
+    //   `https://desolate-hollows-16342.herokuapp.com/detailwithview/${id}`
+    // );
+    const reqdata = await fetch(`http://178.128.56.127/detailwithview/${id}`);
+    // const reqdata = await fetch(`http://localhost:8080/detailwithview/${id}`);
+    const res = await reqdata.json(); // JSON.parse(json);
+    console.log("res data is ", res);
+    return res;
+  };
+  useEffect(() => {
+    editpostid().then((data) => {
+      setPostDetail(data);
+    });
+  }, [id]);
 
   return (
     <>
-      <Detailhead />
+      <Detailhead postDetail={postDetail} cate={cate} />
       <section className="container detailbody">
-        <Detailbanner detailid={detailid} />
+        <Detailbanner postDetail={postDetail} />
 
         <div className="allRightBar detailcontainer">
           <PopularNews />

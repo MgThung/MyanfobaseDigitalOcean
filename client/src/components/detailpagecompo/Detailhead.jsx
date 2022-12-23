@@ -1,79 +1,93 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./detail.css";
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Moment from "react-moment";
 import { Box, Breadcrumbs, Typography, Stack } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import { useSelector } from "react-redux";
+import "./userdetail.css";
+import "../sidebar/sidebar.css";
+import SavePost from "../sidebar/SavePost";
 // import Socialbar from "./Socialbar";
-export default function Detailhead() {
+export default function Detailhead(props) {
+  const navigate = useNavigate();
   Moment.globalFormat = "D MMM YYYY";
-  const [postDetail, setPostDetail] = useState({
-    title: "",
-    description: "",
-    cateName: "",
-    cateId: "",
-    createdAt: "",
-    username: "",
-    userprofile: "",
-    files: [],
-  });
-  const { id } = useParams();
-  const editpostid = async () => {
-    const reqdata = await fetch(
-      `https://desolate-hollows-16342.herokuapp.com/editpost/${id}`
-    );
-    // const reqdata = await fetch(`http://localhost:8080/editpost/${id}`);
-    const res = await reqdata.json(); // JSON.parse(json);
-    console.log("res data is ", res);
-    return res;
-  };
-  useEffect(() => {
-    editpostid().then((data) => {
-      setPostDetail(data);
-    });
-  }, [id]);
+
+  const { user, isError, message } = useSelector((state) => state.auth);
+  useEffect(() => {}, [user, navigate, isError, message]);
+
+  const cate = props.cate;
+  const postDetail = props.postDetail;
+
   return (
-    <section className="detailhead container">
-      <Box sx={{ marginButtom: "10px" }}>
-        <Breadcrumbs
-          aria-aria-label="breadcrumb"
-          separator={<NavigateNextIcon fontSize="small" />}
-        >
-          <Link to="/" className="link1" fontSize="25px">
-            <Typography color={"black"}>Home</Typography>
-          </Link>
-          <Link to="/${postDetail.cateName}" className="link1">
-            <Typography>{postDetail.cateName}</Typography>
-          </Link>
-        </Breadcrumbs>
-      </Box>
-      <div>
-        <Link to={`/${postDetail.cateName}`} className="link1">
-          <button className={` cate${postDetail.cateName}`}>
-            {postDetail.cateName}
-          </button>
-        </Link>
-        <h1>How My Phone’s Most Annoying Feature Saved My Life</h1>
-      </div>
-      <div className="para">
-        <p className="detailpara">
-          Modern technology has become a total phenomenon for civilization, the
-          defining force of a new social order in which efficiency is no longer
-          an option but a necessity imposed on all human activity.
-        </p>
-      </div>
-      <div className="postName1">
-        <img src="../images/homeimgs/viedo4.jpg" alt="" />
-        <div className="postwrite">
-          <p>
-            <span className="pName">Paina Ta Kon</span> - Senior EditorOct 1,
-            2021
-          </p>
-          <span className="pDate">Updated 2022/02/15 at 3:38 AM</span>
+    <>
+      {postDetail && postDetail.length !== 0 ? (
+        <section className="detailhead container">
+          <Box sx={{ marginButtom: "10px" }}>
+            <Breadcrumbs
+              aria-aria-label="breadcrumb"
+              separator={<NavigateNextIcon fontSize="small" />}
+            >
+              <Link to="/" className="link1" fontSize="25px">
+                <Typography color={"black"}>Home</Typography>
+              </Link>
+              <Link to={`/${cate}`} className="userlink">
+                <Typography>
+                  <span>{cate}</span>
+                </Typography>
+              </Link>
+            </Breadcrumbs>
+          </Box>
+          <div>
+            <h3 className="titledetail">{postDetail.title}</h3>
+            <Link to={`/${postDetail.cateName}`} className="">
+              <button className={` cate${postDetail.cateName} detailbtn`}>
+                {postDetail.cateName}
+              </button>
+            </Link>
+          </div>
+
+          <div className="postman">
+            <div className="postmanProfile">
+              {postDetail.userprofile === "" ||
+              postDetail.userprofile[0] === "" ||
+              postDetail.userprofile.length === 0 ? (
+                <img
+                  src="../images/userprofile/defaultuserprofile.png"
+                  alt=""
+                />
+              ) : (
+                <img
+                  src={postDetail.userprofile}
+                  // src={`https://desolate-hollows-16342.herokuapp.com/${postDetail.userprofile}`}
+                  // src={`http://localhost:8080/${postDetail.userprofile}`}
+                  alt=""
+                />
+              )}
+            </div>
+            <span className="profileName">{postDetail.username}</span>
+            <span className="profileDate">
+              <Moment format="DD/MMM/YYYY">{postDetail.createdAt}</Moment>
+            </span>
+
+            {user && user ? (
+              <SavePost getCateData={postDetail} />
+            ) : (
+              <Link to="/login">
+                <i className="uil uil-bookmark unfilled">
+                  to save this post login here!
+                </i>
+              </Link>
+            )}
+          </div>
+          {/* <Socialbar /> */}
+        </section>
+      ) : (
+        <div>
+          <h4>Loading...</h4>
         </div>
-      </div>
-      {/* <Socialbar /> */}
-    </section>
+      )}
+    </>
   );
 }

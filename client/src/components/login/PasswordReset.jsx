@@ -56,8 +56,10 @@ const PasswordReset = () => {
         resetString,
         newPassword,
       };
+
       axios
-        .post("http://localhost:8080/api/users/resetPassword", userData)
+        // .post("http://localhost:8080/api/users/resetPassword", userData)
+        .post("http://178.128.56.127/api/users/resetPassword", userData)
         .then(() => {
           toast.success("Password successfully changed");
           navigate("/login");
