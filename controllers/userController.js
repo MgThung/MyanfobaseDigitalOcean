@@ -436,6 +436,7 @@ const updateUser = asyncHandler(async (req, res) => {
   const profilePicture = req.file;
   const id = req.user.id;
 
+  console.log("reques body is", req.body);
   console.log("user profile picture", profilePicture);
   const userDetail = await User.findById(id);
   /* Check for user */
@@ -445,7 +446,7 @@ const updateUser = asyncHandler(async (req, res) => {
   }
 
   let filesArray = [];
-  if (profilePicture.length !== 0 && profilePicture !== []) {
+  if (profilePicture !== undefined && profilePicture !== []) {
     const file = {
       fileName: profilePicture.key,
       filePath: profilePicture.location,
@@ -459,7 +460,7 @@ const updateUser = asyncHandler(async (req, res) => {
   console.log("user Detail profile equal", userDetail.profilePicture[0] === "");
 
   //checking img and remove old img
-  (profilePicture === [] || profilePicture.length === 0) &&
+  (profilePicture === [] || profilePicture === undefined) &&
   userDetail.profilePicture[0] !== ""
     ? userDetail.profilePicture.forEach((element) => {
         const file = {
