@@ -47,7 +47,7 @@ const ForgetPassword = () => {
     email: "",
   });
   const { email } = formData;
-  const redirectUrl = "http://178.128.56.127/passwordreset";
+  const redirectUrl = "https://www.myanfobase.com/passwordreset";
   // const redirectUrl = "http://localhost:3000/passwordreset";
 
   const navigate = useNavigate();
@@ -83,7 +83,10 @@ const ForgetPassword = () => {
       };
       axios
         // .post("http://localhost:8080/api/users/requestPasswordReset", userData)
-        .post("http://178.128.56.127/api/users/requestPasswordReset", userData)
+        .post(
+          "https://www.myanfobase.com/api/users/requestPasswordReset",
+          userData
+        )
         .then(() => {
           showResult(true);
         })

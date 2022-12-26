@@ -5,7 +5,6 @@ import Moment from "react-moment";
 import "./homelifestyle.css";
 import { Box, Container, Grid } from "@mui/material";
 
-
 export default function Lifestylenew() {
   const [getCateData, setCateData] = useState("");
   const category = "Lifestyles";
@@ -16,7 +15,7 @@ export default function Lifestylenew() {
       const reqdata = await fetch(
         // `https://desolate-hollows-16342.herokuapp.com/api/postcate/${category}`
         // `http://localhost:8080/api/postcate/${category}`
-        `http://178.128.56.127/api/postcate/${category}`
+        `https://www.myanfobase.com/api/postcate/${category}`
       );
       const res = await reqdata.json(); // JSON.parse(json);
       //   console.log("res data is ", res);
