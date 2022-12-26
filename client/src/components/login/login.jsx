@@ -7,6 +7,7 @@ import { login, register, reset } from "../../features/auth/authSlice";
 import { useEffect } from "react";
 import Spinner from "./Spinner";
 import { FiLock, FiMail } from "react-icons/fi";
+import { Stack, TextField } from "@mui/material";
 
 const ErrorShow = (prop) => {
   return (
@@ -147,11 +148,11 @@ const LoginCompo = () => {
             <form action="" className="sign-in-form" onSubmit={onSubmitlogin}>
               <h2 className="titlt">Sign in</h2>
 
-              <div className="input-field">
-                <i className="fas fa-envelope"></i>
-                <input
-                  type="text"
-                  placeholder="Email"
+              <Stack className="singinemail">
+                <TextField
+                  variant="outlined"
+                  label="Email
+"
                   id="email"
                   name="email"
                   value={loginemail}
@@ -159,19 +160,20 @@ const LoginCompo = () => {
                   required
                   icon={<FiMail />}
                 />
-              </div>
-              <div className="input-field">
-                <i className="fas fa-lock"></i>
-                <input
+              </Stack>
+              <Stack className="singinemail">
+                {/* <i className="fas fa-lock"></i> */}
+                <TextField
                   type="password"
-                  placeholder="Password"
+                  label="Password"
                   id="password"
                   name="password"
                   value={loginpassword}
                   onChange={onChangelogin}
                   icon={<FiLock />}
                 />
-              </div>
+                <label>show</label>
+              </Stack>
               <input type="submit" value="Login" className="logbtn solid" />
               {errormessage ? <ErrorShow errormessage={errormessage} /> : ""}
               <p>
@@ -249,7 +251,7 @@ const LoginCompo = () => {
                   id="password"
                   placeholder="Password"
                   name="password"
-                  pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,20}$"
+                  pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]- , _, @, ., /, #, &, +{8,20}$"
                   value={password}
                   required
                   onChange={onChange}

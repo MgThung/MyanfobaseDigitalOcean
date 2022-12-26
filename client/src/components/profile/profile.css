@@ -137,6 +137,10 @@
   justify-content: center;
 }
 
+.editTitle{
+  padding-top: 3rem;
+}
+
 .userimage {
   width: 100%;
   height: 100%;
@@ -338,6 +342,7 @@ input:invalid[focused="true"] {
   right: 20px;
 }
 
+
 .Profile-btn {
   position: absolute;
   bottom: 20px;
@@ -483,6 +488,173 @@ input:invalid[focused="true"] {
 .css-13xfq8m-MuiTabPanel-root {
   padding: 24px 0;
 }
+
+/* button */
+
+
+@-webkit-keyframes extend {
+    0% {
+        width: 6rem;
+        height: 3rem;
+        border-radius: 100px;
+        } 10% {
+        width: 6rem;
+        height: 3rem;
+        background: #fff;
+        margin-left: - 5px;
+        margin-top: - 5px;
+        } 20% {
+        width: 6rem;
+        height: 3rem;
+        background: #6fb07f;
+        margin-left: 0px;
+        margin-top: 0px;
+        } 100% {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 100px;
+        margin-left: 0px;
+        background: #6fb07f;
+        }
+    }
+@keyframes extend {
+    0% {
+        width: 6rem;
+        height: 3rem;
+        border-radius: 100px;
+        } 10% {
+        width: 6rem;
+        height: 3rem;
+        background: #fff;
+        margin-left: - 5px;
+        margin-top: - 5px;
+        } 20% {
+        width: 6rem;
+        height: 3rem;
+        background: #6fb07f;
+        margin-left: 0px;
+        margin-top: 0px;
+        } 100% {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 100px;
+        margin-left: 0px;
+        background: #6fb07f;
+        }
+    }
+
+@-webkit-keyframes disappear {
+    0% {
+        opacity: 1;
+        } 20% {
+        color: #fff;
+        } 100% {
+        opacity: 0;
+        }
+    }
+@keyframes disappear {
+    0% {
+        opacity: 1;
+        } 20% {
+        color: #fff;
+        } 100% {
+        opacity: 0;
+        }
+    }
+
+@-webkit-keyframes appear {
+    0% {
+        opacity: 0;
+        } 70% {
+        opacity: 0;
+        } 100% {
+        opacity: 1;
+        }
+    }
+@keyframes appear {
+    0% {
+        opacity: 0;
+        } 70% {
+        opacity: 0;
+        } 100% {
+        opacity: 1;
+        }
+    }
+html {
+    background: #fff
+    }
+
+input, .submitbutton, submit {
+    border: none
+    }
+
+.editformsub {
+    position: relative;
+    top: 2rem;
+    right: 4rem;
+    /* margin-top: 2rem; */
+    margin-bottom: 8rem;
+}
+
+.submitbutton {
+    border-width: 1px;
+    width: 7rem;
+    height: 3rem;
+    border-radius: 100px;
+    background: #fff;
+    position: absolute;
+    border: 2px solid #6fb07f;
+}
+
+.submitbutton > span {
+    font-size: 23px;
+    color: #6fb07f
+    }
+
+.submitbutton img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0
+    }
+
+.submitbutton:focus {
+    /*animation*/
+    -webkit-animation: extend .5s ease-in-out;
+    -ms-animation: extend .5s ease-in-out;
+    animation: extend .5s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards
+    }
+
+.submitbutton:focus > span {
+    /*animation*/
+    -webkit-animation: disappear .5s ease-in-out;
+    -ms-animation: disappear .5s ease-in-out;
+    animation: disappear .5s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards
+    }
+
+.submitbutton:focus > img {
+    /*animation*/
+    -webkit-animation: appear .5s ease-in-out;
+    -ms-animation: appear .5s ease-in-out;
+    animation: appear .5s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards
+    }
+
+
+
 @media screen and (min-width: 500px) and (max-width: 600px) {
   .proFilebottom {
     position: initial;
@@ -499,6 +671,7 @@ input:invalid[focused="true"] {
 @media screen and (min-width: 600px) and (max-width: 800px) {
   .Probuttom {
     gap: 1rem;
+
   }
   .Profile-main {
     margin-left: 0px;
