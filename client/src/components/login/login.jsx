@@ -172,7 +172,6 @@ const LoginCompo = () => {
                   onChange={onChangelogin}
                   icon={<FiLock />}
                 />
-                <label>show</label>
               </Stack>
               <input type="submit" value="Login" className="logbtn solid" />
               {errormessage ? <ErrorShow errormessage={errormessage} /> : ""}
