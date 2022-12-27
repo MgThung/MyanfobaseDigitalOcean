@@ -1,3 +1,5 @@
+import "./profile.css";
+
 function Dialog({ message, onDialog, Postname }) {
   console.log("title in dialog box is", Postname);
   return (
@@ -28,8 +30,8 @@ function Dialog({ message, onDialog, Postname }) {
           borderRadius: "10px",
         }}
       >
-        <h3 stlye={{ color: "red", fontSize: "16px" }}>{message}</h3>
-        <h1 style={{ color: "blue", fontSize: "24px", marginTop: "30px" }}>
+        <h3 className="areusure" stlye={{  fontSize: "16px" }}>{message}</h3>
+        <h1 style={{ color: "black", fontSize: "24px", marginTop: "30px" }}>
           {Postname}
         </h1>
         <div style={{ display: "flex", alignItems: "center" }}>
