@@ -36,9 +36,9 @@ export default function Slider() {
         className="cat-text"
       >
         {categories && categories.length !== 0 ? (
-          categories.map((cate) => {
+          categories.map((cate, index) => {
             return (
-              <div className="darkslide">
+              <div className="darkslide" key={index}>
                 <SwiperSlide>
                   <Link
                     to={cate.catename}

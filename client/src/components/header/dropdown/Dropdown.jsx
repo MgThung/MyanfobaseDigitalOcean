@@ -15,7 +15,7 @@ export default function Dropdown(props) {
       onClick={() => setDropdown(!dropdown)}
     >
       {categories && categories.length !== 0 ? (
-        categories.map((item) => {
+        categories.map((item,index) => {
           return (
             <li key={item._id} className="catgitems">
               <Link

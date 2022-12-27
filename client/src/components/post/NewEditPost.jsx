@@ -163,8 +163,8 @@ export default function NewEditPost() {
                   </div>
                   {isActive && (
                     <div className="dropdown-content">
-                      {listOfCate.map((option) => (
-                        <div
+                      {listOfCate.map((option,index) => (
+                        <div key={index}
                           onClick={(e) =>
                             onChangeCateId(option._id)(
                               onChangeCate(option.catename)(setIsActive(false))
@@ -231,8 +231,8 @@ export default function NewEditPost() {
             </button>
             <div className="imgShow">
               {editpost.files &&
-                editpost.files.map((file) => (
-                  <div className="Imgarea">
+                editpost.files.map((file,index) => (
+                  <div className="Imgarea" key={index}>
                     <div className="imgDiv1">
                       {/* {console.log("file path is", file.filePath)} */}
                       <img

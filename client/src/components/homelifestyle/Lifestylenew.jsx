@@ -96,7 +96,7 @@ export default function Lifestylenew() {
                   {getCateData.length !== 0 ? (
                     getCateData.slice(1, 4).map((data, index) => {
                       return (
-                        <Box maxWidth="xl">
+                        <Box maxWidth="xl" key={index}>
                           <div className="honey-1">
                             <Grid container direction="row" spacing={3}>
                               <Grid item xs={5}>

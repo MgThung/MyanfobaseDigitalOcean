@@ -10,11 +10,11 @@ export default function EducationLeft(props) {
   return (
     <>
       <Box maxWidth="xl">
-        <Grid container direction="row" spacing={2} >
+        <Grid container direction="row" spacing={2}>
           {getCateData.length !== 0 ? (
-            getCateData.slice(2, 4).map((data) => {
+            getCateData.slice(2, 4).map((data, index) => {
               return (
-                <Grid item  lg={12} md={12} xs={12}>
+                <Grid item lg={12} md={12} xs={12} key={index}>
                   <div className="wrapper">
                     <div className="wrapperimg">
                       <img

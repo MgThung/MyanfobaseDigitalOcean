@@ -32,11 +32,11 @@ const News = () => {
     <>
       <div className="newspart">
         {lastposts.length !== 0 ? (
-          lastposts.slice(0, visible).map((data) => {
+          lastposts.slice(0, visible).map((data, index) => {
             if (data.postAccept === true) {
               return (
                 <>
-                  <Box>
+                  <Box key={index}>
                     <div className="news">
                       <Container maxWidth="xl">
                         <Grid container direction="row" spacing={1}>

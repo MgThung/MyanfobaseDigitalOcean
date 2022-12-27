@@ -167,8 +167,8 @@ const EditForm = () => {
             onChange={onChangeImg}
           />
         </div>
-        {inputs.map((input) => (
-          <div className="infoform">
+        {inputs.map((input,index) => (
+          <div className="infoform" key={index}>
             <FormInput
               key={input.id}
               {...input}

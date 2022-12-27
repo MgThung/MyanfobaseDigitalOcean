@@ -60,7 +60,7 @@ export default function Sidebar(props) {
         <>
           <div className="sidebar">
             <div className="Trav-main">
-              {currentItems.map((data) => {
+              {currentItems.map((data, index) => {
                 if (data.postAccept === true && data.cateName === category) {
                   return (
                     <>
@@ -154,6 +154,7 @@ export default function Sidebar(props) {
                           {/* {data && <SavePost getCateData={data} />} */}
 
                       <Grid
+                        key={index}
                         container
                         my={2}
                         sx={{

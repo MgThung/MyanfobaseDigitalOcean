@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import Slider from "../slider/Slider.jsx";
 import "./homeheader.css";
 import "swiper/css/bundle";
-import Popularslider from "../popularslider/Popularslider.jsx";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
 import PopularHome from "./PopularHome.jsx";
@@ -16,19 +15,19 @@ const HomeHeader = () => {
       <section className="homeheader">
         <div className="home-banner">
           <div className="home-banner-detail">
-            <Typography variant="h1" fontFamily="Merriweather" fontWeight="bold"
-              sx={
-                {
-                  fontSize: {
-                    xs: "30px",
-                    sm: "50px",
-                    md: '60px',
-                    lg:"70px"
-
-                  }
-                }
-              }
-              >
+            <Typography
+              variant="h1"
+              fontFamily="Merriweather"
+              fontWeight="bold"
+              sx={{
+                fontSize: {
+                  xs: "30px",
+                  sm: "50px",
+                  md: "60px",
+                  lg: "70px",
+                },
+              }}
+            >
               MyanfobasE
             </Typography>
             <h3>MYANMAR INFORMATION BASE</h3>

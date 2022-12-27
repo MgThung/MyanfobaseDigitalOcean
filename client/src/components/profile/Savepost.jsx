@@ -35,7 +35,6 @@ const Savepost = () => {
   // console.log("data of fav data in profile", favData);
 
   const RemoveFav = (id) => {
-
     const variable = {
       _id: id,
       user: user._id,
@@ -58,10 +57,10 @@ const Savepost = () => {
       </div>
       <div className="savenewbar-body sidebar1">
         {favData.length !== 0 ? (
-          favData.map((data) => {
+          favData.map((data, index) => {
             return (
               <>
-                <div className="article-save">
+                <div className="article-save" key={index}>
                   <div className="savenewimg">
                     <img
                       src={data.files}

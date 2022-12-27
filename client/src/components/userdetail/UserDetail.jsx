@@ -90,7 +90,7 @@ export default function UserDetail() {
               ? console.log("your image is empty")
               : postDetail.files.map((file, index) => {
                   return (
-                    <div className="userdetailimg">
+                    <div className="userdetailimg" key={index}>
                       {console.log("filePath is", file.filePath)}
                       <img
                         className="detailimguser"

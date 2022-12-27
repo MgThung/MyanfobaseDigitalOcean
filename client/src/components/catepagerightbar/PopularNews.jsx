@@ -31,10 +31,10 @@ export default function PopularNews(props) {
 
         <div className="lastnewbar-body sidebar1">
           {lastposts.length !== 0 ? (
-            lastposts.map((data) => {
+            lastposts.map((data,index) => {
               if (data.postAccept === true) {
                 return (
-                  <div className="article-lastest">
+                  <div className="article-lastest" key={index}>
                     <div className="lastnewimg">
                       <img
                         // src={`http://localhost:8080/${data.files[0].filePath}`}

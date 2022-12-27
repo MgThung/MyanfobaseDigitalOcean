@@ -17,7 +17,6 @@ export default function DropdownCate({
       // Axios.get("https://desolate-hollows-16342.herokuapp.com/readcate")
       .then((response) => {
         setListOfCate(response.data);
-       
       })
       .catch(() => {
         alert("Awww, it didn't work at getting data");
@@ -33,8 +32,9 @@ export default function DropdownCate({
         </div>
         {isActive && (
           <div className="dropdown-content">
-            {listOfCate.map((option) => (
+            {listOfCate.map((option, index) => (
               <div
+                key={index}
                 onClick={(e) =>
                   setSelectedId(option._id)(
                     setSelected(option.catename)(setIsActive(false))

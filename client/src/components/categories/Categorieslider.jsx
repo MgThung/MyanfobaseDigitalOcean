@@ -136,7 +136,7 @@ export default function Categorieslider() {
               countChange.map((cate, index) => {
                 return (
                   <SwiperSlide className="cate-swiper">
-                    <div className="per-cate">
+                    <div className="per-cate" key={index}>
                       <div className="cate-image">
                         <img src={images[index].cateimage} alt="" />
                       </div>
