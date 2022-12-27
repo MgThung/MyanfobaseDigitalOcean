@@ -77,7 +77,7 @@ export default function CategoryCount() {
   ];
 
   const getAlldata = async () => {
-    const reqdata = await fetch(`http://178.128.56.127/api/catecount`);
+    const reqdata = await fetch(`https://www.myanfobase.com/api/catecount`);
     // const reqdata = await fetch(`http://localhost:8080/api/catecount`);
     // const reqdata = await fetch(
     //   `https://desolate-hollows-16342.herokuapp.com/api/catecount`

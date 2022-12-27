@@ -190,7 +190,7 @@ const LoginCompo = () => {
                   <i className="fab fa-twitter"></i>
                 </a>
                 <a
-                  href="http://178.128.56.127/auth/google"
+                  href="https://www.myanfobase.com/auth/google"
                   className="social-icon"
                 >
                   <i className="fab fa-google"></i>

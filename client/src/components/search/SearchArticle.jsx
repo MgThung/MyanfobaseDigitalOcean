@@ -30,7 +30,7 @@ function SearchArticle() {
     const reqdata = await fetch(
       // `https://desolate-hollows-16342.herokuapp.com/api/postcate/${category}`
       // `http://localhost:8080/api/postcate/${category}`
-      `http://178.128.56.127/api/post`
+      `https://www.myanfobase.com/api/post`
     );
     const res = await reqdata.json(); // JSON.parse(json);
     //   console.log("res data is ", res);
@@ -87,11 +87,18 @@ function SearchArticle() {
               }
             })
             .map((element, index) => (
-              <Box width="95%" height="300px" key={element._id}>
+              <Box width="95%" className="cardbox" key={element._id}>
                 <Card className="carddesign">
                   <CardMedia
                     className="cardImg"
                     component="img"
+                    sx={{
+                      heigh: {
+                        xs: "9rem",
+                        sm: "10rem",
+                        md: "11rem",
+                      },
+                    }}
                     image={element.files[0].filePath}
                   />
                   <CardContent className="cardInfo" component="div">
@@ -100,17 +107,17 @@ function SearchArticle() {
                       variant="h5"
                       sx={{
                         fontSize: {
-                          xs: "0.9rem",
-                          sm: "1rem",
-                          md: "1.2rem",
-                          lg: "1.3rem",
+                          xs: "0.7rem",
+                          sm: "0.8rem",
+                          md: "1rem",
+                          lg: "1.1rem",
                         },
                       }}
                       component="div"
                     >
                       {element.title.substring(0, 40)}...
                     </Typography>
-                    <Typography
+                    {/* <Typography
                       variant="body2"
                       sx={{
                         fontSize: {
@@ -122,7 +129,7 @@ function SearchArticle() {
                       }}
                     >
                       {element.description.substring(0, 40)}...
-                    </Typography>
+                    </Typography> */}
                   </CardContent>
                 </Card>
               </Box>
