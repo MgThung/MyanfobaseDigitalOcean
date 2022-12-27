@@ -8,8 +8,11 @@ import { useEffect } from "react";
 import Spinner from "./Spinner";
 import { FiLock, FiMail } from "react-icons/fi";
 import { Stack, TextField } from "@mui/material";
+import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
+import VisibilityIcon from "@mui/icons-material/Visibility";
 
 const ErrorShow = (prop) => {
+ 
   return (
     <p className="resultnoticolor">
       <span className="warningcol">Warrning:</span>
@@ -24,13 +27,23 @@ const LoginCompo = () => {
 
   const [errormessage, setErrormessage] = useState("");
 
+
+  const [show, setShow] = useState(false);
+
+  const handleShow = () => {
+    setShow(!show);
+  };
+
   const signUpButton = () => {
     setIsContainerActive(true);
     setErrormessage("");
+    setShow(false);
   };
   const signInButton = () => {
     setIsContainerActive(false);
     setErrormessage("");
+        setShow(false);
+
   };
   const handleFocus = (e) => {
     setFocused(true);
@@ -138,7 +151,7 @@ const LoginCompo = () => {
   if (isLoading) {
     return <Spinner />;
   }
-
+  
   return (
     <>
       <div className={"login-con " + (isContainerActive ? "signupmode" : " ")}>
@@ -148,8 +161,9 @@ const LoginCompo = () => {
             <form action="" className="sign-in-form" onSubmit={onSubmitlogin}>
               <h2 className="titlt">Sign in</h2>
 
-              <Stack className="singinemail">
+              <Stack>
                 <TextField
+                  className="singinemail"
                   variant="outlined"
                   label="Email
 "
@@ -161,17 +175,21 @@ const LoginCompo = () => {
                   icon={<FiMail />}
                 />
               </Stack>
-              <Stack className="singinemail">
+              <Stack className="singinpassword">
                 {/* <i className="fas fa-lock"></i> */}
                 <TextField
-                  type="password"
-                  label="Password"
+                  className="singinemail"
+                  type={show ? "text" : "password"}
+                  label="password"
                   id="password"
                   name="password"
                   value={loginpassword}
                   onChange={onChangelogin}
                   icon={<FiLock />}
                 />
+                <label className="passwordshow" onClick={handleShow}>
+                  {show ? <VisibilityOffIcon /> : <VisibilityIcon />}
+                </label>
               </Stack>
               <input type="submit" value="Login" className="logbtn solid" />
               {errormessage ? <ErrorShow errormessage={errormessage} /> : ""}
@@ -219,7 +237,7 @@ const LoginCompo = () => {
                   value={username}
                   onChange={onChange}
                 />
-                <span className="singupusermsg">
+                <span className="msgforUsername">
                   Username should be 3-16 characters and shouldn't include any
                   special character!
                 </span>
@@ -239,14 +257,14 @@ const LoginCompo = () => {
                   onChange={onChange}
                   icon={<FiMail />}
                 />
-                <span className="singupusermsg">
+                <span className="msgforEmail">
                   It should be a vaild email address!
                 </span>
               </div>
               <div className="input-field">
                 <i className="fas fa-lock"></i>
                 <input
-                  type="password"
+                  type={show ? "text" : "password"}
                   id="password"
                   placeholder="Password"
                   name="password"
@@ -258,7 +276,10 @@ const LoginCompo = () => {
                   onBlur={handleFocus}
                   icon={<FiLock />}
                 />
-                <span className="singupusermsg">
+                <label className="singuppassword" onClick={handleShow}>
+                  {show ? <VisibilityOffIcon /> : <VisibilityIcon />}
+                </label>
+                <span className="msgforPassword">
                   Password should be 8-20 characters and include at least 1
                   letter, 1 number!
                 </span>
@@ -278,7 +299,8 @@ const LoginCompo = () => {
                   onBlur={handleFocus}
                   icon={<FiLock />}
                 />
-                <span className="singupusermsg">Passwords don't match!</span>
+
+                <span className="msgforcomfirmps">Passwords don't match!</span>
               </div>
 
               <input type="submit" value="Sign Up" className="logbtn solid" />
