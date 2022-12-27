@@ -1,12 +1,11 @@
-import React from "react";
 import "./detailbanner.css";
 import { Grid } from "@mui/material";
 export default function Detailbanner(props) {
   const postDetail = props.postDetail;
-  console.log("post detail from banner", postDetail.files);
   return (
     <div className="bannerSection detailcontainer ">
       {/* <h1>This is the detalil page {detailid.id}</h1> */}
+
       <div className="detailbannerimg">
         <img src={postDetail && postDetail.files[0].filePath} />
       </div>
@@ -85,22 +84,22 @@ export default function Detailbanner(props) {
           </div>
         </Grid>
       </Grid>
-      <Grid container sx={{ margin: "auto" }}>
-        <Grid item xs="12" sm="6" md="4">
-          {postDetail &&
-            postDetail.files.length >= 2 &&
-            postDetail.files.slice(1, postDetail.files.length).map((data) => {
-              return (
-                <>
+      <Grid container sx={{ margin: "auto", gap: "1rem" }}>
+        {postDetail &&
+          postDetail.files.length >= 2 &&
+          postDetail.files.slice(1, postDetail.files.length).map((data,index) => {
+            return (
+              <>
+                <Grid item xs="12" sm="5.8" md="3.8" key={index}>
                   <img
                     className="imgbanner"
                     src={data.filePath}
                     alt="detailimage 2"
                   />
-                </>
-              );
-            })}
-        </Grid>
+                </Grid>
+              </>
+            );
+          })}
       </Grid>
     </div>
   );

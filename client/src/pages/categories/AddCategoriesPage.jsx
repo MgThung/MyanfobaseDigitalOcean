@@ -32,9 +32,9 @@ export default function AddCategoriesPage() {
     <div className="enterCate gridCate ">
       <ul className="cateUl">
         {categories && categories.length !== 0 ? (
-          categories.map((data) => {
+          categories.map((data, index) => {
             return (
-              <div className="cateList">
+              <div className="cateList" key={index}>
                 <li className="titlecategory">{data.catename}</li>
                 <button
                   className="removeBtn"

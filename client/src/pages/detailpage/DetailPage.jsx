@@ -8,7 +8,7 @@ import Latestdetail from "../../components/detailpagecompo/Latestdetail";
 import Latestpho from "../../components/detailpagecompo/Latestpho";
 import RelatedA from "../../components/detailpagecompo/RelatedA";
 import DetailMustRead from "../../components/detailpagecompo/DetailMustRead";
-
+import { Grid } from "@mui/material";
 import "./detailpage.css";
 import PopularNews from "../../components/catepagerightbar/PopularNews";
 import Advtecbar from "../../components/catepagerightbar/Advtecbar";
@@ -27,7 +27,7 @@ export default function DetailPage() {
     // );
     const reqdata = await fetch(`http://localhost:8080/detailwithview/${id}`);
     const res = await reqdata.json(); // JSON.parse(json);
-    console.log("res data is ", res);
+
     return res;
   };
   useEffect(() => {
@@ -40,14 +40,19 @@ export default function DetailPage() {
     <>
       <Detailhead postDetail={postDetail} cate={cate} />
       <section className="container detailbody">
-        <Detailbanner postDetail={postDetail} />
-
-        <div className="allRightBar detailcontainer">
-          <PopularNews />
-          <span className="lastestbottomline "></span>
-          <Advtecbar />
-          <LatestArticle />
-        </div>
+        <Grid container my={2} sx={{ margin: "auto", gap: "1.5rem" }}>
+          <Grid item xs="12" sx="12" md="7.6">
+            <Detailbanner postDetail={postDetail} />
+          </Grid>
+          <Grid item xs="12" sx="12" md="4">
+            <div className="allRightBar detailcontainer">
+              <PopularNews />
+              <span className="lastestbottomline "></span>
+              <Advtecbar />
+              <LatestArticle />
+            </div>
+          </Grid>
+        </Grid>
       </section>
       <div className="container">
         <DetailMustRead />

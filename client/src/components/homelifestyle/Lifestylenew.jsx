@@ -18,15 +18,13 @@ export default function Lifestylenew() {
         `https://www.myanfobase.com/api/postcate/${category}`
       );
       const res = await reqdata.json(); // JSON.parse(json);
-      //   console.log("res data is ", res);
+
       return res;
     };
     getAlldata().then((data) => {
       setCateData(data);
     });
   }, [category]);
-
-  // console.log("get all posts are", getCateData);
 
   return (
     <Box maxWidth="xl">
@@ -98,7 +96,7 @@ export default function Lifestylenew() {
                   {getCateData.length !== 0 ? (
                     getCateData.slice(1, 4).map((data, index) => {
                       return (
-                        <Box maxWidth="xl">
+                        <Box maxWidth="xl" key={index}>
                           <div className="honey-1">
                             <Grid container direction="row" spacing={3}>
                               <Grid item xs={5}>

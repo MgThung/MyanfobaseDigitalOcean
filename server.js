@@ -95,3 +95,6 @@ console.log("prosess in server server", PORT);
 app.listen(PORT);
 
 //36mins
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "/client/build/index.html"));
+});

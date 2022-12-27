@@ -46,7 +46,7 @@ const DrawerComp = () => {
                 <ListItemIcon>
                   <ListItemAvatar>
                     <Avatar>
-                      <i class="uil uil-home"></i>
+                      <i className="uil uil-home"></i>
                     </Avatar>
                   </ListItemAvatar>
                 </ListItemIcon>
@@ -61,7 +61,7 @@ const DrawerComp = () => {
                 <ListItemIcon>
                   <ListItemAvatar>
                     <Avatar>
-                      <i class="uil uil-search"></i>
+                      <i className="uil uil-search"></i>
                     </Avatar>
                   </ListItemAvatar>
                 </ListItemIcon>
@@ -79,7 +79,7 @@ const DrawerComp = () => {
               <ListItemIcon>
                 <ListItemAvatar>
                   <Avatar>
-                    <i class="uil uil-list-ul"></i>
+                    <i className="uil uil-list-ul"></i>
                   </Avatar>
                 </ListItemAvatar>
               </ListItemIcon>
@@ -100,7 +100,7 @@ const DrawerComp = () => {
                 <ListItemIcon>
                   <ListItemAvatar>
                     <Avatar>
-                      <i class="uil uil-plus-circle"></i>
+                      <i className="uil uil-plus-circle"></i>
                     </Avatar>
                   </ListItemAvatar>
                 </ListItemIcon>
@@ -130,7 +130,7 @@ const DrawerComp = () => {
                     <ListItemIcon>
                       <ListItemAvatar>
                         <Avatar>
-                          <i class="uil uil-user-square"></i>
+                          <i className="uil uil-user-square"></i>
                         </Avatar>
                       </ListItemAvatar>
                     </ListItemIcon>

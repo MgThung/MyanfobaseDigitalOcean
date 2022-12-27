@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Moment from "react-moment";
-import Axios from "axios";
 
 export default function AdminDetail() {
   Moment.globalFormat = "D MMM YYYY";
@@ -20,8 +19,6 @@ export default function AdminDetail() {
   });
 
   const { id } = useParams();
-  console.log("hhh", id);
-  // console.log("vvv", postDetail);
   const editpostid = async () => {
     // const reqdata = await fetch(
     //   `https://desolate-hollows-16342.herokuapp.com/editpost/${id}`
@@ -29,7 +26,7 @@ export default function AdminDetail() {
     const reqdata = await fetch(`https://www.myanfobase.com/editpost/${id}`);
     // const reqdata = await fetch(`http://localhost:8080/editpost/${id}`);
     const res = await reqdata.json(); // JSON.parse(json);
-    console.log("res data is ", res);
+    // console.log("res data is ", res);
     return res;
   };
   useEffect(() => {
@@ -59,7 +56,6 @@ export default function AdminDetail() {
               {postDetail.cateName}
             </button>
           </Link>
-          {console.log("post detail img is", postDetail)}
           <div className="postman">
             <div className="postmanProfile">
               {postDetail.userprofile === "" ||
@@ -94,8 +90,7 @@ export default function AdminDetail() {
             ? console.log("your image is empty")
             : postDetail.files.map((file, index) => {
                 return (
-                  <div className="admindetailimg">
-                    {console.log("filePath is", file.filePath)}
+                  <div className="admindetailimg" key={index}>
                     <img
                       className="detailimg"
                       // src={`https://desolate-hollows-16342.herokuapp.com/${file.filePath}`}

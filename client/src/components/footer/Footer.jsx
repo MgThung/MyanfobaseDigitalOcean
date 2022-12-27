@@ -73,32 +73,32 @@ export default function Footer() {
                     <h4>Category</h4>
                   </Box>
                   <Box p={0.5}>
-                    <Link to="/entertainment" color="white" underline="hover">
+                    <Link href="/entertainment" color="white" underline="hover">
                       entertainment
                     </Link>
                   </Box>
                   <Box p={0.5}>
-                    <Link to="/business" color="white" underline="hover">
+                    <Link href="/business" color="white" underline="hover">
                       business
                     </Link>
                   </Box>
                   <Box p={0.5}>
-                    <Link to="/fashion" color="white" underline="hover">
-                      fashion
+                    <Link href="/government" color="white" underline="hover">
+                      government
                     </Link>
                   </Box>
                   <Box p={0.5}>
-                    <Link to="/food" color="white" underline="hover">
-                      food
+                    <Link href="/sports" color="white" underline="hover">
+                      sport
                     </Link>
                   </Box>
                   <Box p={0.5}>
-                    <Link to="/health" color="white" underline="hover">
+                    <Link href="/health" color="white" underline="hover">
                       health
                     </Link>
                   </Box>
                   <Box p={0.5}>
-                    <Link to="/lifestyle" color="white" underline="hover">
+                    <Link href="/lifestyle" color="white" underline="hover">
                       lifestyle
                     </Link>
                   </Box>
@@ -108,14 +108,30 @@ export default function Footer() {
                     <h4>About</h4>
                   </Box>
                   <Box p={0.5}>
-                    <Link to="/aboutus" color="white" underline="hover">
+                    <Link href="/aboutus" color="white" underline="hover">
                       About Us
                     </Link>
                   </Box>
-                  <Box p={0.5}>Carrers</Box>
-                  <Box p={0.5}>Where to Buy</Box>
-                  <Box p={0.5}>investor Relation</Box>
-                  <Box p={0.5}>Student Discount</Box>
+                  <Box p={0.5}>
+                    <Link href="/Science" color="white" underline="hover">
+                      Science
+                    </Link>
+                  </Box>
+                  <Box p={0.5}>
+                    <Link href="/Software" color="white" underline="hover">
+                      Software
+                    </Link>
+                  </Box>
+                  <Box p={0.5}>
+                    <Link href="/Computer" color="white" underline="hover">
+                      Computer
+                    </Link>
+                  </Box>
+                  <Box p={0.5}>
+                    <Link href="/Gamming" color="white" underline="hover">
+                      Gamming
+                    </Link>
+                  </Box>
                 </Grid>
                 <Grid item xs={12} sm={6} md={3}>
                   <Box p={0.5}>
@@ -182,7 +198,7 @@ export default function Footer() {
               </Grid>
             </Container>
           </Box>
-       
+
           <span className="footerunderline"></span>
           <p className="copyright">
             &copy; Copyright 2022. <span> SGcamp (3) Webdevelopment Team</span>

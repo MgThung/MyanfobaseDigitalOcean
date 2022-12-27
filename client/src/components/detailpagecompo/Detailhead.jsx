@@ -3,7 +3,7 @@ import "./detail.css";
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Moment from "react-moment";
-import { Box, Breadcrumbs, Typography, Stack } from "@mui/material";
+import { Box, Breadcrumbs, Typography } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import { useSelector } from "react-redux";
 import "./userdetail.css";
