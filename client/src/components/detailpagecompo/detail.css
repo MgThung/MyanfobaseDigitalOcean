@@ -7,10 +7,17 @@
   gap: 2rem;
   padding-top: 1rem;
 }
+.postmanProfile {
+  width: 50px;
+  height: 50px;
+}
 .postName1 img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
+}
+.detail_title {
+  margin: 1rem 0;
 }
 .pName {
   position: relative;

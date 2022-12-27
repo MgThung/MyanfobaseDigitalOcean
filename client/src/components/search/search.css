@@ -174,10 +174,17 @@
   margin-top: 1rem;
 }
 .cardImg {
-  height: 150px;
+  width: 95%;
+  margin: 0.5rem auto;
+  border-radius: 5px;
+  height: 12rem;
 }
+.cardbox {
+  height: 300px;
+}
+
 .cardInfo {
-  height: 150px;
+  height: 90px;
 }
 .carddesign {
   background-color: #fff;
@@ -202,6 +209,16 @@
     max-width: fit-content;
     margin: auto;
   }
+  .cardbox {
+    height: 250px;
+  }
+  .cardImg {
+    height: 9rem;
+  }
+  .cardInfo {
+    padding: 12px;
+    height: 70px;
+  }
 }
 @media screen and (max-width: 600px) {
   .searchbox {
@@ -215,5 +232,15 @@
   .searchpage {
     max-width: fit-content;
     margin: auto;
+  }
+  .cardbox {
+    height: 220px;
+  }
+  .cardImg {
+    height: 8rem;
+  }
+  .cardInfo {
+    padding: 10px;
+    height: 60px;
   }
 }
