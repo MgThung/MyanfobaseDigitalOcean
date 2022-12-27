@@ -1,5 +1,4 @@
 function Dialog({ message, onDialog, Postname }) {
-  console.log("title in dialog box is", Postname);
   return (
     <div
       style={{

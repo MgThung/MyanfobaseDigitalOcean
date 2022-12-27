@@ -70,7 +70,6 @@ export default function EditPost() {
       // const reqdata = await fetch(`http://localhost:8080/editpost/${id}`);
       const reqdata = await fetch(`https://www.myanfobase.com/editpost/${id}`);
       const res = await reqdata.json(); // JSON.parse(json);
-      console.log("res data is ", res);
       return res;
     };
 
@@ -100,10 +99,8 @@ export default function EditPost() {
     formData.append("postAccept", editpost.postAccept);
     for (let i = 0; i < input.files.length; i++) {
       formData.append("files", input.files[i]);
-      console.log("input file wihtin after formdata is", input.files[i]);
     }
     // const resultData = Object.fromEntries(formData.entries(id));
-    // console.log("form data transform is", resultData.id);
 
     dispatch(updatePostData(formData)).then(() => navigate("/profile"));
   };

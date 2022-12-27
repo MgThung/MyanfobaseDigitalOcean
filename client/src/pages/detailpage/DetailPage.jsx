@@ -27,7 +27,7 @@ export default function DetailPage() {
     );
     // const reqdata = await fetch(`http://localhost:8080/detailwithview/${id}`);
     const res = await reqdata.json(); // JSON.parse(json);
-    console.log("res data is ", res);
+
     return res;
   };
   useEffect(() => {

@@ -2,7 +2,6 @@ import "./detailbanner.css";
 import { Grid } from "@mui/material";
 export default function Detailbanner(props) {
   const postDetail = props.postDetail;
-  console.log("post detail from banner", postDetail.files);
   return (
     <div className="bannerSection detailcontainer ">
       {/* <h1>This is the detalil page {detailid.id}</h1> */}

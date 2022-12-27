@@ -74,7 +74,7 @@ export default function NewEditPost() {
       // );
       // const reqdata = await fetch(`http://localhost:8080/editpost/${id}`);
       const res = await reqdata.json(); // JSON.parse(json);
-      console.log("res data is ", res);
+
       return res;
     };
 
@@ -100,9 +100,6 @@ export default function NewEditPost() {
   //     titleRef.current = input.title;
   //     descRef.current = input.description;
   //   }, [input.title, input.description]);
-
-  console.log("titel ref is", titleRef.current);
-  console.log("desc ref is", descRef.current);
 
   useEffect(() => {
     // Axios.get("https://desolate-hollows-16342.herokuapp.com/api/category")
@@ -131,7 +128,6 @@ export default function NewEditPost() {
     formData.append("postAccept", editpost.postAccept);
     for (let i = 0; i < input.files.length; i++) {
       formData.append("files", input.files[i]);
-      console.log("input file wihtin after formdata is", input.files[i]);
     }
 
     dispatch(updatePostData(formData)).then(() => navigate("/profile"));
@@ -217,7 +213,7 @@ export default function NewEditPost() {
                   required
                 />
               </div>
-              {console.log("data changes")}
+
               <br />
               <br />
               <div className="imgDiv">

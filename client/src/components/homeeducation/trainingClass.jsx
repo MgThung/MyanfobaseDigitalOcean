@@ -19,7 +19,7 @@ export default function TrainingClass() {
       `https://www.myanfobase.com/api/postcate/${category}`
     );
     const res = await reqdata.json(); // JSON.parse(json);
-    //   console.log("res data is ", res);
+
     return res;
   };
   useEffect(() => {
@@ -27,8 +27,6 @@ export default function TrainingClass() {
       setCateData(data);
     });
   }, [category]);
-
-  // console.log("get data inside traingi", getCateData);
 
   return (
     <>

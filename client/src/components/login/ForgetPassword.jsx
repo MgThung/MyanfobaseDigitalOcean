@@ -93,7 +93,7 @@ const ForgetPassword = () => {
 
         // showResult(true))
         .catch((error) => {
-          console.log("erro from data sent is", error.response.data.message);
+          // console.log("erro from data sent is", error.response.data.message);
           const data = error.response.data.message;
           setErrormessage(data);
           // toast.error("error data is", data);
@@ -101,7 +101,6 @@ const ForgetPassword = () => {
     }
   };
 
-  console.log("error message data", errormessage);
 
   if (isLoading) {
     return <Spinner />;

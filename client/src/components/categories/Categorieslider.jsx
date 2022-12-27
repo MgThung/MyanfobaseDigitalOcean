@@ -86,7 +86,6 @@ export default function Categorieslider() {
     //   `https://desolate-hollows-16342.herokuapp.com/api/category`
     // );
     const res = await reqdata.json(); // JSON.parse(json);
-    //   console.log("res data is ", res);
     return res;
   };
   useEffect(() => {
@@ -112,7 +111,6 @@ export default function Categorieslider() {
   const countChange = useMemo(() => {
     return PostMemo(posts);
   }, [categories]);
-  console.log("Coun SSS", countChange);
 
   return (
     <>

@@ -27,7 +27,6 @@ export default function Sidebar(props) {
   const indexOfFirstItem = indexOfLastItem - itemPerPage;
   const currentItems = getCateData.slice(indexOfFirstItem, indexOfLastItem);
   const renderPageNumbers = pages.map((number) => {
-    console.log("number", number);
     return (
       <div key={number} id={number}>
         {number}
@@ -42,7 +41,7 @@ export default function Sidebar(props) {
       `https://www.myanfobase.com/api/postcate/${category}`
     );
     const res = await reqdata.json(); // JSON.parse(json);
-    //   console.log("res data is ", res);
+
     return res;
   };
   useEffect(() => {
@@ -50,8 +49,6 @@ export default function Sidebar(props) {
       setCateData(data);
     });
   }, [category]);
-
-  console.log("current page", currentItems);
 
   // const handleChange = (event) => {
   //   setFavlist(event.target.checked);

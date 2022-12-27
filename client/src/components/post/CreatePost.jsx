@@ -132,7 +132,7 @@ export default function CreatePost(props) {
             onChange={setTextarea}
           />
         </div>
-        {console.log("data is", titleRef)}
+        {/* {console.log("data is", titleRef)} */}
         <div className="titleDiv">
           <label htmlFor="descformid" className="labelDes">
             Description:

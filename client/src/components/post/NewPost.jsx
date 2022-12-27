@@ -67,7 +67,6 @@ export default function NewPost(props) {
       formData.append("files", input.files[i]);
     }
 
-    console.log("Form data from post is", formData);
     dispatch(createPost(formData)).then(() => navigate("/profile"));
   };
 
@@ -96,7 +95,6 @@ export default function NewPost(props) {
     Axios.get("https://www.myanfobase.com/readcate")
       .then((response) => {
         setListOfCate(response.data);
-        console.log("categories inside", response.data);
       })
       .catch(() => {
         alert("Awww, it didn't work at getting categories data");

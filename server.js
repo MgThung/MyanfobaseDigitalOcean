@@ -51,10 +51,6 @@ app.use(passport.session());
 
 require("./routes/authRoutes")(app);
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "/client/build/index.html"));
-});
-
 app.get("/detailwithview/:id", async (req, res) => {
   const id = req.params.id;
   PostModel.findOneAndUpdate(
@@ -95,3 +91,6 @@ console.log("prosess in server server", PORT);
 app.listen(PORT);
 
 //36mins
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "/client/build/index.html"));
+});

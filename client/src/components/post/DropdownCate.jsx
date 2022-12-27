@@ -17,7 +17,7 @@ export default function DropdownCate({
       // Axios.get("https://desolate-hollows-16342.herokuapp.com/readcate")
       .then((response) => {
         setListOfCate(response.data);
-        console.log("categories inside", response.data);
+       
       })
       .catch(() => {
         alert("Awww, it didn't work at getting data");

@@ -1,9 +1,8 @@
 import React from "react";
-import { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
-import Testpost from "./Testpost";
-import { getMultipleFiles, deletePosts } from "../../data/api";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
+
 import "./textform.css";
 import "./dropdowncate.css";
 import "./postform.css";

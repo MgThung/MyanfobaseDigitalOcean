@@ -103,7 +103,6 @@ export const favSlice = createSlice({
         state.isLoading = false;
         state.isSuccess = true;
         state.favorite.push(action.payload);
-        // console.log("action pay load is", action.payload);
       })
       .addCase(createFav.rejected, (state, action) => {
         state.isLoading = false;
@@ -117,7 +116,6 @@ export const favSlice = createSlice({
         state.isLoading = false;
         state.isSuccess = true;
         state.favLengths = action.payload;
-        // console.log("action pay load getpost is", action.payload);
       })
       .addCase(addFavLength.rejected, (state, action) => {
         state.isLoading = false;
@@ -131,7 +129,6 @@ export const favSlice = createSlice({
         state.isLoading = false;
         state.isSuccess = true;
         state.favorite = action.payload;
-        // console.log("action pay load getpost is", action.payload);
       })
       .addCase(getFavs.rejected, (state, action) => {
         state.isLoading = false;
@@ -145,8 +142,6 @@ export const favSlice = createSlice({
         state.isLoading = false;
         state.isSuccess = true;
         state.favorite = state.favorite.filter((post) => {
-          // console.log("post delete id is", post._id);
-          // console.log("post delete action payload is", action.payload);
           return (
             post.postId !== action.payload.postId &&
             post.user !== action.payload.user

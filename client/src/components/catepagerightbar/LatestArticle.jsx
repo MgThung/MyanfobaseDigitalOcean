@@ -24,8 +24,8 @@ export default function LatestArticle(props) {
     });
   }, []);
 
-  console.log("latest post length is", lastposts.length);
-  console.log("latest post is", lastposts);
+
+  // console.log("latest post is", lastposts);
   return (
     lastposts && (
       <div className="lastArt">

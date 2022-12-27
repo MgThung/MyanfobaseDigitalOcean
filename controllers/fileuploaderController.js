@@ -272,7 +272,7 @@ const updAdminAccept = asyncHandler(async (req, res) => {
   const files = req.body.files;
   console.log("id of req.body is", _id);
   console.log("file of req.body is", files);
-  const postDetail = await PostModel.findById(_id);
+  // const postDetail = await PostModel.findById(_id);
   /* Check for user */
   if (!req.user) {
     res.status(401);
