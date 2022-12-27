@@ -139,7 +139,7 @@ const EditForm = () => {
       );
     }
     // const resultData = Object.fromEntries(formData.entries(id));
-    // console.log("form data transform is", resultData.id);
+    console.log("form data transform is", formData);
 
     dispatch(updateUser(formData)).then(() => navigate("/profile"));
   };
@@ -178,7 +178,7 @@ const EditForm = () => {
             <FormInput
               key={input.id}
               {...input}
-              value={values[input.name]}
+              value={values[input.name]}                                                                 
               onChange={onChange}
             />
           </div>
@@ -213,6 +213,17 @@ const EditForm = () => {
           />
         </div>
 
+        
+        {/* <div class="editformsub">
+          <button className="submitbutton" onClick={updateBtn}>
+            <span>Submit</span>
+            <img
+              src="https://i.cloudup.com/2ZAX3hVsBE-3000x3000.png"
+              height="30"
+              width="30"
+            />
+          </button>
+        </div> */}
         <div className="editbuttondiv">
           <button className="editbutton" onClick={updateBtn}>
             Submit

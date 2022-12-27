@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://178.128.56.127/api/category/";
+const API_URL = "https://www.myanfobase.com/api/category/";
 // const API_URL = "http://localhost:8080/api/category/";
 // const API_URL = "https://desolate-hollows-16342.herokuapp.com/api/category/";
 
