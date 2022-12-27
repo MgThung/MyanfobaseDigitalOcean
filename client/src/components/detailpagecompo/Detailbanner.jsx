@@ -86,7 +86,7 @@ export default function Detailbanner(props) {
         </Grid>
       </Grid>
       <Grid container sx={{ margin: "auto" }}>
-        <Grid item xs="12" sm="6" md="4">
+        <Grid item xs={12} sm={6} md={4}>
           {postDetail &&
             postDetail.files.length >= 2 &&
             postDetail.files.slice(1, postDetail.files.length).map((data) => {

@@ -22,7 +22,7 @@ export default function Technology() {
       <section className="container technology">
         <Box sx={{ marginButtom: "10px" }}>
           <Breadcrumbs
-            aria-aria-label="breadcrumb"
+            aria-label="breadcrumb"
             separator={<NavigateNextIcon fontSize="small" />}
           >
             <Link to="/" className="link1" fontSize="25px">

@@ -11,13 +11,15 @@ export default function HomeEducation() {
   return (
     <section className="container EducSect">
       <div className="titleEducation">
-        <Typography variant="h4" fontWeight="bold">Education </Typography>
+        <Typography variant="h4" fontWeight="bold" className="popular-title">
+          Education{" "}
+        </Typography>
         <span className="headerline"></span>
       </div>
       <Box maxWidth="xl">
         <div className="educationHOme">
           {/* <div id="homeeducation" className="edusection"> */}
-          <Grid container direction="row" spacing={2}>
+          <Grid container direction="row" spacing={4}>
             <Grid item lg={8}>
               <TrainingClass />
             </Grid>

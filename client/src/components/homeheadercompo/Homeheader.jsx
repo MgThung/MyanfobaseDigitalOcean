@@ -16,19 +16,19 @@ const HomeHeader = () => {
       <section className="homeheader">
         <div className="home-banner">
           <div className="home-banner-detail">
-            <Typography variant="h1" fontFamily="Merriweather" fontWeight="bold"
-              sx={
-                {
-                  fontSize: {
-                    xs: "30px",
-                    sm: "50px",
-                    md: '60px',
-                    lg:"70px"
-
-                  }
-                }
-              }
-              >
+            <Typography
+              variant="h1"
+              fontFamily="Merriweather"
+              fontWeight="bold"
+              sx={{
+                fontSize: {
+                  xs: "30px",
+                  sm: "50px",
+                  md: "60px",
+                  lg: "70px",
+                },
+              }}
+            >
               MyanfobasE
             </Typography>
             <h3>MYANMAR INFORMATION BASE</h3>
@@ -56,11 +56,14 @@ const HomeHeader = () => {
       <Slider />
 
       <section className="popular-header container">
-        <div className="popular-title">
+        <div>
           <Typography
             variant="h4"
             fontWeight="bold"
-            className={darkMode ? " populartitle-white" : "populartitle-black"}
+            className={
+              (darkMode ? " populartitle-white" : "populartitle-black",
+              "popular-title")
+            }
           >
             Popular Now
           </Typography>

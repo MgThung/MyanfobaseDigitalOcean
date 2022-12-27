@@ -33,7 +33,7 @@ export default function Lifestylenew() {
       <div className="thaw-1">
         {/* <Container maxWidth="xl"> */}
         {getCateData.length !== 0 ? (
-          <>
+          
             <Grid container direction="row" spacing={4}>
               <Grid item lg={6} xs={12}>
                 <div className="part-1">
@@ -59,7 +59,7 @@ export default function Lifestylenew() {
                         to={`/${category}/${getCateData[0]._id}`}
                         className={`colorBlack ${category}hover`}
                       >
-                        <h2>{getCateData[0].title.substring(0, 70)}...</h2>
+                        <h4>{getCateData[0].title.substring(0, 70)}...</h4>
                       </Link>
                       <div className="postman1">
                         <div className="postmanProfile1">
@@ -136,7 +136,7 @@ export default function Lifestylenew() {
                 </div>
               </Grid>
             </Grid>
-          </>
+          
         ) : (
           <div>
             <h4> Loading !</h4>
@@ -144,6 +144,6 @@ export default function Lifestylenew() {
         )}
         {/* </Container> */}
       </div>
-    </Box>
+     </Box>
   );
 }

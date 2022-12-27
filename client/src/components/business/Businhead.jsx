@@ -9,7 +9,7 @@ export default function Businhead() {
       <section className="container travel">
         <Box sx={{ marginButtom: "10px" }}>
           <Breadcrumbs
-            aria-aria-label="breadcrumb"
+            aria-label="breadcrumb"
             separator={<NavigateNextIcon fontSize="small" />}
           >
             <Link to="/" className="link1" fontSize="25px">
