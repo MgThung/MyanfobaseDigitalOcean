@@ -204,3 +204,11 @@
   gap: 4rem;
   cursor: pointer;
 }
+@media screen and (max-width: 600px) {
+  .saveItem {
+    display: flex;
+    margin-left: 2rem;
+    gap: 1rem;
+    cursor: pointer;
+  }
+}

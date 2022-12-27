@@ -62,18 +62,18 @@ export default function Header() {
               <Grid
                 container
                 my={2}
-                sx={{ margin: "auto", alignItems: "center" }}
+                sx={{ margin: "auto", alignItems: "center", height: "6rem" }}
               >
-                <Grid item xs={5} sm={8}>
+                <Grid item xs={5} sm={8} className="headerGrid">
                   <Link to="/" className="nav-logo">
                     <img src="./images/homeimgs/logo2.png" alt="" />
                   </Link>
                 </Grid>
-                <Grid item xs={7} sm={4}>
+                <Grid item xs={7} sm={4} className="headerGrid">
                   <Grid
                     container
                     my={3}
-                    sx={{ marginRight: "0", alignItems: "center" }}
+                    sx={{ margin: "0", alignItems: "center" }}
                   >
                     <Grid item xs={6}>
                       <Link to="/subscribe" className="flex">
