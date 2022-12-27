@@ -25,9 +25,6 @@ mongoose.connect(keys.mongoURI, {
 
 // fileRoutes(app);
 app.use(express.static(path.join(__dirname, "/client/build")));
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "/client/build/static/index.html"));
-// });
 
 app.use(cors());
 app.use(express.json()); // to get data with json format
@@ -53,6 +50,10 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 require("./routes/authRoutes")(app);
+
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "/client/build/index.html"));
+// });
 
 app.get("/detailwithview/:id", async (req, res) => {
   const id = req.params.id;

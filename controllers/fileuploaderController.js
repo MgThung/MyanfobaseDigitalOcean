@@ -4,10 +4,7 @@ const mainPath = require("../routes/baseFilepath");
 const asyncHandler = require("express-async-handler");
 const PostModel = require("../models/Posts");
 const FavModel = require("../models/Favourite");
-const User = require("../models/User");
-const path = require("path");
-const multer = require("multer");
-const multerS3 = require("multer-s3");
+
 const aws = require("aws-sdk");
 const { S3_ENDPOINT, BUCKET_NAME } = process.env;
 
