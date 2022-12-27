@@ -1,33 +1,33 @@
 # name: Node.js CI
 
-# on:
-#   push:
-#     branches: ["master"]
-#   pull_request:
-#     branches: ["master"]
+on:
+  push:
+    branches: ["master"]
+  pull_request:
+    branches: ["master"]
 
-# jobs:
-#   build:
-#     runs-on: self-hosted
+jobs:
+  build:
+    runs-on: self-hosted
 
-#     strategy:
-#       matrix:
-#         node-version: [16.14.2]
-#         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+    strategy:
+      matrix:
+        node-version: [16.14.2]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
-#     steps:
-#       - uses: actions/checkout@v3
-#       - name: Use Node.js ${{ matrix.node-version }}
-#         uses: actions/setup-node@v2
-#         with:
-#           node-version: ${{ matrix.node-version }}
-#       - run: |
-#           npm ci
-#           cd client
-#           npm i
-#           npm run build
-#           cd ../
-#           pm2 kill
-#           pm2 start npm --name 'mywebsite' -- run dev
-#           pm2 save
-#           sudo service nginx restart
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: |
+          npm i
+          cd client
+          npm i
+          npm run build
+          cd ../
+          pm2 kill
+          pm2 start npm --name 'mywebsite' -- run dev
+          pm2 save
+          sudo service nginx restart

@@ -129,7 +129,7 @@ export default function Testpost(props) {
   useEffect(() => {
     // Axios.get("https://desolate-hollows-16342.herokuapp.com/readcate")
     // Axios.get("http://localhost:8080/readcate")
-    Axios.get("http://178.128.56.127/readcate")
+    Axios.get("https://www.myanfobase.com/readcate")
       .then((response) => {
         setListOfCate(response.data);
         console.log("categories inside", response.data);

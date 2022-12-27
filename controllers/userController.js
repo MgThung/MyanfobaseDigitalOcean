@@ -137,7 +137,7 @@ const registerUser = asyncHandler(async (req, res) => {
 //send verification email
 const sendVerificationEmail = ({ _id, email }, res) => {
   //url to be used in email
-  const currentUrl = "http://178.128.56.127/api/users/";
+  const currentUrl = "https://www.myanfobase.com/api/users/";
   // const currentUrl = "http://localhost:8080/api/users/";
   // const currentUrl = "https://desolate-hollows-16342.herokuapp.com/api/users/";
   const uniqueString = uuidv4() + _id;
@@ -436,8 +436,7 @@ const updateUser = asyncHandler(async (req, res) => {
   const profilePicture = req.file;
   const id = req.user.id;
 
-  console.log("reques body is", req.body);
-  console.log("user profile picture", profilePicture);
+  // console.log("user profile picture", profilePicture);
   const userDetail = await User.findById(id);
   /* Check for user */
   if (!req.user) {
@@ -456,8 +455,7 @@ const updateUser = asyncHandler(async (req, res) => {
     filesArray.push(file);
   }
 
-  console.log("user Detail profile", userDetail.profilePicture);
-  console.log("user Detail profile equal", userDetail.profilePicture[0] === "");
+  // console.log("user Detail profile", userDetail.profilePicture);
 
   //checking img and remove old img
   (profilePicture === [] || profilePicture === undefined) &&
