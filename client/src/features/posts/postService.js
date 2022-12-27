@@ -7,8 +7,6 @@ const API_URL = "https://www.myanfobase.com/api/post/";
 
 //Create new Post
 const creatPosts = async (postData, token) => {
-  // console.log("data from createPost Service is", postData);
-  // console.log("Token from createPost Service is", token);
   const config = {
     headers: {
       Authorization: `Bearer ${token}`,
@@ -51,21 +49,17 @@ const editPosts = async (postData, token) => {
       Authorization: `Bearer ${token}`,
     },
   };
-  console.log("Post data Service from API", postData);
+
   if (postData.postAccept === true) {
-    console.log("id from clik butten is", postData._id);
     id = postData._id;
     const response = await axios.put(API_URL + `admin/${id}`, postData, config);
-    console.log("response data after update admin in Service", response.data);
+
     return response.data;
   } else {
     const resultData = Object.fromEntries(postData.entries());
     id = resultData.id;
     const response = await axios.put(API_URL + id, postData, config);
-    console.log(
-      "response data after not admin update in Service",
-      response.data
-    );
+
     return response.data;
   }
 };
@@ -78,7 +72,7 @@ const postDetailData = async (id, token) => {
     },
   };
   const response = await axios.get(API_URL + id, config);
-  console.log("auth service response data", response.data);
+
   return response.data;
 };
 

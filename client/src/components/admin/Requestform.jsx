@@ -17,8 +17,6 @@ export default function RequestForm() {
     (state) => state.posts
   );
 
-  // console.log("post from redux is", posts);
-
   useEffect(() => {
     if (isError) {
       console.log(message);
@@ -34,8 +32,8 @@ export default function RequestForm() {
       if (data._id === id) {
         let copyData = Object.assign({}, data);
         copyData.postAccept = true;
-        console.log("real data", data);
-        console.log("copyData", copyData);
+        // console.log("real data", data);
+        // console.log("copyData", copyData);
         dispatch(updatePostData(copyData)).then(() => dispatch(getPosts()));
       }
     });

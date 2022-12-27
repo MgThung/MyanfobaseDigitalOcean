@@ -84,7 +84,7 @@ function ProRight() {
         <div className="sidebar">
           <div className="Profile-main">
             {posts.length > 0 ? (
-              posts.map((element) =>
+              posts.map((element, index) =>
                 element.user === user._id ? (
                   <div key={element._id}>
                     <Grid

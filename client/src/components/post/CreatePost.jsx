@@ -100,8 +100,8 @@ export default function CreatePost(props) {
             {isActive && (
               <div className="dropdown-content">
                 {categories &&
-                  categories.map((option) => (
-                    <div
+                  categories.map((option,index) => (
+                    <div key={index}
                       onClick={(e) =>
                         onChangeCateId(option._id)(
                           onChangeCate(option.catename)(setIsActive(false))
@@ -132,7 +132,7 @@ export default function CreatePost(props) {
             onChange={setTextarea}
           />
         </div>
-        {console.log("data is", titleRef)}
+        {/* {console.log("data is", titleRef)} */}
         <div className="titleDiv">
           <label htmlFor="descformid" className="labelDes">
             Description:

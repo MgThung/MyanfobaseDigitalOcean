@@ -26,9 +26,7 @@ const ProfileEdit = () => {
 
   const userToken = JSON.parse(localStorage.getItem("user"));
   //localhost:8080/api/users/
-  console.log("user token is", userToken.token);
 
-  console.log("value is", values);
   const inputs = [
     {
       id: 1,
@@ -109,10 +107,6 @@ const ProfileEdit = () => {
     formData.append("token", userToken.token);
     for (let i = 0; i < values.profilePicture.length; i++) {
       formData.append("files", values.profilePicture[i]);
-      console.log(
-        "input file wihtin after formdata is",
-        values.profilePicture[i]
-      );
     }
     // const resultData = Object.fromEntries(formData.entries(id));
     // console.log("form data transform is", resultData.id);
@@ -148,10 +142,9 @@ const ProfileEdit = () => {
             type="file"
             onChange={onChangeImg}
           />
-          {console.log("user ref dat is", usernameRef.current)}
         </div>
-        {inputs.map((input) => (
-          <div className="infoform">
+        {inputs.map((input,index) => (
+          <div className="infoform" key={index}>
             <FormInput
               key={input.id}
               {...input}

@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import "./educationleftright.css";
 import Moment from "react-moment";
-import { Box,Grid } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 export default function EducationRight(props) {
   const getCateData = props.getData;
   const category = "Education";
@@ -13,9 +13,9 @@ export default function EducationRight(props) {
       <div>
         <Grid container direction="row" spacing={2}>
           {getCateData.length !== 0 ? (
-            getCateData.slice(4, 6).map((data) => {
+            getCateData.slice(4, 6).map((data, index) => {
               return (
-                <Grid item lg={12} md={12} xs={12}>
+                <Grid item lg={12} md={12} xs={12} key={index}>
                   <div className="wrapper">
                     <div className="wrapperimg">
                       <img

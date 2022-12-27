@@ -17,7 +17,7 @@ export default function AdvertiseEducation() {
               <div className="advimg">
                 <img loading="lazy" src="./images/homeimgs/adver2.jpg" alt="" />
                 <span>
-                  BuyNow<i class="uil uil-angle-right-b"></i>
+                  BuyNow<i className="uil uil-angle-right-b"></i>
                 </span>
               </div>
               <h4>If you buy the whole set you can GET 50% OFF</h4>
@@ -28,7 +28,7 @@ export default function AdvertiseEducation() {
               <div className="advimg">
                 <img loading="lazy" src="./images/homeimgs/adver1.jpg" alt="" />
                 <span>
-                  BuyNow<i class="uil uil-angle-right-b"></i>
+                  BuyNow<i className="uil uil-angle-right-b"></i>
                 </span>
               </div>
               <h4>Airpot 2Pro Comfortable your ear and nice sound</h4>

@@ -22,7 +22,7 @@ export default function UserDetail() {
     );
     // const reqdata = await fetch(`http://localhost:8080/detailwithview/${id}`);
     const res = await reqdata.json(); // JSON.parse(json);
-    console.log("res data is ", res);
+
     return res;
   };
   useEffect(() => {
@@ -31,7 +31,6 @@ export default function UserDetail() {
     });
   }, [id]);
 
-  console.log("detail form postdetail is", postDetail);
   return (
     <>
       {postDetail && postDetail.length !== 0 ? (
@@ -91,7 +90,7 @@ export default function UserDetail() {
               ? console.log("your image is empty")
               : postDetail.files.map((file, index) => {
                   return (
-                    <div className="userdetailimg">
+                    <div className="userdetailimg" key={index}>
                       {console.log("filePath is", file.filePath)}
                       <img
                         className="detailimguser"

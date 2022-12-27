@@ -14,7 +14,7 @@ export default function Technology() {
   );
   // let length = 0;
   // for (let i = posts.length - 1; i < posts.length - 4; i--) {
-  //   console.log("this is", i, "times");
+
   // }
 
   return (

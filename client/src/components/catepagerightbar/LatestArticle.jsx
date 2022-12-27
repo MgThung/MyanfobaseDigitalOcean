@@ -24,8 +24,8 @@ export default function LatestArticle(props) {
     });
   }, []);
 
-  console.log("latest post length is", lastposts.length);
-  console.log("latest post is", lastposts);
+
+  // console.log("latest post is", lastposts);
   return (
     lastposts && (
       <div className="lastArt">
@@ -36,10 +36,10 @@ export default function LatestArticle(props) {
 
         <div className="lastnewbar-body sidebar1">
           {lastposts.length !== 0 ? (
-            lastposts.map((data) => {
+            lastposts.map((data,index) => {
               if (data.postAccept === true) {
                 return (
-                  <div className="article-lastest">
+                  <div className="article-lastest" key={index}>
                     <div className="lastnewimg">
                       <img
                         // src={`http://localhost:8080/${data.files[0].filePath}`}

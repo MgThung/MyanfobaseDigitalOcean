@@ -70,7 +70,6 @@ export default function EditPost() {
       // const reqdata = await fetch(`http://localhost:8080/editpost/${id}`);
       const reqdata = await fetch(`https://www.myanfobase.com/editpost/${id}`);
       const res = await reqdata.json(); // JSON.parse(json);
-      console.log("res data is ", res);
       return res;
     };
 
@@ -100,10 +99,8 @@ export default function EditPost() {
     formData.append("postAccept", editpost.postAccept);
     for (let i = 0; i < input.files.length; i++) {
       formData.append("files", input.files[i]);
-      console.log("input file wihtin after formdata is", input.files[i]);
     }
     // const resultData = Object.fromEntries(formData.entries(id));
-    // console.log("form data transform is", resultData.id);
 
     dispatch(updatePostData(formData)).then(() => navigate("/profile"));
   };
@@ -139,8 +136,8 @@ export default function EditPost() {
                   {isActive && (
                     <div className="dropdown-content">
                       {categories &&
-                        categories.map((option) => (
-                          <div
+                        categories.map((option,index) => (
+                          <div key={index}
                             onClick={(e) =>
                               onChangeCateId(option._id)(
                                 onChangeCate(option.catename)(
@@ -212,8 +209,8 @@ export default function EditPost() {
             </button>
             <div className="imgShow">
               {editpost.files &&
-                editpost.files.map((file) => (
-                  <div className="Imgarea">
+                editpost.files.map((file,index) => (
+                  <div className="Imgarea" key={index}>
                     <div className="imgDiv1">
                       {/* {console.log("file path is", file.filePath)} */}
                       <img

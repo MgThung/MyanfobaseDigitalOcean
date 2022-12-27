@@ -129,7 +129,7 @@ export default function CategoryCount() {
               categories.map((cate, index) => {
                 return (
                   <SwiperSlide className="cate-swiper">
-                    <div className="per-cate">
+                    <div className="per-cate" key={index}>
                       <div className="cate-image">
                         {/* {console.log("cate id", cate._id)} */}
                         {images.map((data, index) => {
