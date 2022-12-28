@@ -23,8 +23,8 @@ const EditForm = () => {
   });
 
   const userToken = JSON.parse(localStorage.getItem("user"));
-  //localhost:8080/api/users/
-  console.log("user token is", userToken.token);
+
+  // console.log("user token is", userToken.token);
 
   // useEffect(() => {
   //   const details = async () => {
@@ -32,7 +32,6 @@ const EditForm = () => {
   //       `http://localhost:8080/api/users/detail/${user._id}`
   //     );
   //     const res = await reqdata.json(); // JSON.parse(json);
-  //     console.log("user data  res is ", res);
   //     return res;
   //   };
   //   details().then((data) => {
@@ -49,7 +48,6 @@ const EditForm = () => {
   //   });
   // }, [user._id]);
 
-  console.log("value is", values);
   const inputs = [
     {
       id: 1,
@@ -133,13 +131,9 @@ const EditForm = () => {
     formData.append("token", userToken.token);
     for (let i = 0; i < values.profilePicture.length; i++) {
       formData.append("files", values.profilePicture[i]);
-      console.log(
-        "input file wihtin after formdata is",
-        values.profilePicture[i]
-      );
     }
     // const resultData = Object.fromEntries(formData.entries(id));
-    console.log("form data transform is", formData);
+    // console.log("form data transform is", formData);
 
     dispatch(updateUser(formData)).then(() => navigate("/profile"));
   };
@@ -173,12 +167,12 @@ const EditForm = () => {
             onChange={onChangeImg}
           />
         </div>
-        {inputs.map((input) => (
-          <div className="infoform">
+        {inputs.map((input,index) => (
+          <div className="infoform" key={index}>
             <FormInput
               key={input.id}
               {...input}
-              value={values[input.name]}                                                                 
+              value={values[input.name]}
               onChange={onChange}
             />
           </div>
@@ -213,7 +207,6 @@ const EditForm = () => {
           />
         </div>
 
-        
         {/* <div class="editformsub">
           <button className="submitbutton" onClick={updateBtn}>
             <span>Submit</span>

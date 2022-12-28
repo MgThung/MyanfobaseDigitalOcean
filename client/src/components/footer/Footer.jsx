@@ -1,6 +1,14 @@
 import React from "react";
 import "./footer.css";
 import { Grid, Box, Container, Link } from "@mui/material";
+import HomeIcon from "@mui/icons-material/Home";
+import ForwardToInboxIcon from "@mui/icons-material/ForwardToInbox";
+import PhoneForwardedIcon from "@mui/icons-material/PhoneForwarded";
+import MailIcon from "@mui/icons-material/Mail";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import YouTubeIcon from "@mui/icons-material/YouTube";
 
 export default function Footer() {
   return (
@@ -25,7 +33,7 @@ export default function Footer() {
                   <Box p={1}>
                     <Grid container direction="row" spacing={0.5}>
                       <Grid item>
-                        <i class="uil uil-home"></i>
+                        <HomeIcon />
                       </Grid>
                       <Grid item>NO(10). Maharbowga street Yangon</Grid>
                     </Grid>
@@ -33,7 +41,7 @@ export default function Footer() {
                   <Box p={1}>
                     <Grid container direction="row" spacing={0.5}>
                       <Grid item>
-                        <i class="uil uil-envelope-star"></i>
+                        <ForwardToInboxIcon />
                       </Grid>
                       <Grid item>
                         <a href="mailto:myanfobase@gmail.com">
@@ -45,7 +53,7 @@ export default function Footer() {
                   <Box p={1}>
                     <Grid container direction="row" spacing={0.5}>
                       <Grid item>
-                        <i class="uil uil-phone-volume"></i>
+                        <PhoneForwardedIcon />
                       </Grid>
                       <Grid item>
                         <a href="tele:0925252525">0933434334</a>
@@ -55,7 +63,7 @@ export default function Footer() {
                   <Box p={1}>
                     <Grid container direction="row" spacing={0.5}>
                       <Grid item>
-                        <i class="uil uil-envelope-open"></i>
+                        <MailIcon />
                       </Grid>
                       <Grid item>
                         <input
@@ -73,32 +81,32 @@ export default function Footer() {
                     <h4>Category</h4>
                   </Box>
                   <Box p={0.5}>
-                    <Link to="/entertainment" color="white" underline="hover">
+                    <Link href="/entertainment" color="white" underline="hover">
                       entertainment
                     </Link>
                   </Box>
                   <Box p={0.5}>
-                    <Link to="/business" color="white" underline="hover">
+                    <Link href="/business" color="white" underline="hover">
                       business
                     </Link>
                   </Box>
                   <Box p={0.5}>
-                    <Link to="/fashion" color="white" underline="hover">
-                      fashion
+                    <Link href="/government" color="white" underline="hover">
+                      government
                     </Link>
                   </Box>
                   <Box p={0.5}>
-                    <Link to="/food" color="white" underline="hover">
-                      food
+                    <Link href="/sports" color="white" underline="hover">
+                      sport
                     </Link>
                   </Box>
                   <Box p={0.5}>
-                    <Link to="/health" color="white" underline="hover">
+                    <Link href="/health" color="white" underline="hover">
                       health
                     </Link>
                   </Box>
                   <Box p={0.5}>
-                    <Link to="/lifestyle" color="white" underline="hover">
+                    <Link href="/lifestyle" color="white" underline="hover">
                       lifestyle
                     </Link>
                   </Box>
@@ -108,14 +116,30 @@ export default function Footer() {
                     <h4>About</h4>
                   </Box>
                   <Box p={0.5}>
-                    <Link to="/aboutus" color="white" underline="hover">
+                    <Link href="/aboutus" color="white" underline="hover">
                       About Us
                     </Link>
                   </Box>
-                  <Box p={0.5}>Carrers</Box>
-                  <Box p={0.5}>Where to Buy</Box>
-                  <Box p={0.5}>investor Relation</Box>
-                  <Box p={0.5}>Student Discount</Box>
+                  <Box p={0.5}>
+                    <Link href="/Science" color="white" underline="hover">
+                      Science
+                    </Link>
+                  </Box>
+                  <Box p={0.5}>
+                    <Link href="/Software" color="white" underline="hover">
+                      Software
+                    </Link>
+                  </Box>
+                  <Box p={0.5}>
+                    <Link href="/Computer" color="white" underline="hover">
+                      Computer
+                    </Link>
+                  </Box>
+                  <Box p={0.5}>
+                    <Link href="/Gamming" color="white" underline="hover">
+                      Gamming
+                    </Link>
+                  </Box>
                 </Grid>
                 <Grid item xs={12} sm={6} md={3}>
                   <Box p={0.5}>
@@ -124,7 +148,7 @@ export default function Footer() {
                   <Box p={0.5}>
                     <Grid container direction="row" spacing={0.5}>
                       <Grid item>
-                        <i class="uil uil-facebook-f"></i>
+                        <FacebookIcon />
                       </Grid>
                       <Grid item>
                         <span>Facebook</span>
@@ -134,7 +158,7 @@ export default function Footer() {
                   <Box p={0.5}>
                     <Grid container direction="row" spacing={0.5}>
                       <Grid item>
-                        <i class="uil uil-instagram"></i>
+                        <InstagramIcon />
                       </Grid>
                       <Grid item>
                         <span>Instagram</span>
@@ -144,7 +168,7 @@ export default function Footer() {
                   <Box p={0.5}>
                     <Grid container direction="row" spacing={0.5}>
                       <Grid item>
-                        <i class="uil uil-twitter-alt"></i>
+                        <TwitterIcon />
                       </Grid>
                       <Grid item>
                         <span>Twitter</span>
@@ -154,7 +178,7 @@ export default function Footer() {
                   <Box p={0.5}>
                     <Grid container direction="row" spacing={0.5}>
                       <Grid item>
-                        <i class="uil uil-youtube"></i>
+                        <YouTubeIcon />
                       </Grid>
                       <Grid item>
                         <span>Youtube</span>
@@ -182,7 +206,7 @@ export default function Footer() {
               </Grid>
             </Container>
           </Box>
-       
+
           <span className="footerunderline"></span>
           <p className="copyright">
             &copy; Copyright 2022. <span> SGcamp (3) Webdevelopment Team</span>

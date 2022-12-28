@@ -36,10 +36,10 @@ export default function Slider() {
         className="cat-text"
       >
         {categories && categories.length !== 0 ? (
-          categories.map((cate) => {
+          categories.map((cate, index) => {
             return (
-              <div className="darkslide">
-                <SwiperSlide>
+              <div className="darkslide" key={index}>
+                <SwiperSlide key={index}>
                   <Link
                     to={cate.catename}
                     className={darkMode ? "main-catwhite" : "main-catblack"}

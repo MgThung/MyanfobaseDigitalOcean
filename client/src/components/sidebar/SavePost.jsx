@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
+import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
+import BookmarkIcon from "@mui/icons-material/Bookmark";
 import axios from "axios";
 
 export default function SavePost(props) {
@@ -100,12 +102,18 @@ export default function SavePost(props) {
       <div className="saveItem" onClick={addFav}>
         {saved ? (
           <>
-            <i className="uil uil-bookmark filled">Remove from save</i>
+            <div>
+              <BookmarkIcon className="filled" fontSize="20px"/>
+              Remove from save
+            </div>
             <p>{favNumber} people saved this post</p>
           </>
         ) : (
           <>
-            <i className="uil uil-bookmark unfilled">Add to save</i>
+            <div>
+              <BookmarkBorderIcon className="unfilled" fontSize="20px"/>
+              Add to save
+            </div>
             <p>{favNumber} people saved this post</p>
           </>
         )}

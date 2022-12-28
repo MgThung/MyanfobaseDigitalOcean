@@ -13,7 +13,7 @@ export default function PopularHome() {
     const reqdata = await fetch(`https://www.myanfobase.com/api/popular`);
     // const reqdata = await fetch(`http://localhost:8080/api/popular`);
     const res = await reqdata.json(); // JSON.parse(json);
-    //   console.log("res data is ", res);
+
     return res;
   };
 

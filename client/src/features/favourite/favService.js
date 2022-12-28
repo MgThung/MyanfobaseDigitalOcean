@@ -7,8 +7,7 @@ const API_URL = "https://www.myanfobase.com/api/";
 
 //Create new Favourite
 const creatFavService = async (postData, token) => {
-  console.log("data from createPost Service is", postData);
-  console.log("Token from createPost Service is", token);
+  
   const config = {
     headers: {
       Authorization: `Bearer ${token}`,
@@ -20,29 +19,27 @@ const creatFavService = async (postData, token) => {
 
 //Add FavNumber Length
 const addFavLengthService = async (data, token) => {
-  console.log("id fav data is", data);
-  console.log("id fav token is", token);
+
   const config = {
     headers: {
       Authorization: `Bearer ${token}`,
     },
   };
   const response = await axios.post(API_URL + "favoriteNumber", data, config);
-  console.log("resonsd data", response.data.FavNumber);
+
   return response.data.FavNumber;
 };
 
 //Check i alread add fav or not
 const checkMyFav = async (data, token) => {
-  console.log("id fav data is", data);
-  console.log("id fav token is", token);
+
   const config = {
     headers: {
       Authorization: `Bearer ${token}`,
     },
   };
   const response = await axios.post(API_URL + "favorited", data, config);
-  console.log("resonsd data", response.data);
+ 
   return response.data;
 };
 

@@ -120,20 +120,28 @@
   color: white;
 }
 
-.connect-social .connect-logo i {
+.connect-social .connect-logo {
   font-size: 1.8rem;
+  margin-left: 3px;
+  margin-top: 9px;
   color: rgb(36, 133, 190);
 }
-.connect-logo2 i {
+.connect-logo2 {
   font-size: 1.8rem;
+  margin-left: 3px;
+  margin-top: 9px;
   color: red;
 }
-.connect-logo3 i {
+.connect-logo3  {
   font-size: 1.8rem;
+  margin-left: 5px;
+  margin-top: 7px;
   color: #8ed1fc;
 }
-.connect-logo4 i {
+.connect-logo4  {
   font-size: 1.8rem;
+  margin-left: 3px;
+  margin-top: 5px;
   color: #9b51e0;
 }
 .connect-socials {

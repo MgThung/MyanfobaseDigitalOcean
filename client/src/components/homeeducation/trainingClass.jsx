@@ -19,7 +19,7 @@ export default function TrainingClass() {
       `https://www.myanfobase.com/api/postcate/${category}`
     );
     const res = await reqdata.json(); // JSON.parse(json);
-    //   console.log("res data is ", res);
+
     return res;
   };
   useEffect(() => {
@@ -28,17 +28,15 @@ export default function TrainingClass() {
     });
   }, [category]);
 
-  // console.log("get data inside traingi", getCateData);
-
   return (
     <>
       <Box maxWidth="xl">
         <div className="classTop ">
           <Grid container direction="row" spacing={2} marginBottom={2}>
             {getCateData.length !== 0 ? (
-              getCateData.slice(0, 2).map((data) => {
+              getCateData.slice(0, 2).map((data,index) => {
                 return (
-                  <Grid item lg={6} md={6}>
+                  <Grid item lg={6} md={6} key={index} >
                     <article className="homeclass1">
                       <div className="classimg">
                         <img

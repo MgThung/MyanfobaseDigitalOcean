@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 import Slider from "../slider/Slider.jsx";
 import "./homeheader.css";
 import "swiper/css/bundle";
-import Popularslider from "../popularslider/Popularslider.jsx";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
 import PopularHome from "./PopularHome.jsx";
 import { Typography } from "@mui/material";
+import SearchIcon from "@mui/icons-material/Search";
 
 const HomeHeader = () => {
   const theme = useContext(themeContext);
@@ -39,8 +39,7 @@ const HomeHeader = () => {
                   placeholder="Search in here...."
                   id="searchinput"
                 />
-
-                <i className="search-button uil uil-search"></i>
+                <SearchIcon className="searchiconbanner"/>
               </Link>
             </div>
             <div className="banner-botton">
@@ -73,7 +72,7 @@ const HomeHeader = () => {
           <Popularslider />
         </div> */}
       </section>
-      <PopularHome />
+      {/* <PopularHome /> */}
     </>
   );
 };

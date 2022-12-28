@@ -69,7 +69,7 @@ export const postDetail = createAsyncThunk(
     try {
       //adding token to access user
       const token = thunkAPI.getState().auth.user.token;
-      console.log("token in userDetail", token);
+
       return await postService.postDetailData(id, token);
     } catch (error) {
       const message =
@@ -87,10 +87,9 @@ export const postDetail = createAsyncThunk(
 export const updatePostData = createAsyncThunk(
   "post/edit",
   async (postData, thunkAPI) => {
-    console.log("post Data from editpost is", postData);
     try {
       const token = thunkAPI.getState().auth.user.token;
-      console.log("token is ", token);
+
       return await postService.editPosts(postData, token);
     } catch (error) {
       const message =
@@ -147,8 +146,6 @@ export const postSlice = createSlice({
         state.isLoading = false;
         state.isSuccess = true;
         state.posts = state.posts.filter((post) => {
-          // console.log("post delete id is", post._id);
-          // console.log("post delete action payload is", action.payload);
           return post._id !== action.payload.id;
         });
       })
@@ -165,7 +162,6 @@ export const postSlice = createSlice({
         state.isSuccess = true;
         state.posts.push(action.payload);
         // state.posts = action.payload;
-        console.log("action pay load after update is", action.payload);
       })
       .addCase(updatePostData.rejected, (state, action) => {
         state.isLoading = false;

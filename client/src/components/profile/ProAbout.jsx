@@ -50,6 +50,8 @@ const ProAbout = () => {
             <Typography variant="body1">{user.bio} </Typography>
             <Typography variant="body1">{user.email}</Typography>
             <Typography variant="body1">{user.bod}</Typography>
+            <Typography variant="body1">{user.gender}</Typography>
+            <Typography variant="body1">{user.address}</Typography>
           </CardContent>
         </Card>
       </Box>

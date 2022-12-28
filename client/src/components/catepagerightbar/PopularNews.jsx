@@ -13,7 +13,6 @@ export default function PopularNews(props) {
     const reqdata = await fetch(`https://www.myanfobase.com/api/popular`);
     // const reqdata = await fetch(`http://localhost:8080/api/popular`);
     const res = await reqdata.json(); // JSON.parse(json);
-    //   console.log("res data is ", res);
     return res;
   };
 
@@ -32,10 +31,10 @@ export default function PopularNews(props) {
 
         <div className="lastnewbar-body sidebar1">
           {lastposts.length !== 0 ? (
-            lastposts.map((data) => {
+            lastposts.map((data,index) => {
               if (data.postAccept === true) {
                 return (
-                  <div className="article-lastest">
+                  <div className="article-lastest" key={index}>
                     <div className="lastnewimg">
                       <img
                         // src={`http://localhost:8080/${data.files[0].filePath}`}

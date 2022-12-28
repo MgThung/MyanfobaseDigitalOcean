@@ -4,10 +4,7 @@ const mainPath = require("../routes/baseFilepath");
 const asyncHandler = require("express-async-handler");
 const PostModel = require("../models/Posts");
 const FavModel = require("../models/Favourite");
-const User = require("../models/User");
-const path = require("path");
-const multer = require("multer");
-const multerS3 = require("multer-s3");
+
 const aws = require("aws-sdk");
 const { S3_ENDPOINT, BUCKET_NAME } = process.env;
 
@@ -272,7 +269,7 @@ const updAdminAccept = asyncHandler(async (req, res) => {
   const files = req.body.files;
   console.log("id of req.body is", _id);
   console.log("file of req.body is", files);
-  const postDetail = await PostModel.findById(_id);
+  // const postDetail = await PostModel.findById(_id);
   /* Check for user */
   if (!req.user) {
     res.status(401);

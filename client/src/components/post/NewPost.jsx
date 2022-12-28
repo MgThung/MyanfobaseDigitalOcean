@@ -67,7 +67,6 @@ export default function NewPost(props) {
       formData.append("files", input.files[i]);
     }
 
-    console.log("Form data from post is", formData);
     dispatch(createPost(formData)).then(() => navigate("/profile"));
   };
 
@@ -96,7 +95,6 @@ export default function NewPost(props) {
     Axios.get("https://www.myanfobase.com/readcate")
       .then((response) => {
         setListOfCate(response.data);
-        console.log("categories inside", response.data);
       })
       .catch(() => {
         alert("Awww, it didn't work at getting categories data");
@@ -124,8 +122,8 @@ export default function NewPost(props) {
             </div>
             {isActive && (
               <div className="dropdown-content">
-                {listOfCate.map((option) => (
-                  <div
+                {listOfCate.map((option,index) => (
+                  <div key={index}
                     onClick={(e) =>
                       onChangeCateId(option._id)(
                         onChangeCate(option.catename)(setIsActive(false))

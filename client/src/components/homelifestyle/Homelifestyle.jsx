@@ -12,7 +12,7 @@ export default function Homelifestyle() {
       <span className="Lifeline"></span>
       <Box>
         <div id="lifestyles-New">
-          <Container maxWidth="lg">
+          <Container maxWidth="xl">
             <Grid container direction="row" spacing={3}>
               <Grid item xl={8} lg={8} md={12} sm={12} xs={12}>
                 <Lifestylenew />

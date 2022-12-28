@@ -14,7 +14,7 @@ export default function Technology() {
   );
   // let length = 0;
   // for (let i = posts.length - 1; i < posts.length - 4; i--) {
-  //   console.log("this is", i, "times");
+
   // }
 
   return (
@@ -22,11 +22,12 @@ export default function Technology() {
       <section className="container technology">
         <Box sx={{ marginButtom: "10px" }}>
           <Breadcrumbs
+            color={"#747474"}
             aria-label="breadcrumb"
             separator={<NavigateNextIcon fontSize="small" />}
           >
             <Link to="/" className="link1" fontSize="25px">
-              <Typography color={"black"}>Home</Typography>
+              <Typography>Home</Typography>
             </Link>
             <Typography>Technology</Typography>
           </Breadcrumbs>
@@ -67,9 +68,6 @@ export default function Technology() {
           Modern technology has become a total phenomenon for civilization, the
           defining force of a new social order in which efficiency is no longer
           an option but a necessity imposed on all human activity.
-          tttttttttttttt ttttttttttttttttttttttt
-          ttttttttttttttttttttttttttttttttttttt
-          tttttttttttttttttttttttttttttttttttttttttttttttttttttt
         </Typography>
       </section>
 

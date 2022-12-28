@@ -50,7 +50,7 @@ export const userDetail = createAsyncThunk(
     try {
       //adding token to access user
       const token = thunkAPI.getState().auth.user.token;
-      console.log("token in userDetail", token);
+
       return await authService.userDetailData(token);
     } catch (error) {
       const message =
@@ -122,7 +122,6 @@ export const authSlice = createSlice({
         state.isLoading = false;
         state.isSuccess = true;
         state.user = action.payload;
-        console.log("user data pay load is", action.payload);
       })
       .addCase(login.rejected, (state, action) => {
         state.isLoading = true;
@@ -154,7 +153,6 @@ export const authSlice = createSlice({
         // state.user.push(action.payload);
         localStorage.setItem("user", JSON.stringify(action.payload));
         state.user = action.payload;
-        console.log("user action pay load after update is", user);
       })
       .addCase(updateUser.rejected, (state, action) => {
         state.isLoading = false;

@@ -18,7 +18,6 @@ const register = async (userData) => {
 //Login user
 const login = async (userData) => {
   const response = await axios.post(API_URL + "login", userData);
-  console.log("response dat from authservice is", response.data);
 
   if (response.data) {
     localStorage.setItem("user", JSON.stringify(response.data));
@@ -35,7 +34,7 @@ const userDetailData = async (token) => {
     },
   };
   const response = await axios.get(API_URL + "me", config);
-  console.log("auth service response data", response.data);
+
   return response.data;
 };
 
@@ -44,9 +43,9 @@ const updateUserData = async (postData, token) => {
   const resultData = Object.fromEntries(postData.entries());
 
   const id = resultData.id;
-  console.log("result data id from auth Service", id);
-  console.log("result result data", resultData);
-  console.log("result data  from auth Service", postData);
+
+  // console.log("result result data", resultData);
+
   const config = {
     headers: {
       Authorization: `Bearer ${token}`,

@@ -27,7 +27,7 @@ export default function Entermentbanner() {
         sx={{ margin: "auto", width: "100%", gap: "3rem" }}
         rowSpacing={3}
       >
-        <Grid xs={5.5} sm={3.7}>
+        <Grid item xs={5.5} sm={3.7}>
           <div className="firstetn">
             <div className="hansoetn">
               <img src="./images/homeimgs/kdrama1.jpeg" alt="" />
@@ -41,7 +41,7 @@ export default function Entermentbanner() {
             </div>
           </div>
         </Grid>
-        <Grid xs={5.5} sm={3.7}>
+        <Grid item xs={5.5} sm={3.7}>
           <div className="secetn">
             <div className="moneyheist">
               <img src="./images/entertainment/moneyheist.jpg" alt="" />
@@ -55,7 +55,7 @@ export default function Entermentbanner() {
             </div>
           </div>
         </Grid>
-        <Grid xs={6} sm={3.7}>
+        <Grid item xs={6} sm={3.7}>
           <div className="thirdetn">
             <div className="jurassic">
               <img src="./images/entertainment/jurassic.jpg" alt="" />
