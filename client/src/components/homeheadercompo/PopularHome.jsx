@@ -50,7 +50,19 @@ export default function PopularHome() {
                           to={`/${lastposts[0].cateName}/${lastposts[0]._id}`}
                           className={`whiteColor ${lastposts[0].cateName}hover`}
                         >
-                          <Typography variant="h6" color="white">
+                          <Typography
+                            variant="h3"
+                            color="white"
+                            className="bignewtitle"
+                            sx={{
+                              fontSize: {
+                                xs: "15px",
+                                sm: "25px",
+                                md: "23px",
+                                lg: "25px",
+                              },
+                            }}
+                          >
                             {lastposts[0].title.substring(0, 80)}...
                           </Typography>
                         </Link>
@@ -63,8 +75,8 @@ export default function PopularHome() {
                             fontSize: {
                               xs: "15px",
                               sm: "15px",
-                              md: "20px",
-                              lg: "20px",
+                              md: "15px",
+                              lg: "15px",
                             },
                           }}
                         >
@@ -114,9 +126,9 @@ export default function PopularHome() {
                                       sx={{
                                         fontSize: {
                                           xs: "15px",
-                                          sm: "15px",
-                                          md: "12px",
-                                          lg: "15px",
+                                          sm: "25px",
+                                          md: "23px",
+                                          lg: "25px",
                                         },
                                       }}
                                     >

@@ -6,6 +6,7 @@ import { themeContext } from "../../Context";
 import { useContext } from "react";
 import PopularHome from "./PopularHome.jsx";
 import { Typography } from "@mui/material";
+import SearchIcon from "@mui/icons-material/Search";
 
 const HomeHeader = () => {
   const theme = useContext(themeContext);
@@ -38,8 +39,7 @@ const HomeHeader = () => {
                   placeholder="Search in here...."
                   id="searchinput"
                 />
-
-                <i className="search-button uil uil-search"></i>
+                <SearchIcon className="searchiconbanner"/>
               </Link>
             </div>
             <div className="banner-botton">
@@ -55,11 +55,14 @@ const HomeHeader = () => {
       <Slider />
 
       <section className="popular-header container">
-        <div className="popular-title">
+        <div>
           <Typography
             variant="h4"
             fontWeight="bold"
-            className={darkMode ? " populartitle-white" : "populartitle-black"}
+            className={
+              (darkMode ? " populartitle-white" : "populartitle-black",
+              "popular-title")
+            }
           >
             Popular Now
           </Typography>
@@ -69,7 +72,7 @@ const HomeHeader = () => {
           <Popularslider />
         </div> */}
       </section>
-      <PopularHome />
+      {/* <PopularHome /> */}
     </>
   );
 };

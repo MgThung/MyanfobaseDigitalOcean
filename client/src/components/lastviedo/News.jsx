@@ -35,7 +35,7 @@ const News = () => {
           lastposts.slice(0, visible).map((data, index) => {
             if (data.postAccept === true) {
               return (
-                <>
+                
                   <Box key={index}>
                     <div className="news">
                       <Container maxWidth="xl">
@@ -105,7 +105,6 @@ const News = () => {
                       </Container>
                     </div>
                   </Box>
-                </>
               );
             }
           })

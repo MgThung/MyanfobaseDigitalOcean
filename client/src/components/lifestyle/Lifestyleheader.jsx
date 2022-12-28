@@ -11,11 +11,11 @@ const Lifestyleheader = () => {
         <Box sx={{ marginButtom: "10px" }}>
           <Breadcrumbs
             color={"#747474"}
-            aria-aria-label="breadcrumb"
+            aria-label="breadcrumb"
             separator={<NavigateNextIcon fontSize="small" />}
           >
             <Link to="/" className="link1" fontSize="25px">
-              <Typography >Home</Typography>
+              <Typography>Home</Typography>
             </Link>
             <Typography>Lifestyle</Typography>
           </Breadcrumbs>
@@ -56,7 +56,6 @@ const Lifestyleheader = () => {
           Modern technology has become a total phenomenon for civilization, the
           defining force of a new social order in which efficiency is no longer
           an option but a necessity imposed on all human activity.
-          
         </Typography>
       </section>
     </>

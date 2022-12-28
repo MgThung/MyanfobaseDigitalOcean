@@ -29,7 +29,7 @@ export default function Sportbanner() {
           sx={{ margin: "auto", width: "100%", gap: "3rem" }}
           rowSpacing={3}
         >
-          <Grid xs={5.5} sm={3.7}>
+          <Grid item xs={5.5} sm={3.7}>
             <div className="firstetn">
               <div className="hansoetn">
                 <img src="./images/sport/sport5.avif" alt="" />
@@ -43,7 +43,7 @@ export default function Sportbanner() {
               </div>
             </div>
           </Grid>
-          <Grid xs={5.5} sm={3.7}>
+          <Grid item xs={5.5} sm={3.7}>
             <div className="secetn">
               <div className="moneyheist">
                 <img src="./images/sport/sport6.avif" alt="" />
@@ -57,7 +57,7 @@ export default function Sportbanner() {
               </div>
             </div>
           </Grid>
-          <Grid xs={6} sm={3.7}>
+          <Grid item xs={6} sm={3.7}>
             <div className="thirdetn">
               <div className="jurassic">
                 <img src="./images/sport/sport1.jpg" alt="" />

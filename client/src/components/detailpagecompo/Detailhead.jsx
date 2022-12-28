@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import Moment from "react-moment";
 import { Box, Breadcrumbs, Typography } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 import { useSelector } from "react-redux";
 import "./userdetail.css";
 import "../sidebar/sidebar.css";
@@ -26,7 +27,7 @@ export default function Detailhead(props) {
         <section className="detailhead container">
           <Box sx={{ marginButtom: "10px" }}>
             <Breadcrumbs
-              aria-aria-label="breadcrumb"
+              aria-label="breadcrumb"
               separator={<NavigateNextIcon fontSize="small" />}
             >
               <Link to="/" className="link1" fontSize="25px">
@@ -74,10 +75,9 @@ export default function Detailhead(props) {
             {user && user ? (
               <SavePost getCateData={postDetail} />
             ) : (
-              <Link to="/login">
-                <i className="uil uil-bookmark unfilled">
+                <Link to="/login">
+                  <BookmarkBorderIcon/>
                   to save this post login here!
-                </i>
               </Link>
             )}
           </div>

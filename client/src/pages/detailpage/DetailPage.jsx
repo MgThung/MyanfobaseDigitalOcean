@@ -41,10 +41,10 @@ export default function DetailPage() {
       <Detailhead postDetail={postDetail} cate={cate} />
       <section className="container detailbody">
         <Grid container my={2} sx={{ margin: "auto", gap: "1.5rem" }}>
-          <Grid item xs="12" sx="12" md="7.6">
+          <Grid item xs={12}  md={7.6}>
             <Detailbanner postDetail={postDetail} />
           </Grid>
-          <Grid item xs="12" sx="12" md="4">
+          <Grid item xs={12} md={4}>
             <div className="allRightBar detailcontainer">
               <PopularNews />
               <span className="lastestbottomline "></span>

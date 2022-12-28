@@ -23,7 +23,7 @@ export default function AdvertiseEducation() {
               <h4>If you buy the whole set you can GET 50% OFF</h4>
             </div>
           </Grid>
-          <Grid lg={12} md={6} xs={12} marginBottom={5}>
+          <Grid item lg={12} md={6} xs={12} marginBottom={5}>
             <div className="secAdv">
               <div className="advimg">
                 <img loading="lazy" src="./images/homeimgs/adver1.jpg" alt="" />

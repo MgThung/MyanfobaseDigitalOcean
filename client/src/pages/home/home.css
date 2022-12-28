@@ -1,3 +1,12 @@
 .HomePageDiv {
   overflow: hidden;
 }
+.css-19r6kue-MuiContainer-root {
+    padding-left: 0px; 
+     padding-right: 0px;
+}
+
+.popular-title{
+  font-size: 1.8rem;
+  color: #111;
+}

@@ -134,7 +134,7 @@ span.writerName::before {
   border-radius: 50px;
   box-sizing: border-box;
 }
-.wrapperNav .buttonNav .iconNav i {
+.wrapperNav .buttonNav .iconNav  {
   line-height: 50px;
 }
 
@@ -150,10 +150,10 @@ span.writerName::before {
 .wrapperNav .buttonNav:nth-child(4):hover .iconNav {
   background: #4082f1;
 }
-.wrapperNav .buttonNav:nth-child(1):hover .iconNav i,
-.wrapperNav .buttonNav:nth-child(2):hover .iconNav i,
-.wrapperNav .buttonNav:nth-child(3):hover .iconNav i,
-.wrapperNav .buttonNav:nth-child(4):hover .iconNav i {
+.wrapperNav .buttonNav:nth-child(1):hover .iconNav ,
+.wrapperNav .buttonNav:nth-child(2):hover .iconNav ,
+.wrapperNav .buttonNav:nth-child(3):hover .iconNav ,
+.wrapperNav .buttonNav:nth-child(4):hover .iconNav  {
   color: #fff;
 }
 

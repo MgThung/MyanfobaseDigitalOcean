@@ -11,11 +11,11 @@ const Theader = () => {
         <Box sx={{ marginButtom: "10px" }}>
           <Breadcrumbs
             color={"#747474"}
-            aria-aria-label="breadcrumb"
+            aria-label="breadcrumb"
             separator={<NavigateNextIcon fontSize="small" />}
           >
             <Link to="/" className="link1" fontSize="25px">
-              <Typography >Home</Typography>
+              <Typography>Home</Typography>
             </Link>
             <Typography>Travel</Typography>
           </Breadcrumbs>

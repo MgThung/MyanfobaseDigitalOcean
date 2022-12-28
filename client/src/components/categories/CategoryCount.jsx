@@ -128,13 +128,16 @@ export default function CategoryCount() {
             {categories.length !== 0 ? (
               categories.map((cate, index) => {
                 return (
-                  <SwiperSlide className="cate-swiper">
+                  <SwiperSlide className="cate-swiper" key={index}>
                     <div className="per-cate" key={index}>
-                      <div className="cate-image">
+                      <div>
                         {/* {console.log("cate id", cate._id)} */}
                         {images.map((data, index) => {
-                          if (data.id == cate._id)
-                            return <img src={data.cateimage} alt="" />;
+                          if (data.id == cate._id) return (
+                            <div key={index} className="cate-image">
+                              <img src={data.cateimage} alt="" />
+                            </div>
+                          );
                         })}
                       </div>
 

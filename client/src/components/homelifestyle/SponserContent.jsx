@@ -1,5 +1,6 @@
 import React from "react";
 import "./sponserContent.css";
+import NotificationsActiveIcon from "@mui/icons-material/NotificationsActive";
 
 export default function SponserContent() {
   return (
@@ -14,7 +15,7 @@ export default function SponserContent() {
         <div className="sponserAll">
           <p>Cosmetic Pics That Prove Jennifer is a Timeless Beauty</p>
           <div className="sponserBy">
-            <i id="icon-3" className="uil uil-bell"></i>
+            <NotificationsActiveIcon id="icon3" />{" "}
             <span className="sponserText">Sponsered by</span>
             <span className="sponserBefore">Before</span>
           </div>
@@ -28,7 +29,7 @@ export default function SponserContent() {
         <div className="sponserAll">
           <p>Cosmetic Pics That Prove Jennifer is a Timeless Beauty</p>
           <div className="sponserBy">
-            <i id="icon-3" className="uil uil-bell"></i>
+            <NotificationsActiveIcon id="icon3" />{" "}
             <span className="sponserText">Sponsered by</span>
             <span className="sponserBefore">Before</span>
           </div>
@@ -42,7 +43,7 @@ export default function SponserContent() {
         <div className="sponserAll">
           <p>Cosmetic Pics That Prove Jennifer is a Timeless Beauty</p>
           <div className="sponserBy">
-            <i id="icon-3" className="uil uil-bell"></i>
+            <NotificationsActiveIcon id="icon3" />
             <span className="sponserText">Sponsered by</span>
             <span className="sponserBefore">Before</span>
           </div>
