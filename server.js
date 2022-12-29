@@ -7,7 +7,7 @@ const passport = require("passport");
 const cors = require("cors");
 require("./models/User");
 const PostModel = require("./models/Posts");
-const { CateModel, CounterModel } = require("./models/Categories");
+
 const bodyParser = require("body-parser");
 require("./services/passport");
 require("dotenv").config();
