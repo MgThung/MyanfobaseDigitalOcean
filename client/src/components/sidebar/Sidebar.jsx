@@ -63,7 +63,7 @@ export default function Sidebar(props) {
               {currentItems.map((data, index) => {
                 if (data.postAccept === true && data.cateName === category) {
                   return (
-                    <>
+                    <div key={index}>
                       {/* <div
                         id={darkMode ? "sidebar-white" : "sidebar-black"}
                         className="postTrav"
@@ -154,7 +154,6 @@ export default function Sidebar(props) {
                           {/* {data && <SavePost getCateData={data} />} */}
 
                       <Grid
-                        key={index}
                         container
                         my={2}
                         sx={{
@@ -224,7 +223,7 @@ export default function Sidebar(props) {
                           </div>
                         </Grid>
                       </Grid>
-                    </>
+                    </div>
                   );
                 }
               })}

@@ -170,10 +170,10 @@ a .hoverclor:hover {
   color: black !important;
 }
 
-.headerwrap i,
-.dropdownItem i {
-  font-size: 20px;
-  width: 20px;
+.headerwrap i ,
+.dropdownItem{
+  font-size: 15px;
+  
 }
 
 .dropdownItem a,

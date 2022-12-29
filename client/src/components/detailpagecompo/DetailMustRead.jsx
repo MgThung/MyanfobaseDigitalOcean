@@ -18,7 +18,7 @@ export default function DetailMustRead() {
           gap: { sm: "1rem", md: "0.9rem", lg: "1.3rem", xl: "1.6rem" },
         }}
       >
-        <Grid item md="2.8" sm="5.8" xs="12">
+        <Grid item md={2.8} sm={5.8} xs={12}>
           <div className="tec-mustread1">
             <div className="tecmust-buttonimg">
               <div className="tec-mustread-img1">
@@ -34,7 +34,7 @@ export default function DetailMustRead() {
             </div>
           </div>
         </Grid>
-        <Grid item md="2.8" sm="5.8" xs="12">
+        <Grid item md={2.8} sm={5.8} xs={12}>
           <div className="tec-mustread2">
             <div className="tecmust-buttonimg">
               <div className="tec-mustread-img2">
@@ -50,7 +50,7 @@ export default function DetailMustRead() {
             </div>
           </div>
         </Grid>
-        <Grid item md="2.8" sm="5.8" xs="12">
+        <Grid item md={2.8} sm={5.8} xs={12}>
           <div className="tec-mustread3">
             <div className="tecmust-buttonimg">
               <div className="tec-mustread-img3">
@@ -66,7 +66,7 @@ export default function DetailMustRead() {
             </div>
           </div>
         </Grid>
-        <Grid item md="2.8" sm="5.8" xs="12">
+        <Grid item md={2.8} sm={5.8} xs={12}>
           <div className="tec-mustread4">
             <div className="tecmust-buttonimg">
               <div className="tec-mustread-img4">

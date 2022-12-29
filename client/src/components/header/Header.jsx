@@ -4,6 +4,11 @@ import Dropdown from "./dropdown/Dropdown";
 import Language from "./dropdown/Language";
 import { useSelector, useDispatch } from "react-redux";
 import { logout, reset } from "../../features/auth/authSlice";
+import LogoutIcon from "@mui/icons-material/Logout";
+import HouseIcon from "@mui/icons-material/House";
+import SearchIcon from "@mui/icons-material/Search";
+import ListIcon from "@mui/icons-material/List";
+import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import "./header.css";
 import {
   AppBar,
@@ -142,7 +147,7 @@ export default function Header() {
                               <h3>{user.username}</h3>
                               <ul>
                                 <DropdownItem
-                                  data={"fa-solid fa-user"}
+                                  data={LogoutIcon}
                                   text={"My Profile"}
                                   pathLink={"/profile"}
                                 />
@@ -153,8 +158,8 @@ export default function Header() {
                                 />
                                 <Toggle />
 
-                                <li className="dropdownItem">
-                                  <i className="fa-solid fa-right-from-bracket"></i>
+                                <li>
+                                  {/* <LogoutIcon className="dropdownItem" /> */}
                                   <button onClick={onLogout}>Logout</button>
                                 </li>
                               </ul>
@@ -169,7 +174,7 @@ export default function Header() {
                               color="white"
                               fontSize={17}
                             >
-                              <i className="fa-solid fa-right-to-bracket"></i>
+                              <LogoutIcon />
                               Login
                             </Typography>
                             {/* <span className="capitalize">Login</span> */}
@@ -195,8 +200,13 @@ export default function Header() {
                   <img src="./images/homeimgs/logo2.png" alt="" />
                 </Link>
                 <Link to="/" className="flex hoverclor navli">
-                  <Typography variant="h6" color="white" fontSize={17}>
-                    <i className="uil uil-home headericon"></i>
+                  <Typography
+                    variant="h6"
+                    color="white"
+                    fontSize={17}
+                    marginBottom={4}
+                  >
+                    <HouseIcon />
                   </Typography>
                   <Typography variant="h6" color="white" fontSize={17}>
                     Home
@@ -205,7 +215,7 @@ export default function Header() {
                 </Link>
                 <Link to="/search" className="flex hoverclor navli">
                   <Typography variant="h6" color="white" fontSize={17}>
-                    <i className="uil uil-search headericon"></i>
+                    <SearchIcon />
                   </Typography>
                   <Typography variant="h6" color="white" fontSize={17}>
                     Search
@@ -219,7 +229,7 @@ export default function Header() {
                 >
                   <div className="flex hoverclor">
                     <Typography variant="h6" color="white" fontSize={17}>
-                      <i className="uil uil-list-ul headericon"></i>
+                      <ListIcon />
                     </Typography>
                     <Typography variant="h6" color="white" fontSize={17}>
                       Menu
@@ -238,7 +248,7 @@ export default function Header() {
 
                 <Link to="/post" className="flex hoverclor navli">
                   <Typography variant="h6" color="white" fontSize={17}>
-                    <i className="uil uil-plus-circle headericon"></i>
+                    <AddCircleOutlineIcon />
                   </Typography>
                   <Typography variant="h6" color="white" fontSize={17}>
                     Post
@@ -249,7 +259,7 @@ export default function Header() {
                 {user !== null && user.isAdmin === true ? (
                   <Link to="/admin" className="flex hoverclor navli">
                     <Typography variant="subtitle1" color="white" fontSize={17}>
-                      <i className="uil uil-user-square headericon"></i>
+                      <SearchIcon />
                     </Typography>
                     <Typography variant="subtitle1" color="white" fontSize={17}>
                       Admin
@@ -348,7 +358,7 @@ export default function Header() {
                           <Toggle />
 
                           <li className="dropdownItem">
-                            <i className="fa-solid fa-right-from-bracket"></i>
+                            <LogoutIcon />{" "}
                             <button onClick={onLogout}>Logout</button>
                           </li>
                         </ul>
@@ -359,7 +369,7 @@ export default function Header() {
                   <>
                     <Link to="/login" className="login">
                       <Typography variant="h6" color="white" fontSize={17}>
-                        <i className="fa-solid fa-right-to-bracket"></i>
+                        <LogoutIcon />
                         Login
                       </Typography>
                       {/* <span className="capitalize">Login</span> */}

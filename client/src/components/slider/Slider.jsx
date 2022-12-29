@@ -39,7 +39,7 @@ export default function Slider() {
           categories.map((cate, index) => {
             return (
               <div className="darkslide" key={index}>
-                <SwiperSlide>
+                <SwiperSlide key={index}>
                   <Link
                     to={cate.catename}
                     className={darkMode ? "main-catwhite" : "main-catblack"}

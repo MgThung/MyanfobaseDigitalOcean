@@ -6,12 +6,14 @@ import SponserContent from "./SponserContent";
 export default function Homelifestyle() {
   return (
     <section className="container LifestyleSect">
-      <Typography variant="h4" fontWeight="bold">Lifestyle News</Typography>
+      <Typography variant="h4" fontWeight="bold" className="popular-title">
+        Lifestyle News
+      </Typography>
       <span className="Lifeline"></span>
       <Box>
         <div id="lifestyles-New">
           <Container maxWidth="xl">
-            <Grid container direction="row" spacing={15}>
+            <Grid container direction="row" spacing={3}>
               <Grid item xl={8} lg={8} md={12} sm={12} xs={12}>
                 <Lifestylenew />
               </Grid>
