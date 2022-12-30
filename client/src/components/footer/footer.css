@@ -88,6 +88,16 @@ ul li {
 .TagInfo {
   padding-top: 2rem;
 }
+.footercolor{
+  color: white;
+}
+.footercolor:hover{
+  color: white;
+}
+.footerhover:hover{
+    color: rgb(255, 174, 0);
+
+}
 @media screen and (max-width: 1200px) {
   .fotpayment{
 gap: .2rem;

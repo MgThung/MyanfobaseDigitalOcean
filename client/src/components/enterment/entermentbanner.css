@@ -9,7 +9,7 @@
 }
 .hansoetn {
   width: 100%;
-  height: 520px;
+  height: 32.5rem;
   transition: all 0.5s;
 }
 .hansoetn img {
@@ -34,7 +34,7 @@
 .hansoetn_P p {
   text-transform: capitalize;
   margin: 0;
-  font-size: 15px;
+  font-size: 0.93rem;
   text-align: center;
 }
 .firstetn:hover .hansoetn_P {
@@ -51,7 +51,7 @@
 
 .moneyheist {
   width: 100%;
-  height: 520px;
+  height: 32.5rem;
   transition: all 0.5s;
 }
 .moneyheist img {
@@ -76,7 +76,7 @@
 .moneyheist_P p {
   text-transform: capitalize;
   margin: 0;
-  font-size: 15px;
+  font-size: 0.93rem;
   text-align: center;
 }
 .secetn:hover .moneyheist_P {
@@ -93,7 +93,7 @@
 }
 .jurassic {
   width: 100%;
-  height: 520px;
+  height: 32.5rem;
   transition: all 0.5s;
 }
 .jurassic img {
@@ -118,7 +118,7 @@
 .jurassic_P p {
   text-transform: capitalize;
   margin: 0;
-  font-size: 15px;
+  font-size: 0.93rem;
   text-align: center;
 }
 .thirdetn:hover .jurassic_P {
@@ -142,11 +142,11 @@
 /* .iconRightArrow {
 } */
 .top h4 {
-  font-size: 15px;
+  font-size: 0.93rem;
 }
 .sectop h1 {
-  font-size: 30px;
-  line-height: 38px;
+  font-size: 1.875rem;
+  line-height: 2.375rem;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -161,7 +161,7 @@ ul {
 
 .tec {
   /* position: relative; */
-  font-size: 14px;
+  font-size: 0.875rem;
   margin: 10px 15px 10px 0;
   padding: 4px 8px 5px 8px;
   background-color: #262e67;
@@ -178,11 +178,11 @@ ul {
 .para {
   /* padding-right: 280px; */
   font-family: "Open Sans", "Open Sans Regular", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: italic;
-  line-height: 26px;
+  line-height: 1.625rem;
   color: #777;
-  margin-top: 18px;
+  margin-top: 1.125rem;
 }
 .enter {
   padding-top: 6rem;
@@ -192,10 +192,10 @@ ul {
     display: none;
   }
   .hansoetn {
-    height: 450px;
+    height: 28.125rem;
   }
   .moneyheist {
-    height: 450px;
+    height: 28.125rem;
   }
   .css-ewqgs-MuiGrid-root {
     gap: 1rem;

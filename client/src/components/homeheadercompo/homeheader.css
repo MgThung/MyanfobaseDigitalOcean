@@ -67,7 +67,7 @@
 #searchinput {
   margin-top: 1.5rem;
   padding: 0.6rem 30rem 0.6rem 2rem;
-  border-radius: 50px;
+  border-radius: 3.1rem;
   max-width: 1600px;
 }
 .search-banner {
@@ -85,7 +85,7 @@
 }
 .banner-botton {
   position: absolute;
-  bottom: 62px;
+  bottom: 3.8rem;
   right: -321px;
 }
 .banner-botton h2 {
@@ -114,7 +114,7 @@
 } */
 .popular-now-line {
   display: block;
-  width: 185px;
+  width: 11.5rem;
   height: 2px;
   background-color: #f18510;
   margin-bottom: 1rem;
@@ -138,7 +138,7 @@
 }
 
 .popular-bignew h4 {
-  font-size: 25px;
+  font-size: 1.56rem;
   margin-top: 0.5rem;
 }
 .popular-secnew h4,
@@ -175,7 +175,7 @@
   padding-top: 1rem;
   box-shadow: inset -11px -103px 52px -29px rgb(14 13 13 / 81%);
   padding-bottom: 1rem;
-  padding-left: 20px;
+  padding-left: 1.25rem;
 }
 
 .popular-bignew p {
@@ -191,7 +191,7 @@
   padding-top: 1rem;
   box-shadow: inset 5px -134px 56px -77px rgb(14 13 13 / 81%);
   padding-bottom: 1rem;
-  padding-left: 8px;
+  padding-left: 0.5rem;
 }
 .popularsec-bg {
   width: 100%;
@@ -262,7 +262,7 @@
   padding-top: 0.5rem;
   box-shadow: inset 5px -134px 56px -77px rgb(14 13 13 / 81%);
   padding-bottom: 0.5rem;
-  padding-left: 8px;
+  padding-left: 0.5rem;
 }
 .popular-thirdnew p {
   color: white;
@@ -278,7 +278,7 @@
   padding-top: 0.5rem;
   box-shadow: inset 5px -134px 56px -77px rgb(14 13 13 / 81%);
   padding-bottom: 0.5rem;
-  padding-left: 8px;
+  padding-left: 0.5rem;
 }
 .popular-fouthnew p {
   color: white;
@@ -294,7 +294,7 @@
 }
 
 .sec-grid {
-  padding-top: 8px;
+  padding-top: 0.5rem;
 }
 .sec-grid .secGrid2ndphoto {
   position: relative;
