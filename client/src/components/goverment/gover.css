@@ -25,11 +25,11 @@
   transform: translate(-50%, -50%);
   color: #fff;
   width: 100%;
-  padding: 15px;
+  padding: 0.93rem;
   /* text-align: center; */
 }
 .t-content p {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 .ban-travel:hover .t-info {
   opacity: 0.8;
@@ -42,8 +42,8 @@
   padding-top: 0rem;
 }
 .travel-main h1 {
-  font-size: 30px;
-  line-height: 38px;
+  font-size: 1.875rem;
+  line-height: 2.375rem;
   font-weight: 700;
   text-transform: uppercase;
 }

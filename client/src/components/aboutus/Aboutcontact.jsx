@@ -28,7 +28,25 @@ export default function Aboutcontact() {
             <textarea placeholder="adress< ^ ~ ^ >"></textarea>
           </div>
         </div>
-        <buttom className="button_contactus btnlast">Contact Us</buttom>
+        <button
+          onClick={() => onDialog(false)}
+          style={{
+            // marginLeft: "40px",
+            // margin: "auto",
+            border: "1px solid #000",
+            borderRadius: "10px",
+            color: "rgb(4, 55, 99)",
+            background: "rgb(238, 239, 245)",
+            fontWeight: "800",
+            transition: "all 0.5s ease-in-out",
+            padding: "0.5rem 1rem",
+            // marginTop: "35px",
+          }}
+         
+        >
+          Contact 
+        </button>
+        {/* <buttom className="button_contactus btnlast">Contact Us</buttom> */}
       </div>
 
       <div className="map">
