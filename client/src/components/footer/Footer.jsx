@@ -44,7 +44,10 @@ export default function Footer() {
                         <ForwardToInboxIcon />
                       </Grid>
                       <Grid item>
-                        <a href="mailto:myanfobase@gmail.com">
+                        <a
+                          className="footercolor"
+                          href="mailto:myanfobase@gmail.com"
+                        >
                           myanfobase@gmail.com
                         </a>
                       </Grid>
@@ -56,7 +59,9 @@ export default function Footer() {
                         <PhoneForwardedIcon />
                       </Grid>
                       <Grid item>
-                        <a href="tele:0925252525">0933434334</a>
+                        <a className="footercolor" href="tele:0925252525">
+                          0933434334
+                        </a>
                       </Grid>
                     </Grid>
                   </Box>
@@ -81,32 +86,62 @@ export default function Footer() {
                     <h4>Category</h4>
                   </Box>
                   <Box p={0.5}>
-                    <Link href="/entertainment" color="white" underline="hover">
+                    <Link
+                      className="footerhover"
+                      color="white"
+                      href="/entertainment"
+                      underline="none"
+                    >
                       entertainment
                     </Link>
                   </Box>
                   <Box p={0.5}>
-                    <Link href="/business" color="white" underline="hover">
+                    <Link
+                      className="footerhover"
+                      href="/business"
+                      color="white"
+                      underline="none"
+                    >
                       business
                     </Link>
                   </Box>
                   <Box p={0.5}>
-                    <Link href="/government" color="white" underline="hover">
+                    <Link
+                      className="footerhover"
+                      href="/government"
+                      color="white"
+                      underline="none"
+                    >
                       government
                     </Link>
                   </Box>
                   <Box p={0.5}>
-                    <Link href="/sports" color="white" underline="hover">
+                    <Link
+                      className="footerhover"
+                      href="/sports"
+                      color="white"
+                      underline="none"
+                    >
                       sport
                     </Link>
                   </Box>
                   <Box p={0.5}>
-                    <Link href="/health" color="white" underline="hover">
+                    <Link
+                      className="footerhover"
+                      href="/health"
+                      color="white"
+                      underline="none"
+                    >
                       health
                     </Link>
                   </Box>
                   <Box p={0.5}>
-                    <Link href="/lifestyle" color="white" underline="hover">
+                    <Link
+                      className="footerhover"
+                      href="/lifestyle"
+                      color="white"
+                      underline="none"
+                    >
                       lifestyle
                     </Link>
                   </Box>
@@ -116,27 +151,52 @@ export default function Footer() {
                     <h4>About</h4>
                   </Box>
                   <Box p={0.5}>
-                    <Link href="/aboutus" color="white" underline="hover">
+                    <Link
+                      className="footerhover"
+                      href="/aboutus"
+                      color="white"
+                      underline="none"
+                    >
                       About Us
                     </Link>
                   </Box>
                   <Box p={0.5}>
-                    <Link href="/Science" color="white" underline="hover">
+                    <Link
+                      className="footerhover"
+                      href="/Science"
+                      color="white"
+                      underline="none"
+                    >
                       Science
                     </Link>
                   </Box>
                   <Box p={0.5}>
-                    <Link href="/Software" color="white" underline="hover">
+                    <Link
+                      className="footerhover"
+                      href="/Software"
+                      color="white"
+                      underline="none"
+                    >
                       Software
                     </Link>
                   </Box>
                   <Box p={0.5}>
-                    <Link href="/Computer" color="white" underline="hover">
+                    <Link
+                      className="footerhover"
+                      href="/Computer"
+                      color="white"
+                      underline="none"
+                    >
                       Computer
                     </Link>
                   </Box>
                   <Box p={0.5}>
-                    <Link href="/Gamming" color="white" underline="hover">
+                    <Link
+                      className="footerhover"
+                      href="/Gamming"
+                      color="white"
+                      underline="none"
+                    >
                       Gamming
                     </Link>
                   </Box>
@@ -151,7 +211,7 @@ export default function Footer() {
                         <FacebookIcon />
                       </Grid>
                       <Grid item>
-                        <span>Facebook</span>
+                        <span className="footerhover">Facebook</span>
                       </Grid>
                     </Grid>
                   </Box>
@@ -161,7 +221,7 @@ export default function Footer() {
                         <InstagramIcon />
                       </Grid>
                       <Grid item>
-                        <span>Instagram</span>
+                        <span className="footerhover">Instagram</span>
                       </Grid>
                     </Grid>
                   </Box>
@@ -171,7 +231,7 @@ export default function Footer() {
                         <TwitterIcon />
                       </Grid>
                       <Grid item>
-                        <span>Twitter</span>
+                        <span className="footerhover">Twitter</span>
                       </Grid>
                     </Grid>
                   </Box>
@@ -181,7 +241,7 @@ export default function Footer() {
                         <YouTubeIcon />
                       </Grid>
                       <Grid item>
-                        <span>Youtube</span>
+                        <span className="footerhover">Youtube</span>
                       </Grid>
                     </Grid>
                   </Box>

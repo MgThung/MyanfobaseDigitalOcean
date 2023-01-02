@@ -12,7 +12,7 @@
   border-radius: 50%;
 }
 .lifestyles h1 {
-  font-size: 15px;
+  font-size: 0.93rem;
   border-bottom: #f18510 3px solid;
 
   margin-right: 25rem;
@@ -24,7 +24,7 @@
   padding: 15px 0;
 }
 .profileName1 {
-  font-size: 15px;
+  font-size: 0.93rem;
   font-weight: 500;
   color: red;
   margin: 0 25px 0 10px;
@@ -42,14 +42,14 @@
 }
 .Lifeline {
   display: block;
-  width: 205px;
+  width: 13.75rem;
   height: 2px;
   background-color: #f18510;
   margin-bottom: 1rem;
 }
 .Lifeline1 {
   display: block;
-  width: 230px;
+  width: 11.875rem;
   height: 2px;
   background-color: #f18510;
   margin-bottom: 1rem;

@@ -81,7 +81,7 @@ export default function Aboutbanner() {
             of the person being quoted to make the message feel more relatable
             to the target audience.
           </p>
-          <buttom className="about btnlast">Contact Us</buttom>
+          {/* <buttom className="about btnlast">Contact Us</buttom> */}
         </div>
       </div>
     </div>
