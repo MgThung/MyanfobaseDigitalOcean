@@ -10,6 +10,7 @@ import { FiLock, FiMail } from "react-icons/fi";
 import { Stack, TextField } from "@mui/material";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import VisibilityIcon from "@mui/icons-material/Visibility";
+import SinginInput from "./singinInput"
 
 const ErrorShow = (prop) => {
   return (
@@ -32,6 +33,28 @@ const LoginCompo = () => {
 
   const [show, setShow] = useState(false);
   const [comfirmpwshow, setComfirmpwshow] = useState(false);
+  
+
+  const singinInputs = [
+    {
+      id: 1,
+      type: "text",
+      name: "username",
+      placeholder: "Username",
+      pattern: "^[a-zA-Z0-9 ]{3,16}$",
+      errorMessage:
+        "Username should be 3-16 characters and shouldn't include any special character!",
+      required: true,
+    },
+    {
+      id: 2,
+      type: "email",
+      name: "Email",
+      placeholder: "email",
+      errorMessage: "It should be a vaild email address!",
+      required: true,
+    },
+  ];
 
   const handleShow = () => {
     setShow(!show);
@@ -86,7 +109,7 @@ const LoginCompo = () => {
 
     if (password1ref.current.value !== confirmpasref.current.value) {
       toast.error("Passwords do not match");
-    } else {
+    }  else {
       const formData = new FormData();
       formData.append("username", usernameref.current.value);
       formData.append("email", emaileref.current.value);
@@ -102,6 +125,7 @@ const LoginCompo = () => {
         toast.success("Your Account successfully created");
       });
     }
+
   };
   /* login data */
   const [loginData, setLoginData] = useState({
@@ -206,28 +230,24 @@ const LoginCompo = () => {
             {/* <!-- for sign up --> */}
             <form action="" className="sign-up-form" onSubmit={onSubmit}>
               <h2 className="titlt">Sign Up</h2>
-              <div className="input-field">
-                <i className="fas fa-user"></i>
 
-                <input
-                  type="text"
-                  pattern="^[a-zA-Z0-9 ]{3,16}$"
-                  placeholder="Username"
-                  name="username"
-                  id="username"
-                  required
-                  focused={focused.toString()}
-                  onBlur={handleFocus}
-                  ref={usernameref}
-                  // onChange={onChange}
-                />
-                <span className="msgforUsername">
-                  Username should be 3-16 characters and shouldn't include any
-                  special character!
-                </span>
-              </div>
-              
-              <div className="input-field">
+              {singinInputs.map((input, index) => (
+                <div className="input-field" key={index}>
+                  <i className="fas fa-user"></i>
+
+                  <SinginInput
+                    key={input.id}
+                    {...input}
+                 
+                    id="username"    
+                    ref={usernameref}
+                    // onChange={onChange}
+                  />
+                  
+                </div>
+              ))}
+
+              {/* <div className="input-field">
                 <i className="fas fa-envelope"></i>
                 <input
                   type="email"
@@ -244,7 +264,8 @@ const LoginCompo = () => {
                 <span className="msgforEmail">
                   It should be a vaild email address!
                 </span>
-              </div>
+              </div> */}
+
               <div className="input-field">
                 <i className="fas fa-lock"></i>
                 <input
@@ -253,7 +274,6 @@ const LoginCompo = () => {
                   placeholder="Password"
                   name="password"
                   pattern="^(?=.*[a-zA-Z])(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{8,20}"
-                  value={password}
                   required
                   ref={password1ref}
                   focused={focused.toString()}
@@ -264,8 +284,8 @@ const LoginCompo = () => {
                   {show ? <VisibilityOffIcon /> : <VisibilityIcon />}
                 </label>
                 <span className="msgforPassword">
-                  at least 8-20 characters and include 1
-                  letter, 1 number and 1 special character!
+                  at least 8-20 characters and include 1 letter, 1 number and 1
+                  special character!
                 </span>
               </div>
               <div className="input-field">

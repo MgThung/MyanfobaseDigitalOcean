@@ -85,8 +85,8 @@ form.sign-up-form {
   background-color: #e7dfdf;
   margin: 10px 0;
   border-radius: 55px;
-  display: grid;
-  grid-template-columns: 15% 85%;
+  /* display: grid;
+  grid-template-columns: 15% 85%; */
   padding: 0 0.4rem;
 }
 
@@ -429,7 +429,7 @@ form.sign-up-form {
 
 /* chue  */
 
-.input-field .singupusermsg {
+.input-field span {
   padding: 3px 0px 3px 10px;
   color: red;
   width: 700px;
@@ -442,7 +442,31 @@ form.sign-up-form {
 .input-field input:invalid[focused="true"] {
   border: none;
 }
-.input-field .msgforUsername {
+.singinInputs span {
+  padding: 3px 0px 3px 10px;
+  color: red;
+  width: 700px;
+  display: none;
+}
+.singinInputs input:invalid[focused="true"] ~ span {
+  display: block;
+}
+
+.singinInputs input:invalid[focused="true"] {
+  border: none;
+}
+
+.singinInputs input {
+  max-width: 380px;
+  width: 100%;
+  height: 55px;
+  background-color: #e7dfdf;
+  margin: 10px 0;
+  border-radius: 55px;
+  
+  padding-left: 2rem;
+}
+/* .input-field .msgforUsername {
   padding: 3px 0px 3px 10px;
   color: red;
   width: 700px;
@@ -465,5 +489,5 @@ form.sign-up-form {
   color: red;
   width: 700px;
   display: none;
-}
+} */
 
