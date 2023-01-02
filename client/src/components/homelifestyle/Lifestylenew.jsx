@@ -86,7 +86,7 @@ export default function Lifestylenew() {
                         </span>
                       </div>
 
-                      <p>{getCateData[0].description.substring(0, 160)}...</p>
+                      <p>{getCateData[0].description.substring(0, 650)}...</p>
                     </div>
                   </div>
                 </div>
@@ -94,7 +94,7 @@ export default function Lifestylenew() {
               <Grid item lg={6} xs={12}>
                 <div className="honey">
                   {getCateData.length !== 0 ? (
-                    getCateData.slice(1, 4).map((data, index) => {
+                    getCateData.slice(1, 6).map((data, index) => {
                       return (
                         <Box maxWidth="xl" key={index}>
                           <div className="honey-1">

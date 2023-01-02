@@ -18,14 +18,14 @@ const HomeHeader = () => {
           <div className="home-banner-detail">
             <Typography
               variant="h1"
-              fontFamily="Merriweather"
+              fontFamily="Heebo"
               fontWeight="bold"
               sx={{
                 fontSize: {
                   xs: "30px",
                   sm: "50px",
                   md: "60px",
-                  lg: "70px",
+                  lg: "85px",
                 },
               }}
             >
@@ -72,7 +72,7 @@ const HomeHeader = () => {
           <Popularslider />
         </div> */}
       </section>
-      {/* <PopularHome /> */}
+      <PopularHome />
     </>
   );
 };

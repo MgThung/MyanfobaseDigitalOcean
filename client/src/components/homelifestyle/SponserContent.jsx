@@ -5,7 +5,7 @@ import NotificationsActiveIcon from "@mui/icons-material/NotificationsActive";
 export default function SponserContent() {
   return (
     <div className="sponsered">
-      <h4>Sponsered Content</h4>
+      <h3>Sponsered Content</h3>
       <span className="Lifeline1"></span>
 
       <div className="sponsered-1">
