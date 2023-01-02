@@ -17,8 +17,7 @@ export default function Aboutcontact() {
 
   const formSubmit = (event) => {
     event.preventDefault();
-    console.log("form current email value", emailref.current.value);
-    console.log("message current", messref.current.value);
+
     if (
       emailref.current.value.length === 0 ||
       messref.current.value.length === 0

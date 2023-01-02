@@ -116,7 +116,7 @@ export default function Aboutbody() {
                 <a className="githiub">
                   <i className="uil uil-github"></i>
                 </a>
-
+              
                 <div className="fullstack">Frontend Developer</div>
               </div>
             </div>
