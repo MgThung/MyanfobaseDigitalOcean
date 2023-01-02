@@ -80,7 +80,11 @@ export default function Footer() {
                     </Grid>
                   </Box>
                 </Grid>
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> master
                 <Grid item xs={12} sm={6} md={3}>
                   <Box p={0.5}>
                     <h4>Category</h4>
