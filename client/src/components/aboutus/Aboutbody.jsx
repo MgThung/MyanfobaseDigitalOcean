@@ -1,7 +1,6 @@
 import React from "react";
 import "./about.css";
-import { Grid,Box } from "@mui/material";
-
+import { Grid, Box } from "@mui/material";
 
 export default function Aboutbody() {
   return (
@@ -57,15 +56,14 @@ export default function Aboutbody() {
       </div>
 
       <div className="team_member">
-        <p className="developer">Expart Developer</p>
         <div className="header_leader">
           <h3 className="first_letter">Our</h3>
-          <h3 className="sec_letter">team member</h3>
+          <h3 className="sec_letter">team members</h3>
         </div>
         {/* <div className="ourmember"> */}
         <Grid className="ourmember" container my={8}>
           {/* <div className="kzh"> */}
-          <Grid className="kzh" item md>
+          <Grid className="ksh" item md>
             <div>
               <img
                 className="secpart_Firphoto"
@@ -89,7 +87,7 @@ export default function Aboutbody() {
                   <i className="uil uil-github"></i>
                 </a>
 
-                <div className="fullstack">full-stuck developer</div>
+                <div className="fullstack">Full-Stack Developer</div>
               </div>
             </div>
           </Grid>
@@ -118,8 +116,8 @@ export default function Aboutbody() {
                 <a className="githiub">
                   <i className="uil uil-github"></i>
                 </a>
-
-                <div className="fullstack">full-stuck developer</div>
+              
+                <div className="fullstack">Frontend Developer</div>
               </div>
             </div>
           </Grid>
@@ -147,7 +145,7 @@ export default function Aboutbody() {
                   <i className="uil uil-github"></i>
                 </a>
 
-                <div className="fullstack">full-stuck developer</div>
+                <div className="fullstack">Frontend Developer</div>
               </div>
             </div>
           </Grid>
@@ -175,7 +173,7 @@ export default function Aboutbody() {
                   <i className="uil uil-github"></i>
                 </a>
 
-                <div className="fullstack">full-stuck developer</div>
+                <div className="fullstack">Frontend Developer</div>
               </div>
             </div>
             {/* </div> */}

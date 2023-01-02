@@ -133,11 +133,12 @@ export default function CategoryCount() {
                       <div>
                         {/* {console.log("cate id", cate._id)} */}
                         {images.map((data, index) => {
-                          if (data.id == cate._id) return (
-                            <div key={index} className="cate-image">
-                              <img src={data.cateimage} alt="" />
-                            </div>
-                          );
+                          if (data.id == cate._id)
+                            return (
+                              <div key={index} className="cate-image">
+                                <img src={data.cateimage} alt="" />
+                              </div>
+                            );
                         })}
                       </div>
 

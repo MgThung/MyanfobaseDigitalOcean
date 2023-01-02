@@ -208,11 +208,13 @@ function ProRight() {
                     {/* <Paginate /> */}
                   </div>
                 ) : (
-                  " "
+                  ""
                 )
               )
             ) : (
-              <h3>You have not set any post</h3>
+              <div>
+                <h3>You have not set any post</h3>
+              </div>
             )}
           </div>
         </div>

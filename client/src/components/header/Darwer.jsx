@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, memo } from "react";
 import { Link } from "react-router-dom";
 import {
   Drawer,
@@ -54,7 +54,7 @@ const DrawerComp = () => {
               </ListItemButton>
             </ListItem>
           </Link>
-
+          
           <Link to="/search" className=" hoverclor navli">
             <ListItem sx={{ padding: "0 16px" }}>
               <ListItemButton>
@@ -155,4 +155,4 @@ const DrawerComp = () => {
   );
 };
 
-export default DrawerComp;
+export default memo(DrawerComp);

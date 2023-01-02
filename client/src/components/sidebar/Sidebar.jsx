@@ -227,14 +227,14 @@ export default function Sidebar(props) {
                   );
                 }
               })}
+
+              {/* <Paginate /> */}
               <Pagination
                 count={renderPageNumbers.length}
                 onChange={(event, value) => setcurrentPage(value)}
                 color="primary"
                 variant="outlined"
               ></Pagination>
-
-              {/* <Paginate /> */}
             </div>
           </div>
         </>

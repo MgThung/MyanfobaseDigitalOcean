@@ -1,4 +1,4 @@
-import React from "react";
+import { React, memo } from "react";
 import "./about.css";
 
 export default function Aboutbanner() {
@@ -87,5 +87,3 @@ export default function Aboutbanner() {
     </div>
   );
 }
-
-

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback, memo } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Dropdown from "./dropdown/Dropdown";
 import Language from "./dropdown/Language";
@@ -26,7 +26,7 @@ import Toggle from "../toggle/Toggle";
 import { getCate } from "../../features/categories/categorySlice";
 import DrawerComp from "./Darwer";
 
-export default function Header() {
+export default memo(function Header() {
   const [dropdown, setDropdown] = useState(false);
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -38,11 +38,11 @@ export default function Header() {
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
   // console.log(isMatch);
 
-  const onLogout = () => {
+  const onLogout = useCallback(() => {
     dispatch(logout());
     dispatch(reset());
     navigate("/");
-  };
+  }, [dispatch, navigate]);
 
   const { categories, isLoading, isError, message } = useSelector(
     (state) => state.categories
@@ -69,6 +69,7 @@ export default function Header() {
                 my={2}
                 sx={{ margin: "auto", alignItems: "center", height: "6rem" }}
               >
+                {console.log("header runder time")}
                 <Grid item xs={5} sm={8} className="headerGrid">
                   <Link to="/" className="nav-logo">
                     <img src="./images/homeimgs/logo2.png" alt="" />
@@ -383,14 +384,15 @@ export default function Header() {
       </AppBar>
     </>
   );
-}
+});
 
-function DropdownItem(props) {
+const DropdownItem = memo((props) => {
   return (
     <li className="dropdownItem">
       {/* <img src={props.img}></img> */}
       <i className={props.data}></i>
+
       <Link to={`${props.pathLink}`}>{props.text}</Link>
     </li>
   );
-}
+});

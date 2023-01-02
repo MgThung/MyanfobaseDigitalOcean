@@ -1,52 +1,88 @@
-import React from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "./about.css";
+const Result = () => {
+  return (
+    <p className="notifysms">
+      Your message has been successfully sent. Thanks for your informations...
+    </p>
+  );
+};
 
 export default function Aboutcontact() {
+  const form = useRef(null);
+  const emailref = useRef(null);
+  const messref = useRef(null);
+  const [result, showResult] = useState(false);
+
+  const formSubmit = (event) => {
+    event.preventDefault();
+
+    if (
+      emailref.current.value.length === 0 ||
+      messref.current.value.length === 0
+    ) {
+      alert("please fill all data");
+    } else {
+      emailjs
+        .sendForm(
+          "gmail",
+          "template_wskoggv",
+          form.current,
+          "X2g6jwrEyUhbIzoQW"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+
+      emailref.current.value = "";
+      messref.current.value = "";
+      showResult(true);
+    }
+
+    //hide result
+    setTimeout(() => {
+      showResult(false);
+    }, 7000);
+  };
+
   return (
     <div className="about_main_contact">
       <div className="abmain_heading">
         <h1>Contact Us</h1>
+        <form ref={form} onSubmit={formSubmit}>
+          <div className="about_border_contact">
+            <p>
+              At vero eos et accusanus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum deleniti atque
+            </p>
 
-        <div className="about_border_contact">
-          <p>
-            At vero eos et accusanus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium voluptatum deleniti atque
-          </p>
-          <div className="about_testform">
-            <textarea placeholder="email< ^ ~ ^ >"></textarea>
+            <div className="about_testform">
+              <input
+                ref={emailref}
+                type="email"
+                name="email"
+                placeholder="email< ^ ~ ^ >"
+              ></input>
+            </div>
+
+            <div className="text">
+              <textarea
+                ref={messref}
+                type="text"
+                name="message"
+                placeholder="adress< ^ ~ ^ >"
+              ></textarea>
+            </div>
           </div>
-
-          <div className="text">
-            {/* <textarea
-              name=""
-              id=""
-              colse="100"
-              rows="8"
-              placeholder="Your Comment"
-            ></textarea> */}
-
-            <textarea placeholder="adress< ^ ~ ^ >"></textarea>
-          </div>
-        </div>
-        <button
-          onClick={() => onDialog(false)}
-          style={{
-            // marginLeft: "40px",
-            // margin: "auto",
-            border: "1px solid #000",
-            borderRadius: "10px",
-            color: "rgb(4, 55, 99)",
-            background: "rgb(238, 239, 245)",
-            fontWeight: "800",
-            transition: "all 0.5s ease-in-out",
-            padding: "0.5rem 1rem",
-            // marginTop: "35px",
-          }}
-         
-        >
-          Contact 
-        </button>
-        {/* <buttom className="button_contactus btnlast">Contact Us</buttom> */}
+          <button className="contactbtn">Contact</button>
+          <div className="row">{result ? <Result /> : ""}</div>
+        </form>
       </div>
 
       <div className="map">
@@ -57,7 +93,7 @@ export default function Aboutcontact() {
           // style="border:0;"
           // allowfullscreen=""
           // loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
     </div>

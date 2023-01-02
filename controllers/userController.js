@@ -55,6 +55,7 @@ transporter.verify((err, success) => {
 //@route Post/api/users/
 const registerUser = asyncHandler(async (req, res) => {
   let { username, email, password, googleId = "null" } = req.body;
+
   username = username.trim();
   email = email.trim();
   password = password.trim();
@@ -471,7 +472,7 @@ const updateUser = asyncHandler(async (req, res) => {
       })
     : userDetail.profilePicture[0] === "" ||
       userDetail.profilePicture.length === 0
-    ? console.log("user is the new one")
+    ? console.log("new user is updated without new profile image")
     : userDetail.profilePicture.map(async (data, index) => {
         //for aws pic delete
         return (
@@ -508,12 +509,12 @@ const updateUser = asyncHandler(async (req, res) => {
         dob: dob,
         gender: gender,
         address: address,
-        profilePicture: filesArray ? filesArray : "",
+        profilePicture: filesArray ? filesArray : [],
       },
     }
   );
-  console.log("file array is", filesArray[0].filePath);
-  console.log("file array is", filesArray[0].filePath);
+  // console.log("file array is", filesArray[0].filePath);
+  // console.log("file array is", filesArray[0].filePath);
 
   await PostModel.updateMany(
     { user: id },
