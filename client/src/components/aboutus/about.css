@@ -1,18 +1,6 @@
 .top {
   margin-top: 3rem;
 }
-.about_sec h2 {
-  font-weight: 700;
-  text-transform: uppercase;
-  /* color: #001d46; */
-  color: #9a9a9a;
-  line-height: 1.1em;
-  font-family: "Domine";
-  margin-right: 16rem;
-  font-size: 47px;
-  margin-top: 1rem;
-  padding-bottom: 1rem;
-}
 
 .about_sec_para {
   margin-top: 2rem;
@@ -253,15 +241,24 @@
   color: white;
   margin-top: 20px;
 }
+.fbicon:hover {
+  color: #3b5998 ;
+}
 .googleicon {
   margin-left: 19px;
   font-size: 20px;
   color: white;
 }
+.googleicon:hover{
+  color: #50c7c7;
+}
 .instaicon {
   margin-left: 19px;
   font-size: 20px;
   color: white;
+}
+.instaicon:hover{
+  color:   #cd486b;
 }
 .githiub {
   margin-left: 20px;
