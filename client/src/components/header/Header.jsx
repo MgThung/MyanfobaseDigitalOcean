@@ -209,16 +209,32 @@ export default memo(function Header() {
                   >
                     <HouseIcon />
                   </Typography>
-                  <Typography variant="h6" color="white" fontSize={17}>
+                  <Typography
+                    className="homehome"
+                    variant="h6"
+                    color="white"
+                    fontSize={17}
+                    paddingTop={1}
+                  >
                     Home
                   </Typography>
                   {/* <span className="capitalize">Home</span> */}
                 </Link>
                 <Link to="/search" className="flex hoverclor navli">
-                  <Typography variant="h6" color="white" fontSize={17}>
+                  <Typography
+                    variant="h6"
+                    color="white"
+                    fontSize={17}
+                    marginBottom={4}
+                  >
                     <SearchIcon />
                   </Typography>
-                  <Typography variant="h6" color="white" fontSize={17}>
+                  <Typography
+                    variant="h6"
+                    color="white"
+                    fontSize={17}
+                    paddingTop={0.4}
+                  >
                     Search
                   </Typography>
                   {/* <span className="capitalize">Search</span> */}
@@ -232,7 +248,12 @@ export default memo(function Header() {
                     <Typography variant="h6" color="white" fontSize={17}>
                       <ListIcon />
                     </Typography>
-                    <Typography variant="h6" color="white" fontSize={17}>
+                    <Typography
+                      variant="h6"
+                      color="white"
+                      fontSize={17}
+                      paddingTop={0.3}
+                    >
                       Menu
                     </Typography>
 
@@ -251,7 +272,12 @@ export default memo(function Header() {
                   <Typography variant="h6" color="white" fontSize={17}>
                     <AddCircleOutlineIcon />
                   </Typography>
-                  <Typography variant="h6" color="white" fontSize={17}>
+                  <Typography
+                    variant="h6"
+                    color="white"
+                    fontSize={17}
+                    paddingTop={0.4}
+                  >
                     Post
                   </Typography>
                   {/* <span className="capitalize">Post</span> */}

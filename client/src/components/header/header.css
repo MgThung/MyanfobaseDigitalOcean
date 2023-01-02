@@ -8,6 +8,11 @@
 .nav-logo img {
   width: 100px;
   height: 90px;
+  /* display: block ;
+  object-fit: cover;
+  animation:  2s infinite linear alternate;
+      z-index: 11; */
+
 }
 .headercolor {
   width: 100%;

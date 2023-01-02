@@ -172,8 +172,7 @@ const LoginCompo = () => {
                 <TextField
                   className="singinemail"
                   variant="outlined"
-                  label="Email
-"
+                  label="Email"
                   id="loginemail"
                   name="email"
                   value={loginemail}
