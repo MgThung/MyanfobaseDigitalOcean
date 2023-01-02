@@ -6,7 +6,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import MailIcon from "@mui/icons-material/Mail";
 import PrintIcon from "@mui/icons-material/Print";
 export default function Detailbanner(props) {
-  const postDetail = props.post1Detail;
+  const postDetail = props.postDetail;
   return (
     <div className="bannerSection detailcontainer ">
       {/* <h1>This is the detalil page {detailid.id}</h1> */}
