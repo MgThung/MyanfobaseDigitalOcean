@@ -1,6 +1,10 @@
 import React from "react";
 import "./about.css";
 import { Grid, Box } from "@mui/material";
+import Facebookicon from "@mui/icons-material/Facebook";
+import GoogleIcon from "@mui/icons-material/Google";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 export default function Aboutbody() {
   return (
@@ -75,16 +79,24 @@ export default function Aboutbody() {
               <div className="ourmember_text">
                 <h3>Kyaw Swar htet</h3>
                 <a className="fbicon">
-                  <i className="uil uil-facebook-f"></i>
+                  <Facebookicon
+                    // sx={{
+                    //   paddingTop: "13",
+                    //   marginLeft: "70",
+                    //   fontSize: "20",
+                    //   color: "white",
+                    //   marginTop: "20",
+                    // }}
+                  />
                 </a>
                 <a className="googleicon">
-                  <i className="uil uil-google"></i>
+                  <GoogleIcon />
                 </a>
                 <a className="instaicon">
-                  <i className="uil uil-instagram"></i>
+                  <InstagramIcon />
                 </a>
                 <a className="githiub">
-                  <i className="uil uil-github"></i>
+                  <GitHubIcon />
                 </a>
 
                 <div className="fullstack">Full-Stack Developer</div>
@@ -105,16 +117,16 @@ export default function Aboutbody() {
               <div className="ourmember_text1">
                 <h3>Chue Wathan Kyaw</h3>
                 <a className="fbicon">
-                  <i className="uil uil-facebook-f"></i>
+                  <Facebookicon />
                 </a>
                 <a className="googleicon">
-                  <i className="uil uil-google"></i>
+                  <GoogleIcon />
                 </a>
                 <a className="instaicon">
-                  <i className="uil uil-instagram"></i>
+                  <InstagramIcon />
                 </a>
                 <a className="githiub">
-                  <i className="uil uil-github"></i>
+                  <GitHubIcon />
                 </a>
               
                 <div className="fullstack">Frontend Developer</div>
@@ -133,16 +145,16 @@ export default function Aboutbody() {
               <div className="ourmember_text2">
                 <h3>Thaung Thike Htoo</h3>
                 <a className="fbicon">
-                  <i className="uil uil-facebook-f"></i>
+                  <Facebookicon />
                 </a>
                 <a className="googleicon">
-                  <i className="uil uil-google"></i>
+                  <GoogleIcon />
                 </a>
                 <a className="instaicon">
-                  <i className="uil uil-instagram"></i>
+                  <InstagramIcon />
                 </a>
                 <a className="githiub">
-                  <i className="uil uil-github"></i>
+                  <GitHubIcon />
                 </a>
 
                 <div className="fullstack">Frontend Developer</div>
@@ -161,16 +173,16 @@ export default function Aboutbody() {
               <div className="ourmember_text3">
                 <h3>Thaw Zin Hlaine</h3>
                 <a className="fbicon">
-                  <i className="uil uil-facebook-f"></i>
+                  <Facebookicon />
                 </a>
                 <a className="googleicon">
-                  <i className="uil uil-google"></i>
+                  <GoogleIcon />
                 </a>
                 <a className="instaicon">
-                  <i className="uil uil-instagram"></i>
+                  <InstagramIcon />
                 </a>
                 <a className="githiub">
-                  <i className="uil uil-github"></i>
+                  <GitHubIcon />
                 </a>
 
                 <div className="fullstack">Frontend Developer</div>
