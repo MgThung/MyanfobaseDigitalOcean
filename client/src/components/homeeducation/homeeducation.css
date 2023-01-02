@@ -9,7 +9,8 @@
   grid-template-columns: 70% 30%;
   gap: 2rem;
 } */
-.titleEducation h2 {
+.titleEducation  {
+font-family: 'Heebo', sans-serif;
   margin-bottom: 0;
   line-height: 1.4 !important;
 }
@@ -18,7 +19,7 @@
 } */
 .titleEducation span.headerline {
   display: block;
-  width: 160px;
+  width: 145px;
   height: 2px;
   background-color: #f18510;
   margin-bottom: 1rem;

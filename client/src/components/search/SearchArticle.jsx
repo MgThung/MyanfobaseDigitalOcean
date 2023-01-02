@@ -1,10 +1,11 @@
 import "./search.css";
 import { Link } from "react-router-dom";
-// import { getMultipleFiles } from "../../data/api";
+import { useSelector, useDispatch } from "react-redux";
 
 import "../post/postform.css";
 import "../post/textform.css";
 import React, { useState, useEffect } from "react";
+import { getPosts } from "../../features/posts/postSlice";
 import {
   Box,
   Card,
@@ -14,43 +15,17 @@ import {
   Grid,
 } from "@mui/material";
 function SearchArticle() {
-  const [multipleFiles, setMultipleFiles] = useState([]);
+  const dispatch = useDispatch();
   const [searchTerm, setSearchTerm] = useState("");
-
-  // const getMultipleFilesList = async () => {
-  //   try {
-  //     const fileslist = await getMultipleFiles();
-  //     setMultipleFiles(fileslist);
-  //     console.log(multipleFiles);
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
-  const getAlldata = async () => {
-    const reqdata = await fetch(
-      // `https://desolate-hollows-16342.herokuapp.com/api/postcate/${category}`
-      // `http://localhost:8080/api/postcate/${category}`
-      `https://www.myanfobase.com/api/post`
-    );
-    const res = await reqdata.json(); // JSON.parse(json);
-    //   console.log("res data is ", res);
-    return res;
-  };
+  const { posts, isLoading, isError, message } = useSelector(
+    (state) => state.posts
+  );
   useEffect(() => {
-    getAlldata().then((data) => {
-      setMultipleFiles(data);
-    });
+    if (isError) {
+      console.log(message);
+    }
+    dispatch(getPosts());
   }, []);
-
-  // const findOneByimage = function (image, done) {
-  //   file.findOne({ files: { $all: [image] } }, (error, result) => {
-  //     if (error) {
-  //       console.log(error)
-  //     } else {
-  //       done(null, result)
-  //     }
-  //   })
-  // };
 
   return (
     <>
@@ -76,48 +51,49 @@ function SearchArticle() {
       </div>
       <div className="container-fluid">
         <div className="searchbox container ">
-          {multipleFiles
-            .filter((val) => {
-              if (searchTerm === "") {
-                return val;
-              } else if (
-                val.title.toLowerCase().includes(searchTerm.toLowerCase())
-              ) {
-                return val;
-              }
-            })
-            .map((element, index) => (
-              <Box width="95%" className="cardbox" key={element._id}>
-                <Card className="carddesign">
-                  <CardMedia
-                    className="cardImg"
-                    component="img"
-                    sx={{
-                      heigh: {
-                        xs: "9rem",
-                        sm: "10rem",
-                        md: "11rem",
-                      },
-                    }}
-                    image={element.files[0].filePath}
-                  />
-                  <CardContent className="cardInfo" component="div">
-                    <Typography
-                      gutterBottom
-                      variant="h5"
+          {posts &&
+            posts
+              .filter((val) => {
+                if (searchTerm === "") {
+                  return val;
+                } else if (
+                  val.title.toLowerCase().includes(searchTerm.toLowerCase())
+                ) {
+                  return val;
+                }
+              })
+              .map((element, index) => (
+                <Box width="95%" className="cardbox" key={element._id}>
+                  <Card className="carddesign">
+                    <CardMedia
+                      className="cardImg"
+                      component="img"
                       sx={{
-                        fontSize: {
-                          xs: "0.7rem",
-                          sm: "0.8rem",
-                          md: "1rem",
-                          lg: "1.1rem",
+                        heigh: {
+                          xs: "9rem",
+                          sm: "10rem",
+                          md: "11rem",
                         },
                       }}
-                      component="div"
-                    >
-                      {element.title.substring(0, 40)}...
-                    </Typography>
-                    {/* <Typography
+                      image={element.files[0].filePath}
+                    />
+                    <CardContent className="cardInfo" component="div">
+                      <Typography
+                        gutterBottom
+                        variant="h5"
+                        sx={{
+                          fontSize: {
+                            xs: "0.7rem",
+                            sm: "0.8rem",
+                            md: "1rem",
+                            lg: "1.1rem",
+                          },
+                        }}
+                        component="div"
+                      >
+                        {element.title.substring(0, 40)}...
+                      </Typography>
+                      {/* <Typography
                       variant="body2"
                       sx={{
                         fontSize: {
@@ -130,10 +106,10 @@ function SearchArticle() {
                     >
                       {element.description.substring(0, 40)}...
                     </Typography> */}
-                  </CardContent>
-                </Card>
-              </Box>
-            ))}
+                    </CardContent>
+                  </Card>
+                </Box>
+              ))}
         </div>
       </div>
     </>

@@ -1,4 +1,4 @@
-import React from "react";
+import { React, memo } from "react";
 import "./about.css";
 import { Box, Breadcrumbs, Typography, Stack } from "@mui/material";
 

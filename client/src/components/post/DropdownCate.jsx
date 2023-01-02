@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import Axios from "axios";
 import "./dropdowncate.css";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 export default function DropdownCate({
   selected,
@@ -28,7 +29,7 @@ export default function DropdownCate({
       <div>
         <div className="dropdown-btn" onClick={(e) => setIsActive(!isActive)}>
           {selected}
-          <i class="fa-solid fa-square-caret-down"></i>
+          <ArrowDropDownIcon />
         </div>
         {isActive && (
           <div className="dropdown-content">

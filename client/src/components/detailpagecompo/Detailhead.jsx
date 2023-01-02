@@ -75,9 +75,9 @@ export default function Detailhead(props) {
             {user && user ? (
               <SavePost getCateData={postDetail} />
             ) : (
-                <Link to="/login">
-                  <BookmarkBorderIcon/>
-                  to save this post login here!
+              <Link to="/login">
+                <BookmarkBorderIcon />
+                to save this post login here!
               </Link>
             )}
           </div>

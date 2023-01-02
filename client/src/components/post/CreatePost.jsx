@@ -7,6 +7,7 @@ import "./textform.css";
 import "./postform.css";
 import "./dropdowncate.css";
 import { createPost } from "../../features/posts/postSlice";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 export default function CreatePost(props) {
   const [input, setInput] = useState({
@@ -95,13 +96,14 @@ export default function CreatePost(props) {
               onClick={(e) => setIsActive(!isActive)}
             >
               {input.cateName}
-              <i class="fa-solid fa-square-caret-down"></i>
+              <ArrowDropDownIcon/>
             </div>
             {isActive && (
               <div className="dropdown-content">
                 {categories &&
-                  categories.map((option,index) => (
-                    <div key={index}
+                  categories.map((option, index) => (
+                    <div
+                      key={index}
                       onClick={(e) =>
                         onChangeCateId(option._id)(
                           onChangeCate(option.catename)(setIsActive(false))

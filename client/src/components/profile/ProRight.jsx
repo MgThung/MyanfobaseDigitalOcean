@@ -8,7 +8,8 @@ import "../../App.css";
 import Moment from "react-moment";
 import Spinner from "../login/Spinner";
 import { Grid } from "@mui/material";
-import ReactReadMoreReadLess from "react-read-more-read-less";
+import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
+import ModeEditIcon from "@mui/icons-material/ModeEdit";
 import {
   deletePost,
   editPost,
@@ -179,7 +180,7 @@ function ProRight() {
                                   onClick={() => handleDelete(element._id)}
                                   className="DeleteP "
                                 >
-                                  <i className=" uil uil-trash-alt"></i>
+                                  <DeleteForeverIcon/>
                                 </button>
                                 {dialog.isLoading && (
                                   <Dialog
@@ -194,7 +195,7 @@ function ProRight() {
                                 <Link to={`/update/${element._id}`}>
                                   <div className="tooltip1 topdel">Edit</div>
                                   <button className="EditPost">
-                                    <i className=" uil uil-edit"></i>
+                                  <ModeEditIcon/>
                                   </button>
                                 </Link>
                               </div>
@@ -207,11 +208,13 @@ function ProRight() {
                     {/* <Paginate /> */}
                   </div>
                 ) : (
-                  " "
+                  ""
                 )
               )
             ) : (
-              <h3>You have not set any post</h3>
+              <div>
+                <h3>You have not set any post</h3>
+              </div>
             )}
           </div>
         </div>

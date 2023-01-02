@@ -84,7 +84,7 @@
 .about_body_firstphoto {
   position: relative;
   width: 100%;
-height: 97%;
+  height: 97%;
   margin-top: 2rem;
 }
 
@@ -177,7 +177,9 @@ height: 97%;
 }
 .header_leader {
   display: flex;
-  padding-left: 30rem;
+  margin-top: 3.5rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .first_letter {
@@ -196,12 +198,9 @@ height: 97%;
   margin-top: 2rem;
 }
 
-
-
-
-
-.kzh {
+.ksh {
   position: relative;
+  overflow: hidden;
 }
 
 .secpart_Firphoto {
@@ -231,7 +230,7 @@ height: 97%;
   /* margin-left: 48px; */
   font-size: 25px;
   background-color: #001d46;
-  padding-left: 3.5rem;
+  text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -250,20 +249,23 @@ height: 97%;
   font-size: 20px;
   color: white;
 }
-.googleicon{
-  color: #4285F4;
+.googleicon:hover{
+  color: #50c7c7;
 }
 .instaicon {
   margin-left: 19px;
   font-size: 20px;
   color: white;
 }
+.instaicon:hover{
+  color:   #cd486b;
+}
 .githiub {
   margin-left: 20px;
   font-size: 20px;
   color: white;
 }
-.kzh:hover {
+.ksh:hover {
   cursor: pointer;
 }
 .ourmember_text a {
@@ -274,42 +276,41 @@ height: 97%;
 .fullstack {
   visibility: hidden;
   opacity: 0;
-  font-size: 14px;
-  margin-left: 83px;
+  font-size: 15px;
+  text-align: center;
   margin-top: 10px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  font-style: italic;
 }
 
-.kzh:hover .ourmember_overlay {
+.ksh:hover .ourmember_overlay {
   height: 150px;
   /* background-color: #042038; */
   overflow: hidden;
   background: rgb(27, 27, 27, 0.5);
 }
 
-.kzh:hover .ourmember_text a {
+.ksh:hover .ourmember_text a {
   opacity: 1;
   visibility: visible;
 }
-.kzh:hover .fullstack {
+.ksh:hover .fullstack {
   opacity: 1;
   visibility: visible;
+  color: rgb(88, 156, 234) (105, 89, 89);
 }
-
-
-
-
-
 
 .cwtk {
-    margin-left: 1rem;
-
+  margin-left: 1rem;
+  overflow: hidden;
   position: relative;
 }
 
 .secpart_Secphoto {
   width: 100%;
   height: 300px;
-   overflow: hidden;
+  overflow: hidden;
   box-shadow: 2px 2px 10px;
   border-radius: 3px;
   object-fit: cover;
@@ -325,13 +326,12 @@ height: 97%;
   /* background: rgb(27, 27, 27, 0.5); */
   color: #e1e1e1;
   transition: 0.5s;
-
 }
 .ourmember_text1 h3 {
   /* margin-left: 48px; */
   font-size: 25px;
   background-color: #001d46;
-  padding-left: 3.5rem;
+  text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -342,13 +342,6 @@ height: 97%;
   /* overflow: hidden; */
   visibility: hidden;
   opacity: 0;
-}
-.fullstack {
-   visibility: hidden;
-  opacity: 0;
-  font-size: 14px;
-  margin-left: 83px;
-  margin-top: 10px;
 }
 
 .cwtk:hover .ourmember_overlay1 {
@@ -367,18 +360,10 @@ height: 97%;
   visibility: visible;
 }
 
-
-
-
-
-
-
-
-
-
 .thh {
   margin-left: 1rem;
   position: relative;
+  overflow: hidden;
 }
 .secpart_Tphoto {
   width: 100%;
@@ -406,7 +391,7 @@ height: 97%;
   /* margin-left: 48px; */
   font-size: 25px;
   background-color: #001d46;
-  padding-left: 3.5rem;
+  text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -419,15 +404,6 @@ height: 97%;
   visibility: hidden;
   opacity: 0;
 }
-
-/* 
-.fullstack {
-  visibility: hidden;
-  opacity: 0;
-  font-size: 14px;
-  margin-left: 83px;
-  margin-top: 10px;
-} */
 
 .thh:hover .ourmember_overlay2 {
   height: 150px;
@@ -445,22 +421,15 @@ height: 97%;
   visibility: visible;
 }
 
-
-
-
-
-
-
-
-
 .thawthaw {
   margin-left: 1rem;
+  overflow: hidden;
   position: relative;
 }
 .secpart_Fouthphoto {
   width: 100%;
   height: 300px;
-   overflow: hidden;
+  overflow: hidden;
   box-shadow: 2px 2px 10px;
   border-radius: 3px;
   object-fit: cover;
@@ -482,7 +451,7 @@ height: 97%;
   /* margin-left: 48px; */
   font-size: 25px;
   background-color: #001d46;
-  padding-left: 3.5rem;
+  text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -495,7 +464,6 @@ height: 97%;
   visibility: hidden;
   opacity: 0;
 }
-
 
 .thawthaw:hover .ourmember_overlay3 {
   height: 150px;
@@ -538,7 +506,7 @@ height: 97%;
   border-color: #1b1b1b;
 }
 
-.about_testform textarea {
+.about_testform input {
   border: 1px solid #e1e1e1;
   /* padding: 40px 1px; */
   padding: 6px 10px;
@@ -548,7 +516,7 @@ height: 97%;
   margin-bottom: 20px;
 }
 
-.about_testform textarea:hover {
+.about_testform input:hover {
   border-color: #1b1b1b;
 }
 
@@ -571,4 +539,22 @@ height: 97%;
 
 .about {
   margin-left: 9rem;
+}
+.notifysms {
+  color: rgb(219, 7, 177);
+  font-size: 1.2rem;
+  padding: 1rem 0.5rem;
+}
+.contactbtn {
+  border: 1px solid #000;
+  border-radius: 10px;
+  color: rgb(4, 55, 99);
+  background: rgb(238, 239, 245);
+  font-weight: 800;
+  transition: all 0.5s ease-in-out;
+  padding: 0.5rem 1rem;
+}
+.contactbtn:hover {
+  color: rgb(249, 250, 251);
+  background-color: rgb(4, 55, 99);
 }

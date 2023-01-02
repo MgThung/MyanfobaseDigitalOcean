@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, memo } from "react";
 import { Link } from "react-router-dom";
-import { DropdownItems } from "./dropdownItem";
 
 import "./dropdown.css";
 
-export default function Dropdown(props) {
-  const user = props.user;
-  const categories = props.categories;
+const Dropdown = memo((props) => {
+  const { user, categories } = props;
+
   const [dropdown, setDropdown] = useState(false);
 
   return (
@@ -15,7 +14,7 @@ export default function Dropdown(props) {
       onClick={() => setDropdown(!dropdown)}
     >
       {categories && categories.length !== 0 ? (
-        categories.map((item,index) => {
+        categories.map((item, index) => {
           return (
             <li key={item._id} className="catgitems">
               <Link
@@ -48,4 +47,6 @@ export default function Dropdown(props) {
       )}
     </ul>
   );
-}
+});
+
+export default Dropdown;

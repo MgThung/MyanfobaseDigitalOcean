@@ -33,9 +33,9 @@ img {
   color: #00a79d;
 } */
 
-article p::first-letter {
+/* article p::first-letter {
   font-size: 22px;
-}
+} */
 
 /* article p:hover {
   color: #00a79d;

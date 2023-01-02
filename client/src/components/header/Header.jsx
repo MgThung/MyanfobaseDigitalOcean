@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback, memo } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Dropdown from "./dropdown/Dropdown";
 import Language from "./dropdown/Language";
@@ -26,7 +26,7 @@ import Toggle from "../toggle/Toggle";
 import { getCate } from "../../features/categories/categorySlice";
 import DrawerComp from "./Darwer";
 
-export default function Header() {
+export default memo(function Header() {
   const [dropdown, setDropdown] = useState(false);
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -38,11 +38,11 @@ export default function Header() {
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
   // console.log(isMatch);
 
-  const onLogout = () => {
+  const onLogout = useCallback(() => {
     dispatch(logout());
     dispatch(reset());
     navigate("/");
-  };
+  }, [dispatch, navigate]);
 
   const { categories, isLoading, isError, message } = useSelector(
     (state) => state.categories
@@ -69,6 +69,7 @@ export default function Header() {
                 my={2}
                 sx={{ margin: "auto", alignItems: "center", height: "6rem" }}
               >
+                {console.log("header runder time")}
                 <Grid item xs={5} sm={8} className="headerGrid">
                   <Link to="/" className="nav-logo">
                     <img src="./images/homeimgs/logo2.png" alt="" />
@@ -81,25 +82,23 @@ export default function Header() {
                     sx={{ margin: "0", alignItems: "center" }}
                   >
                     <Grid item xs={6}>
-                      <Link to="/subscribe" className="flex">
-                        <Button
-                          sx={{
-                            color: "white",
-                            border: "2px solid white",
-                            padding: "5px 10px",
-                            borderRadius: "4px",
-                            fontSize: "12px",
-                            "&:hover": {
-                              backgroundColor: "rgb(255, 174, 0)",
-                              color: "black",
-                            },
-                          }}
-                          style={{ color: "white", border: "2px solid white" }}
-                        >
-                          Subscribe
-                        </Button>
-                        {/* <button className="subscribebtn">Subscribe</button> */}
-                      </Link>
+                      <Button
+                        sx={{
+                          color: "white",
+                          border: "2px solid white",
+                          padding: "5px 10px",
+                          borderRadius: "4px",
+                          fontSize: "12px",
+                          "&:hover": {
+                            backgroundColor: "rgb(255, 174, 0)",
+                            color: "black",
+                          },
+                        }}
+                        style={{ color: "white", border: "2px solid white" }}
+                      >
+                        Subscribe
+                      </Button>
+                      {/* <button className="subscribebtn">Subscribe</button> */}
                     </Grid>
 
                     <Grid item xs={6}>
@@ -300,26 +299,25 @@ export default function Header() {
                 )}
               </Stack>
               <Stack direction="row" spacing={6} alignItems="center">
-                <Link to="/subscribe" className="flex">
-                  <Button
-                    className="btnSubs"
-                    sx={{
-                      color: "white",
-                      border: "2px solid white",
-                      padding: { md: "6px 5px", lg: "8px 17px" },
-                      borderRadius: "4px",
-                      fontSize: { md: "14px", lg: "17px" },
-                      "&:hover": {
-                        backgroundColor: "rgb(255, 174, 0)",
-                        color: "black",
-                      },
-                    }}
-                    style={{ color: "white", border: "2px solid white" }}
-                  >
-                    Subscribe
-                  </Button>
-                  {/* <button className="subscribebtn">Subscribe</button> */}
-                </Link>
+                <Button
+                  className="btnSubs"
+                  sx={{
+                    color: "white",
+                    border: "2px solid white",
+                    padding: { md: "6px 5px", lg: "8px 17px" },
+                    borderRadius: "4px",
+                    fontSize: { md: "14px", lg: "17px" },
+                    "&:hover": {
+                      backgroundColor: "rgb(255, 174, 0)",
+                      color: "black",
+                    },
+                  }}
+                  style={{ color: "white", border: "2px solid white" }}
+                >
+                  Subscribe
+                </Button>
+                {/* <button className="subscribebtn">Subscribe</button> */}
+
                 <div className="language">
                   <Language label="choose an language" />
                 </div>
@@ -412,14 +410,15 @@ export default function Header() {
       </AppBar>
     </>
   );
-}
+});
 
-function DropdownItem(props) {
+const DropdownItem = memo((props) => {
   return (
     <li className="dropdownItem">
       {/* <img src={props.img}></img> */}
       <i className={props.data}></i>
+
       <Link to={`${props.pathLink}`}>{props.text}</Link>
     </li>
   );
-}
+});
