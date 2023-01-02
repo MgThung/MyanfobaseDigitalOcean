@@ -12,7 +12,7 @@ export default function HomeEducation() {
     <section className="container EducSect">
       <div className="titleEducation">
         <Typography variant="h4" fontWeight="bold" className="popular-title">
-          Education{" "}
+          Education
         </Typography>
         <span className="headerline"></span>
       </div>

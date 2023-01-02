@@ -1,6 +1,7 @@
 .Advwrapper {
   /* display: grid;
   grid-template-rows: 10% 1fr 1fr; */
+  padding: 0px 10px 0px 10px;
   border: 1px solid rgb(233, 175, 81);
 }
 img {
@@ -66,7 +67,7 @@ img {
 }
 .advertisetitle span.headerline {
   display: block;
-  width: 254px;
+  width: 270px;
   height: 2px;
   margin-left: 8px;
   background-color: #f18510;

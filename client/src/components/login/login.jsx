@@ -31,10 +31,16 @@ const LoginCompo = () => {
   const confirmpasref = useRef(null);
 
   const [show, setShow] = useState(false);
+  const [comfirmpwshow, setComfirmpwshow] = useState(false);
 
   const handleShow = () => {
     setShow(!show);
   };
+  const handlecomfirmpwShow = () => {
+    setComfirmpwshow(!comfirmpwshow);
+  };
+
+  // password show and hide end
 
   const signUpButton = () => {
     setIsContainerActive(true);
@@ -144,7 +150,7 @@ const LoginCompo = () => {
                   variant="outlined"
                   label="Email
 "
-                  id="email"
+                  id="loginemail"
                   name="email"
                   value={loginemail}
                   onChange={onChangelogin}
@@ -158,7 +164,7 @@ const LoginCompo = () => {
                   className="singinemail"
                   type={show ? "text" : "password"}
                   label="password"
-                  id="password"
+                  id="loginpassword"
                   name="password"
                   value={loginpassword}
                   onChange={onChangelogin}
@@ -246,7 +252,8 @@ const LoginCompo = () => {
                   id="password"
                   placeholder="Password"
                   name="password"
-                  pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]- , _, @, ., /, #, &, +{8,20}$"
+                  pattern="^(?=.*[a-zA-Z])(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{8,20}"
+                  value={password}
                   required
                   ref={password1ref}
                   focused={focused.toString()}
@@ -257,14 +264,14 @@ const LoginCompo = () => {
                   {show ? <VisibilityOffIcon /> : <VisibilityIcon />}
                 </label>
                 <span className="msgforPassword">
-                  Password should be 8-20 characters and include at least 1
-                  letter, 1 number!
+                  at least 8-20 characters and include 1
+                  letter, 1 number and 1 special character!
                 </span>
               </div>
               <div className="input-field">
                 <i className="fas fa-lock"></i>
                 <input
-                  type="password"
+                  type={comfirmpwshow ? "text" : "password"}
                   placeholder="Confirm Password"
                   id="password2"
                   name="password2"
@@ -275,7 +282,9 @@ const LoginCompo = () => {
                   onBlur={handleFocus}
                   icon={<FiLock />}
                 />
-
+                <label className="singuppassword" onClick={handlecomfirmpwShow}>
+                  {comfirmpwshow ? <VisibilityOffIcon /> : <VisibilityIcon />}
+                </label>
                 <span className="msgforcomfirmps">Passwords don't match!</span>
               </div>
 

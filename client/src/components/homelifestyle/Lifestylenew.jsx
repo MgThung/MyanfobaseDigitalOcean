@@ -1,10 +1,11 @@
-import { Link } from "react-router-dom";
-import React, { useState, useEffect, memo } from "react";
+import { Link, useNavigate, useParams } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import Moment from "react-moment";
 import "./homelifestyle.css";
 import { Box, Container, Grid } from "@mui/material";
 
-const Lifestylenew = () => {
+export default function Lifestylenew() {
   const [getCateData, setCateData] = useState("");
   const category = "Lifestyles";
   Moment.globalFormat = "DD MMM YYYY";
@@ -17,7 +18,6 @@ const Lifestylenew = () => {
         `https://www.myanfobase.com/api/postcate/${category}`
       );
       const res = await reqdata.json(); // JSON.parse(json);
-      
 
       return res;
     };
@@ -36,7 +36,6 @@ const Lifestylenew = () => {
               <div className="part-1">
                 <div className="photo-exercise">
                   <div className="exercise-photo">
-                  
                     <img
                       className="photo-ex1"
                       src={getCateData[0].files[0].filePath}
@@ -86,7 +85,7 @@ const Lifestylenew = () => {
                       </span>
                     </div>
 
-                    <p>{getCateData[0].description.substring(0, 160)}...</p>
+                    <p>{getCateData[0].description.substring(0, 650)}...</p>
                   </div>
                 </div>
               </div>
@@ -94,7 +93,7 @@ const Lifestylenew = () => {
             <Grid item lg={6} xs={12}>
               <div className="honey">
                 {getCateData.length !== 0 ? (
-                  getCateData.slice(1, 4).map((data, index) => {
+                  getCateData.slice(1, 6).map((data, index) => {
                     return (
                       <Box maxWidth="xl" key={index}>
                         <div className="honey-1">
@@ -110,7 +109,6 @@ const Lifestylenew = () => {
                                 />
                               </div>
                             </Grid>
-
                             <Grid item xs={7}>
                               <div className="honey-paragraph">
                                 <Link
@@ -144,6 +142,4 @@ const Lifestylenew = () => {
       </div>
     </Box>
   );
-};
-
-export default Lifestylenew;
+}

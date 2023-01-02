@@ -122,11 +122,11 @@
   background-color: rgb(238, 30, 15);
 }
 
-.postman1 {
+/* .postman1 {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
-}
+} */
 .adminlink {
   color: black;
 }

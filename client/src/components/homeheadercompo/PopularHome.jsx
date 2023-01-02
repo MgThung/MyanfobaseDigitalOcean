@@ -26,7 +26,7 @@ export default function PopularHome() {
   return (
     <>
       {lastposts && lastposts.length !== 0 ? (
-        <section className="popular-body container">
+        <div className="popular-body container">
           <Box>
             <div className="first-grid">
               <Container maxWidth="xl">
@@ -257,7 +257,7 @@ export default function PopularHome() {
               </Container>
             </div>
           </Box>
-        </section>
+        </div>
       ) : (
         <div>
           <h4>Loading..!</h4>

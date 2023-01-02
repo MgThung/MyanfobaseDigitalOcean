@@ -8,6 +8,8 @@ import { useEffect } from "react";
 import Spinner from "./Spinner";
 import { FiLock, FiMail } from "react-icons/fi";
 import axios from "axios";
+import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
+import VisibilityIcon from "@mui/icons-material/Visibility";
 
 const ErrorShow = (prop) => {
   return (
@@ -23,6 +25,15 @@ const PasswordReset = () => {
   const [focused, setFocused] = useState(false);
   const { userId, resetString } = useParams();
   const [errormessage, setErrormessage] = useState("");
+
+  // password show and hide start
+  const [show, setShow] = useState(false);
+
+  const handleShow = () => {
+    setShow(!show);
+  };
+
+  // password show and hide end
 
   const handleFocus = (e) => {
     setFocused(true);
@@ -58,8 +69,8 @@ const PasswordReset = () => {
       };
 
       axios
-        // .post("http://localhost:8080/api/users/resetPassword", userData)
-        .post("https://www.myanfobase.com/api/users/resetPassword", userData)
+        .post("http://localhost:8080/api/users/resetPassword", userData)
+        // .post("https://www.myanfobase.com/api/users/resetPassword", userData)
         .then(() => {
           toast.success("Password successfully changed");
           navigate("/login");
@@ -87,7 +98,7 @@ const PasswordReset = () => {
               <div className="input-field">
                 <i className="fas fa-lock"></i>
                 <input
-                  type="password"
+                  type={show ? "text" : "password"}
                   id="newPassword"
                   placeholder="new Password"
                   name="newPassword"
@@ -99,15 +110,18 @@ const PasswordReset = () => {
                   onBlur={handleFocus}
                   icon={<FiLock />}
                 />
+                <label className="passwordshow" onClick={handleShow}>
+                  {show ? <VisibilityOffIcon /> : <VisibilityIcon />}
+                </label>
                 <span className="singupusermsg">
-                  Password should be 8-20 characters and include at least 1
+                  Password should be 8-20 characters and include  1
                   letter, 1 number!
                 </span>
               </div>
               <div className="input-field">
                 <i className="fas fa-lock"></i>
                 <input
-                  type="password"
+                  type={show ? "text" : "password"}
                   placeholder="Confirm Password"
                   id="password2"
                   name="password2"
@@ -119,6 +133,9 @@ const PasswordReset = () => {
                   onBlur={handleFocus}
                   icon={<FiLock />}
                 />
+                <label className="passwordshow" onClick={handleShow}>
+                  {show ? <VisibilityOffIcon /> : <VisibilityIcon />}
+                </label>
                 <span className="singupusermsg">Passwords don't match!</span>
               </div>
 

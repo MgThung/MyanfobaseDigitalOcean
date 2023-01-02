@@ -21,7 +21,7 @@
 .postman1 {
   display: flex;
   align-items: center;
-  padding: 5px 0;
+  padding: 15px 0;
 }
 .profileName1 {
   font-size: 0.93rem;
@@ -204,20 +204,13 @@
   color: #8f43d5;
 } */
 
-.sponsered-1 p {
-  margin-top: 1rem;
+.sponsered-1 p ,
+.sponsered-2 p,
+.sponsered-3p {
+  margin-top: .5rem;
 }
 
-.sponsered-2 p {
-  margin-top: 1rem;
-}
-/* .sponsered-2 p:hover {
-  color: #8f43d5;
-} */
 
-.sponsered-3 p {
-  margin-top: 1rem;
-}
 
 /* .sponsered-3 p:hover {
   color: #8f43d5;

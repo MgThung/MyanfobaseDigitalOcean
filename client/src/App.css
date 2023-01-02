@@ -7,9 +7,10 @@
   list-style: none;
   box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap'); */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap"); */
 :root {
   --background-sec: #0d0c0d;
 
@@ -36,7 +37,7 @@
   /* overflow: hidden; */
 }
 body {
-  font-family: "Roboto", sans-serif !important;
+  font-family: "Heebo", sans-serif !important;
   line-height: 1.7;
   color: var(--color-black);
   background: var(--background-main) !important;
