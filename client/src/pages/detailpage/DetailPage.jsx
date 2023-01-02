@@ -22,10 +22,10 @@ export default function DetailPage() {
     // const reqdata = await fetch(
     //   `https://desolate-hollows-16342.herokuapp.com/detailwithview/${id}`
     // );
-    // const reqdata = await fetch(
-    //   `https://www.myanfobase.com/detailwithview/${id}`
-    // );
-    const reqdata = await fetch(`http://localhost:8080/detailwithview/${id}`);
+    const reqdata = await fetch(
+      `https://www.myanfobase.com/detailwithview/${id}`
+    );
+    // const reqdata = await fetch(`http://localhost:8080/detailwithview/${id}`);
     const res = await reqdata.json(); // JSON.parse(json);
 
     return res;
@@ -41,7 +41,7 @@ export default function DetailPage() {
       <Detailhead postDetail={postDetail} cate={cate} />
       <section className="container detailbody">
         <Grid container my={2} sx={{ margin: "auto", gap: "1.5rem" }}>
-          <Grid item xs={12}  md={7.6}>
+          <Grid item xs={12} md={7.6}>
             <Detailbanner postDetail={postDetail} />
           </Grid>
           <Grid item xs={12} md={4}>
