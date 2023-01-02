@@ -1,13 +1,19 @@
 import React from "react";
 import "./about.css";
+import { Grid,Box } from "@mui/material";
+
 
 export default function Aboutbody() {
   return (
     <div className="mainabout_body">
       <h3 className="about_heading">We're more than a digital angency.</h3>
       <div className="about_body">
-        <div className="about_body_firstphoto">
-          <img src="./images/aboutus/grouppc.avif" alt="" />
+        <div>
+          <img
+            className="about_body_firstphoto"
+            src="./images/aboutus/grouppc.avif"
+            alt=""
+          />
         </div>
         <div className="about_body_secpartphoto">
           <img
@@ -56,13 +62,17 @@ export default function Aboutbody() {
           <h3 className="first_letter">Our</h3>
           <h3 className="sec_letter">team member</h3>
         </div>
-        <div className="ourmember">
-          <div className="kzh">
-            <img
-              className="secpart_Firphoto"
-              src="./images/aboutus/kyaw.jpg"
-              alt=""
-            />
+        {/* <div className="ourmember"> */}
+        <Grid className="ourmember" container my={8}>
+          {/* <div className="kzh"> */}
+          <Grid className="kzh" item md>
+            <div>
+              <img
+                className="secpart_Firphoto"
+                src="./images/aboutus/kyaw.jpg"
+                alt=""
+              />
+            </div>
             <div className="ourmember_overlay">
               <div className="ourmember_text">
                 <h3>Kyaw Swar htet</h3>
@@ -82,13 +92,17 @@ export default function Aboutbody() {
                 <div className="fullstack">full-stuck developer</div>
               </div>
             </div>
-          </div>
-          <div className="cwtk">
-            <img
-              className="secpart_Secphoto"
-              src="./images/aboutus/chue.jpg"
-              alt=""
-            />
+          </Grid>
+          {/* </div> */}
+          {/* <div className="cwtk"> */}
+          <Grid className="cwtk" item md>
+            <div>
+              <img
+                className="secpart_Secphoto"
+                src="./images/aboutus/chue.jpg"
+                alt=""
+              />
+            </div>
             <div className="ourmember_overlay1">
               <div className="ourmember_text1">
                 <h3>Chue Wathan Kyaw</h3>
@@ -108,8 +122,10 @@ export default function Aboutbody() {
                 <div className="fullstack">full-stuck developer</div>
               </div>
             </div>
-          </div>
-          <div className="thh">
+          </Grid>
+          {/* </div> */}
+          {/* <div className="thh"> */}
+          <Grid className="thh" item>
             <img
               className="secpart_Tphoto"
               src="./images/aboutus/code.jpg"
@@ -134,8 +150,10 @@ export default function Aboutbody() {
                 <div className="fullstack">full-stuck developer</div>
               </div>
             </div>
-          </div>
-          <div className="thawthaw">
+          </Grid>
+          {/* </div> */}
+          {/* <div className="thawthaw"> */}
+          <Grid className="thawthaw" item>
             <img
               className="secpart_Fouthphoto"
               src="./images/aboutus/thaw.jpg"
@@ -160,8 +178,10 @@ export default function Aboutbody() {
                 <div className="fullstack">full-stuck developer</div>
               </div>
             </div>
-          </div>
-        </div>
+            {/* </div> */}
+          </Grid>
+        </Grid>
+        {/* </div> */}
       </div>
     </div>
   );
