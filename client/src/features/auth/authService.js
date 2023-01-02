@@ -1,12 +1,14 @@
 import axios from "axios";
 
-const API_URL = "https://www.myanfobase.com/api/users/";
-// const API_URL = "http://localhost:8080/api/users/";
+// const API_URL = "https://www.myanfobase.com/api/users/";
+const API_URL = "http://localhost:8080/api/users/";
 // const API_URL = "https://desolate-hollows-16342.herokuapp.com/api/users/";
 
 //Register user
 const register = async (userData) => {
-  const response = await axios.post(API_URL, userData);
+  const result = Object.fromEntries(userData.entries());
+
+  const response = await axios.post(API_URL, result);
 
   if (response.data) {
     localStorage.setItem("user", JSON.stringify(response.data));
@@ -44,7 +46,7 @@ const updateUserData = async (postData, token) => {
 
   const id = resultData.id;
 
-  // console.log("result result data", resultData);
+  console.log("result result data id", id);
 
   const config = {
     headers: {

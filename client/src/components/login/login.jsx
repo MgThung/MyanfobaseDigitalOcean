@@ -12,7 +12,6 @@ import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 
 const ErrorShow = (prop) => {
- 
   return (
     <p className="resultnoticolor">
       <span className="warningcol">Warrning:</span>
@@ -26,7 +25,10 @@ const LoginCompo = () => {
   const [focused, setFocused] = useState(false);
 
   const [errormessage, setErrormessage] = useState("");
-
+  const usernameref = useRef(null);
+  const emaileref = useRef(null);
+  const password1ref = useRef(null);
+  const confirmpasref = useRef(null);
 
   const [show, setShow] = useState(false);
 
@@ -42,21 +44,13 @@ const LoginCompo = () => {
   const signInButton = () => {
     setIsContainerActive(false);
     setErrormessage("");
-        setShow(false);
-
+    setShow(false);
   };
   const handleFocus = (e) => {
     setFocused(true);
   };
 
   /*Register Data */
-  const [formData, setFormData] = useState({
-    username: "",
-    email: "",
-    password: "",
-    password2: "",
-  });
-  const { username, email, password, password2 } = formData;
 
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -67,12 +61,10 @@ const LoginCompo = () => {
 
   useEffect(() => {
     if (isError) {
-      // toast.error(message);
       setErrormessage(message);
     }
 
     if (isSuccess && user && user._id) {
-      // setIsContainerActive(false);
       return navigate("/");
     } else {
       navigate("/login");
@@ -81,25 +73,25 @@ const LoginCompo = () => {
     dispatch(reset());
   }, [user, isError, isSuccess, message, navigate, dispatch]);
   /* Register data onchange */
-  const onChange = (e) => {
-    setFormData((prevState) => ({
-      ...prevState,
-      [e.target.name]: e.target.value,
-    }));
-  };
+
   /* Register data onsubmit */
   const onSubmit = (e) => {
     e.preventDefault();
 
-    if (password !== password2) {
+    if (password1ref.current.value !== confirmpasref.current.value) {
       toast.error("Passwords do not match");
     } else {
-      const userData = {
-        username,
-        email,
-        password,
-      };
-      dispatch(register(userData)).then(() => {
+      const formData = new FormData();
+      formData.append("username", usernameref.current.value);
+      formData.append("email", emaileref.current.value);
+      formData.append("password", password1ref.current.value);
+
+      usernameref.current.value = "";
+      emaileref.current.value = "";
+      password1ref.current.value = "";
+      confirmpasref.current.value = "";
+
+      dispatch(register(formData)).then(() => {
         navigate("/login");
         toast.success("Your Account successfully created");
       });
@@ -131,27 +123,12 @@ const LoginCompo = () => {
         navigate("/");
       }
     });
-
-    // .then((res, err) => {
-    //   if (err) {
-    //     alert(err);
-    //   } else {
-    //     navigate("/");
-    //     setLoginData({
-    //       email: "",
-    //       password: "",
-    //     });
-    //   }
-    // })
-    // .catch((err) => {
-    //   alert(err);
-    // });
   };
 
   if (isLoading) {
     return <Spinner />;
   }
-  
+
   return (
     <>
       <div className={"login-con " + (isContainerActive ? "signupmode" : " ")}>
@@ -225,6 +202,7 @@ const LoginCompo = () => {
               <h2 className="titlt">Sign Up</h2>
               <div className="input-field">
                 <i className="fas fa-user"></i>
+
                 <input
                   type="text"
                   pattern="^[a-zA-Z0-9 ]{3,16}$"
@@ -234,15 +212,15 @@ const LoginCompo = () => {
                   required
                   focused={focused.toString()}
                   onBlur={handleFocus}
-                  value={username}
-                  onChange={onChange}
+                  ref={usernameref}
+                  // onChange={onChange}
                 />
                 <span className="msgforUsername">
                   Username should be 3-16 characters and shouldn't include any
                   special character!
                 </span>
               </div>
-
+              {console.log("register render time")}
               <div className="input-field">
                 <i className="fas fa-envelope"></i>
                 <input
@@ -250,11 +228,11 @@ const LoginCompo = () => {
                   placeholder="Email"
                   id="email"
                   name="email"
-                  value={email}
                   required
                   focused={focused.toString()}
                   onBlur={handleFocus}
-                  onChange={onChange}
+                  ref={emaileref}
+                  // onChange={onChange}
                   icon={<FiMail />}
                 />
                 <span className="msgforEmail">
@@ -269,9 +247,8 @@ const LoginCompo = () => {
                   placeholder="Password"
                   name="password"
                   pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]- , _, @, ., /, #, &, +{8,20}$"
-                  value={password}
                   required
-                  onChange={onChange}
+                  ref={password1ref}
                   focused={focused.toString()}
                   onBlur={handleFocus}
                   icon={<FiLock />}
@@ -292,9 +269,8 @@ const LoginCompo = () => {
                   id="password2"
                   name="password2"
                   required
-                  pattern={formData.password}
-                  value={password2}
-                  onChange={onChange}
+                  pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]- , _, @, ., /, #, &, +{8,20}$"
+                  ref={confirmpasref}
                   focused={focused.toString()}
                   onBlur={handleFocus}
                   icon={<FiLock />}

@@ -100,8 +100,9 @@ export default function CreatePost(props) {
             {isActive && (
               <div className="dropdown-content">
                 {categories &&
-                  categories.map((option,index) => (
-                    <div key={index}
+                  categories.map((option, index) => (
+                    <div
+                      key={index}
                       onClick={(e) =>
                         onChangeCateId(option._id)(
                           onChangeCate(option.catename)(setIsActive(false))
