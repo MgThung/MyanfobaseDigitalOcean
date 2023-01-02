@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import "./login.css";
-import { login, register, reset } from "../../features/auth/authSlice";
+import {  reset } from "../../features/auth/authSlice";
 import { useEffect } from "react";
 import Spinner from "./Spinner";
 import axios from "axios";
@@ -32,12 +32,7 @@ const ForgetPassword = () => {
   const [result, showResult] = useState(false);
   const [errormessage, setErrormessage] = useState("");
 
-  const signUpButton = () => {
-    setIsContainerActive(true);
-  };
-  const signInButton = () => {
-    setIsContainerActive(false);
-  };
+
   const handleFocus = (e) => {
     setFocused(true);
   };

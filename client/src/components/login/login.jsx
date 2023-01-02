@@ -220,7 +220,7 @@ const LoginCompo = () => {
                   special character!
                 </span>
               </div>
-              {console.log("register render time")}
+              
               <div className="input-field">
                 <i className="fas fa-envelope"></i>
                 <input

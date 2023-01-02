@@ -36,7 +36,7 @@ const Lifestylenew = () => {
               <div className="part-1">
                 <div className="photo-exercise">
                   <div className="exercise-photo">
-                    {console.log("lifestyle new render")}
+                  
                     <img
                       className="photo-ex1"
                       src={getCateData[0].files[0].filePath}

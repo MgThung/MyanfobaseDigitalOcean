@@ -7,7 +7,7 @@ export default function SponserContent() {
     <div className="sponsered">
       <h4>Sponsered Content</h4>
       <span className="Lifeline1"></span>
-      {console.log("sponser data render")}
+
       <div className="sponsered-1">
         <div className="beauty-photo">
           <img src="images/homeimgs/adver2.jpg" alt="" />

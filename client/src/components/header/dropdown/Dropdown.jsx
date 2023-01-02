@@ -17,7 +17,6 @@ const Dropdown = memo((props) => {
         categories.map((item, index) => {
           return (
             <li key={item._id} className="catgitems">
-              {console.log("Dropdown rendering")}
               <Link
                 to={item.catename}
                 className="nav-item"

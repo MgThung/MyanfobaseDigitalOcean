@@ -1,8 +1,7 @@
-import React from 'react'
+import React from "react";
 import { Link } from "react-router-dom";
 import { Box, Breadcrumbs, Typography } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
-
 
 export default function Abouthead() {
   return (
@@ -11,7 +10,7 @@ export default function Abouthead() {
         <Box className="top" sx={{ marginButtom: "60px" }}>
           <Breadcrumbs
             color={"#747474"}
-            aria-aria-label="breadcrumb"
+            aria-label="breadcrumb"
             separator={<NavigateNextIcon fontSize="small" />}
           >
             <Link to="/" className="link1" fontSize="25px">
