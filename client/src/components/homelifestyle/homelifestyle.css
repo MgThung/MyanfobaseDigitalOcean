@@ -21,7 +21,7 @@
 .postman1 {
   display: flex;
   align-items: center;
-  padding: 5px 0;
+  padding: 15px 0;
 }
 .profileName1 {
   font-size: 15px;
@@ -42,14 +42,14 @@
 }
 .Lifeline {
   display: block;
-  width: 220px;
+  width: 205px;
   height: 2px;
   background-color: #f18510;
   margin-bottom: 1rem;
 }
 .Lifeline1 {
   display: block;
-  width: 190px;
+  width: 230px;
   height: 2px;
   background-color: #f18510;
   margin-bottom: 1rem;
@@ -204,20 +204,13 @@
   color: #8f43d5;
 } */
 
-.sponsered-1 p {
-  margin-top: 1rem;
+.sponsered-1 p ,
+.sponsered-2 p,
+.sponsered-3p {
+  margin-top: .5rem;
 }
 
-.sponsered-2 p {
-  margin-top: 1rem;
-}
-/* .sponsered-2 p:hover {
-  color: #8f43d5;
-} */
 
-.sponsered-3 p {
-  margin-top: 1rem;
-}
 
 /* .sponsered-3 p:hover {
   color: #8f43d5;

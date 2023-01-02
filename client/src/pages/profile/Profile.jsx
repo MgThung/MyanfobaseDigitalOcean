@@ -30,10 +30,10 @@ export default function Profile() {
       <ProImg user={user} />
       <section className="container proFiledet">
         <Grid container my={2} spacing={5} sx={{ margin: "auto" }}>
-          <Grid sm={3.6} md={3.6} xl={3.6}>
+          <Grid item sm={3.6} md={3.6} xl={3.6}>
             <ProLeft />
           </Grid>
-          <Grid sm={8.4} md={8.4} xl={8.4}>
+          <Grid item sm={8.4} md={8.4} xl={8.4}>
             <ProRight />
           </Grid>
         </Grid>

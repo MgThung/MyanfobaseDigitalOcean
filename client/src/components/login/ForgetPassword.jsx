@@ -47,8 +47,8 @@ const ForgetPassword = () => {
     email: "",
   });
   const { email } = formData;
-  const redirectUrl = "https://www.myanfobase.com/passwordreset";
-  // const redirectUrl = "http://localhost:3000/passwordreset";
+  // const redirectUrl = "https://www.myanfobase.com/passwordreset";
+  const redirectUrl = "http://localhost:3000/passwordreset";
 
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -82,11 +82,11 @@ const ForgetPassword = () => {
         redirectUrl,
       };
       axios
-        // .post("http://localhost:8080/api/users/requestPasswordReset", userData)
-        .post(
-          "https://www.myanfobase.com/api/users/requestPasswordReset",
-          userData
-        )
+        .post("http://localhost:8080/api/users/requestPasswordReset", userData)
+        // .post(
+        //   "https://www.myanfobase.com/api/users/requestPasswordReset",
+        //   userData
+        // )
         .then(() => {
           showResult(true);
         })
@@ -100,7 +100,6 @@ const ForgetPassword = () => {
         });
     }
   };
-
 
   if (isLoading) {
     return <Spinner />;

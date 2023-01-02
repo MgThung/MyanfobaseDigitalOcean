@@ -1,6 +1,7 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Bowlby+One&family=Ultra&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
 .header {
   background-color: rgb(209, 213, 212);
   padding-top: 1rem;
@@ -52,7 +53,7 @@
   text-align: center;
 }
 .home-banner-detail h1 {
-  font-family: "Merriweather", serif;
+  font-family: "Heebo", serif;
   color: white;
   /* font-family: "Bowlby One"; */
   /* font-size: 70px; */
@@ -90,14 +91,14 @@
 }
 .banner-botton {
   position: absolute;
-  bottom: 62px;
-  right: -321px;
+  bottom: 32px;
+  right: -21rem;
 }
 .banner-botton h2 {
   font-size: 2rem;
   color: white;
-  font-family: "Ultra";
-  font-weight: 250;
+  font-family: "Heebo";
+  font-weight: 800;
   text-align: left;
 }
 .banner-botton p {
@@ -119,7 +120,7 @@
 } */
 .popular-now-line {
   display: block;
-  width: 185px;
+  width: 180px;
   height: 2px;
   background-color: #f18510;
   margin-bottom: 1rem;

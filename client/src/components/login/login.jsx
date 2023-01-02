@@ -27,12 +27,14 @@ const LoginCompo = () => {
 
   const [errormessage, setErrormessage] = useState("");
 
-
+  // password show and hide start
   const [show, setShow] = useState(false);
 
   const handleShow = () => {
     setShow(!show);
   };
+
+  // password show and hide end
 
   const signUpButton = () => {
     setIsContainerActive(true);
@@ -42,8 +44,7 @@ const LoginCompo = () => {
   const signInButton = () => {
     setIsContainerActive(false);
     setErrormessage("");
-        setShow(false);
-
+    setShow(false);
   };
   const handleFocus = (e) => {
     setFocused(true);
@@ -151,7 +152,7 @@ const LoginCompo = () => {
   if (isLoading) {
     return <Spinner />;
   }
-  
+
   return (
     <>
       <div className={"login-con " + (isContainerActive ? "signupmode" : " ")}>
@@ -167,7 +168,7 @@ const LoginCompo = () => {
                   variant="outlined"
                   label="Email
 "
-                  id="email"
+                  id="loginemail"
                   name="email"
                   value={loginemail}
                   onChange={onChangelogin}
@@ -181,7 +182,7 @@ const LoginCompo = () => {
                   className="singinemail"
                   type={show ? "text" : "password"}
                   label="password"
-                  id="password"
+                  id="loginpassword"
                   name="password"
                   value={loginpassword}
                   onChange={onChangelogin}
