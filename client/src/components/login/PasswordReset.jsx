@@ -114,7 +114,7 @@ const PasswordReset = () => {
                   {show ? <VisibilityOffIcon /> : <VisibilityIcon />}
                 </label>
                 <span className="singupusermsg">
-                  Password should be 8-20 characters and include at least 1
+                  Password should be 8-20 characters and include  1
                   letter, 1 number!
                 </span>
               </div>
