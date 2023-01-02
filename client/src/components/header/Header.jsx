@@ -6,6 +6,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { logout, reset } from "../../features/auth/authSlice";
 import LogoutIcon from "@mui/icons-material/Logout";
 import HouseIcon from "@mui/icons-material/House";
+import AdminPanelSettingsIcon from "@mui/icons-material/AdminPanelSettings";
 import SearchIcon from "@mui/icons-material/Search";
 import ListIcon from "@mui/icons-material/List";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
@@ -34,9 +35,8 @@ export default memo(function Header() {
   const [open, setOpen] = useState(false);
 
   const theme = useTheme();
-  // console.log(theme);
+
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
-  // console.log(isMatch);
 
   const onLogout = useCallback(() => {
     dispatch(logout());
@@ -69,7 +69,6 @@ export default memo(function Header() {
                 my={2}
                 sx={{ margin: "auto", alignItems: "center", height: "6rem" }}
               >
-                {console.log("header runder time")}
                 <Grid item xs={5} sm={8} className="headerGrid">
                   <Link to="/" className="nav-logo">
                     <img src="./images/homeimgs/logo2.png" alt="" />
@@ -286,7 +285,7 @@ export default memo(function Header() {
                 {user !== null && user.isAdmin === true ? (
                   <Link to="/admin" className="flex hoverclor navli">
                     <Typography variant="subtitle1" color="white" fontSize={17}>
-                      <SearchIcon />
+                      <AdminPanelSettingsIcon />
                     </Typography>
                     <Typography variant="subtitle1" color="white" fontSize={17}>
                       Admin
