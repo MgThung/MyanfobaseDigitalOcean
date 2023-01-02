@@ -148,8 +148,7 @@ const LoginCompo = () => {
                 <TextField
                   className="singinemail"
                   variant="outlined"
-                  label="Email
-"
+                  label="Email"
                   id="loginemail"
                   name="email"
                   value={loginemail}
@@ -226,7 +225,7 @@ const LoginCompo = () => {
                   special character!
                 </span>
               </div>
-              
+
               <div className="input-field">
                 <i className="fas fa-envelope"></i>
                 <input
@@ -253,7 +252,6 @@ const LoginCompo = () => {
                   placeholder="Password"
                   name="password"
                   pattern="^(?=.*[a-zA-Z])(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{8,20}"
-                  value={password}
                   required
                   ref={password1ref}
                   focused={focused.toString()}
@@ -264,8 +262,8 @@ const LoginCompo = () => {
                   {show ? <VisibilityOffIcon /> : <VisibilityIcon />}
                 </label>
                 <span className="msgforPassword">
-                  at least 8-20 characters and include 1
-                  letter, 1 number and 1 special character!
+                  at least 8-20 characters and include 1 letter, 1 number and 1
+                  special character!
                 </span>
               </div>
               <div className="input-field">
