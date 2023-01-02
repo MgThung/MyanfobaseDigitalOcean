@@ -52,6 +52,7 @@
   text-align: center;
 }
 .home-banner-detail h1 {
+  /* font-family: PT Serif !important; */
   font-family: "Merriweather", serif;
   color: white;
   /* font-family: "Bowlby One"; */

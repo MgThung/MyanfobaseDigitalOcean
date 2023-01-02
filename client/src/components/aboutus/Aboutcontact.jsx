@@ -13,7 +13,7 @@ export default function Aboutcontact() {
             blanditiis praesentium voluptatum deleniti atque
           </p>
           <div className="about_testform">
-            <textarea placeholder="email< ^ ~ ^ >"></textarea>
+            <textarea placeholder="email"></textarea>
           </div>
 
           <div className="text">
@@ -25,7 +25,7 @@ export default function Aboutcontact() {
               placeholder="Your Comment"
             ></textarea> */}
 
-            <textarea placeholder="adress< ^ ~ ^ >"></textarea>
+            <textarea placeholder="comment"></textarea>
           </div>
         </div>
         <button
