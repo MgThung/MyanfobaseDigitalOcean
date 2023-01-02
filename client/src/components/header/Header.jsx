@@ -81,25 +81,23 @@ export default function Header() {
                     sx={{ margin: "0", alignItems: "center" }}
                   >
                     <Grid item xs={6}>
-                      <Link to="/subscribe" className="flex">
-                        <Button
-                          sx={{
-                            color: "white",
-                            border: "2px solid white",
-                            padding: "5px 10px",
-                            borderRadius: "4px",
-                            fontSize: "12px",
-                            "&:hover": {
-                              backgroundColor: "rgb(255, 174, 0)",
-                              color: "black",
-                            },
-                          }}
-                          style={{ color: "white", border: "2px solid white" }}
-                        >
-                          Subscribe
-                        </Button>
-                        {/* <button className="subscribebtn">Subscribe</button> */}
-                      </Link>
+                      <Button
+                        sx={{
+                          color: "white",
+                          border: "2px solid white",
+                          padding: "5px 10px",
+                          borderRadius: "4px",
+                          fontSize: "12px",
+                          "&:hover": {
+                            backgroundColor: "rgb(255, 174, 0)",
+                            color: "black",
+                          },
+                        }}
+                        style={{ color: "white", border: "2px solid white" }}
+                      >
+                        Subscribe
+                      </Button>
+                      {/* <button className="subscribebtn">Subscribe</button> */}
                     </Grid>
 
                     <Grid item xs={6}>
@@ -274,26 +272,25 @@ export default function Header() {
                 )}
               </Stack>
               <Stack direction="row" spacing={6} alignItems="center">
-                <Link to="/subscribe" className="flex">
-                  <Button
-                    className="btnSubs"
-                    sx={{
-                      color: "white",
-                      border: "2px solid white",
-                      padding: { md: "6px 5px", lg: "8px 17px" },
-                      borderRadius: "4px",
-                      fontSize: { md: "14px", lg: "17px" },
-                      "&:hover": {
-                        backgroundColor: "rgb(255, 174, 0)",
-                        color: "black",
-                      },
-                    }}
-                    style={{ color: "white", border: "2px solid white" }}
-                  >
-                    Subscribe
-                  </Button>
-                  {/* <button className="subscribebtn">Subscribe</button> */}
-                </Link>
+                <Button
+                  className="btnSubs"
+                  sx={{
+                    color: "white",
+                    border: "2px solid white",
+                    padding: { md: "6px 5px", lg: "8px 17px" },
+                    borderRadius: "4px",
+                    fontSize: { md: "14px", lg: "17px" },
+                    "&:hover": {
+                      backgroundColor: "rgb(255, 174, 0)",
+                      color: "black",
+                    },
+                  }}
+                  style={{ color: "white", border: "2px solid white" }}
+                >
+                  Subscribe
+                </Button>
+                {/* <button className="subscribebtn">Subscribe</button> */}
+
                 <div className="language">
                   <Language label="choose an language" />
                 </div>
