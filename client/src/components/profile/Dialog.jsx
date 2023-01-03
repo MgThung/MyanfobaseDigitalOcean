@@ -11,6 +11,7 @@ function Dialog({ message, onDialog, Postname }) {
         bottom: "0",
         backgroundColor: "rgba(0,0,0,0.5)",
       }}
+      hey
       onClick={() => onDialog(false)}
     >
       <div
