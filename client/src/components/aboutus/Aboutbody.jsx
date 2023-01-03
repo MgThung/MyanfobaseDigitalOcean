@@ -3,7 +3,7 @@ import "./about.css";
 import { Grid, Box } from "@mui/material";
 import Facebookicon from "@mui/icons-material/Facebook";
 import GoogleIcon from "@mui/icons-material/Google";
-import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 export default function Aboutbody() {
@@ -78,24 +78,40 @@ export default function Aboutbody() {
             <div className="ourmember_overlay">
               <div className="ourmember_text">
                 <h3>Kyaw Swar htet</h3>
-                <a className="fbicon">
+                <a
+                  className="fbicon"
+                  href="https://www.facebook.com/kyawswar.htet.10"
+                  target="_blank"
+                >
                   <Facebookicon
-                    // sx={{
-                    //   paddingTop: "13",
-                    //   marginLeft: "70",
-                    //   fontSize: "20",
-                    //   color: "white",
-                    //   marginTop: "20",
-                    // }}
+                  // sx={{
+                  //   paddingTop: "13",
+                  //   marginLeft: "70",
+                  //   fontSize: "20",
+                  //   color: "white",
+                  //   marginTop: "20",
+                  // }}
                   />
                 </a>
-                <a className="googleicon">
+                <a
+                  className="googleicon"
+                  href="https://www.gmail.com"
+                  target="_blank"
+                >
                   <GoogleIcon />
                 </a>
-                <a className="instaicon">
-                  <InstagramIcon />
+                <a
+                  className="instaicon"
+                  href="https://www.linkedin.com/in/kyaw-swar-htet-975b73221/"
+                  target="_blank"
+                >
+                  <LinkedInIcon />
                 </a>
-                <a className="githiub">
+                <a
+                  className="githiub"
+                  href="https://github.com/KyawSwarHtet"
+                  target="_blank"
+                >
                   <GitHubIcon />
                 </a>
 
@@ -123,12 +139,12 @@ export default function Aboutbody() {
                   <GoogleIcon />
                 </a>
                 <a className="instaicon">
-                  <InstagramIcon />
+                  <LinkedInIcon />
                 </a>
                 <a className="githiub">
                   <GitHubIcon />
                 </a>
-              
+
                 <div className="fullstack">Frontend Developer</div>
               </div>
             </div>
@@ -151,7 +167,7 @@ export default function Aboutbody() {
                   <GoogleIcon />
                 </a>
                 <a className="instaicon">
-                  <InstagramIcon />
+                  <LinkedInIcon />
                 </a>
                 <a className="githiub">
                   <GitHubIcon />
@@ -179,7 +195,7 @@ export default function Aboutbody() {
                   <GoogleIcon />
                 </a>
                 <a className="instaicon">
-                  <InstagramIcon />
+                  <LinkedInIcon />
                 </a>
                 <a className="githiub">
                   <GitHubIcon />
