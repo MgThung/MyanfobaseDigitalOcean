@@ -4,7 +4,7 @@ import "./artssbanner.css";
 
 export default function Artssbanner() {
   return (
-    <>
+    <section className="container">
       <Grid my={2} container sx={{ margin: "0px" }}>
         <Grid item xs={12} sm={6} md={6}>
           <div className="artphoto">
@@ -31,6 +31,6 @@ export default function Artssbanner() {
           </div>
         </Grid>
       </Grid>
-    </>
+    </section>
   );
 }

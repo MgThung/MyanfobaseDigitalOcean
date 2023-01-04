@@ -7,7 +7,7 @@ import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
 export default function Musicheader() {
   return (
-    <section>
+    <section className="container enter">
       <Box sx={{ marginButtom: "10px" }}>
         <Breadcrumbs
           color={"#747474"}
@@ -30,7 +30,7 @@ export default function Musicheader() {
         textTransform="uppercase"
         sx={{ marginTop: "10px" }}
       >
-        Entertainment
+        Music
       </Typography>
       <div className="Catabutton">
         <Link to="/korean">

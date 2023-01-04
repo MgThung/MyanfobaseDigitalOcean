@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../../technology/technology.css";
+import "../../../technology/technology.css"
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { Box, Breadcrumbs, Typography, Stack } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
 export default function Animeheader() {
   return (
-    <section className="technology">
+    <section className="container technology">
       <Box sx={{ marginButtom: "10px" }}>
         <Breadcrumbs
           color={"#747474"}

@@ -36,7 +36,7 @@ export default function Makeup() {
 
       <div className="Catabutton">
         <Link to="/makeup">
-          <button className="tec">Make-up</button>
+          <button className="tec btnactive">Make-up</button>
         </Link>
         <Link to="/Blogger">
           <button className="tec">Beauty Blogger</button>

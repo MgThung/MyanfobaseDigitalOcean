@@ -10,9 +10,7 @@ export default function Art() {
   return (
     <>
       <Artssheader />
-      <section className="container">
         <Artssbanner />
-      </section>
 
       <section className="container">
         <Grid my={2} container>

@@ -1,8 +1,9 @@
 import React from "react";
+import "../../subcategory/subcategy.css";
 
 export default function BiologyBanner() {
   return (
-    <section className="catebannerImg">
+    <section className="container catebannerImg">
       <div className="leftBanner">
         <div className="catebanner1">
           <img src="./images/science/biology/biologyinfo3.jpg" />

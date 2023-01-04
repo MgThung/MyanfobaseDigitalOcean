@@ -72,7 +72,6 @@ export default function Technology() {
       </section>
 
       <section className="container">
-        <Box>
           <div className="photo">
             <Container maxWidth="xl">
               <Grid container direction="row" spacing={1}>
@@ -159,7 +158,6 @@ export default function Technology() {
               </Grid>
             </Container>
           </div>
-        </Box>
       </section>
     </>
   );

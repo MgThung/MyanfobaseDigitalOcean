@@ -1,4 +1,5 @@
 import React from "react";
+import "../../../enterment/entermentbanner.css";
 
 // import CSSRulePlugin from "gsap/CSSRulePlugin";
 // import { TimelineLite, Power2 } from "gsap";

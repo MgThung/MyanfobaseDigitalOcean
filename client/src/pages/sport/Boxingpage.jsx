@@ -1,25 +1,26 @@
 import React from "react";
 import Latestbar from "../../components/catepagerightbar/Latestbar";
+import PopularNews from "../../components/catepagerightbar/PopularNews";
 import SportMain from "../../components/sport/SportMain";
-import SportPopular from "../../components/sport/SportPopular";
 import Boxingbanner from "../../components/sport/sportsetmenu/boxing/Boxingbanner";
 import Boxingheader from "../../components/sport/sportsetmenu/boxing/Boxingheader";
+import { Grid } from "@mui/material";
 
 export default function Boxingpage() {
   return (
     <>
-      <section className="container">
-        <Boxingheader />
-      </section>
+      <Boxingheader />
       <Boxingbanner />
       <section className="container">
-        <div className="sportbody">
-          <SportMain />
-          <div className="allRightBar">
-            <SportPopular />
+        <Grid my={2} container>
+          <Grid item xs={12} xl={8.4} md={8.4}>
+            <SportMain />
+          </Grid>
+          <Grid item xs={12} xl={3.6} md={3.6}>
+            <PopularNews />
             <Latestbar />
-          </div>
-        </div>
+          </Grid>
+        </Grid>
       </section>
     </>
   );

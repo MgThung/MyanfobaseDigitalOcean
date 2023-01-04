@@ -7,7 +7,7 @@ import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
 export default function Asianheader() {
   return (
-    <section>
+    <section className="container enter">
       <Box sx={{ marginButtom: "10px" }}>
         <Breadcrumbs
           color={"#747474"}
@@ -30,7 +30,7 @@ export default function Asianheader() {
         textTransform="uppercase"
         sx={{ marginTop: "10px" }}
       >
-        Entertainment
+        Asian
       </Typography>
       <div className="Catabutton">
         <Link to="/korean">

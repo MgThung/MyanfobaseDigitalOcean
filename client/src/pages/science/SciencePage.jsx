@@ -9,10 +9,9 @@ import PopularNews from "../../components/catepagerightbar/PopularNews";
 export default function SciencePage() {
   return (
     <>
-      <div className="container">
+      
         <Science />
         <ScienceBanner />
-      </div>
       <section className="container">
         <Grid my={2} container>
           <Grid item xs={12} xl={8.4} md={8.4}>
