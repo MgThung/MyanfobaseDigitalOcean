@@ -6,8 +6,8 @@
   margin-top: 2rem;
   margin-left: rem;
   margin-right: 6rem;
-  /* color: #001d46; */
-  color: #747474;
+/* color: black; */
+  /* color: #747474; */
   line-height: 1.8rem;
 }
 
@@ -66,7 +66,7 @@
   margin-top: 2rem;
 
   margin-right: 6rem;
-  color: #747474;
+  /* color: #747474; */
   line-height: 1.8rem;
 }
 
@@ -119,14 +119,14 @@
 }
 
 .about_body_firstpara h3 {
-  color: #1b1b1b;
+
   font-family: "AvantGarde Bold", Sans-serif;
   font-size: 22px;
   font-weight: 700;
 }
 
 .about_body_firstpara p {
-  color: #747474;
+  /* color: #747474; */
   font-family: "Trade Gothic", Sans-serif;
   font-size: 17px;
   font-weight: 400;
@@ -135,14 +135,14 @@
 }
 
 .about_body_secpara h3 {
-  color: #1b1b1b;
+
   font-family: "AvantGarde Bold", Sans-serif;
   font-size: 22px;
   font-weight: 700;
 }
 
 .about_body_secpara p {
-  color: #747474;
+  /* color: #747474; */
   font-family: "Trade Gothic", Sans-serif;
   font-size: 17px;
   font-weight: 400;
@@ -152,7 +152,7 @@
 }
 
 .about_body_thirdpara h3 {
-  color: #1b1b1b;
+  /* color: #1b1b1b; */
   font-family: "AvantGarde Bold", Sans-serif;
   font-size: 22px;
   font-weight: 700;
@@ -160,7 +160,7 @@
 }
 
 .about_body_thirdpara p {
-  color: #747474;
+  /* color: #747474; */
   font-family: "Trade Gothic", Sans-serif;
   font-size: 17px;
   font-weight: 400;
@@ -528,7 +528,7 @@
 .about_border_contact p {
   margin-top: 10px;
   padding-bottom: 10px;
-  color: #747474;
+  /* color: #747474; */
   font-family: "Trade Gothic", Sans-serif;
 }
 .map {

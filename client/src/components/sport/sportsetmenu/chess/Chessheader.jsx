@@ -1,31 +1,40 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../../technology/technology.css";
+// import "../../../technology/technology.css";
+import "../../sportbanner.css";
+import { Box, Breadcrumbs, Typography, Stack } from "@mui/material";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
 export default function Chessheader() {
   return (
-    <section className="technology">
-      <div className="top">
-        <Link to="/" className="link1">
-          <h4 className="capitalize">Home</h4>
-        </Link>
-        <div className="icon">
-          <i className="uil uil-angle-right-b"></i>
-        </div>
-        <Link to="/sports" className="link1">
-          <h4 className="capitalize">Sports</h4>
-        </Link>
-        <div className="icon">
-          <i className="uil uil-angle-right-b"></i>
-        </div>
-        <h4 className="capitalize">chess</h4>
-      </div>
-      <div className="sectop">
-        <h1>chess</h1>
-      </div>
+    <section className="mainetn1">
+      <Box sx={{ marginButtom: "10px" }}>
+        <Breadcrumbs
+          color={"#747474"}
+          aria-label="breadcrumb"
+          separator={<NavigateNextIcon fontSize="small" />}
+        >
+          <Link to="/" className="link1" fontSize="25px">
+            <Typography>Home</Typography>
+          </Link>
+          <Link to="/sports" className="link1" fontSize="25px">
+            <Typography>Sport</Typography>
+          </Link>
+          <Typography>Chess</Typography>
+        </Breadcrumbs>
+      </Box>
+      <Typography
+        variant="h1"
+        fontSize={30}
+        fontWeight={700}
+        textTransform="uppercase"
+        sx={{ marginTop: "10px" }}
+      >
+        Sport
+      </Typography>
       <div className="Catabutton">
         <Link to="/football">
-          <button className="tec">football</button>
+          <button className="tec ">football</button>
         </Link>
         <Link to="/boxing">
           <button className="tec">boxing</button>
@@ -40,6 +49,17 @@ export default function Chessheader() {
           <button className="tec">gamming</button>
         </Link>
       </div>
+      <Typography
+        variant="body1"
+        fontFamily={("Open Sans", "Open Sans Regular", "sans - serif")}
+        fontStyle={"italic"}
+        align={"justify"}
+        sx={{ marginTop: "18px", color: "#777" }}
+      >
+        Modern technology has become a total phenomenon for civilization, the
+        defining force of a new social order in which efficiency is no longer an
+        option but a necessity imposed on all human activity.
+      </Typography>
     </section>
   );
 }
