@@ -98,6 +98,18 @@ ul li {
     color: rgb(255, 174, 0);
 
 }
+.fbfooterhv:hover{
+  color: #4db2ec;
+}
+.instafooterhv:hover{
+  color: #cd486b;
+}
+.twitterfooterhv:hover{
+  color: #1D9BF0;
+}
+.youtubefooterhv:hover{
+  color: #bb0000;
+}
 @media screen and (max-width: 1200px) {
   .fotpayment{
 gap: .2rem;

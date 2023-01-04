@@ -1,4 +1,5 @@
 import React from "react";
+// import './entermentbanner.css'
 
 export default function TechnologyPopular() {
   return (

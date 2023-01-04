@@ -114,7 +114,6 @@ export default function Aboutbody() {
                 >
                   <GitHubIcon />
                 </a>
-
                 <div className="fullstack">Full-Stack Developer</div>
               </div>
             </div>

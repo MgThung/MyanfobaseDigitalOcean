@@ -1,9 +1,66 @@
-import React from "react";
+// import React from "react";
 
+// // import CSSRulePlugin from "gsap/CSSRulePlugin";
+// // import { TimelineLite, Power2 } from "gsap";
+
+// export default function Koreanbanner () {
+ 
+//   return (
+//     <section>
+//       <div className="mainetn">
+//         <div className="firstetn">
+//           <div className="hansoetn">
+//             <img src="./images/entertainment/korera/business.jpg" alt="" />
+//           </div>
+
+//           <div className="hansoetn_P">
+//             <p className="paragraph">
+//               Seo Hyun Jin, Hwang In Yeop & more star in an intriguing group
+//               poster for ‘Why Her’ The SBS drama is set to premiere soon!
+//             </p>
+//           </div>
+//         </div>
+
+//         <div className="secetn">
+//           <div className="moneyheist">
+//             <img src="./images/entertainment/korera/start-up.jpg" alt="" />
+//           </div>
+//           <div className="moneyheist_P">
+//             <p>
+//               Seo Hyun Jin, Hwang In Yeop & more star in an intriguing <br />{" "}
+//               group poster for ‘Why Her’ The SBS drama is set
+//               <br /> to premiere soon!
+//             </p>
+//           </div>
+//         </div>
+
+//         <div className="thirdetn">
+//           <div className="jurassic">
+//             <img src="./images/entertainment/korera/hotel_del_luna.jpg" alt="" />
+//           </div>
+//           <div className="jurassic_P">
+//             <p>
+//               Seo Hyun Jin, Hwang In Yeop & more star in an intriguing group
+//               poster for ‘Why Her’ The SBS drama is set to premiere soon!
+//             </p>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+
+
+
+
+import React from "react";
+import "../../entermentbanner.css";
+// import "./entermentbanner.css";
+import { Grid } from "@mui/material";
 // import CSSRulePlugin from "gsap/CSSRulePlugin";
 // import { TimelineLite, Power2 } from "gsap";
 
-export default function Koreanbanner () {
+export default function Koreanbanner() {
   // let container = useRef(null);
   // let image = useRef(null);
   // let imageReveal = CSSRulePlugin.getRule(".hansoetn:after");
@@ -19,46 +76,59 @@ export default function Koreanbanner () {
   // });
 
   return (
-    <section>
-      <div className="mainetn">
-        <div className="firstetn">
-          <div className="hansoetn">
-            <img src="./images/entertainment/korera/business.jpg" alt="" />
-          </div>
+    <section className="mainetn1">
+      <Grid
+        my={3}
+        container
+        sx={{ margin: "auto", width: "100%", gap: "3rem" }}
+        rowSpacing={3}
+      >
+        <Grid item xs={5.5} sm={3.7}>
+          <div className="firstetn">
+            <div className="hansoetn">
+              <img src="./images/entertainment/korera/business.jpg" alt="" />
+            </div>
 
-          <div className="hansoetn_P">
-            <p className="paragraph">
-              Seo Hyun Jin, Hwang In Yeop & more star in an intriguing group
-              poster for ‘Why Her’ The SBS drama is set to premiere soon!
-            </p>
+            <div className="hansoetn_P">
+              <p className="paragraph">
+                Seo Hyun Jin, Hwang In Yeop & more star in an intriguing group
+                poster for ‘Why Her’ The SBS drama is set to premiere soon!
+              </p>
+            </div>
           </div>
-        </div>
-
-        <div className="secetn">
-          <div className="moneyheist">
-            <img src="./images/entertainment/korera/start-up.jpg" alt="" />
+        </Grid>
+        <Grid item xs={5.5} sm={3.7}>
+          <div className="secetn">
+            <div className="moneyheist">
+              <img src="./images/entertainment/korera/start-up.jpg" alt="" />
+            </div>
+            <div className="moneyheist_P">
+              <p>
+                Seo Hyun Jin, Hwang In Yeop & more star in an intriguing <br />{" "}
+                group poster for ‘Why Her’ The SBS drama is set
+                <br /> to premiere soon!
+              </p>
+            </div>
           </div>
-          <div className="moneyheist_P">
-            <p>
-              Seo Hyun Jin, Hwang In Yeop & more star in an intriguing <br />{" "}
-              group poster for ‘Why Her’ The SBS drama is set
-              <br /> to premiere soon!
-            </p>
+        </Grid>
+        <Grid item xs={6} sm={3.7}>
+          <div className="thirdetn">
+            <div className="jurassic">
+           
+              <img
+                src="./images/entertainment/korera/hotel_del_luna.jpg"
+                alt=""
+              />
+            </div>
+            <div className="jurassic_P">
+              <p>
+                Seo Hyun Jin, Hwang In Yeop & more star in an intriguing group
+                poster for ‘Why Her’ The SBS drama is set to premiere soon!
+              </p>
+            </div>
           </div>
-        </div>
-
-        <div className="thirdetn">
-          <div className="jurassic">
-            <img src="./images/entertainment/korera/hotel_del_luna.jpg" alt="" />
-          </div>
-          <div className="jurassic_P">
-            <p>
-              Seo Hyun Jin, Hwang In Yeop & more star in an intriguing group
-              poster for ‘Why Her’ The SBS drama is set to premiere soon!
-            </p>
-          </div>
-        </div>
-      </div>
+        </Grid>
+      </Grid>
     </section>
   );
 }
