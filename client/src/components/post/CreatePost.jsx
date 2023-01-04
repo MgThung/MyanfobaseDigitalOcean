@@ -6,6 +6,7 @@ import { useSelector, useDispatch } from "react-redux";
 import "./textform.css";
 import "./postform.css";
 import "./dropdowncate.css";
+import { CategoriesData } from "./CategoriesData";
 import { createPost } from "../../features/posts/postSlice";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
@@ -19,6 +20,8 @@ export default function CreatePost(props) {
   });
   const titleRef = useRef(null);
   const descRef = useRef(null);
+
+  console.log("category data", CategoriesData);
 
   const setTextarea = (element, defaultHeight) => {
     if (element) {
@@ -96,24 +99,23 @@ export default function CreatePost(props) {
               onClick={(e) => setIsActive(!isActive)}
             >
               {input.cateName}
-              <ArrowDropDownIcon/>
+              <ArrowDropDownIcon />
             </div>
             {isActive && (
               <div className="dropdown-content">
-                {categories &&
-                  categories.map((option, index) => (
-                    <div
-                      key={index}
-                      onClick={(e) =>
-                        onChangeCateId(option._id)(
-                          onChangeCate(option.catename)(setIsActive(false))
-                        )
-                      }
-                      className="dropdown-item"
-                    >
-                      {option.catename}
-                    </div>
-                  ))}
+                {CategoriesData.map((option, index) => (
+                  <div
+                    key={index}
+                    onClick={(e) =>
+                      onChangeCateId(option._id)(
+                        onChangeCate(option.catename)(setIsActive(false))
+                      )
+                    }
+                    className="dropdown-item"
+                  >
+                    {option.catename}
+                  </div>
+                ))}
               </div>
             )}
           </div>
