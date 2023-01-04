@@ -1,4 +1,6 @@
 import React from "react";
+import "../../subcategory/subcategy.css";
+
 
 export default function Waterbanner() {
   return (

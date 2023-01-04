@@ -3,7 +3,7 @@ import "./subcategy.css";
 
 export default function Subcategorybanner() {
   return (
-    <section className="catebannerImg">
+    <section className="container catebannerImg">
       <div className="leftBanner">
         <div className="catebanner1">
           <img src="./images/technology/computerpage/computerbanner1.jpg" />

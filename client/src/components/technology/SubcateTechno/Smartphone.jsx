@@ -1,27 +1,36 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Box, Breadcrumbs, Typography, Stack } from "@mui/material";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import "../technology.css";
 
 export default function Smartphone() {
   return (
-    <section className="technology">
-      <div className="top">
-        <Link to="/" className="link1">
-          <h4 className="capitalize">Home</h4>
-        </Link>
-        <div className="icon">
-          <i className="uil uil-angle-right-b"></i>
-        </div>
-        <Link to="/technology" className="link1">
-          <h4 className="capitalize">Technology</h4>
-        </Link>
-        <div className="icon">
-          <i className="uil uil-angle-right-b"></i>
-        </div>
-        <h4 className="capitalize">SmartPhone</h4>
-      </div>
-      <div className="sectop">
-        <h1>SmartPhone</h1>
-      </div>
+    <section className="container technology">
+      <Box sx={{ marginButtom: "10px" }}>
+        <Breadcrumbs
+          color={"#747474"}
+          aria-label="breadcrumb"
+          separator={<NavigateNextIcon fontSize="small" />}
+        >
+          <Link to="/" className="link1" fontSize="25px">
+            <Typography>Home</Typography>
+          </Link>
+          <Link to="/technology" className="link1" fontSize="25px">
+            <Typography>Technology</Typography>
+          </Link>
+          <Typography>Smartphone</Typography>
+        </Breadcrumbs>
+      </Box>
+      <Typography
+        variant="h1"
+        fontSize={30}
+        fontWeight={700}
+        textTransform="uppercase"
+        sx={{ marginTop: "10px" }}
+      >
+        Technology
+      </Typography>
       <div className="Catabutton">
         <Link to="/computer">
           <button className="tec">Computer</button>
@@ -33,7 +42,7 @@ export default function Smartphone() {
           <button className="tec">Innovation</button>
         </Link>
         <Link to="/smartphone">
-          <button className="tec btnactive">Smartphone</button>
+          <button className="tec">Smartphone</button>
         </Link>
         <Link to="/software">
           <button className="tec">Software</button>

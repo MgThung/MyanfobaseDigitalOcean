@@ -1,22 +1,25 @@
 import Latestbar from "../../components/catepagerightbar/Latestbar";
+import PopularNews from "../../components/catepagerightbar/PopularNews";
 import Hfoods from "../../components/health/healthsetcat/healthyFood/Hfood";
 import HfoodsBanner from "../../components/health/healthsetcat/healthyFood/Hfoodsbanner";
-import Hfoodspopular from "../../components/health/healthsetcat/healthyFood/HfoodsPopular";
 import HealthSidebar from "../../components/health/Healthsidebar";
+import { Grid } from "@mui/material";
 
 export default function Hfoodspage() {
   return (
     <>
+      <Hfoods />
+      <HfoodsBanner />
       <section className="container">
-        <Hfoods />
-        <HfoodsBanner />
-        <section className="tecbody">
-          <HealthSidebar />
-          <div className="allRightBar">
-            <Hfoodspopular />
+        <Grid my={2} container>
+          <Grid item xs={12} xl={8.4} md={8.4}>
+            <HealthSidebar />
+          </Grid>
+          <Grid item xs={12} xl={3.6} md={3.6}>
+            <PopularNews />
             <Latestbar />
-          </div>
-        </section>
+          </Grid>
+        </Grid>
       </section>
     </>
   );

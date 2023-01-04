@@ -1,23 +1,27 @@
 import React from "react";
 import Latestbar from "../../components/catepagerightbar/Latestbar";
-import Subcatemain from "../../components/subcategory/Subcatemain";
+import PopularNews from "../../components/catepagerightbar/PopularNews";
+import Tecmain from "../../components/catepagerightbar/Tecmain";
 import Software from "../../components/technology/SubcateTechno/Software";
 import SoftwareBanner from "../../components/technology/SubcateTechno/SoftwareBanner";
-import TechnologyPopular from "../../components/technology/TechnologyPopular";
+import { Grid } from "@mui/material";
+
 
 export default function SoftwarePage() {
   return (
     <>
+      <Software />
+      <SoftwareBanner />
       <section className="container">
-        <Software />
-        <SoftwareBanner />
-        <section className="tecbody">
-          <Subcatemain />
-          <div className="allRightBar">
-            <TechnologyPopular />
+        <Grid container my={2}>
+          <Grid item xs={12} xl={8.4} md={8.4}>
+            <Tecmain />
+          </Grid>
+          <Grid item xs={12} xl={3.6} md={3.6}>
+            <PopularNews />
             <Latestbar />
-          </div>
-        </section>
+          </Grid>
+        </Grid>
       </section>
     </>
   );

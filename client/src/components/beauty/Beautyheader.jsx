@@ -1,5 +1,6 @@
 import React from "react";
 import "../technology/technology.css";
+import "../travelling/theader.css"
 import { Link } from "react-router-dom";
 import { Box, Breadcrumbs, Typography, Stack } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";

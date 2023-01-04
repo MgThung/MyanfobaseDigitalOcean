@@ -1,22 +1,26 @@
 import Latestbar from "../../components/catepagerightbar/Latestbar";
 import HealthClinic from "../../components/health/healthsetcat/clinic/healthClinic";
 import HealthClinicbanner from "../../components/health/healthsetcat/clinic/healthClinicBanner";
-import HealthClinicPopular from "../../components/health/healthsetcat/clinic/healthClinicPopular";
-import HealthClinicSidebar from "../../components/health/healthsetcat/clinic/healthlinicSidebar";
+import HealthSidebar from "../../components/health/Healthsidebar";
+import { Grid } from "@mui/material";
+import PopularNews from "../../components/catepagerightbar/PopularNews";
+
 
 export default function HealthClinicPage() {
   return (
     <>
+      <HealthClinic />
+      <HealthClinicbanner />
       <section className="container">
-        <HealthClinic />
-        <HealthClinicbanner />
-        <section className="tecbody">
-          <HealthClinicSidebar />
-          <div className="allRightBar">
-            <HealthClinicPopular />
+        <Grid my={2} container>
+          <Grid item xs={12} xl={8.4} md={8.4}>
+            <HealthSidebar />
+          </Grid>
+          <Grid item xs={12} xl={3.6} md={3.6}>
+            <PopularNews />
             <Latestbar />
-          </div>
-        </section>
+          </Grid>
+        </Grid>
       </section>
     </>
   );

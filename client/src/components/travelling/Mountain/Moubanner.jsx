@@ -1,4 +1,6 @@
 import React from "react";
+import "../../subcategory/subcategy.css";
+
 
 export default function Moubanner() {
   return (
@@ -20,7 +22,7 @@ export default function Moubanner() {
         </div>
         <div className="rightBanner">
           <div className="catebanner2">
-            <img src="./images/travel/mountain/taungwine.jpg" alt="" />
+            <img src="./images/travel/mountain/mountains.jpg" alt="" />
           </div>
           <article className="bannerPara">
             <button className="cateTravel ">Travel</button>

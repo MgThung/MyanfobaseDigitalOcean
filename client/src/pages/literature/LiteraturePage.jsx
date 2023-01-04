@@ -9,9 +9,7 @@ import "./literaturebody.css";
 export default function LiteraturePage() {
   return (
     <>
-      <div className="container">
         <Literature />
-      </div>
       <section className="container">
         <Grid my={2} container>
           <Grid item xs={12} xl={8.4} md={8.4}>

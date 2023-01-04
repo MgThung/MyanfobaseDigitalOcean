@@ -1,41 +1,41 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Box, Container, Grid, Typography } from "@mui/material";
+import { Breadcrumbs, Stack } from "@mui/material";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import "../../technology/technology.css";
+import "../../travelling/theader.css";
 
 export default function Poetry() {
   return (
-    <section className="technology">
-      <div className="top">
-        <Link to="/" className="link1">
-          <h4 className="capitalize">Home</h4>
-        </Link>
-        <div className="icon">
-          <i className="uil uil-angle-right-b"></i>
-        </div>
-        <Link to="/literature" className="link1">
-          <h4 className="capitalize">Literature</h4>
-        </Link>
-        <div className="icon">
-          <i className="uil uil-angle-right-b"></i>
-        </div>
-        <h4 className="capitalize">Poetry</h4>
-      </div>
-      <div className="sectop">
-        <h1>Poetry</h1>
-      </div>
-      <div className="Catabutton">
-        <Link to="/poetry">
-          <button className="tec btnactive">Poetry</button>
-        </Link>
-        <Link to="/fiction">
-          <button className="tec">Fiction</button>
-        </Link>
-        <Link to="/drama">
-          <button className="tec">Drama</button>
-        </Link>
-        <Link to="/comedy">
-          <button className="tec">Comedy</button>
-        </Link>
+    <section className="container travel">
+      <Box sx={{ marginButtom: "10px" }}>
+        <Breadcrumbs
+          color={"#747474"}
+          aria-label="breadcrumb"
+          separator={<NavigateNextIcon fontSize="small" />}
+        >
+          <Link to="/" className="link1" fontSize="25px">
+            <Typography>Home</Typography>
+          </Link>
+          <Link to="/literature" className="link1" fontSize="25px">
+            <Typography>Literature</Typography>
+          </Link>
 
+          <Typography>Poetry</Typography>
+        </Breadcrumbs>
+      </Box>
+      <Typography
+        variant="h1"
+        fontSize={30}
+        fontWeight={700}
+        textTransform="uppercase"
+        sx={{ marginTop: "10px" }}
+      >
+        Poetry
+      </Typography>
+
+      <div className="button">
         <Link to="/novel">
           <button className="tec">Novel</button>
         </Link>
@@ -44,6 +44,12 @@ export default function Poetry() {
         </Link>
         <Link to="/romance">
           <button className="tec">Romance</button>
+        </Link>
+        <Link to="/fiction">
+          <button className="tec">Fiction</button>
+        </Link>
+        <Link to="/poetry">
+          <button className="tec">Poetry</button>
         </Link>
       </div>
     </section>
