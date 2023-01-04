@@ -9,7 +9,7 @@ function Dialog({ message, onDialog, Postname }) {
         left: "0",
         right: "0",
         bottom: "0",
-        backgroundColor: "rgba(0,0,0,0.05)",
+        backgroundColor: "rgba(0,0,0,0.2)",
       }}
       hey
       onClick={() => onDialog(false)}

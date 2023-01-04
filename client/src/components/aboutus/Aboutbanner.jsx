@@ -18,7 +18,7 @@ export default function Aboutbanner() {
             marginRight: "16",
             marginTop: "1rem",
             paddingBottom: "1",
-            color: "#9a9a9a",
+            // color: "#9a9a9a",
           }}
         >
           HEATING AND AIR CONDITIONING REPAIR AND <br />
