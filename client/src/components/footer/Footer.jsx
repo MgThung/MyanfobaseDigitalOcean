@@ -35,7 +35,7 @@ export default function Footer() {
                       <Grid item>
                         <HomeIcon />
                       </Grid>
-                      <Grid item>NO(10). Maharbowga street Yangon</Grid>
+                      <Grid item>No(10). Maharbowga street Yangon</Grid>
                     </Grid>
                   </Box>
                   <Box p={1}>
@@ -65,7 +65,7 @@ export default function Footer() {
                       </Grid>
                     </Grid>
                   </Box>
-                  <Box p={1}>
+                  {/* <Box p={1}>
                     <Grid container direction="row" spacing={0.5}>
                       <Grid item>
                         <MailIcon />
@@ -78,9 +78,8 @@ export default function Footer() {
                         />
                       </Grid>
                     </Grid>
-                  </Box>
+                  </Box> */}
                 </Grid>
-                {console.log("footer render time")}
                 <Grid item xs={12} sm={6} md={3}>
                   <Box p={0.5}>
                     <h4>Category</h4>
@@ -207,7 +206,7 @@ export default function Footer() {
                   </Box>
                   <Box p={0.5}>
                     <Grid container direction="row" spacing={0.5}>
-                      <Grid item>
+                      <Grid item className="fbfooterhv">
                         <FacebookIcon />
                       </Grid>
                       <Grid item>
@@ -217,7 +216,7 @@ export default function Footer() {
                   </Box>
                   <Box p={0.5}>
                     <Grid container direction="row" spacing={0.5}>
-                      <Grid item>
+                      <Grid item className="instafooterhv">
                         <InstagramIcon />
                       </Grid>
                       <Grid item>
@@ -227,7 +226,7 @@ export default function Footer() {
                   </Box>
                   <Box p={0.5}>
                     <Grid container direction="row" spacing={0.5}>
-                      <Grid item>
+                      <Grid item className="twitterfooterhv">
                         <TwitterIcon />
                       </Grid>
                       <Grid item>
@@ -237,7 +236,7 @@ export default function Footer() {
                   </Box>
                   <Box p={0.5}>
                     <Grid container direction="row" spacing={0.5}>
-                      <Grid item>
+                      <Grid item className="youtubefooterhv">
                         <YouTubeIcon />
                       </Grid>
                       <Grid item>
@@ -245,7 +244,7 @@ export default function Footer() {
                       </Grid>
                     </Grid>
                   </Box>
-                  <Box p={0.5}>Student Discount</Box>
+                  {/* <Box p={0.5}>Student Discount</Box> */}
                   <div>
                     <ul className="fotpayment">
                       <li>
@@ -269,7 +268,7 @@ export default function Footer() {
 
           <span className="footerunderline"></span>
           <p className="copyright">
-            &copy; Copyright 2022. <span> SGcamp (3) Webdevelopment Team</span>
+            &copy; Copyright 2022. <span> Webdevelopment Team</span>
           </p>
           {/* </div> */}
         </footer>

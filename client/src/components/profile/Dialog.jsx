@@ -9,8 +9,9 @@ function Dialog({ message, onDialog, Postname }) {
         left: "0",
         right: "0",
         bottom: "0",
-        backgroundColor: "rgba(0,0,0,0.5)",
+        backgroundColor: "rgba(0,0,0,0.2)",
       }}
+      hey
       onClick={() => onDialog(false)}
     >
       <div
@@ -29,7 +30,9 @@ function Dialog({ message, onDialog, Postname }) {
           borderRadius: "10px",
         }}
       >
-        <h3 className="areusure" stlye={{  fontSize: "16px" }}>{message}</h3>
+        <h3 className="areusure" stlye={{ fontSize: "16px" }}>
+          {message}
+        </h3>
         <h1 style={{ color: "black", fontSize: "24px", marginTop: "30px" }}>
           {Postname}
         </h1>

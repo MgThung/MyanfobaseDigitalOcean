@@ -67,7 +67,7 @@ export default function Aboutcontact() {
                 ref={emailref}
                 type="email"
                 name="email"
-                placeholder="email< ^ ~ ^ >"
+                placeholder="email"
               ></input>
             </div>
 
@@ -76,7 +76,7 @@ export default function Aboutcontact() {
                 ref={messref}
                 type="text"
                 name="message"
-                placeholder="adress< ^ ~ ^ >"
+                placeholder="comment"
               ></textarea>
             </div>
           </div>

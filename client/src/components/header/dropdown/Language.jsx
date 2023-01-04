@@ -16,7 +16,7 @@ const options = [
 ];
 
 function onChangeInput(value) {
-  console.log(value);
+
 }
 export default function Language() {
   return (
