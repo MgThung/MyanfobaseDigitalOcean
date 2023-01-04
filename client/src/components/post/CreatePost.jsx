@@ -21,8 +21,6 @@ export default function CreatePost(props) {
   const titleRef = useRef(null);
   const descRef = useRef(null);
 
-  console.log("category data", CategoriesData);
-
   const setTextarea = (element, defaultHeight) => {
     if (element) {
       const target = element.target ? element.target : element;

@@ -13,7 +13,7 @@ export default function Sketchespage() {
         <Sketchesbanner />
         <section className="contaier">
           <div className="artbody">
-            <ArtssMain />
+            <ArtssMain category={"Art-Sketches"} />
             <div className="allRightBar">
               <ArtssPopular />
               <Latestbar />

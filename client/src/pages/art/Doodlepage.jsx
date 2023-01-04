@@ -14,7 +14,7 @@ export default function Doodlepage() {
       </section>
       <section className="container">
         <div className="artbody">
-          <ArtssMain />
+          <ArtssMain category={"DoodleArt"} />
           <div className="allRightBar">
             <ArtssPopular />
             <Latestbar />

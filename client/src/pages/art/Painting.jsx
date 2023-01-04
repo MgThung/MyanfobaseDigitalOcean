@@ -14,7 +14,7 @@ export default function Painting() {
       </section>
       <section className="container">
         <div className="artbody">
-          <ArtssMain />
+          <ArtssMain category={"Painting"} />
 
           <div className="allRightBar">
             <ArtssPopular />

@@ -1,11 +1,9 @@
-import React from 'react'
-import Animebanner from '../../components/artss/artsetmenu/anime/Animebanner'
-import Animeheader from '../../components/artss/artsetmenu/anime/Animeheader'
-import ArtssMain from '../../components/artss/ArtssMain'
-import ArtssPopular from '../../components/artss/ArtssPopular'
-import Latestbar from '../../components/catepagerightbar/Latestbar'
-
-
+import React from "react";
+import Animebanner from "../../components/artss/artsetmenu/anime/Animebanner";
+import Animeheader from "../../components/artss/artsetmenu/anime/Animeheader";
+import ArtssMain from "../../components/artss/ArtssMain";
+import ArtssPopular from "../../components/artss/ArtssPopular";
+import Latestbar from "../../components/catepagerightbar/Latestbar";
 
 export default function Animepage() {
   return (
@@ -16,14 +14,13 @@ export default function Animepage() {
       </section>
       <section className="container">
         <div className="artbody">
-          <ArtssMain />
+          <ArtssMain category={"Anime-Art"} />
           <div className="allRightBar">
             <ArtssPopular />
             <Latestbar />
           </div>
         </div>
-          </section>
-    
+      </section>
     </>
   );
 }

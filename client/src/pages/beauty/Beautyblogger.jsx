@@ -13,7 +13,7 @@ export default function Beautyblogger() {
         <Blogger />
         <Bloggerbanner />
         <section className="tecbody">
-          <Bloggersidebar />
+          <Bloggersidebar category={"Beauty-Blog"} />
           <BloggerRightbar />
         </section>
       </section>

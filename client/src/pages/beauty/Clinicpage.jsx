@@ -10,7 +10,7 @@ export default function BeautyClinicpage() {
         <BeautyClinic />
         <BeautyClinicBanner />
         <section className="tecbody">
-          <BeautyClinicsidebar />
+          <BeautyClinicsidebar category={"Beauty-Clinic"} />
           <BeautyClinicRightbar />
         </section>
       </section>

@@ -11,7 +11,7 @@ export default function Makeuppage() {
         <Makeupbanner />
 
         <section className="tecbody">
-          <Makeupsidebar />
+          <Makeupsidebar category={"Make-up"} />
           <MakeupRightbar />
         </section>
       </section>

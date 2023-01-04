@@ -11,7 +11,7 @@ export default function Skinpage() {
         <Skinbanner />
 
         <section className="tecbody">
-          <Skinsidebar />
+          <Skinsidebar category={"Skincare"} />
           <SkinRightbar />
         </section>
       </section>

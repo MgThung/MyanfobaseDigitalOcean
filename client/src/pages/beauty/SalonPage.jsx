@@ -11,7 +11,7 @@ export default function SalonPage() {
         <Salonbanner />
 
         <section className="tecbody">
-          <Salonsidebar />
+          <Salonsidebar category={"Beauty-Salon"} />
           <SalonRightbar />
         </section>
       </section>

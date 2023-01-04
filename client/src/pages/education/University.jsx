@@ -10,7 +10,7 @@ const University = () => {
       <Univerhead />
       <Univerbenner />
       <section className="container travel1">
-        <EduSlide />
+        <EduSlide category={"Universities"} />
         <EduRight />
       </section>
     </>
