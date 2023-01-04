@@ -10,10 +10,11 @@ import { FiLock, FiMail } from "react-icons/fi";
 import { Stack, TextField } from "@mui/material";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import VisibilityIcon from "@mui/icons-material/Visibility";
-import SinginInput from "./singinInput"
-import PersonIcon from '@mui/icons-material/Person';
+import SinginInput from "./singinInput";
+import PersonIcon from "@mui/icons-material/Person";
 import EmailIcon from "@mui/icons-material/Email";
 import LockIcon from "@mui/icons-material/Lock";
+import "./singinInput";
 
 const ErrorShow = (prop) => {
   return (
@@ -36,7 +37,6 @@ const LoginCompo = () => {
 
   const [show, setShow] = useState(false);
   const [comfirmpwshow, setComfirmpwshow] = useState(false);
-  
 
   const singinInputs = [
     {
@@ -114,7 +114,7 @@ const LoginCompo = () => {
 
     if (password1ref.current.value !== confirmpasref.current.value) {
       toast.error("Passwords do not match");
-    }  else {
+    } else {
       const formData = new FormData();
       formData.append("username", usernameref.current.value);
       formData.append("email", emaileref.current.value);
@@ -130,7 +130,6 @@ const LoginCompo = () => {
         toast.success("Your Account successfully created");
       });
     }
-
   };
   /* login data */
   const [loginData, setLoginData] = useState({
@@ -173,7 +172,7 @@ const LoginCompo = () => {
             <form action="" className="sign-in-form" onSubmit={onSubmitlogin}>
               <h2 className="titlt">Sign in</h2>
 
-              <Stack >
+              <Stack>
                 <TextField
                   className="singinemail"
                   variant="outlined"
