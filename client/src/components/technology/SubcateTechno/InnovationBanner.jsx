@@ -3,7 +3,7 @@ import React from "react";
 export default function InnovationBanner() {
   return (
     <>
-      <section className="catebannerImg">
+      <section className="container catebannerImg">
         <div className="leftBanner">
           <div className="catebanner1">
             <img src="./images/technology/innovation/innovationbanner1.png" />

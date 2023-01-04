@@ -18,7 +18,7 @@ const Art = React.lazy(() => import("./pages/art/Art"));
 const Doodlepage = React.lazy(() => import("./pages/art/Doodlepage"));
 const Painting = React.lazy(() => import("./pages/art/Painting"));
 const Sketchespage = React.lazy(() => import("./pages/art/Sketchespage"));
-const Surreatpage = React.lazy(() => import("./pages/art/Surreatpage"));
+
 const Beauty = React.lazy(() => import("./pages/beauty/Beauty"));
 const Beautyblogger = React.lazy(() => import("./pages/beauty/Beautyblogger"));
 const Makeuppage = React.lazy(() => import("./pages/beauty/makeupPage"));
@@ -28,38 +28,36 @@ const ExercisePage = React.lazy(() =>
   import("./pages/lifestylepage/exercisePage")
 );
 const Lifestyle = React.lazy(() => import("./pages/lifestylepage/Lifestyle"));
-const Asianpage = React.lazy(() => import("./pages/entertainment/Asianpage"));
+
 const Cartoonpage = React.lazy(() =>
   import("./pages/entertainment/Cartoonpage")
 );
-const Cinemapage = React.lazy(() => import("./pages/entertainment/Cinemapage"));
+
 const Entertainment = React.lazy(() =>
   import("./pages/entertainment/Entertainment")
 );
 const Koreanpage = React.lazy(() => import("./pages/entertainment/Koreanpage"));
 const Moviepage = React.lazy(() => import("./pages/entertainment/Moviepage"));
 const Music = React.lazy(() => import("./pages/entertainment/Music"));
-const Myanmar = React.lazy(() => import("./pages/entertainment/Myanmar"));
+
 const DetailPage = React.lazy(() => import("./pages/detailpage/DetailPage"));
 const Business = React.lazy(() => import("./pages/business/Business"));
 const Education = React.lazy(() => import("./pages/education/Education"));
 const University = React.lazy(() => import("./pages/education/University"));
 const Government = React.lazy(() => import("./pages/government/Govenment"));
 const Law = React.lazy(() => import("./pages/government/Law"));
-const Leader = React.lazy(() => import("./pages/government/Leader"));
+
 const Ministry = React.lazy(() => import("./pages/government/Ministry"));
 const Passport = React.lazy(() => import("./pages/government/Passport"));
 const Police = React.lazy(() => import("./pages/government/Police"));
 const Culture = React.lazy(() => import("./pages/history/Culture"));
 const Dress = React.lazy(() => import("./pages/history/Dress"));
-const Dynasty = React.lazy(() => import("./pages/history/Dynasty"));
+
 const History = React.lazy(() => import("./pages/history/History"));
 const Region = React.lazy(() => import("./pages/history/Region"));
 const Religous = React.lazy(() => import("./pages/history/Religous"));
 // import Home from "./pages/home/Home";
 
-const ComedyPage = React.lazy(() => import("./pages/literature/ComedyPage"));
-const DramaPage = React.lazy(() => import("./pages/literature/DramaPage"));
 const FictionPage = React.lazy(() => import("./pages/literature/FictionPage"));
 const LiteraturePage = React.lazy(() =>
   import("./pages/literature/LiteraturePage")
@@ -91,9 +89,7 @@ const ComputerPage = React.lazy(() => import("./pages/tecnology/ComputerPage"));
 const ElectronicPage = React.lazy(() =>
   import("./pages/tecnology/ElectronicPage")
 );
-const InnovationPage = React.lazy(() =>
-  import("./pages/tecnology/InnovationPage")
-);
+
 const SmartphonePage = React.lazy(() =>
   import("./pages/tecnology/SmartphonePage")
 );
@@ -102,15 +98,14 @@ const TecnologyPages = React.lazy(() =>
   import("./pages/tecnology/TecnologyPage")
 );
 
-const Advanture = React.lazy(() => import("./pages/travelling/Advanture"));
 const Beach = React.lazy(() => import("./pages/travelling/Beach"));
 const Mountain = React.lazy(() => import("./pages/travelling/Mountain"));
 const Pagoda = React.lazy(() => import("./pages/travelling/Pagoda"));
 const Travel = React.lazy(() => import("./pages/travelling/Travel"));
 const Waterfall = React.lazy(() => import("./pages/travelling/Waterfall"));
-const FamilyPage = React.lazy(() => import("./pages/lifestylepage/familyPage"));
+
 const LuxuryPage = React.lazy(() => import("./pages/lifestylepage/luxuryPage"));
-const ModernPage = React.lazy(() => import("./pages/lifestylepage/modernPage"));
+
 const HealthyLifePage = React.lazy(() =>
   import("./pages/lifestylepage/healthyPage")
 );
@@ -303,14 +298,7 @@ function App() {
             </React.Suspense>
           }
         />
-        <Route
-          path="/surreat"
-          element={
-            <React.Suspense fallback="Loading....">
-              <Surreatpage />
-            </React.Suspense>
-          }
-        />
+
         <Route
           path="/painting"
           element={
@@ -360,14 +348,7 @@ function App() {
             </React.Suspense>
           }
         />
-        <Route
-          path="/Advanture_trip"
-          element={
-            <React.Suspense fallback="Loading....">
-              <Advanture />
-            </React.Suspense>
-          }
-        />
+
         <Route
           path="/computer"
           element={
@@ -384,14 +365,7 @@ function App() {
             </React.Suspense>
           }
         />
-        <Route
-          path="/innovation"
-          element={
-            <React.Suspense fallback="Loading....">
-              <InnovationPage />
-            </React.Suspense>
-          }
-        />
+
         <Route
           path="/smartphone"
           element={
@@ -433,35 +407,12 @@ function App() {
             </React.Suspense>
           }
         />
-        <Route
-          path="/cinema"
-          element={
-            <React.Suspense fallback="Loading....">
-              <Cinemapage />
-            </React.Suspense>
-          }
-        />
+
         <Route
           path="/music"
           element={
             <React.Suspense fallback="Loading....">
               <Music />
-            </React.Suspense>
-          }
-        />
-        <Route
-          path="/asian"
-          element={
-            <React.Suspense fallback="Loading....">
-              <Asianpage />
-            </React.Suspense>
-          }
-        />
-        <Route
-          path="/myanmar"
-          element={
-            <React.Suspense fallback="Loading....">
-              <Myanmar />
             </React.Suspense>
           }
         />
@@ -563,14 +514,7 @@ function App() {
             </React.Suspense>
           }
         />
-        <Route
-          path="/leader"
-          element={
-            <React.Suspense fallback="Loading....">
-              <Leader />
-            </React.Suspense>
-          }
-        />
+
         <Route
           path="/passport"
           element={
@@ -604,14 +548,7 @@ function App() {
             </React.Suspense>
           }
         />
-        <Route
-          path="/dynasty"
-          element={
-            <React.Suspense fallback="Loading....">
-              <Dynasty />
-            </React.Suspense>
-          }
-        />
+
         <Route
           path="/religion"
           element={
@@ -736,14 +673,7 @@ function App() {
             </React.Suspense>
           }
         />
-        <Route
-          path="/family"
-          element={
-            <React.Suspense fallback="Loading....">
-              <FamilyPage />
-            </React.Suspense>
-          }
-        />
+
         <Route
           path="/luxury"
           element={
@@ -768,22 +698,7 @@ function App() {
             </React.Suspense>
           }
         />
-        <Route
-          path="/drama"
-          element={
-            <React.Suspense fallback="Loading....">
-              <DramaPage />
-            </React.Suspense>
-          }
-        />
-        <Route
-          path="/comedy"
-          element={
-            <React.Suspense fallback="Loading....">
-              <ComedyPage />
-            </React.Suspense>
-          }
-        />
+
         <Route
           path="/novel"
           element={
@@ -808,14 +723,7 @@ function App() {
             </React.Suspense>
           }
         />
-        <Route
-          path="/modern"
-          element={
-            <React.Suspense fallback="Loading....">
-              <ModernPage />
-            </React.Suspense>
-          }
-        />
+
         <Route
           path="/health"
           element={

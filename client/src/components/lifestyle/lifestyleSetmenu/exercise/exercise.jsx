@@ -1,29 +1,40 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Box, Breadcrumbs, Typography, Stack } from "@mui/material";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import "../../../technology/technology.css";
 
 export default function Exercise() {
   return (
-    <section className="technology">
-      <div className="top">
-        <Link to="/" className="link1">
-          <h4>Home</h4>
-        </Link>
-        <div className="icon">
-          <i className="uil uil-angle-right-b"></i>
-        </div>
-        <Link to="/lifestyles" className="link1">
-          <h4>Lifestyle</h4>
-        </Link>
-        <div className="icon">
-          <i className="uil uil-angle-right-b"></i>
-        </div>
-        <h4>Exercise</h4>
-      </div>
-      <div className="sectop">
-        <h1>exercise</h1>
-      </div>
+    <section className="container technology">
+      <Box sx={{ marginButtom: "10px" }}>
+        <Breadcrumbs
+          color={"#747474"}
+          aria-label="breadcrumb"
+          separator={<NavigateNextIcon fontSize="small" />}
+        >
+          <Link to="/" className="link1" fontSize="25px">
+            <Typography>Home</Typography>
+          </Link>
+          <Link to="/lifestyle" className="link1" fontSize="25px">
+            <Typography>Lifestyle</Typography>
+          </Link>
+          <Typography>Exercise</Typography>
+        </Breadcrumbs>
+      </Box>
+      <Typography
+        variant="h1"
+        fontSize={30}
+        fontWeight={700}
+        textTransform="uppercase"
+        sx={{ marginTop: "10px" }}
+      >
+        Exercise
+      </Typography>
       <div className="Catabutton">
-        <button className="tec">Exercise</button>
+        <Link to="/exercise">
+          <button className="tec">Exercise</button>
+        </Link>
         <Link to="/healthylife">
           <button className="tec">Healthy Life</button>
         </Link>
@@ -37,9 +48,6 @@ export default function Exercise() {
           <button className="tec">Modern</button>
         </Link>
       </div>
-      {/* <div className="para">
-        
-      </div> */}
     </section>
   );
 }

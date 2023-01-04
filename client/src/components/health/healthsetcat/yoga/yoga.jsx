@@ -1,47 +1,53 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Box, Breadcrumbs, Typography, Stack } from "@mui/material";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import "../../../technology/technology.css";
 
 export default function Yoga() {
   return (
-    <section className="technology">
-      <div className="top">
-        <Link to="/" className="link1">
-          <h4>Home</h4>
-        </Link>
-        <div className="icon">
-          <i className="uil uil-angle-right-b"></i>
-        </div>
-        <Link to="/healthy" className="link1">
-          <h4>Healthy</h4>
-        </Link>
-        <div className="icon">
-          <i className="uil uil-angle-right-b"></i>
-        </div>
-        <h4>Yoga</h4>
-      </div>
-      <div className="sectop">
-        <h1>Yoga</h1>
-      </div>
+    <section className="container technology">
+      <Box sx={{ marginButtom: "10px" }}>
+        <Breadcrumbs
+          color={"#747474"}
+          aria-label="breadcrumb"
+          separator={<NavigateNextIcon fontSize="small" />}
+        >
+          <Link to="/" className="link1" fontSize="25px">
+            <Typography>Home</Typography>
+          </Link>
+          <Link to="/health" className="link1" fontSize="25px">
+            <Typography>Health</Typography>
+          </Link>
+          <Typography>Yoga</Typography>
+        </Breadcrumbs>
+      </Box>
+      <Typography
+        variant="h1"
+        fontSize={30}
+        fontWeight={700}
+        textTransform="uppercase"
+        sx={{ marginTop: "10px" }}
+      >
+        Yoga
+      </Typography>
       <div className="Catabutton">
         <Link to="/infodoctor">
           <button className="tec">Info Doctor</button>
         </Link>
-
         <Link to="/healthclinic">
           <button className="tec">Clinic</button>
         </Link>
-
-        <button className="tec">Yoga</button>
+        <Link to="/yoga">
+          <button className="tec">Yoga</button>
+        </Link>
         <Link to="/hfoods">
           <button className="tec">Healthy Foods</button>
         </Link>
         <Link to="/medicine">
-          <button className="tec">Medicine</button>
+          <button className="tec">medicine</button>
         </Link>
       </div>
-      {/* <div className="para">
-        
-      </div> */}
     </section>
   );
 }

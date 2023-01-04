@@ -1,26 +1,36 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Box, Breadcrumbs, Typography, Stack } from "@mui/material";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import "../../technology/technology.css";
+import "../theader.css";
 const Mouhead = () => {
   return (
-    <section className="travel container">
-      <div className="top">
-        <Link to="/" className="link1">
-          <h4>Home</h4>
-        </Link>
-        <div className="icon">
-          <i className="uil uil-angle-right-b"></i>
-        </div>
-        <Link to="/travel" className="link1">
-          <h4>Travel</h4>
-        </Link>
-        <div className="icon">
-          <i className="uil uil-angle-right-b"></i>
-        </div>
-        <h4>Mountain</h4>
-      </div>
-      <div className="sectop">
-        <h1>Mountain</h1>
-      </div>
+    <section className="container travel">
+      <Box sx={{ marginButtom: "10px" }}>
+        <Breadcrumbs
+          color={"#747474"}
+          aria-label="breadcrumb"
+          separator={<NavigateNextIcon fontSize="small" />}
+        >
+          <Link to="/" className="link1" fontSize="25px">
+            <Typography>Home</Typography>
+          </Link>
+          <Link to="/" className="link1" fontSize="25px">
+            <Typography>Travel</Typography>
+          </Link>
+          <Typography>Mountain</Typography>
+        </Breadcrumbs>
+      </Box>
+      <Typography
+        variant="h1"
+        fontSize={30}
+        fontWeight={700}
+        textTransform="uppercase"
+        sx={{ marginTop: "10px" }}
+      >
+        Mountain
+      </Typography>
       <div className="Catabutton">
         <Link to="/pagoda">
           <button className="tec">Pagoda</button>
@@ -32,15 +42,25 @@ const Mouhead = () => {
           <button className="tec">Waterfall</button>
         </Link>
         <Link to="/mountains">
-          <button className="tec btnactive">Mountains</button>
+          <button className="tec">Mountains</button>
         </Link>
         <Link to="/Advanture_trip">
           <button className="tec">Advanture trip</button>
         </Link>
       </div>
-      {/* <div className="para">
-        
-      </div> */}
+      <Typography
+        variant="body1"
+        fontFamily={("Open Sans", "Open Sans Regular", "sans - serif")}
+        fontStyle={"italic"}
+        align={"justify"}
+        sx={{ marginTop: "18px", color: "#777" }}
+      >
+        Modern technology has become a total phenomenon for civilization, the
+        defining force of a new social order in which efficiency is no longer an
+        option but a necessity imposed on all human activity. tttttttttttttt
+        ttttttttttttttttttttttt ttttttttttttttttttttttttttttttttttttt
+        tttttttttttttttttttttttttttttttttttttttttttttttttttttt
+      </Typography>
     </section>
   );
 };

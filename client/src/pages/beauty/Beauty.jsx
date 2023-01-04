@@ -11,12 +11,6 @@ export default function Beauty({ getAllusers, getAllposts }) {
       <Beautyheader />
       <Beautybanner />
 
-      {/* <section className="tecbody">
-          <BeautySidebar />
-
-          <BeautyRighrbar />
-        </section> */}
-
       <section className="container">
         <Grid my={2} container>
           <Grid item xs={12} xl={8.4} md={8.4}>

@@ -1,27 +1,35 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { Box, Breadcrumbs, Typography, Stack } from "@mui/material";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import "../../../technology/technology.css"
 export default function Modern() {
   return (
-    <section className="technology">
-      <div className="top">
-        <Link to="/" className="link1">
-          <h4>Home</h4>
-        </Link>
-        <div className="icon">
-          <i className="uil uil-angle-right-b"></i>
-        </div>
-        <Link to="/lifestyles" className="link1">
-          <h4>Lifestyle</h4>
-        </Link>
-        <div className="icon">
-          <i className="uil uil-angle-right-b"></i>
-        </div>
-        <h4>Modern</h4>
-      </div>
-      <div className="sectop">
-        <h1>Modern</h1>
-      </div>
+    <section className="container technology">
+      <Box sx={{ marginButtom: "10px" }}>
+        <Breadcrumbs
+          color={"#747474"}
+          aria-label="breadcrumb"
+          separator={<NavigateNextIcon fontSize="small" />}
+        >
+          <Link to="/" className="link1" fontSize="25px">
+            <Typography>Home</Typography>
+          </Link>
+          <Link to="/lifestyle" className="link1" fontSize="25px">
+            <Typography>Lifestyle</Typography>
+          </Link>
+          <Typography>Modern</Typography>
+        </Breadcrumbs>
+      </Box>
+      <Typography
+        variant="h1"
+        fontSize={30}
+        fontWeight={700}
+        textTransform="uppercase"
+        sx={{ marginTop: "10px" }}
+      >
+        Modern
+      </Typography>
       <div className="Catabutton">
         <Link to="/exercise">
           <button className="tec">Exercise</button>
@@ -29,19 +37,17 @@ export default function Modern() {
         <Link to="/healthylife">
           <button className="tec">Healthy Life</button>
         </Link>
-        <Link to="/luxury">
+        <Link to="/Luxury">
           <button className="tec">Luxury</button>
         </Link>
-
-        <Link to="/family">
+        <Link to="/Family">
           <button className="tec">Family</button>
         </Link>
-
-        <button className="tec">Modern</button>
+        <Link to="/Modern">
+          <button className="tec">Modern</button>
+        </Link>
       </div>
-      {/* <div className="para">
-        
-      </div> */}
+    
     </section>
   );
 }

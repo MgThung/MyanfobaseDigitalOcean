@@ -1,29 +1,40 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Box, Breadcrumbs, Typography, Stack } from "@mui/material";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import "../../technology/technology.css"
+import "../../travelling/theader.css"
 export default function Culhead() {
   return (
-    <section className="travel container">
-      <div className="top">
-        <Link to="/" className="link1">
-          <h4>Home</h4>
-        </Link>
-        <div className="icon">
-          <i className="uil uil-angle-right-b"></i>
-        </div>
-        <Link to="/history" className="link1">
-          <h4>History</h4>
-        </Link>
-        <div className="icon">
-          <i className="uil uil-angle-right-b"></i>
-        </div>
-        <h4>Culture</h4>
-      </div>
-      <div className="sectop">
-        <h1>Culture</h1>
-      </div>
-      <div className="Catabutton">
+    <section className="container travel">
+      <Box sx={{ marginButtom: "10px" }}>
+        <Breadcrumbs
+          color={"#747474"}
+          aria-label="breadcrumb"
+          separator={<NavigateNextIcon fontSize="small" />}
+        >
+          <Link to="/" className="link1" fontSize="25px">
+            <Typography>Home</Typography>
+          </Link>
+          <Link to="/" className="link1" fontSize="25px">
+            <Typography>History</Typography>
+          </Link>
+          <Typography>Culture</Typography>
+        </Breadcrumbs>
+      </Box>
+      <Typography
+        variant="h1"
+        fontSize={30}
+        fontWeight={700}
+        textTransform="uppercase"
+        sx={{ marginTop: "10px" }}
+      >
+        Culture
+      </Typography>
+
+      <div className="button">
         <Link to="/culture">
-          <button className="tec btnactive">Culture</button>
+          <button className="tec">Culture</button>
         </Link>
         <Link to="/dynasty">
           <button className="tec">Dynasty</button>
@@ -38,9 +49,8 @@ export default function Culhead() {
           <button className="tec">Region & State</button>
         </Link>
       </div>
-      {/* <div className="para">
-        
-      </div> */}
+
+   
     </section>
   );
 }

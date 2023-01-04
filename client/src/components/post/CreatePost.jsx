@@ -1,5 +1,5 @@
 import React from "react";
-import Axios from "axios";
+
 import { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
@@ -29,7 +29,6 @@ export default function CreatePost(props) {
     }
   };
 
-  const { categories } = useSelector((state) => state.categories);
   const [isActive, setIsActive] = useState(false);
 
   const dispatch = useDispatch();

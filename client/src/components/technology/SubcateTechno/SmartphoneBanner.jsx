@@ -3,7 +3,7 @@ import React from "react";
 export default function SmartphoneBanner() {
   return (
     <>
-      <section className="catebannerImg">
+      <section className="container catebannerImg">
         <div className="leftBanner">
           <div className="catebanner1">
             <img src="./images/technology/smartphone/smartphonebanner1.jpg" />

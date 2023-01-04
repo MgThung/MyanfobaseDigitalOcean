@@ -226,12 +226,12 @@ export const CategoriesData = [
   },
   {
     _id: 46,
-    catename: "Drama",
+    catename: "Short-Story",
     __v: 0,
   },
   {
     _id: 47,
-    catename: "Comedy",
+    catename: "Fiction",
     __v: 0,
   },
   {

@@ -1,19 +1,23 @@
+import BeautyRighrbar from "../../components/beauty/Bearightbar";
+import BeautySidebar from "../../components/beauty/Beautysidebar";
 import Salon from "../../components/beauty/setcat/salon";
 import Salonbanner from "../../components/beauty/setcat/Salonbanner";
-import SalonRightbar from "../../components/beauty/setcat/Salonrightbar";
-import Salonsidebar from "../../components/beauty/setcat/Salonsidebar";
+import { Grid } from "@mui/material";
 
 export default function SalonPage() {
   return (
     <>
+      <Salon />
+      <Salonbanner />
       <section className="container">
-        <Salon />
-        <Salonbanner />
-
-        <section className="tecbody">
-          <Salonsidebar category={"Beauty-Salon"} />
-          <SalonRightbar />
-        </section>
+        <Grid my={2} container>
+          <Grid item xs={12} xl={8.4} md={8.4}>
+            <BeautySidebar category={"Beauty-Salon"} />
+          </Grid>
+          <Grid item xs={12} xl={3.6} md={3.6}>
+            <BeautyRighrbar />
+          </Grid>
+        </Grid>
       </section>
     </>
   );

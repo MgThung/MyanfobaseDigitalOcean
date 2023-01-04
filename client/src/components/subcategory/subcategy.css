@@ -65,6 +65,7 @@
 .leftBanner .catebanner1 img,
 .rightBanner .catebanner2 img {
   transition: all 2s;
+  width: 100%;
 }
 
 .rightBanner:hover img,
@@ -95,7 +96,7 @@
 .postCate_info h4 {
   margin-bottom: 0;
 }
-.postCate_info h4:hover{
+.postCate_info h4:hover {
   color: var(--technology-bg);
 }
 .postCate_info p {
@@ -143,10 +144,10 @@
   height: 100%;
   border-radius: 50%;
 }
-.Trav_img img {
+/* .Trav_img img {
   width: 250px;
   height: 180px;
-}
+} */
 .postTrav_info {
   width: 90%;
 }

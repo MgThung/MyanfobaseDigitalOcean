@@ -55,7 +55,7 @@ export default function DetailPage() {
         </Grid>
       </section>
       <div className="container">
-        <DetailMustRead />
+        <DetailMustRead category={cate} />
       </div>
     </>
   );
