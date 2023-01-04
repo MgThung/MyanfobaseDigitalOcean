@@ -1,26 +1,36 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Box, Breadcrumbs, Typography, Stack } from "@mui/material";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import "../../technology/technology.css"
+import "../theader.css"
 export default function Advheader() {
   return (
-    <section className="travel container">
-      <div className="top">
-        <Link to="/" className="link1">
-          <h4>Home</h4>
-        </Link>
-        <div className="icon">
-          <i className="uil uil-angle-right-b"></i>
-        </div>
-        <Link to="/travel" className="link1">
-          <h4>Travel</h4>
-        </Link>
-        <div className="icon">
-          <i className="uil uil-angle-right-b"></i>
-        </div>
-        <h4>Advanture trip</h4>
-      </div>
-      <div className="sectop">
-        <h1>Advanture trip</h1>
-      </div>
+    <section className="container travel">
+      <Box sx={{ marginButtom: "10px" }}>
+        <Breadcrumbs
+          color={"#747474"}
+          aria-label="breadcrumb"
+          separator={<NavigateNextIcon fontSize="small" />}
+        >
+          <Link to="/" className="link1" fontSize="25px">
+            <Typography>Home</Typography>
+          </Link>
+          <Link to="/" className="link1" fontSize="25px">
+            <Typography>Travel</Typography>
+          </Link>
+          <Typography>Adventure</Typography>
+        </Breadcrumbs>
+      </Box>
+      <Typography
+        variant="h1"
+        fontSize={30}
+        fontWeight={700}
+        textTransform="uppercase"
+        sx={{ marginTop: "10px" }}
+      >
+        Adventure
+      </Typography>
       <div className="Catabutton">
         <Link to="/pagoda">
           <button className="tec">Pagoda</button>
@@ -35,12 +45,10 @@ export default function Advheader() {
           <button className="tec">Mountains</button>
         </Link>
         <Link to="/Advanture_trip">
-          <button className="tec btnactive">Advanture trip</button>
+          <button className="tec">Advanture trip</button>
         </Link>
       </div>
-      {/* <div className="para">
-        
-      </div> */}
+    
     </section>
   );
 }

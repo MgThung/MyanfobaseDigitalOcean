@@ -1,8 +1,9 @@
 import React from "react";
+import "../../subcategory/subcategy.css"
 
 export default function NovelBanner() {
   return (
-    <section className="catebannerImg">
+    <section className="container catebannerImg">
       <div className="leftBanner">
         <div className="catebanner1">
           <img src="./images/literature/novel/novelbanner1.jpg" />

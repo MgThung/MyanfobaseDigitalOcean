@@ -1,26 +1,32 @@
 import React from "react";
 import "./tecnologyPage.css";
+import { Grid } from "@mui/material";
+
 
 import Computer from "../../components/subcategory/Computer";
 import Subcategorybanner from "../../components/subcategory/Subcategorybanner";
-import Subcatemain from "../../components/subcategory/Subcatemain";
 import Latestbar from "../../components/catepagerightbar/Latestbar";
-import TechnologyPopular from "../../components/technology/TechnologyPopular";
+import Tecmain from "../../components/catepagerightbar/Tecmain";
+import PopularNews from "../../components/catepagerightbar/PopularNews";
 
 export default function ComputerPage() {
   return (
     <>
-      <section className="container">
+      
         <Computer />
         <Subcategorybanner />
-        <section className="tecbody">
-          <Subcatemain />
-          <div className="allRightBar">
-            <TechnologyPopular />
-            <Latestbar />
-          </div>
+        <section className="container">
+          <Grid container my={2}>
+            <Grid item xs={12} xl={8.4} md={8.4}>
+              <Tecmain />
+            </Grid>
+            <Grid item xs={12} xl={3.6} md={3.6}>
+              <PopularNews />
+              <Latestbar />
+            </Grid>
+          </Grid>
         </section>
-      </section>
+     
     </>
   );
 }

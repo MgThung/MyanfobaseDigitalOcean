@@ -1,22 +1,25 @@
 import Latestbar from "../../components/catepagerightbar/Latestbar";
+import PopularNews from "../../components/catepagerightbar/PopularNews";
 import Infodoctor from "../../components/health/healthsetcat/infoDoctor/infodoctor";
 import InfodoctorBanner from "../../components/health/healthsetcat/infoDoctor/infodoctorbanner";
-import InfodoctorPopular from "../../components/health/healthsetcat/infoDoctor/infodoctorPopular";
-import InfodoctorSiderbar from "../../components/health/healthsetcat/infoDoctor/infodoctorsiderbar";
+import { Grid } from "@mui/material";
+import HealthSidebar from "../../components/health/Healthsidebar";
 
 export default function InfodoctorPage() {
   return (
     <>
+      <Infodoctor />
+      <InfodoctorBanner />
       <section className="container">
-        <Infodoctor />
-        <InfodoctorBanner />
-        <section className="tecbody">
-          <InfodoctorSiderbar />
-          <div className="allRightBar">
-            <InfodoctorPopular />
+        <Grid my={2} container>
+          <Grid item xs={12} xl={8.4} md={8.4}>
+            <HealthSidebar />
+          </Grid>
+          <Grid item xs={12} xl={3.6} md={3.6}>
+            <PopularNews />
             <Latestbar />
-          </div>
-        </section>
+          </Grid>
+        </Grid>
       </section>
     </>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import "../../subcategory/subcategy.css";
 
 const Dressbanner = () => {
   return (

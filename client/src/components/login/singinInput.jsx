@@ -4,24 +4,24 @@ import "./login.css"
 
 const SinginInput = (props) => {
     const [focused, setFocused] = useState(false);
-    const { errorMessage, onChange, id, ...inputProps } = props;
+    const { errorMessage,icon, onChange, id, ...inputProps } = props;
     
     const handleFocus = (e) => {
         setFocused(true);
  }
     return (
-       <div>
-              
-
-                <input
-                {...inputProps}
-                onChange={onChange}
-                onBlur={handleFocus}
+      <div className="singinInputs">
+            <div className="iconSingup">{icon}</div>
+          <input
+            {...inputProps}
+            onChange={onChange}
+            onBlur={handleFocus}
                 focused={focused.toString()}
-            />
-            <span>{errorMessage}</span>
-            </div>
-  )
+
+          />
+        <span>{errorMessage}</span>
+      </div>
+    );
     
 }
 

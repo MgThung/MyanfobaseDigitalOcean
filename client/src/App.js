@@ -58,8 +58,6 @@ const Region = React.lazy(() => import("./pages/history/Region"));
 const Religous = React.lazy(() => import("./pages/history/Religous"));
 // import Home from "./pages/home/Home";
 
-const ComedyPage = React.lazy(() => import("./pages/literature/ComedyPage"));
-const DramaPage = React.lazy(() => import("./pages/literature/DramaPage"));
 const FictionPage = React.lazy(() => import("./pages/literature/FictionPage"));
 const LiteraturePage = React.lazy(() =>
   import("./pages/literature/LiteraturePage")
@@ -768,22 +766,8 @@ function App() {
             </React.Suspense>
           }
         />
-        <Route
-          path="/drama"
-          element={
-            <React.Suspense fallback="Loading....">
-              <DramaPage />
-            </React.Suspense>
-          }
-        />
-        <Route
-          path="/comedy"
-          element={
-            <React.Suspense fallback="Loading....">
-              <ComedyPage />
-            </React.Suspense>
-          }
-        />
+       
+      
         <Route
           path="/novel"
           element={

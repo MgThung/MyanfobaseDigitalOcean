@@ -1,26 +1,36 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Box, Breadcrumbs, Typography, Stack } from "@mui/material";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import "../../technology/technology.css";
+import "../../travelling/theader.css";
 export default function Leadhead() {
   return (
-    <section className="travel container">
-      <div className="top">
-        <Link to="/" className="link1">
-          <h4>Home</h4>
-        </Link>
-        <div className="icon">
-          <i className="uil uil-angle-right-b"></i>
-        </div>
-        <Link to="/govenment" className="link1">
-          <h4>Goverment</h4>
-        </Link>
-        <div className="icon">
-          <i className="uil uil-angle-right-b"></i>
-        </div>
-        <h4>Leader</h4>
-      </div>
-      <div className="sectop">
-        <h1>Leader</h1>
-      </div>
+    <section className="container travel">
+      <Box sx={{ marginButtom: "10px" }}>
+        <Breadcrumbs
+          color={"#747474"}
+          aria-label="breadcrumb"
+          separator={<NavigateNextIcon fontSize="small" />}
+        >
+          <Link to="/" className="link1" fontSize="25px">
+            <Typography>Home</Typography>
+          </Link>
+          <Link to="/government" className="link1" fontSize="25px">
+            <Typography>Government</Typography>
+          </Link>
+          <Typography>Leader</Typography>
+        </Breadcrumbs>
+      </Box>
+      <Typography
+        variant="h1"
+        fontSize={30}
+        fontWeight={700}
+        textTransform="uppercase"
+        sx={{ marginTop: "10px" }}
+      >
+        Leader
+      </Typography>
       <div className="Catabutton">
         <Link to="/ministry">
           <button className="tec">Ministry</button>
@@ -29,8 +39,9 @@ export default function Leadhead() {
           <button className="tec">Police Station</button>
         </Link>
         <Link to="/leader">
-          <button className="tec btnactive">Leader</button>
+          <button className="tec">Leader</button>
         </Link>
+
         <Link to="/passport">
           <button className="tec">Passport</button>
         </Link>
@@ -38,9 +49,7 @@ export default function Leadhead() {
           <button className="tec">Law</button>
         </Link>
       </div>
-      {/* <div className="para">
-        
-      </div> */}
+     
     </section>
   );
 }

@@ -11,6 +11,9 @@ import { Stack, TextField } from "@mui/material";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import SinginInput from "./singinInput"
+import PersonIcon from '@mui/icons-material/Person';
+import EmailIcon from "@mui/icons-material/Email";
+import LockIcon from "@mui/icons-material/Lock";
 
 const ErrorShow = (prop) => {
   return (
@@ -45,6 +48,7 @@ const LoginCompo = () => {
       errorMessage:
         "Username should be 3-16 characters and shouldn't include any special character!",
       required: true,
+      icon: <PersonIcon />,
     },
     {
       id: 2,
@@ -53,6 +57,7 @@ const LoginCompo = () => {
       placeholder: "email",
       errorMessage: "It should be a vaild email address!",
       required: true,
+      icon: <EmailIcon />,
     },
   ];
 
@@ -168,7 +173,7 @@ const LoginCompo = () => {
             <form action="" className="sign-in-form" onSubmit={onSubmitlogin}>
               <h2 className="titlt">Sign in</h2>
 
-              <Stack>
+              <Stack >
                 <TextField
                   className="singinemail"
                   variant="outlined"
@@ -232,17 +237,15 @@ const LoginCompo = () => {
 
               {singinInputs.map((input, index) => (
                 <div className="input-field" key={index}>
-                  <i className="fas fa-user"></i>
+                  {/* <i className="fas fa-user"></i> */}
 
                   <SinginInput
                     key={input.id}
                     {...input}
-                 
-                    id="username"    
-                    ref={usernameref}
+                    id="username"
+                    refs={usernameref}
                     // onChange={onChange}
                   />
-                  
                 </div>
               ))}
 
@@ -266,7 +269,7 @@ const LoginCompo = () => {
               </div> */}
 
               <div className="input-field">
-                <i className="fas fa-lock"></i>
+                <LockIcon className="seciconSingup" />
                 <input
                   type={show ? "text" : "password"}
                   id="password"
@@ -288,7 +291,7 @@ const LoginCompo = () => {
                 </span>
               </div>
               <div className="input-field">
-                <i className="fas fa-lock"></i>
+                <LockIcon className="seciconSingup" />
                 <input
                   type={comfirmpwshow ? "text" : "password"}
                   placeholder="Confirm Password"
