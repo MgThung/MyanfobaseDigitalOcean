@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../../../travelling/theader.css";
 // import "../../../technology/technology.css";
 import "../../sportbanner.css";
 import { Box, Breadcrumbs, Typography, Stack } from "@mui/material";
@@ -7,7 +8,7 @@ import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
 export default function Gammingheader() {
   return (
-    <section className="mainetn1">
+    <section className="container travel">
       <Box sx={{ marginButtom: "10px" }}>
         <Breadcrumbs
           color={"#747474"}
@@ -20,7 +21,7 @@ export default function Gammingheader() {
           <Link to="/sports" className="link1" fontSize="25px">
             <Typography>Sport</Typography>
           </Link>
-          <Typography>Gamming</Typography>
+          <Typography>Gaming</Typography>
         </Breadcrumbs>
       </Box>
       <Typography
@@ -30,7 +31,7 @@ export default function Gammingheader() {
         textTransform="uppercase"
         sx={{ marginTop: "10px" }}
       >
-        Sport
+        Gaming
       </Typography>
       <div className="Catabutton">
         <Link to="/football">
@@ -46,20 +47,9 @@ export default function Gammingheader() {
           <button className="tec">cane ball</button>
         </Link>
         <Link to="/gamming">
-          <button className="tec btnactive">gamming</button>
+          <button className="tec">gamming</button>
         </Link>
       </div>
-      <Typography
-        variant="body1"
-        fontFamily={("Open Sans", "Open Sans Regular", "sans - serif")}
-        fontStyle={"italic"}
-        align={"justify"}
-        sx={{ marginTop: "18px", color: "#777" }}
-      >
-        Modern technology has become a total phenomenon for civilization, the
-        defining force of a new social order in which efficiency is no longer an
-        option but a necessity imposed on all human activity.
-      </Typography>
     </section>
   );
 }

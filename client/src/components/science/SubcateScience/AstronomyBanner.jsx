@@ -1,8 +1,9 @@
 import React from "react";
+import "../../subcategory/subcategy.css"
 
 export default function AstronomyBanner() {
   return (
-    <section className="catebannerImg">
+    <section className="container catebannerImg">
       <div className="leftBanner">
         <div className="catebanner1">
           <img src="./images/science/astonomy/astonomybanner1.jpg" />

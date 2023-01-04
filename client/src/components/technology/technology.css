@@ -79,6 +79,8 @@ ul {
   background-color: #262e67;
   color: white;
 } */
+
+
 .firstpara h4 {
   color: white;
   font-size: 25px;
@@ -100,10 +102,7 @@ ul {
   transition: 1s;
 }
 
-.photo {
-  /* display: grid;
-  grid-template-columns: 65% 35%; */
-}
+
 .secphoto {
   /* display: grid;
   grid-template-rows: 49% 49%; */
@@ -243,7 +242,9 @@ ul {
 }
 
 /* style css  */
+
 .css-19r6kue-MuiContainer-root {
-  padding-left: 0px;
-  padding-right: 0px;
+   
+    padding-left: 0px !important;
+    padding-right: 0px !important;
 }

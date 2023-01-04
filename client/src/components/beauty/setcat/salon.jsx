@@ -47,7 +47,7 @@ export default function Salon() {
           <button className="tec">Beauty Clinic</button>
         </Link>
         <Link to="/salon">
-          <button className="tec">Beauty Salon</button>
+          <button className="tec btnactive">Beauty Salon</button>
         </Link>
       </div>
     </section>

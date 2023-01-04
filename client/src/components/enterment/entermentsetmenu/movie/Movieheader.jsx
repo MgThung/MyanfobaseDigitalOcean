@@ -7,7 +7,7 @@ import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
 export default function Movieheader() {
   return (
-    <section>
+    <section className="container enter">
       <Box sx={{ marginButtom: "10px" }}>
         <Breadcrumbs
           color={"#747474"}
@@ -31,7 +31,7 @@ export default function Movieheader() {
         textTransform="uppercase"
         sx={{ marginTop: "10px" }}
       >
-        Entertainment
+        Movie
       </Typography>
       <div className="Catabutton">
         <Link to="/korean">

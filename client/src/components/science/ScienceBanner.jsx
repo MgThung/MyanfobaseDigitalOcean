@@ -5,7 +5,7 @@ import { Box, Typography, Grid, Container } from "@mui/material";
 
 export default function ScienceBanner() {
   return (
-    <section>
+    <section className="container">
       <Box>
         <div className="photo">
           <Container maxWidth="xl">

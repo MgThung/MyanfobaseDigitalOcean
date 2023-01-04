@@ -1,23 +1,26 @@
 import React from "react";
 import Latestbar from "../../components/catepagerightbar/Latestbar";
+import PopularNews from "../../components/catepagerightbar/PopularNews";
 import ScienceMain from "../../components/science/ScienceMain";
-import SciencePopular from "../../components/science/SciencePopular";
 import EarthScience from "../../components/science/SubcateScience/EarthScience";
 import EarthScienceBanner from "../../components/science/SubcateScience/EarthScienceBanner";
+import { Grid } from "@mui/material";
 
 export default function EarthSciencePage() {
   return (
     <>
+      <EarthScience />
+      <EarthScienceBanner />
       <section className="container">
-        <EarthScience />
-        <EarthScienceBanner />
-        <section className="tecbody">
-          <ScienceMain />
-          <div className="allRightBar">
-            <SciencePopular />
+        <Grid my={2} container>
+          <Grid item xs={12} xl={8.4} md={8.4}>
+            <ScienceMain />
+          </Grid>
+          <Grid item xs={12} xl={3.6} md={3.6}>
+            <PopularNews />
             <Latestbar />
-          </div>
-        </section>
+          </Grid>
+        </Grid>
       </section>
     </>
   );

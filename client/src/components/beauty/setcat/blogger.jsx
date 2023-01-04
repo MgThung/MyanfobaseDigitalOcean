@@ -38,7 +38,7 @@ export default function Blogger() {
           <button className="tec">Make-up</button>
         </Link>
         <Link to="/Blogger">
-          <button className="tec">Beauty Blogger</button>
+          <button className="tec btnactive">Beauty Blogger</button>
         </Link>
         <Link to="/skincare">
           <button className="tec">Skin care</button>
@@ -50,7 +50,6 @@ export default function Blogger() {
           <button className="tec">Beauty Salon</button>
         </Link>
       </div>
-     
     </section>
   );
 }

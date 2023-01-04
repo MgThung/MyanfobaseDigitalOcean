@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../technology/technology.css";
 import "../travelling/theader.css";
 import { Box, Breadcrumbs, Typography, Stack } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 export default function Artssheader() {
   return (
     <>
-      <section className="container artsection">
+      <section className="container technology">
         <Box sx={{ marginButtom: "10px" }}>
           <Breadcrumbs
             color={"#747474"}
@@ -16,7 +17,7 @@ export default function Artssheader() {
             <Link to="/" className="link1" fontSize="25px">
               <Typography>Home</Typography>
             </Link>
-            <Typography>Art</Typography>
+            <Typography>Arts</Typography>
           </Breadcrumbs>
         </Box>
         <Typography
@@ -26,8 +27,9 @@ export default function Artssheader() {
           textTransform="uppercase"
           sx={{ marginTop: "10px" }}
         >
-          Art
+          Arts
         </Typography>
+
         <div className="Catabutton">
           <Link to="/anime">
             <button className="tec">anime art</button>
@@ -45,7 +47,6 @@ export default function Artssheader() {
             <button className="tec">painting</button>
           </Link>
         </div>
-
         <Typography
           variant="body1"
           fontFamily={("Open Sans", "Open Sans Regular", "sans - serif")}
@@ -57,15 +58,6 @@ export default function Artssheader() {
           defining force of a new social order in which efficiency is no longer
           an option but a necessity imposed on all human activity.
         </Typography>
-
-        {/* <div className="para">
-          <p>
-            Modern technology has become a total phenomenon for civilization,
-            the defining force of a new social order in which efficiency is no
-            longer an option but a necessity imposed on all human activity.
-            tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
-          </p>
-        </div> */}
       </section>
     </>
   );

@@ -1,7 +1,6 @@
 import React from "react";
 import "../technology/technology.css";
 import { Link } from "react-router-dom";
-import "../technology/technology.css";
 import { Box, Breadcrumbs, Typography, Stack } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 const Lifestyleheader = () => {

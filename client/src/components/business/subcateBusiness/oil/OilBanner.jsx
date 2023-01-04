@@ -1,15 +1,16 @@
 import React from "react";
+import "../../../subcategory/subcategy.css";
 
-export default function Univerbenner() {
+export default function OilBanner() {
   return (
     <>
       <section className="catebannerImg container">
         <div className="leftBanner">
           <div className="catebanner1">
-            <img src="./images/education/university/uni1.jpg" alt="" />
+            <img src="./images/government/law/law1.jpg" alt="" />
           </div>
           <article className="bannerPara">
-            <button className="cateTravel ">Travel</button>
+            <button className="cateGovernment">Government</button>
             <h4>How to Mark yourself 'Safe' on Socials Media</h4>
             <p className="leftparaText">
               Modern technology has become a total phenomenon for civilization,
@@ -20,10 +21,10 @@ export default function Univerbenner() {
         </div>
         <div className="rightBanner">
           <div className="catebanner2">
-            <img src="./images/education/university/uni2.jpg" alt="" />
+            <img src="./images/government/law/law2.jpg" alt="" />
           </div>
           <article className="bannerPara">
-            <button className="cateTravel ">Travel</button>
+            <button className="cateGovernment">Government</button>
             <h4>How to Mark yourself 'Safe' on Socials Media</h4>
             <p className="rightparaText">
               Modern technology has become a total phenomenon for civilization,
