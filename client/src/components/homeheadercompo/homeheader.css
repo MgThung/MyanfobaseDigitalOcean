@@ -12,9 +12,12 @@
   padding-top: 0rem;
   margin-bottom: 1rem;
 }
-.home-banner-detail h1 {
-  padding-top: 2rem;
-  letter-spacing: 5px;
+.headertypo{
+  color: #043062eb;
+}
+.home-banner-detail h3{
+ color:#b3461aed ;
+  letter-spacing: 3px;
 }
 .header-nav {
   display: flex;
@@ -42,8 +45,9 @@
   margin-left: 0.5rem;
 }
 .home-banner {
-  background-image: url(/public/images/homeimgs/bagan1.jpg);
-  height: 40rem;
+  background-image: url(/public/images/homeimgs/banner48.jpg);
+  height: 45rem;
+  position: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top 50% right 0;
@@ -54,12 +58,12 @@
   text-align: center;
 }
 .home-banner-detail h1 {
-  /* font-family: PT Serif !important; */
-  font-family: "Merriweather", serif;
-  color: white;
-  /* font-family: "Bowlby One"; */
-  /* font-size: 70px; */
-  padding-top: 4rem;
+
+  font-family: "Heebo", serif;
+  color: #043062eb;
+ letter-spacing: 3px;
+ font-weight: bold;
+  padding-top: 3rem;
 }
 .home-banner-detail h3 {
   color: #6b3451;

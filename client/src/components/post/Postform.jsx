@@ -56,7 +56,7 @@ export default function Postform() {
             Let's share our information to other people.
           </h2>
           <p>
-            Here! You can share your experience, information ,life-tips and
+            Here! You can share your experience, information, life-tips and
             other knowledge by posting.
           </p>
           <pre>
