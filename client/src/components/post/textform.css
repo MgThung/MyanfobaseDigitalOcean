@@ -84,7 +84,7 @@ form {
 
 .descForm:is(:focus, :valid) {
   border-width: 2px;
-  border-color: #4671ea;
+  border-color: #1d65a9;
   padding: 14px;
 }
 
@@ -110,7 +110,7 @@ form {
 .textdesign:focus,
 .textdesign:valid {
   padding: 20px 10px;
-  background: rgb(190 233 244);
+  background: rgb(204, 227, 238);
   margin-top: 30px;
 }
 .updateheader {

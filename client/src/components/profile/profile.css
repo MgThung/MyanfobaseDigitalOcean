@@ -151,6 +151,10 @@
 
 .editTitle {
   padding-top: 3rem;
+  text-align: center;
+  font-weight: 600;
+  margin-left: 2rem;
+  color: #0a365c;
 }
 
 .userimage {
@@ -183,6 +187,10 @@
    */
 
   /* margin-left: 30%; */
+}
+
+.proFiledet{
+  margin-bottom: 5rem;
 }
 .editbutton {
   /* padding: 10px 40px 10px 40px;
