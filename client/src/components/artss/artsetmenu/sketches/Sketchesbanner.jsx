@@ -13,10 +13,10 @@ export default function Sketchesbanner() {
         </Grid>
         <Grid item xs={12} sm={6} md={6}>
           <div className="artpara">
-            <h1>Chagall, Master Drawings</h1>
+            <h1>Women Face on White Background,</h1>
             <div className="datepara">
               <p>
-                FEBRUARY 27-MAY 28, 2018 <br />
+                MARCH - 28, 2019 <br />
                 On view at The Met First Avenue <br />
                 in Gallery 209
               </p>
@@ -34,4 +34,3 @@ export default function Sketchesbanner() {
     </section>
   );
 }
-

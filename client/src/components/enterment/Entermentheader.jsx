@@ -49,9 +49,11 @@ export default function Entermentheader() {
           align={"justify"}
           sx={{ marginTop: "18px", color: "#777" }}
         >
-          Modern technology has become a total phenomenon for civilization, the
-          defining force of a new social order in which efficiency is no longer
-          an option but a necessity imposed on all human activity.
+          Entertaining activities can refresh your mind and preserve your mental
+          health as well as emotional well-being. It will bring happiness into
+          your life. Some of these activities may even bring you closer to your
+          friends and family members. Therefore, entertainment can be beneficial
+          in many ways.
         </Typography>
       </section>
     </>

@@ -20,7 +20,7 @@ export default function PrivateHeader() {
             <Link to="/education" className="link1" fontSize="25px">
               <Typography>Education</Typography>
             </Link>
-            <Typography>Private School</Typography>
+            <Typography>Schools</Typography>
           </Breadcrumbs>
         </Box>
         <Typography
@@ -30,21 +30,20 @@ export default function PrivateHeader() {
           textTransform="uppercase"
           sx={{ marginTop: "10px" }}
         >
-          Private School
+          Schools
         </Typography>
 
         <div className="catebutton">
           <Link to="/university">
             <button className="tec">University & Collage</button>
           </Link>
-         
+
           <Link to="/private">
-            <button className="tec btnactive">Private School</button>
+            <button className="tec btnactive">Schools</button>
           </Link>
           <Link to="/online">
             <button className="tec ">Online Class</button>
           </Link>
-         
         </div>
       </section>
     </>

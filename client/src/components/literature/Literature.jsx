@@ -1,17 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../travelling/theader.css"
+import "../travelling/theader.css";
 import "../technology/technology.css";
 import "./literature.css";
-import { Box, Container, Grid, Typography} from "@mui/material";
-import {  Breadcrumbs, Stack } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
+import { Breadcrumbs, Stack } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
-
 
 export default function Literature() {
   return (
     <>
-    
       <section className="container travel">
         <Box sx={{ marginButtom: "10px" }}>
           <Breadcrumbs
@@ -61,9 +59,11 @@ export default function Literature() {
           align={"justify"}
           sx={{ marginTop: "18px", color: "#777" }}
         >
-          Modern technology has become a total phenomenon for civilization, the
-          defining force of a new social order in which efficiency is no longer
-          an option but a necessity imposed on all human activity.
+          Literature allows a person to step back in time and learn about life
+          on Earth from the ones who walked before us. We can gather a better
+          understanding of culture and have a greater appreciation of them. We
+          learn through the ways history is recorded, in the forms of
+          manuscripts and through speech itself.
         </Typography>
       </section>
 

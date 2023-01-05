@@ -1,6 +1,6 @@
 import React from "react";
 import "../technology/technology.css";
-import "../travelling/theader.css"
+import "../travelling/theader.css";
 import { Link } from "react-router-dom";
 import { Box, Breadcrumbs, Typography, Stack } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
@@ -54,9 +54,10 @@ const Beautyheader = () => {
           align={"justify"}
           sx={{ marginTop: "18px", color: "#777" }}
         >
-          Modern technology has become a total phenomenon for civilization, the
-          defining force of a new social order in which efficiency is no longer
-          an option but a necessity imposed on all human activity.
+          Beauty isn't just superficial, and is actually a key part of how we
+          understand and interact with the world around us. Beauty infuses our
+          inner life and helps us form relationships with our environment, from
+          food to landscape to art, and even with each other.
         </Typography>
       </section>
     </>
