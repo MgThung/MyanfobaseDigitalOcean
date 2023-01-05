@@ -6,6 +6,7 @@ import "./admin.css";
 
 import { updatePostData } from "../../features/posts/postSlice";
 import Spinner from "../login/Spinner";
+import SpinnerLoading from "../login/SpinnerLoading";
 import { deletePost, getPosts, reset } from "../../features/posts/postSlice";
 import "../profile/profile.css";
 export default function RequestForm() {
@@ -41,7 +42,7 @@ export default function RequestForm() {
   };
 
   if (isLoading) {
-    return <Spinner />;
+    return <SpinnerLoading />;
   }
 
   return (
@@ -88,7 +89,10 @@ export default function RequestForm() {
                     >
                       <p className="user-title">{element.title}</p>
                     </Link>
-                    <Link to={`/${element.cateName}`} className="link1 postcatetop">
+                    <Link
+                      to={`/${element.cateName}`}
+                      className="link1 postcatetop"
+                    >
                       <button className="admin-cate cateTravel">
                         {element.cateName}
                       </button>

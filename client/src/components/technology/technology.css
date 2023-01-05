@@ -80,7 +80,6 @@ ul {
   color: white;
 } */
 
-
 .firstpara h4 {
   color: white;
   font-size: 25px;
@@ -101,7 +100,6 @@ ul {
 .fbphoto .fbphoto:hover {
   transition: 1s;
 }
-
 
 .secphoto {
   /* display: grid;
@@ -244,7 +242,10 @@ ul {
 /* style css  */
 
 .css-19r6kue-MuiContainer-root {
-   
-    padding-left: 0px !important;
-    padding-right: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.catebanner2 img {
+  object-fit: cover;
 }
