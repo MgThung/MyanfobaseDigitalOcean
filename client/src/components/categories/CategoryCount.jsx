@@ -12,6 +12,7 @@ import "./categories.css";
 import { Pagination, Navigation, A11y } from "swiper";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import Spinner from "../login/Spinner";
 
 export default function CategoryCount() {
   const [categories, setCategories] = useState("");
@@ -156,7 +157,8 @@ export default function CategoryCount() {
               })
             ) : (
               <div>
-                <h4>Loading....</h4>
+                {/* <h4>Loading....</h4> */}
+                <Spinner />
               </div>
             )}
           </Swiper>

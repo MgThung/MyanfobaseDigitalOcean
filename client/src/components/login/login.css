@@ -380,7 +380,7 @@ form.sign-up-form {
     left: 9%;
     bottom: 63%;
     transform: translateX(-50%);
-  background: linear-gradient(45deg, #273c61, #58cbf5);
+    background: linear-gradient(45deg, #273c61, #58cbf5);
     right: initial;
     top: initial;
     transition: 2s ease-in-out;
@@ -435,14 +435,13 @@ form.sign-up-form {
   }
   .input-field span {
     padding: 0px 0px 3px 10px;
-    margin-top: .6rem;
-    font-size: .8rem;
-}
-.singinInputs span {
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+  }
+  .singinInputs span {
     padding: 0px 0px 3px 10px;
-    font-size: .8rem;
-}
-
+    font-size: 0.8rem;
+  }
 
   .panel {
     flex-direction: row;
@@ -450,7 +449,7 @@ form.sign-up-form {
     align-items: center;
     padding: 0rem 6%;
     margin-left: 0rem;
-}
+  }
 
   .panel .login-content {
     color: black;
@@ -541,27 +540,36 @@ form.sign-up-form {
   }
 }
 
-/* .input-field .msgforUsername {
-  padding: 3px 0px 3px 10px;
-  color: red;
-  width: 700px;
-  display: none;
+.spinnerLogin {
+  display: inherit;
+  position: relative;
+  font-size: 0px;
+  top: 20px;
+  left: 20px;
+  width: 60px;
+  height: 100px !important;
 }
-.input-field .msgforEmail {
-  padding: 3px 0px 3px 10px;
-  color: red;
-  width: 700px;
-  display: none;
+.spinnerLogin span {
+  width: 3px !important;
+  height: 13px !important;
 }
-.input-field .msgforPassword {
-  padding: 3px 0px 3px 10px;
-  color: red;
-  width: 700px;
-  display: none;
+
+.SpinnerPlus {
+  display: inherit;
+  position: relative;
+  font-size: 0px;
+  top: 62px;
+  left: 21px;
+  width: 100px;
+  height: 0px !important;
 }
-.input-field .msgforcomfirmps {
-  padding: 3px 0px 3px 10px;
-  color: red;
-  width: 700px;
-  display: none;
-} */
+.SpinnerPlus span {
+  background-color: rgb(226, 229, 235);
+  width: 10px !important;
+  height: 10px !important;
+  margin: 5px !important;
+  border-radius: 100%;
+  display: inline-block;
+  animation: 0.75s cubic-bezier(0.2, 0.68, 0.18, 1.08) 0.12s infinite normal
+    both running react-spinners-PulseLoader-pulse;
+}

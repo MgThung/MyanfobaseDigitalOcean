@@ -213,7 +213,7 @@ function ProRight() {
               )
             ) : (
               <div>
-                <h3>You have not set any post</h3>
+                <h3>You have not set any post yet!</h3>
               </div>
             )}
           </div>
