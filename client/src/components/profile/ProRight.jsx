@@ -80,7 +80,7 @@ function ProRight() {
       <div key={user._id}>
         <div className="lastnewbar-title">
           <h2 className="capitalize">My Posts</h2>
-          <span className="lasttitleline Post-line"></span>
+          <span className="mypostunderline"></span>
         </div>
         <div className="sidebar">
           <div className="Profile-main">

@@ -17,7 +17,9 @@ const HomeHeader = () => {
         <div className="home-banner">
           <div className="home-banner-detail">
             <Typography
+              className="headertypo"
               variant="h1"
+            
               fontFamily="Heebo"
               fontWeight="bold"
               sx={{
@@ -25,7 +27,7 @@ const HomeHeader = () => {
                   xs: "30px",
                   sm: "50px",
                   md: "60px",
-                  lg: "85px",
+                  lg: "90px",
                 },
               }}
             >
