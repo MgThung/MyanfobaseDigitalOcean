@@ -1,45 +1,55 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Box, Breadcrumbs, Typography, Stack } from "@mui/material";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import "../../technology/technology.css";
+import "../../travelling/theader.css";
 
 export default function Blogger() {
   return (
-    <section className="technology">
-      <div className="top">
-        <Link to="/" className="link1">
-          <h4>Home</h4>
-        </Link>
-        <div className="icon">
-          <i className="uil uil-angle-right-b"></i>
-        </div>
-        <Link to="/beauty" className="link1">
-          <h4>Beauty</h4>
-        </Link>
-        <div className="icon">
-          <i className="uil uil-angle-right-b"></i>
-        </div>
-        <h4>Beauty Blogger</h4>
-      </div>
-      <div className="sectop">
-        <h1>Beauty Blogger</h1>
-      </div>
+    <section className="container technology">
+      <Box sx={{ marginButtom: "10px" }}>
+        <Breadcrumbs
+          color={"#747474"}
+          aria-label="breadcrumb"
+          separator={<NavigateNextIcon fontSize="small" />}
+        >
+          <Link to="/" className="link1" fontSize="25px">
+            <Typography>Home</Typography>
+          </Link>
+          <Link to="/beauty" className="link1" fontSize="25px">
+            <Typography>Beauty</Typography>
+          </Link>
+          <Typography>Blogger</Typography>
+        </Breadcrumbs>
+      </Box>
+      <Typography
+        variant="h1"
+        fontSize={30}
+        fontWeight={700}
+        textTransform="uppercase"
+        sx={{ marginTop: "10px" }}
+      >
+        Blogger
+      </Typography>
+
       <div className="Catabutton">
-         <Link to="/makeup">
+        <Link to="/makeup">
           <button className="tec">Make-up</button>
-          </Link>
-          <button className="tec">Beauty Blogger</button>
-           <Link to="/skincare">
+        </Link>
+        <Link to="/Blogger">
+          <button className="tec btnactive">Beauty Blog</button>
+        </Link>
+        <Link to="/skincare">
           <button className="tec">Skin care</button>
-          </Link>
+        </Link>
         <Link to="/beautyclinic">
           <button className="tec">Beauty Clinic</button>
         </Link>
-           <Link to="/salon">
+        <Link to="/salon">
           <button className="tec">Beauty Salon</button>
-          </Link>
+        </Link>
       </div>
-      {/* <div className="para">
-        
-      </div> */}
     </section>
   );
 }

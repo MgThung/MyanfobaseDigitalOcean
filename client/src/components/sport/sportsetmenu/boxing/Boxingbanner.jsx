@@ -1,4 +1,5 @@
 import React from "react";
+import "../../../enterment/entermentbanner.css"
 import Footer from "../../../footer/Footer";
 
 // import CSSRulePlugin from "gsap/CSSRulePlugin";

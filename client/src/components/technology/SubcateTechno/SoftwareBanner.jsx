@@ -4,7 +4,7 @@ import "../technology.css"
 export default function SoftwareBanner() {
   return (
     <>
-      <section className="catebannerImg">
+      <section className="container catebannerImg">
         <div className="leftBanner">
           <div className="catebanner1">
             <img src="./images/technology/software/softwarebanner2.png" />

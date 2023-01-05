@@ -6,18 +6,18 @@
 .firstetn {
   position: relative;
   width: 80%;
- overflow: hidden;
+  overflow: hidden;
 }
 .hansoetn {
   width: 100%;
   height: 32.5rem;
   transition: all 0.5s;
 }
-.hansoetn img{
+.hansoetn img {
   width: 100%;
   height: 100%;
 }
-.hansoetn_P{
+.hansoetn_P {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -32,19 +32,19 @@
   transform: translate(-100%);
   transition: all 0.5s;
 }
-.hansoetn_P p{
+.hansoetn_P p {
   text-transform: capitalize;
   margin: 0;
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
 }
-.firstetn:hover .hansoetn_P{
-    transform: translate(0%);
+.firstetn:hover .hansoetn_P {
+  transform: translate(0%);
 }
-.firstetn:hover .hansoetn{
+.firstetn:hover .hansoetn {
   transform: scale(1.4) rotate(-15deg);
 }
-.secetn{
+.secetn {
   width: 80%;
   position: relative;
   overflow: hidden;
@@ -55,11 +55,11 @@
   height: 32.5rem;
   transition: all 0.5s;
 }
-.moneyheist img{
+.moneyheist img {
   width: 100%;
   height: 100%;
 }
-.moneyheist_P{
+.moneyheist_P {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -74,21 +74,20 @@
   transform: translate(-100%);
   transition: all 0.5s;
 }
-.moneyheist_P p{
+.moneyheist_P p {
   text-transform: capitalize;
   margin: 0;
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
 }
-.secetn:hover .moneyheist_P{
+.secetn:hover .moneyheist_P {
   transform: translate(0%);
 }
-.secetn:hover .moneyheist{
+.secetn:hover .moneyheist {
   transform: scale(1.4) rotate(-15deg);
 }
 
-
-.thirdetn{
+.thirdetn {
   width: 80%;
   position: relative;
   overflow: hidden;
@@ -98,11 +97,11 @@
   height: 32.5rem;
   transition: all 0.5s;
 }
-.jurassic img{
+.jurassic img {
   width: 100%;
   height: 100%;
 }
-.jurassic_P{
+.jurassic_P {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -117,15 +116,15 @@
   transform: translate(-100%);
   transition: all 0.5s;
 }
-.jurassic_P p{
+.jurassic_P p {
   text-transform: capitalize;
   margin: 0;
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
 }
-.thirdetn:hover .jurassic_P{
-    transform: translate(0%);
+.thirdetn:hover .jurassic_P {
+  transform: translate(0%);
 }
-.thirdetn:hover .jurassic{
-    transform: scale(1.4) rotate(-15deg);
+.thirdetn:hover .jurassic {
+  transform: scale(1.4) rotate(-15deg);
 }

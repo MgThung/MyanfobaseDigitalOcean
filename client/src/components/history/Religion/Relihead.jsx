@@ -1,27 +1,38 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Box, Breadcrumbs, Typography, Stack } from "@mui/material";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import "../../travelling/theader.css";
+import "../../technology/technology.css";
 export default function Relihead() {
   return (
-    <section className="travel container">
-      <div className="top">
-        <Link to="/" className="link1">
-          <h4>Home</h4>
-        </Link>
-        <div className="icon">
-          <i className="uil uil-angle-right-b"></i>
-        </div>
-        <Link to="/history" className="link1">
-          <h4>History</h4>
-        </Link>
-        <div className="icon">
-          <i className="uil uil-angle-right-b"></i>
-        </div>
-        <h4>Religion</h4>
-      </div>
-      <div className="sectop">
-        <h1>Religion</h1>
-      </div>
-      <div className="Catabutton">
+    <section className="container travel">
+      <Box sx={{ marginButtom: "10px" }}>
+        <Breadcrumbs
+          color={"#747474"}
+          aria-label="breadcrumb"
+          separator={<NavigateNextIcon fontSize="small" />}
+        >
+          <Link to="/" className="link1" fontSize="25px">
+            <Typography>Home</Typography>
+          </Link>
+          <Link to="/" className="link1" fontSize="25px">
+            <Typography>History</Typography>
+          </Link>
+          <Typography>Religion</Typography>
+        </Breadcrumbs>
+      </Box>
+      <Typography
+        variant="h1"
+        fontSize={30}
+        fontWeight={700}
+        textTransform="uppercase"
+        sx={{ marginTop: "10px" }}
+      >
+        Religion
+      </Typography>
+
+      <div className="button">
         <Link to="/culture">
           <button className="tec">Culture</button>
         </Link>
@@ -29,7 +40,7 @@ export default function Relihead() {
           <button className="tec">Dynasty</button>
         </Link>
         <Link to="/religion">
-          <button className="tec btnactive">Religion</button>
+          <button className="tec">Religion</button>
         </Link>
         <Link to="/dress">
           <button className="tec">Dress Code</button>
@@ -38,9 +49,6 @@ export default function Relihead() {
           <button className="tec">Region & State</button>
         </Link>
       </div>
-      {/* <div className="para">
-        
-      </div> */}
     </section>
   );
 }

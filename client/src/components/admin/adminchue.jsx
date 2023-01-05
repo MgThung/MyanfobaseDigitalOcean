@@ -38,7 +38,7 @@ export default function AdminChue() {
 
   return (
     <>
-      <h2>chue</h2>
+      
       <div>
         <div className="admin-title">
           <h1>ADMIN PAGE</h1>

@@ -1,50 +1,42 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../travelling/theader.css"
 import "../technology/technology.css";
 import "./literature.css";
-import "../technology/technology.css";
 import { Box, Container, Grid, Typography} from "@mui/material";
-
+import {  Breadcrumbs, Stack } from "@mui/material";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
 
 export default function Literature() {
   return (
     <>
-      <section className="technology">
-        <div className="top">
-          <div className="homelink">
-            <ul>
-              <li>
-                <Link to="/" className="link1">
-                  <h4>Home</h4>
-                </Link>
-              </li>
-            </ul>
-          </div>
+    
+      <section className="container travel">
+        <Box sx={{ marginButtom: "10px" }}>
+          <Breadcrumbs
+            color={"#747474"}
+            aria-label="breadcrumb"
+            separator={<NavigateNextIcon fontSize="small" />}
+          >
+            <Link to="/" className="link1" fontSize="25px">
+              <Typography>Home</Typography>
+            </Link>
 
-          <div className="iconRightArrow">
-            <i className="uil uil-angle-right-b"></i>
-          </div>
+            <Typography>Literature</Typography>
+          </Breadcrumbs>
+        </Box>
+        <Typography
+          variant="h1"
+          fontSize={30}
+          fontWeight={700}
+          textTransform="uppercase"
+          sx={{ marginTop: "10px" }}
+        >
+          Literature
+        </Typography>
 
-          <h4>Literature</h4>
-        </div>
-        <div className="sectop">
-          <h1>Literature</h1>
-        </div>
-        <div className="Catabutton">
-          <Link to="/poetry">
-            <button className="tec">Poetry</button>
-          </Link>
-          <Link to="/fiction">
-            <button className="tec">Fiction</button>
-          </Link>
-          <Link to="/drama">
-            <button className="tec">Drama</button>
-          </Link>
-          <Link to="/comedy">
-            <button className="tec">Comedy</button>
-          </Link>
-
+        <div className="button">
           <Link to="/novel">
             <button className="tec">Novel</button>
           </Link>
@@ -54,19 +46,28 @@ export default function Literature() {
           <Link to="/romance">
             <button className="tec">Romance</button>
           </Link>
+          <Link to="/fiction">
+            <button className="tec">Fiction</button>
+          </Link>
+          <Link to="/poetry">
+            <button className="tec">Poetry</button>
+          </Link>
         </div>
-        <div className="para">
-          <p>
-            With the development of language, the human imagination has found a
-            way to create and communicate through the written word. A literary
-            work can transport us into a fictional, fantastic new world,
-            describe a fleeting feeling, or simply give us a picture of the past
-            through novels, poems, tragedies, epic works, and other genres.
-          </p>
-        </div>
+
+        <Typography
+          variant="body1"
+          fontFamily={("Open Sans", "Open Sans Regular", "sans - serif")}
+          fontStyle={"italic"}
+          align={"justify"}
+          sx={{ marginTop: "18px", color: "#777" }}
+        >
+          Modern technology has become a total phenomenon for civilization, the
+          defining force of a new social order in which efficiency is no longer
+          an option but a necessity imposed on all human activity.
+        </Typography>
       </section>
 
-      <section>
+      <section className="container">
         <Box>
           <div className="photo">
             <Container maxWidth="xl">

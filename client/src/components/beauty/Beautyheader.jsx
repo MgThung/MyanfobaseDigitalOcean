@@ -1,5 +1,6 @@
 import React from "react";
 import "../technology/technology.css";
+import "../travelling/theader.css"
 import { Link } from "react-router-dom";
 import { Box, Breadcrumbs, Typography, Stack } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
@@ -34,7 +35,7 @@ const Beautyheader = () => {
             <button className="tec">Make-up</button>
           </Link>
           <Link to="/Blogger">
-            <button className="tec">Beauty Blogger</button>
+            <button className="tec">Beauty Blog</button>
           </Link>
           <Link to="/skincare">
             <button className="tec">Skin care</button>

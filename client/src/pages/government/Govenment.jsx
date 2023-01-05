@@ -13,7 +13,7 @@ export default function Govenment() {
       <section className="container">
         <Grid my={2} container>
           <Grid item xs={12} xl={8.4} md={8.4}>
-            <GoverLeft />
+            <GoverLeft category={"Government"} />
           </Grid>
           <Grid item xs={12} xl={3.6} md={3.6}>
             <GoverRide />

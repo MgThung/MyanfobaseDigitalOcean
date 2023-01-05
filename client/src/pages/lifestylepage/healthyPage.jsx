@@ -1,22 +1,25 @@
 import Latestbar from "../../components/catepagerightbar/Latestbar";
+import PopularNews from "../../components/catepagerightbar/PopularNews";
 import HealthyLife from "../../components/lifestyle/lifestyleSetmenu/healthyLife/healthy";
 import HealthyLifeBanner from "../../components/lifestyle/lifestyleSetmenu/healthyLife/healthyBanner";
-import HealthyLifePopular from "../../components/lifestyle/lifestyleSetmenu/healthyLife/healthyPopular";
-import HealthyLifeSidebar from "../../components/lifestyle/lifestyleSetmenu/healthyLife/healthySidebar";
+import Lifestylesidebar from "../../components/lifestyle/Lifestylesidebar";
+import { Grid } from "@mui/material";
 
 export default function HealthyLifePage() {
   return (
     <>
+      <HealthyLife />
+      <HealthyLifeBanner />
       <section className="container">
-        <HealthyLife />
-        <HealthyLifeBanner />
-        <section className="tecbody">
-          <HealthyLifeSidebar />
-          <div className="allRightBar">
-            <HealthyLifePopular />
+        <Grid my={2} container>
+          <Grid item xs={12} xl={8.4} md={8.4}>
+            <Lifestylesidebar category={"Healthy-Life"} />
+          </Grid>
+          <Grid item xs={12} xl={3.6} md={3.6}>
+            <PopularNews />
             <Latestbar />
-          </div>
-        </section>
+          </Grid>
+        </Grid>
       </section>
     </>
   );

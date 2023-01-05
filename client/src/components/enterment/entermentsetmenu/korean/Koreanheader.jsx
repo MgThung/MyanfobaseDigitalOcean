@@ -50,7 +50,6 @@
 //   );
 // }
 
-
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../entermentbanner.css";
@@ -59,8 +58,7 @@ import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 export default function Koreanheader() {
   return (
     <>
-      <section>
-        
+      <section className="container enter">
         <Box sx={{ marginButtom: "10px" }}>
           <Breadcrumbs
             color={"#747474"}
@@ -83,7 +81,7 @@ export default function Koreanheader() {
           textTransform="uppercase"
           sx={{ marginTop: "10px" }}
         >
-          Entertainment
+          Korean{" "}
         </Typography>
         <div className="Catabutton">
           <Link to="/korean">
@@ -95,17 +93,8 @@ export default function Koreanheader() {
           <Link to="/cartoon">
             <button className="tec">cartoon</button>
           </Link>
-          <Link to="/cinema">
-            <button className="tec">cinema</button>
-          </Link>
           <Link to="/music">
             <button className="tec">music</button>
-          </Link>
-          <Link to="/asian">
-            <button className="tec">asian</button>
-          </Link>
-          <Link to="/myanmar">
-            <button className="tec">myanmar</button>
           </Link>
         </div>
         <Typography
@@ -123,4 +112,3 @@ export default function Koreanheader() {
     </>
   );
 }
-

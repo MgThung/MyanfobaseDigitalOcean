@@ -10,14 +10,12 @@ export default function Art() {
   return (
     <>
       <Artssheader />
-      <section className="container">
         <Artssbanner />
-      </section>
 
       <section className="container">
         <Grid my={2} container>
           <Grid item xs={12} xl={8.4} md={8.4}>
-            <ArtssMain />
+            <ArtssMain category={"Arts"} />
           </Grid>
           <Grid item xs={12} xl={3.6} md={3.6}>
             <PopularNews />

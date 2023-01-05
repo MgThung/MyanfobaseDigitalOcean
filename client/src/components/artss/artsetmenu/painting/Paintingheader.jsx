@@ -4,10 +4,9 @@ import "../../../technology/technology.css";
 import { Box, Breadcrumbs, Typography, Stack } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
-
 export default function Paintingheader() {
   return (
-    <section className="technology">
+    <section className="container technology">
       <Box sx={{ marginButtom: "10px" }}>
         <Breadcrumbs
           color={"#747474"}
@@ -36,9 +35,6 @@ export default function Paintingheader() {
         <Link to="/doodle">
           <button className="tec">doodle art</button>
         </Link>
-        <Link to="/surreat">
-          <button className="tec">surreat art</button>
-        </Link>
         <Link to="/painting">
           <button className="tec btnactive">painting</button>
         </Link>
@@ -46,4 +42,3 @@ export default function Paintingheader() {
     </section>
   );
 }
-

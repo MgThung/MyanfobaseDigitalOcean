@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../../../travelling/theader.css";
 // import "../../../technology/technology.css";
 import "../../sportbanner.css";
 import { Box, Breadcrumbs, Typography, Stack } from "@mui/material";
@@ -7,7 +8,7 @@ import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
 export default function Caneballheader() {
   return (
-    <section className="mainetn1">
+    <section className="container travel">
       <Box sx={{ marginButtom: "10px" }}>
         <Breadcrumbs
           color={"#747474"}
@@ -30,7 +31,7 @@ export default function Caneballheader() {
         textTransform="uppercase"
         sx={{ marginTop: "10px" }}
       >
-        Sport
+        Caneball
       </Typography>
       <div className="Catabutton">
         <Link to="/football">
@@ -43,7 +44,7 @@ export default function Caneballheader() {
           <button className="tec">chess</button>
         </Link>
         <Link to="/cane">
-          <button className="tec btnactive">cane ball</button>
+          <button className="tec">cane ball</button>
         </Link>
         <Link to="/gamming">
           <button className="tec">gamming</button>
