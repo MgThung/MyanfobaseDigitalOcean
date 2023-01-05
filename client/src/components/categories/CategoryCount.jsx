@@ -129,35 +129,44 @@ export default function CategoryCount() {
             {categories.length !== 0 ? (
               categories.map((cate, index) => {
                 return (
-                  <SwiperSlide className="cate-swiper" key={index}>
-                    <div className="per-cate" key={index}>
-                      <div>
-                        {/* {console.log("cate id", cate._id)} */}
-                        {images.map((data, index) => {
-                          if (data.id == cate._id)
-                            return (
-                              <div key={index} className="cate-image">
-                                <img src={data.cateimage} alt="" />
+                  <>
+                    {images.map((data, indexdata) => {
+                      return (
+                        <>
+                          {data.id == cate._id ? (
+                            <SwiperSlide
+                              className="cate-swiper"
+                              key={indexdata}
+                            >
+                              <div className="per-cate" key={indexdata}>
+                                <div>
+                                  {console.log("data iss", data)}
+                                  {console.log("cate count iss", cate.count)}
+                                  <div key={indexdata} className="cate-image">
+                                    <img src={data.cateimage} alt="" />
+                                  </div>
+                                </div>
+                                <div className="swiperbody">
+                                  <h3>{data.id}</h3>
+                                  <h5>{cate.count} Articles</h5>
+
+                                  <Link to={data.id}>
+                                    <span>C</span>heck Here
+                                  </Link>
+                                </div>
                               </div>
-                            );
-                        })}
-                      </div>
-
-                      <div className="swiperbody">
-                        <h3>{cate._id}</h3>
-                        <h5>{cate.count} Articles</h5>
-
-                        <Link to={cate._id}>
-                          <span>C</span>heck Here
-                        </Link>
-                      </div>
-                    </div>
-                  </SwiperSlide>
+                            </SwiperSlide>
+                          ) : (
+                            ""
+                          )}
+                        </>
+                      );
+                    })}
+                  </>
                 );
               })
             ) : (
               <div>
-                {/* <h4>Loading....</h4> */}
                 <Spinner />
               </div>
             )}
@@ -167,3 +176,30 @@ export default function CategoryCount() {
     </>
   );
 }
+
+// return (
+//   <SwiperSlide className="cate-swiper" key={index}>
+//     <div className="per-cate" key={index}>
+//       <div>
+//         {/* {console.log("cate id", cate._id)} */}
+//         {images.map((data, index) => {
+//           if (data.id == cate._id)
+//             return (
+//               <div key={index} className="cate-image">
+//                 <img src={data.cateimage} alt="" />
+//               </div>
+//             );
+//         })}
+//       </div>
+
+//       <div className="swiperbody">
+//         <h3>{cate._id}</h3>
+//         <h5>{cate.count} Articles</h5>
+
+//         <Link to={cate._id}>
+//           <span>C</span>heck Here
+//         </Link>
+//       </div>
+//     </div>
+//   </SwiperSlide>
+// );
