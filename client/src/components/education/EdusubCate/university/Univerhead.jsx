@@ -36,18 +36,14 @@ export default function UniversityHeader() {
         <Link to="/university">
           <button className="tec btnactive">University & Collage</button>
         </Link>
-        <Link to="/elementary">
-          <button className="tec ">Elementary School</button>
-        </Link>
+       
         <Link to="/private">
           <button className="tec ">Private School</button>
         </Link>
         <Link to="/online">
           <button className="tec ">Online Class</button>
         </Link>
-        <Link to="/equality">
-          <button className="tec ">Equality-Education </button>
-        </Link>
+
       </div>
     </section>
   );

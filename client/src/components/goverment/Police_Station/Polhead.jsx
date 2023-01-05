@@ -37,11 +37,9 @@ export default function Polhead() {
           <button className="tec">Ministry</button>
         </Link>
         <Link to="/police_station">
-          <button className="tec">Police Station</button>
+          <button className="tec btnactive">Police Station</button>
         </Link>
-        <Link to="/leader">
-          <button className="tec">Leader</button>
-        </Link>
+      
 
         <Link to="/passport">
           <button className="tec">Passport</button>
@@ -50,7 +48,6 @@ export default function Polhead() {
           <button className="tec">Law</button>
         </Link>
       </div>
-    
     </section>
   );
 }

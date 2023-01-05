@@ -47,7 +47,7 @@ export default function Fiction() {
           <button className="tec">Romance</button>
         </Link>
         <Link to="/fiction">
-          <button className="tec">Fiction</button>
+          <button className="tec btnactive">Fiction</button>
         </Link>
         <Link to="/poetry">
           <button className="tec">Poetry</button>

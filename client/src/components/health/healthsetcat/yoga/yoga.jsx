@@ -39,7 +39,7 @@ export default function Yoga() {
           <button className="tec">Clinic</button>
         </Link>
         <Link to="/yoga">
-          <button className="tec">Yoga</button>
+          <button className="tec btnactive">Yoga</button>
         </Link>
         <Link to="/hfoods">
           <button className="tec">Healthy Foods</button>

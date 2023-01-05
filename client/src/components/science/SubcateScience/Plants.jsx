@@ -46,7 +46,7 @@ export default function Plants() {
             <button className="tec">Mathematics</button>
           </Link> */}
         <Link to="/plants">
-          <button className="tec">Plants</button>
+          <button className="tec btnactive">Plants</button>
         </Link>
 
         <Link to="/mammals">

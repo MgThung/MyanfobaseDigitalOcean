@@ -35,7 +35,7 @@ export default function Artssheader() {
             <button className="tec">anime art</button>
           </Link>
           <Link to="/sketches">
-            <button className="tec">art sketches</button>
+            <button className="tec">sketches art</button>
           </Link>
           <Link to="/doodle">
             <button className="tec">doodle art</button>

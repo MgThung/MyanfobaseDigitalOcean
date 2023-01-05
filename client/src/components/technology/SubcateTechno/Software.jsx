@@ -38,14 +38,12 @@ export default function Software() {
         <Link to="/electronic">
           <button className="tec">Electronics</button>
         </Link>
-        <Link to="/innovation">
-          <button className="tec">Innovation</button>
-        </Link>
+     
         <Link to="/smartphone">
           <button className="tec">Smartphone</button>
         </Link>
         <Link to="/software">
-          <button className="tec">Software</button>
+          <button className="tec btnactive">Software</button>
         </Link>
       </div>
     </section>

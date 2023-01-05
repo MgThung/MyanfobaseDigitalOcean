@@ -36,7 +36,7 @@ const Beahead = () => {
           <button className="tec">Pagoda</button>
         </Link>
         <Link to="/beach">
-          <button className="tec">Beach</button>
+          <button className="tec btnactive">Beach</button>
         </Link>
         <Link to="/waterfall">
           <button className="tec">Waterfall</button>
@@ -44,9 +44,7 @@ const Beahead = () => {
         <Link to="/mountains">
           <button className="tec">Mountains</button>
         </Link>
-        <Link to="/Advanture_trip">
-          <button className="tec">Advanture trip</button>
-        </Link>
+       
       </div>
    
     </section>
