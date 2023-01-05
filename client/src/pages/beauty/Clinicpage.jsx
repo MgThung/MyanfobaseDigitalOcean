@@ -4,7 +4,6 @@ import { Grid } from "@mui/material";
 import BeautySidebar from "../../components/beauty/Beautysidebar";
 import BeautyRighrbar from "../../components/beauty/Bearightbar";
 
-
 export default function BeautyClinicpage() {
   return (
     <>
@@ -13,7 +12,7 @@ export default function BeautyClinicpage() {
       <section className="container">
         <Grid my={2} container>
           <Grid item xs={12} xl={8.4} md={8.4}>
-            <BeautySidebar />
+            <BeautySidebar category={"Beauty-Clinic"} />
           </Grid>
           <Grid item xs={12} xl={3.6} md={3.6}>
             <BeautyRighrbar />

@@ -8,12 +8,12 @@ import { Grid } from "@mui/material";
 const UniversityPage = () => {
   return (
     <>
-      <UniversityHeader/>
-     <Univerbenner/>
+      <UniversityHeader />
+      <Univerbenner />
       <section className="container">
         <Grid my={2} container>
           <Grid item xs={12} xl={8.4} md={8.4}>
-            <EduSlide />
+            <EduSlide category={"Universities"} />
           </Grid>
           <Grid item xs={12} xl={3.6} md={3.6}>
             <EduRight />

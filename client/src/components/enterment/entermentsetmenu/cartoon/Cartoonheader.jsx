@@ -42,17 +42,8 @@ export default function Cartoonheader() {
         <Link to="/cartoon">
           <button className="tec btnactive">cartoon</button>
         </Link>
-        <Link to="/cinema">
-          <button className="tec">cinema</button>
-        </Link>
         <Link to="/music">
           <button className="tec">music</button>
-        </Link>
-        <Link to="/asian">
-          <button className="tec">asian</button>
-        </Link>
-        <Link to="/myanmar">
-          <button className="tec">myanmar</button>
         </Link>
       </div>
       <Typography

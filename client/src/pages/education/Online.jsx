@@ -8,12 +8,12 @@ import OnlineClassHeader from "../../components/education/EdusubCate/OnlineClass
 export default function OnlineClassPage() {
   return (
     <>
-      <OnlineClassHeader/>
+      <OnlineClassHeader />
       <OnlineClassBanner />
       <section className="container">
         <Grid my={2} container>
           <Grid item xs={12} xl={8.4} md={8.4}>
-            <BusinMain />
+            <BusinMain category={"Online-Class"} />
           </Grid>
           <Grid item xs={12} xl={3.6} md={3.6}>
             <BusinRight />

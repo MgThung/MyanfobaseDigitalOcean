@@ -6,7 +6,6 @@ import Smartphone from "../../components/technology/SubcateTechno/Smartphone";
 import SmartphoneBanner from "../../components/technology/SubcateTechno/SmartphoneBanner";
 import { Grid } from "@mui/material";
 
-
 export default function SmartphonePage() {
   return (
     <>
@@ -15,7 +14,7 @@ export default function SmartphonePage() {
       <section className="container">
         <Grid container my={2}>
           <Grid item xs={12} xl={8.4} md={8.4}>
-            <Tecmain />
+            <Tecmain category={"Smart-Phone"} />
           </Grid>
           <Grid item xs={12} xl={3.6} md={3.6}>
             <PopularNews />

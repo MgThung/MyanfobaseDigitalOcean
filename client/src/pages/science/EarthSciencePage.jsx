@@ -14,7 +14,7 @@ export default function EarthSciencePage() {
       <section className="container">
         <Grid my={2} container>
           <Grid item xs={12} xl={8.4} md={8.4}>
-            <ScienceMain />
+            <ScienceMain category={"Earth-Science"} />
           </Grid>
           <Grid item xs={12} xl={3.6} md={3.6}>
             <PopularNews />

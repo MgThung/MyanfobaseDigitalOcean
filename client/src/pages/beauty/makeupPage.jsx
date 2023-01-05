@@ -4,7 +4,6 @@ import Makeup from "../../components/beauty/setcat/makeup";
 import Makeupbanner from "../../components/beauty/setcat/Makeupbanner";
 import { Grid } from "@mui/material";
 
-
 export default function Makeuppage() {
   return (
     <>
@@ -14,7 +13,7 @@ export default function Makeuppage() {
       <section className="container">
         <Grid my={2} container>
           <Grid item xs={12} xl={8.4} md={8.4}>
-            <BeautySidebar />
+            <BeautySidebar category={"Make-up"} />
           </Grid>
           <Grid item xs={12} xl={3.6} md={3.6}>
             <BeautyRighrbar />

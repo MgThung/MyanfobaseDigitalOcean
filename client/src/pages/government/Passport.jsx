@@ -5,7 +5,6 @@ import Passbanner from "../../components/goverment/Passport/Passbanner";
 import Passhead from "../../components/goverment/Passport/Passhead";
 import { Grid } from "@mui/material";
 
-
 export default function Passport() {
   return (
     <>
@@ -14,7 +13,7 @@ export default function Passport() {
       <section className="container">
         <Grid my={2} container>
           <Grid item xs={12} xl={8.4} md={8.4}>
-            <GoverLeft />
+            <GoverLeft category={"Passport"} />
           </Grid>
           <Grid item xs={12} xl={3.6} md={3.6}>
             <GoverRide />

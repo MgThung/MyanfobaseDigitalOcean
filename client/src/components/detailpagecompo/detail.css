@@ -87,6 +87,7 @@ a.instagram {
   width: 100%;
   height: 100%;
   display: block;
+  object-fit: cover;
 }
 .tec-mustread-img1 {
   width: 100%;
@@ -131,18 +132,7 @@ a.instagram {
   margin-top: 1rem;
   font-size: 1.2rem;
 }
-.tec-mustread1:hover .tec-must-para h4 {
-  color: var(--technology-bg);
-}
-.tec-mustread2:hover .tec-must-para h4 {
-  color: var(--technology-bg);
-}
-.tec-mustread3:hover .tec-must-para h4 {
-  color: var(--technology-bg);
-}
-.tec-mustread4:hover .tec-must-para h4 {
-  color: var(--technology-bg);
-}
+
 .tec-mustread1 {
   width: 100%;
   height: auto;
@@ -179,4 +169,7 @@ a.instagram {
 }
 .detailbtn {
   margin-top: 1rem;
+}
+.mustreadtitle {
+  text-align: left;
 }

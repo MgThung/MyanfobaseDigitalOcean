@@ -91,7 +91,6 @@ export default function UserDetail() {
               : postDetail.files.map((file, index) => {
                   return (
                     <div className="userdetailimg" key={index}>
-                      {console.log("filePath is", file.filePath)}
                       <img
                         className="detailimguser"
                         src={file.filePath}

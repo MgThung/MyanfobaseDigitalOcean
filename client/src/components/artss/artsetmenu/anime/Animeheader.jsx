@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../../technology/technology.css"
+import "../../../technology/technology.css";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { Box, Breadcrumbs, Typography, Stack } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
@@ -23,7 +23,7 @@ export default function Animeheader() {
           <Typography>anime art</Typography>
         </Breadcrumbs>
       </Box>
-      
+
       <div className="sectop">
         <h1>Arts</h1>
       </div>
@@ -37,9 +37,6 @@ export default function Animeheader() {
         <Link to="/doodle">
           <button className="tec">doodle art</button>
         </Link>
-        <Link to="/surreat">
-          <button className="tec">surreat art</button>
-        </Link>
         <Link to="/painting">
           <button className="tec">painting</button>
         </Link>
@@ -47,4 +44,3 @@ export default function Animeheader() {
     </section>
   );
 }
-

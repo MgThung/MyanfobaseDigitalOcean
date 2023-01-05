@@ -1,11 +1,12 @@
 import React from "react";
-import Axios from "axios";
+
 import { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import "./textform.css";
 import "./postform.css";
 import "./dropdowncate.css";
+import { CategoriesData } from "./CategoriesData";
 import { createPost } from "../../features/posts/postSlice";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
@@ -28,7 +29,6 @@ export default function CreatePost(props) {
     }
   };
 
-  const { categories } = useSelector((state) => state.categories);
   const [isActive, setIsActive] = useState(false);
 
   const dispatch = useDispatch();
@@ -96,24 +96,23 @@ export default function CreatePost(props) {
               onClick={(e) => setIsActive(!isActive)}
             >
               {input.cateName}
-              <ArrowDropDownIcon/>
+              <ArrowDropDownIcon />
             </div>
             {isActive && (
               <div className="dropdown-content">
-                {categories &&
-                  categories.map((option, index) => (
-                    <div
-                      key={index}
-                      onClick={(e) =>
-                        onChangeCateId(option._id)(
-                          onChangeCate(option.catename)(setIsActive(false))
-                        )
-                      }
-                      className="dropdown-item"
-                    >
-                      {option.catename}
-                    </div>
-                  ))}
+                {CategoriesData.map((option, index) => (
+                  <div
+                    key={index}
+                    onClick={(e) =>
+                      onChangeCateId(option._id)(
+                        onChangeCate(option.catename)(setIsActive(false))
+                      )
+                    }
+                    className="dropdown-item"
+                  >
+                    {option.catename}
+                  </div>
+                ))}
               </div>
             )}
           </div>

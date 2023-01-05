@@ -5,7 +5,6 @@ import HistRight from "../../components/history/HistRight";
 import HistSide from "../../components/history/HistSide";
 import { Grid } from "@mui/material";
 
-
 export default function Culture() {
   return (
     <>
@@ -14,7 +13,7 @@ export default function Culture() {
       <section className="container">
         <Grid my={2} container>
           <Grid item xs={12} xl={8.4} md={8.4}>
-            <HistSide />
+            <HistSide category={"Culture"} />
           </Grid>
           <Grid item xs={12} xl={3.6} md={3.6}>
             <HistRight />

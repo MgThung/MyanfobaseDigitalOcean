@@ -8,12 +8,12 @@ import IndustrialBanner from "../../components/business/subcateBusiness/industri
 export default function IndustrialPage() {
   return (
     <>
-          <IndustrialHeader />
-          <IndustrialBanner/>
+      <IndustrialHeader />
+      <IndustrialBanner />
       <section className="container">
         <Grid my={2} container>
           <Grid item xs={12} xl={8.4} md={8.4}>
-            <BusinMain />
+            <BusinMain category={"Industrial"} />
           </Grid>
           <Grid item xs={12} xl={3.6} md={3.6}>
             <BusinRight />

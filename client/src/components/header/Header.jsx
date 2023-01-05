@@ -266,21 +266,24 @@ export default memo(function Header() {
                     />
                   )}
                 </div>
-
-                <Link to="/post" className="flex hoverclor navli">
-                  <Typography variant="h6" color="white" fontSize={17}>
-                    <AddCircleOutlineIcon />
-                  </Typography>
-                  <Typography
-                    variant="h6"
-                    color="white"
-                    fontSize={17}
-                    paddingTop={0.4}
-                  >
-                    Post
-                  </Typography>
-                  {/* <span className="capitalize">Post</span> */}
-                </Link>
+                {user && user._id !== null ? (
+                  <Link to="/post" className="flex hoverclor navli">
+                    <Typography variant="h6" color="white" fontSize={17}>
+                      <AddCircleOutlineIcon />
+                    </Typography>
+                    <Typography
+                      variant="h6"
+                      color="white"
+                      fontSize={17}
+                      paddingTop={0.4}
+                    >
+                      Post
+                    </Typography>
+                    {/* <span className="capitalize">Post</span> */}
+                  </Link>
+                ) : (
+                  ""
+                )}
 
                 {user !== null && user.isAdmin === true ? (
                   <Link to="/admin" className="flex hoverclor navli">
@@ -298,23 +301,30 @@ export default memo(function Header() {
                 )}
               </Stack>
               <Stack direction="row" spacing={6} alignItems="center">
-                <Button
-                  className="btnSubs"
-                  sx={{
-                    color: "white",
-                    border: "2px solid white",
-                    padding: { md: "6px 5px", lg: "8px 17px" },
-                    borderRadius: "4px",
-                    fontSize: { md: "14px", lg: "17px" },
-                    "&:hover": {
-                      backgroundColor: "rgb(255, 174, 0)",
-                      color: "black",
-                    },
-                  }}
-                  style={{ color: "white", border: "2px solid white" }}
-                >
-                  Subscribe
-                </Button>
+                {user !== null && user.isAdmin === true ? (
+                  " "
+                ) : (
+                  <>
+                    <Button
+                      className="btnSubs"
+                      sx={{
+                        color: "white",
+                        border: "2px solid white",
+                        padding: { md: "6px 5px", lg: "8px 17px" },
+                        borderRadius: "4px",
+                        fontSize: { md: "14px", lg: "17px" },
+                        "&:hover": {
+                          backgroundColor: "rgb(255, 174, 0)",
+                          color: "black",
+                        },
+                      }}
+                      style={{ color: "white", border: "2px solid white" }}
+                    >
+                      Subscribe
+                    </Button>
+                  </>
+                )}
+
                 {/* <button className="subscribebtn">Subscribe</button> */}
 
                 <div className="language">

@@ -39,7 +39,7 @@ export default function Makeup() {
           <button className="tec btnactive">Make-up</button>
         </Link>
         <Link to="/Blogger">
-          <button className="tec">Beauty Blogger</button>
+          <button className="tec">Beauty Blog</button>
         </Link>
         <Link to="/skincare">
           <button className="tec">Skin care</button>

@@ -40,9 +40,6 @@ export default function Artssheader() {
           <Link to="/doodle">
             <button className="tec">doodle art</button>
           </Link>
-          <Link to="/surreat">
-            <button className="tec">surreat art</button>
-          </Link>
           <Link to="/painting">
             <button className="tec">painting</button>
           </Link>

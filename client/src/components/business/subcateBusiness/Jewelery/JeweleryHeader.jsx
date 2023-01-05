@@ -29,12 +29,10 @@ export default function JewelryHeader() {
           textTransform="uppercase"
           sx={{ marginTop: "10px" }}
         >
-          Gems & Jewelry{" "}
+          Gems & Jewelry
         </Typography>
         <div className="button">
-          <Link to="/oil">
-            <button className="tec">Oil & Gas</button>
-          </Link>
+          
           <Link to="/consumer">
             <button className="tec ">Consumer Services</button>
           </Link>

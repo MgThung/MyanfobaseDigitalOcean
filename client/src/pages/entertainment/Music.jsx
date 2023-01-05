@@ -6,7 +6,6 @@ import Musicheader from "../../components/enterment/entermentsetmenu/music/Music
 import Entertainmentmain from "../../components/enterment/Entertainmentmain";
 import { Grid } from "@mui/material";
 
-
 export default function Music() {
   return (
     <>
@@ -15,7 +14,7 @@ export default function Music() {
       <section className="container">
         <Grid my={2} container>
           <Grid item xs={12} xl={8.4} md={8.4}>
-            <Entertainmentmain />
+            <Entertainmentmain category={"Music"} />
           </Grid>
           <Grid item xs={12} xl={3.6} md={3.6}>
             <PopularNews />

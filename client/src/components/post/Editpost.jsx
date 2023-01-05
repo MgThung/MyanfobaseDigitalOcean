@@ -1,13 +1,14 @@
 import React from "react";
 import { useState, useEffect } from "react";
-// import { updatePosts, getPostDetail, UpdateData } from "../../data/api";
+
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-// import Axios from "axios";
+
 import "./textform.css";
 import "./postform.css";
 import "./dropdowncate.css";
 import { updatePostData } from "../../features/posts/postSlice";
+import { CategoriesData } from "./CategoriesData";
 
 export default function EditPost() {
   const [editpost, setEditpost] = useState();
@@ -19,8 +20,6 @@ export default function EditPost() {
     cateId: "",
     files: [],
   });
-
-  const { categories } = useSelector((state) => state.categories);
 
   const setTextarea = (element, defaultHeight) => {
     if (element) {
@@ -129,28 +128,28 @@ export default function EditPost() {
                   >
                     <option value={input.cateName}>
                       {/* {selected === 0 ? editpost.cateName : selected} */}
-                      {input.cateName}
+                      <h4>
+                        <strong>{input.cateName}</strong>
+                      </h4>
                       <i class="fa-solid fa-square-caret-down"></i>
                     </option>
                   </div>
                   {isActive && (
                     <div className="dropdown-content">
-                      {categories &&
-                        categories.map((option,index) => (
-                          <div key={index}
-                            onClick={(e) =>
-                              onChangeCateId(option._id)(
-                                onChangeCate(option.catename)(
-                                  setIsActive(false)
-                                )
-                              )
-                            }
-                            // onChange={onChange}
-                            className="dropdown-item"
-                          >
-                            {option.catename}
-                          </div>
-                        ))}
+                      {CategoriesData.map((option, index) => (
+                        <div
+                          key={index}
+                          onClick={(e) =>
+                            onChangeCateId(option._id)(
+                              onChangeCate(option.catename)(setIsActive(false))
+                            )
+                          }
+                          // onChange={onChange}
+                          className="dropdown-item"
+                        >
+                          {option.catename}
+                        </div>
+                      ))}
                     </div>
                   )}
                 </div>
@@ -209,7 +208,7 @@ export default function EditPost() {
             </button>
             <div className="imgShow">
               {editpost.files &&
-                editpost.files.map((file,index) => (
+                editpost.files.map((file, index) => (
                   <div className="Imgarea" key={index}>
                     <div className="imgDiv1">
                       {/* {console.log("file path is", file.filePath)} */}

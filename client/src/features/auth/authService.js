@@ -46,8 +46,6 @@ const updateUserData = async (postData, token) => {
 
   const id = resultData.id;
 
-  console.log("result result data id", id);
-
   const config = {
     headers: {
       Authorization: `Bearer ${token}`,

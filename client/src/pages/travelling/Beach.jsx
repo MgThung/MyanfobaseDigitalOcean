@@ -13,7 +13,7 @@ export default function Beach() {
       <section className="container">
         <Grid my={2} container sx={{ margin: "0px" }}>
           <Grid item xs={12} xl={8.4} md={8.4}>
-            <TravSidebar />
+            <TravSidebar category={"Beaches"} />
           </Grid>
           <Grid item xs={12} xl={3.6} md={3.6}>
             <TravRbar />

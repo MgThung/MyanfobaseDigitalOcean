@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../../travelling/theader.css"
+import "../../../travelling/theader.css";
 import { Box, Breadcrumbs, Typography, Stack } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 export default function ConsumerHeader() {
@@ -32,9 +32,6 @@ export default function ConsumerHeader() {
           Consumer Service
         </Typography>
         <div className="button">
-          <Link to="/oil">
-            <button className="tec">Oil & Gas</button>
-          </Link>
           <Link to="/consumer">
             <button className="tec btnactive">Consumer Services</button>
           </Link>

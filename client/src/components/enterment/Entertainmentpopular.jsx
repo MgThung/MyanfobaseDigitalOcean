@@ -12,7 +12,7 @@ export default function Entertainmentpopular() {
           <div className="lastnewimg">
             <img src="./images/science/scienceinfo3.jpg" alt="" />
           </div>
-          {console.log("enter popular render")}
+
           <div className="lastnewinfo">
             <h4>Where does it come from effective from Exercise ?</h4>
             <div className="lastnewbuttondate">

@@ -36,10 +36,7 @@ export default function Sportbanner() {
               </div>
 
               <div className="hansoetn_P">
-                <p className="paragraph">
-                  Seo Hyun Jin, Hwang In Yeop & more star in an intriguing group
-                  poster for ‘Why Her’ The SBS drama is set to premiere soon!
-                </p>
+                <p className="paragraph">How to get more kick power!</p>
               </div>
             </div>
           </Grid>
@@ -49,11 +46,7 @@ export default function Sportbanner() {
                 <img src="./images/sport/sport6.avif" alt="" />
               </div>
               <div className="moneyheist_P">
-                <p>
-                  Seo Hyun Jin, Hwang In Yeop & more star in an intriguing{" "}
-                  <br /> group poster for ‘Why Her’ The SBS drama is set
-                  <br /> to premiere soon!
-                </p>
+                <p>The ways how to play football better!</p>
               </div>
             </div>
           </Grid>
@@ -63,10 +56,7 @@ export default function Sportbanner() {
                 <img src="./images/sport/sport1.jpg" alt="" />
               </div>
               <div className="jurassic_P">
-                <p>
-                  Seo Hyun Jin, Hwang In Yeop & more star in an intriguing group
-                  poster for ‘Why Her’ The SBS drama is set to premiere soon!
-                </p>
+                <p>Let's protect ourself</p>
               </div>
             </div>
           </Grid>

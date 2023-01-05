@@ -5,7 +5,6 @@ import Lawbanner from "../../components/goverment/Law/Lawbanner";
 import Lawhead from "../../components/goverment/Law/Lawhead";
 import { Grid } from "@mui/material";
 
-
 export default function Law() {
   return (
     <>
@@ -14,7 +13,7 @@ export default function Law() {
       <section className="container">
         <Grid my={2} container>
           <Grid item xs={12} xl={8.4} md={8.4}>
-            <GoverLeft />
+            <GoverLeft category={"Law"} />
           </Grid>
           <Grid item xs={12} xl={3.6} md={3.6}>
             <GoverRide />

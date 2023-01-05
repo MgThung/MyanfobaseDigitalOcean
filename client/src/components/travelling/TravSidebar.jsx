@@ -2,10 +2,11 @@ import React from "react";
 import Sidebar from "../sidebar/Sidebar";
 import "./travside.css";
 import "../sidebar/sidebar.css";
-const TravSidebar = () => {
+const TravSidebar = (props) => {
+  const category = props.category;
   return (
     <div className="">
-      <Sidebar category={"Travel"} />
+      <Sidebar category={category} />
     </div>
   );
 };

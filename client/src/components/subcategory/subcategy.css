@@ -68,12 +68,9 @@
   width: 100%;
 }
 
-
-
 .rightBanner:hover img,
 .leftBanner:hover img {
   transform: scale(1.2);
-
 }
 
 .cate-main {
@@ -99,7 +96,7 @@
 .postCate_info h4 {
   margin-bottom: 0;
 }
-.postCate_info h4:hover{
+.postCate_info h4:hover {
   color: var(--technology-bg);
 }
 .postCate_info p {
@@ -111,19 +108,11 @@
   right: 20px;
 }
 
-.Trav-main {
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
 .postTrav {
   display: grid;
   grid-template-columns: 40% 60%;
 }
-.Trav_img {
-  position: relative;
-}
+
 .postbuttom {
   /* display: flex;
   justify-content: left; */
@@ -147,10 +136,7 @@
   height: 100%;
   border-radius: 50%;
 }
-.Trav_img img {
-  width: 250px;
-  height: 180px;
-}
+
 .postTrav_info {
   width: 90%;
 }
@@ -159,9 +145,4 @@
 }
 .postTrav_info p {
   margin-bottom: 0;
-}
-.Travel1 {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
 }

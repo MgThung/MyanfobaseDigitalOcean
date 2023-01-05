@@ -32,9 +32,6 @@ export default function IndustrialHeader() {
           Industrial{" "}
         </Typography>
         <div className="button">
-          <Link to="/oil">
-            <button className="tec">Oil & Gas</button>
-          </Link>
           <Link to="/consumer">
             <button className="tec ">Consumer Services</button>
           </Link>

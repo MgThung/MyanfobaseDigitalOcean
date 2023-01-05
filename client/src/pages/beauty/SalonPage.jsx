@@ -4,7 +4,6 @@ import Salon from "../../components/beauty/setcat/salon";
 import Salonbanner from "../../components/beauty/setcat/Salonbanner";
 import { Grid } from "@mui/material";
 
-
 export default function SalonPage() {
   return (
     <>
@@ -13,7 +12,7 @@ export default function SalonPage() {
       <section className="container">
         <Grid my={2} container>
           <Grid item xs={12} xl={8.4} md={8.4}>
-            <BeautySidebar />
+            <BeautySidebar category={"Beauty-Salon"} />
           </Grid>
           <Grid item xs={12} xl={3.6} md={3.6}>
             <BeautyRighrbar />

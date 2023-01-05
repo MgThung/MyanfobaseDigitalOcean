@@ -9,12 +9,12 @@ import { Grid } from "@mui/material";
 export default function Footballpage() {
   return (
     <>
-        <Footballheader />
+      <Footballheader />
       <Footballbanner />
       <section className="container">
         <Grid my={2} container>
           <Grid item xs={12} xl={8.4} md={8.4}>
-            <SportMain />
+            <SportMain category={"Football"} />
           </Grid>
           <Grid item xs={12} xl={3.6} md={3.6}>
             <PopularNews />

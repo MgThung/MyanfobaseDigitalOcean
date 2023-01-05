@@ -4,7 +4,6 @@ import "../../../technology/technology.css";
 import { Box, Breadcrumbs, Typography, Stack } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
-
 export default function Doodleheader() {
   return (
     <section className="container technology">
@@ -23,7 +22,7 @@ export default function Doodleheader() {
           <Typography>doodle art</Typography>
         </Breadcrumbs>
       </Box>
-      
+
       <div className="sectop">
         <h1>Arts</h1>
       </div>
@@ -37,9 +36,6 @@ export default function Doodleheader() {
         <Link to="/doodle">
           <button className="tec btnactive">doodle art</button>
         </Link>
-        <Link to="/surreat">
-          <button className="tec">surreat art</button>
-        </Link>
         <Link to="/painting">
           <button className="tec">painting</button>
         </Link>
@@ -47,5 +43,3 @@ export default function Doodleheader() {
     </section>
   );
 }
-
-

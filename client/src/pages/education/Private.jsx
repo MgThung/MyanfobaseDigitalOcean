@@ -8,12 +8,12 @@ import PrivateHeader from "../../components/education/EdusubCate/Private/Private
 export default function PrivateSchoolPage() {
   return (
     <>
-      <PrivateHeader/>
+      <PrivateHeader />
       <PrivateBanner />
       <section className="container">
         <Grid my={2} container>
           <Grid item xs={12} xl={8.4} md={8.4}>
-            <BusinMain />
+            <BusinMain category={"Schools"} />
           </Grid>
           <Grid item xs={12} xl={3.6} md={3.6}>
             <BusinRight />

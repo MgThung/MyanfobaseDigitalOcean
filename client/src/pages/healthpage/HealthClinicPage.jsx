@@ -5,7 +5,6 @@ import HealthSidebar from "../../components/health/Healthsidebar";
 import { Grid } from "@mui/material";
 import PopularNews from "../../components/catepagerightbar/PopularNews";
 
-
 export default function HealthClinicPage() {
   return (
     <>
@@ -14,7 +13,7 @@ export default function HealthClinicPage() {
       <section className="container">
         <Grid my={2} container>
           <Grid item xs={12} xl={8.4} md={8.4}>
-            <HealthSidebar />
+            <HealthSidebar category={"Clinic"} />
           </Grid>
           <Grid item xs={12} xl={3.6} md={3.6}>
             <PopularNews />

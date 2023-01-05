@@ -50,7 +50,6 @@
 //   );
 // }
 
-
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../entermentbanner.css";
@@ -94,17 +93,8 @@ export default function Koreanheader() {
           <Link to="/cartoon">
             <button className="tec">cartoon</button>
           </Link>
-          <Link to="/cinema">
-            <button className="tec">cinema</button>
-          </Link>
           <Link to="/music">
             <button className="tec">music</button>
-          </Link>
-          <Link to="/asian">
-            <button className="tec">asian</button>
-          </Link>
-          <Link to="/myanmar">
-            <button className="tec">myanmar</button>
           </Link>
         </div>
         <Typography
@@ -122,4 +112,3 @@ export default function Koreanheader() {
     </>
   );
 }
-

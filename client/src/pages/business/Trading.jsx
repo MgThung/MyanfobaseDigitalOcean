@@ -8,12 +8,12 @@ import TradingBanner from "../../components/business/subcateBusiness/Trading/Tra
 export default function TradingPage() {
   return (
     <>
-          <TradingHeader />
-          <TradingBanner/>
+      <TradingHeader />
+      <TradingBanner />
       <section className="container">
         <Grid my={2} container>
           <Grid item xs={12} xl={8.4} md={8.4}>
-            <BusinMain />
+            <BusinMain category={"Trading-goods"} />
           </Grid>
           <Grid item xs={12} xl={3.6} md={3.6}>
             <BusinRight />

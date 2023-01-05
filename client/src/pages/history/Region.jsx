@@ -13,7 +13,7 @@ export default function Region() {
       <section className="container">
         <Grid my={2} container>
           <Grid item xs={12} xl={8.4} md={8.4}>
-            <HistSide />
+            <HistSide category={"Regions"} />
           </Grid>
           <Grid item xs={12} xl={3.6} md={3.6}>
             <HistRight />

@@ -9,11 +9,11 @@ import "./literaturebody.css";
 export default function LiteraturePage() {
   return (
     <>
-        <Literature />
+      <Literature />
       <section className="container">
         <Grid my={2} container>
           <Grid item xs={12} xl={8.4} md={8.4}>
-            <LiteratureMain />
+            <LiteratureMain category={"Literature"} />
           </Grid>
           <Grid item xs={12} xl={3.6} md={3.6}>
             <PopularNews />

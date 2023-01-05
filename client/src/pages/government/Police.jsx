@@ -5,7 +5,6 @@ import Polbanner from "../../components/goverment/Police_Station/Polbanner";
 import Polhead from "../../components/goverment/Police_Station/Polhead";
 import { Grid } from "@mui/material";
 
-
 export default function Police() {
   return (
     <>
@@ -14,7 +13,7 @@ export default function Police() {
       <section className="container">
         <Grid my={2} container>
           <Grid item xs={12} xl={8.4} md={8.4}>
-            <GoverLeft />
+            <GoverLeft category={"Police-Station"} />
           </Grid>
           <Grid item xs={12} xl={3.6} md={3.6}>
             <GoverRide />

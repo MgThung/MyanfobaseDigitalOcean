@@ -4,7 +4,6 @@ import Skinbanner from "../../components/beauty/setcat/Skinbanner";
 import Skincare from "../../components/beauty/setcat/skincare";
 import { Grid } from "@mui/material";
 
-
 export default function Skinpage() {
   return (
     <>
@@ -13,7 +12,7 @@ export default function Skinpage() {
       <section className="container">
         <Grid my={2} container>
           <Grid item xs={12} xl={8.4} md={8.4}>
-            <BeautySidebar />
+            <BeautySidebar category={"Skincare"} />
           </Grid>
           <Grid item xs={12} xl={3.6} md={3.6}>
             <BeautyRighrbar />

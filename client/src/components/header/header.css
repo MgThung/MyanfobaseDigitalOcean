@@ -6,13 +6,21 @@
   padding: 0;
 }
 .nav-logo img {
-  width: 100px;
-  height: 90px;
-  /* display: block ;
+  width: 90px;
+  height: 80px;
+  display: block;
   object-fit: cover;
-  animation:  2s infinite linear alternate;
-      z-index: 11; */
+  animation: myani 2s infinite linear alternate;
+}
 
+@keyframes myani {
+  from {
+    transform: rotate(8deg);
+  }
+
+  to {
+    transform: rotate(-8deg);
+  }
 }
 .headercolor {
   width: 100%;
@@ -175,10 +183,9 @@ a .hoverclor:hover {
   color: black !important;
 }
 
-.headerwrap i ,
-.dropdownItem{
+.headerwrap i,
+.dropdownItem {
   font-size: 15px;
-  
 }
 
 .dropdownItem a,
