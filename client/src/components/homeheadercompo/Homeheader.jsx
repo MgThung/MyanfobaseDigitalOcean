@@ -39,14 +39,15 @@ const HomeHeader = () => {
                   placeholder="Search in here...."
                   id="searchinput"
                 />
-                <SearchIcon className="searchiconbanner"/>
+                <SearchIcon className="searchiconbanner" />
               </Link>
             </div>
             <div className="banner-botton">
               <h2>Welcome to our Page</h2>
               <p>
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form.
+                Have a great day and be healthy. We wish you to get a lot of
+                knowledge, pleasure and latest information by visiting our
+                Website.
               </p>
             </div>
           </div>

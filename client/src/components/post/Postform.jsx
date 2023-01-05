@@ -53,14 +53,16 @@ export default function Postform() {
       <section className="postbg">
         <div className="container firstdesc">
           <h2 className="capitalize">
-            Let's share your experience and knowledge on our website!
+            Let's share our information to other people.
           </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
-            corporis consequuntur harum ab minima et, necessitatibus sit
-            blanditiis a at tempore unde eius minus veritatis odit aliquid
-            consequatur accusantium eum.
+            Here! You can share your experience, information ,life-tips and
+            other knowledge by posting.
           </p>
+          <pre>
+            Note: if you posted something, please wait a time for admin
+            approvement!
+          </pre>
         </div>
       </section>
       <div className="container formBody">
