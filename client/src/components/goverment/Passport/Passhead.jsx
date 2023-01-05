@@ -39,18 +39,15 @@ const Passhead = () => {
         <Link to="/police_station">
           <button className="tec">Police Station</button>
         </Link>
-        <Link to="/leader">
-          <button className="tec">Leader</button>
-        </Link>
+     
 
         <Link to="/passport">
-          <button className="tec">Passport</button>
+          <button className="tec btnactive">Passport</button>
         </Link>
         <Link to="/law">
           <button className="tec">Law</button>
         </Link>
       </div>
-   
     </section>
   );
 };

@@ -35,7 +35,7 @@ export default function Footballheader() {
       </Typography>
       <div className="Catabutton">
         <Link to="/football">
-          <button className="tec">football</button>
+          <button className="tec btnactive">football</button>
         </Link>
         <Link to="/boxing">
           <button className="tec">boxing</button>

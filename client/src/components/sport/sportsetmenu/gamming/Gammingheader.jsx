@@ -47,7 +47,7 @@ export default function Gammingheader() {
           <button className="tec">cane ball</button>
         </Link>
         <Link to="/gamming">
-          <button className="tec">gamming</button>
+          <button className="tec btnactive">gamming</button>
         </Link>
       </div>
     </section>

@@ -38,7 +38,7 @@ export default function Novel() {
 
       <div className="button">
         <Link to="/novel">
-          <button className="tec">Novel</button>
+          <button className="tec btnactive">Novel</button>
         </Link>
         <Link to="/shortstory">
           <button className="tec">Short-Story</button>

@@ -50,7 +50,7 @@ export default function Mammals() {
         </Link>
 
         <Link to="/mammals">
-          <button className="tec">Mammals</button>
+          <button className="tec btnactive">Mammals</button>
         </Link>
       </div>
       <Typography

@@ -42,10 +42,7 @@ const Mouhead = () => {
           <button className="tec">Waterfall</button>
         </Link>
         <Link to="/mountains">
-          <button className="tec">Mountains</button>
-        </Link>
-        <Link to="/Advanture_trip">
-          <button className="tec">Advanture trip</button>
+          <button className="tec btnactive">Mountains</button>
         </Link>
       </div>
       <Typography

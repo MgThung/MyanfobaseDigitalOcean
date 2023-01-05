@@ -39,14 +39,9 @@ export default function Luxury() {
           <button className="tec">Healthy Life</button>
         </Link>
         <Link to="/Luxury">
-          <button className="tec">Luxury</button>
+          <button className="tec btnactive">Luxury</button>
         </Link>
-        <Link to="/Family">
-          <button className="tec">Family</button>
-        </Link>
-        <Link to="/Modern">
-          <button className="tec">Modern</button>
-        </Link>
+      
       </div>
     </section>
   );

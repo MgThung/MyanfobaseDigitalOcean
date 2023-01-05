@@ -48,9 +48,7 @@ export default function Technology() {
           <Link to="/electronic">
             <button className="tec">Electronics</button>
           </Link>
-          <Link to="/innovation">
-            <button className="tec">Innovation</button>
-          </Link>
+         
           <Link to="/smartphone">
             <button className="tec">Smartphone</button>
           </Link>
@@ -72,92 +70,88 @@ export default function Technology() {
       </section>
 
       <section className="container">
-          <div className="photo">
-            <Container maxWidth="xl">
-              <Grid container direction="row" spacing={1}>
-                <Grid item lg={8} md={12} sm={12}>
-                  <div className="firstphoto">
-                    <div className="tech-firstphoto">
-                      <img
-                        className="fbphoto"
-                        src="./images/literature/literaturebanner1.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div className="firstpara">
-                      <button className="cateLiterature">Literature</button>
+        <div className="photo">
+          <Container maxWidth="xl">
+            <Grid container direction="row" spacing={1}>
+              <Grid item lg={8} md={12} sm={12}>
+                <div className="firstphoto">
+                  <div className="tech-firstphoto">
+                    <img
+                      className="fbphoto"
+                      src="./images/literature/literaturebanner1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div className="firstpara">
+                    <button className="cateTechnology">Technology</button>
 
-                      <Typography
-                        className="literaturecolor"
-                        variant="h4"
-                        color="white"
-                      >
-                        How to Mark yourself 'Safe' on Socials Media
-                      </Typography>
-                      <p>
-                        Modern technology has become a total phenomenon for
-                        civilization, the defining force of a new social order
-                        in which efficiency is no longer an option but a
-                        necessity imposed on all human activity.
-                      </p>
-                    </div>
+                    <Typography
+                      className="literaturecolor"
+                      variant="h4"
+                      color="white"
+                    >
+                      How to Mark yourself 'Safe' on Socials Media
+                    </Typography>
+                    <p>
+                      Modern technology has become a total phenomenon for
+                      civilization, the defining force of a new social order in
+                      which efficiency is no longer an option but a necessity
+                      imposed on all human activity.
+                    </p>
                   </div>
-                </Grid>
-                <Grid item lg={4} md={12}>
-                  <div className="secphoto">
-                    <Grid container direction="row" spacing={1}>
-                      <Grid item lg={12} md={6} xs={12}>
-                        <div className="secrobot">
-                          <div className="tecsecdiv-firstphoto">
-                            <img
-                              className="robotphoto"
-                              src="./images/literature/literaturebanner2.jpg"
-                              alt=""
-                            />
-                          </div>
-                          <div className="robotpara">
-                            <button className="cateLiterature">
-                              Literature
-                            </button>
-                            <Typography
-                              className="literaturecolor"
-                              variant="h4"
-                              color="white"
-                            >
-                              Corsair HS80 RGB Wirless Gaming Headset Review
-                            </Typography>
-                          </div>
-                        </div>
-                      </Grid>
-                      <Grid item lg={12} md={6} xs={12}>
-                        <div className="secair">
-                          <div className="tec-lastbannerphotos">
-                            <img
-                              className="airbudphoto"
-                              src="./images/science/sciencebanner11.jpg"
-                              alt=""
-                            />
-                          </div>
-                          <div className="airbudpara">
-                            <button className="cateLiterature">
-                              Literature
-                            </button>
-                            <Typography
-                              className="literaturecolor"
-                              variant="h4"
-                              color="white"
-                            >
-                              Corsair HS80 RGB Wirless Gaming Headset Review
-                            </Typography>
-                          </div>
-                        </div>
-                      </Grid>
-                    </Grid>
-                  </div>
-                </Grid>
+                </div>
               </Grid>
-            </Container>
-          </div>
+              <Grid item lg={4} md={12}>
+                <div className="secphoto">
+                  <Grid container direction="row" spacing={1}>
+                    <Grid item lg={12} md={6} xs={12}>
+                      <div className="secrobot">
+                        <div className="tecsecdiv-firstphoto">
+                          <img
+                            className="robotphoto"
+                            src="./images/literature/literaturebanner2.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div className="robotpara">
+                          <button className="cateTechnology">Technology</button>
+                          <Typography
+                            className="literaturecolor"
+                            variant="h4"
+                            color="white"
+                          >
+                            Corsair HS80 RGB Wirless Gaming Headset Review
+                          </Typography>
+                        </div>
+                      </div>
+                    </Grid>
+                    <Grid item lg={12} md={6} xs={12}>
+                      <div className="secair">
+                        <div className="tec-lastbannerphotos">
+                          <img
+                            className="airbudphoto"
+                            src="./images/science/sciencebanner11.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div className="airbudpara">
+                          <button className="cateTechnology">Technology</button>
+                          <Typography
+                            className="literaturecolor"
+                            variant="h4"
+                            color="white"
+                          >
+                            Corsair HS80 RGB Wirless Gaming Headset Review
+                          </Typography>
+                        </div>
+                      </div>
+                    </Grid>
+                  </Grid>
+                </div>
+              </Grid>
+            </Grid>
+          </Container>
+        </div>
       </section>
     </>
   );

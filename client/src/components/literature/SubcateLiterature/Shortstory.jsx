@@ -41,7 +41,7 @@ export default function Shortstory() {
           <button className="tec">Novel</button>
         </Link>
         <Link to="/shortstory">
-          <button className="tec">Short-Story</button>
+          <button className="tec btnactive">Short-Story</button>
         </Link>
         <Link to="/romance">
           <button className="tec">Romance</button>

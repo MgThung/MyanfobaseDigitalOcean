@@ -42,9 +42,7 @@ const Theader = () => {
           <Link to="/mountains">
             <button className="tec">Mountains</button>
           </Link>
-          <Link to="/Advanture_trip">
-            <button className="tec">Advanture trip</button>
-          </Link>
+          
         </div>
         <Typography
           variant="body1"

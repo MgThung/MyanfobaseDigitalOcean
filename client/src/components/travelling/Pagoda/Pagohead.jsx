@@ -33,7 +33,7 @@ export default function Pagohead() {
       </Typography>
       <div className="Catabutton">
         <Link to="/pagoda">
-          <button className="tec">Pagoda</button>
+          <button className="tec btnactive">Pagoda</button>
         </Link>
         <Link to="/beach">
           <button className="tec">Beach</button>
@@ -43,9 +43,6 @@ export default function Pagohead() {
         </Link>
         <Link to="/mountains">
           <button className="tec">Mountains</button>
-        </Link>
-        <Link to="/Advanture_trip">
-          <button className="tec">Advanture trip</button>
         </Link>
       </div>
     </section>

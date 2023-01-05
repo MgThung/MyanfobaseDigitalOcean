@@ -19,7 +19,7 @@ export default function Regionhead() {
           <Link to="/" className="link1" fontSize="25px">
             <Typography>History</Typography>
           </Link>
-          <Typography>Region</Typography>
+          <Typography>Region & State</Typography>
         </Breadcrumbs>
       </Box>
       <Typography
@@ -29,16 +29,14 @@ export default function Regionhead() {
         textTransform="uppercase"
         sx={{ marginTop: "10px" }}
       >
-        Region
+        Region & State
       </Typography>
 
       <div className="button">
         <Link to="/culture">
           <button className="tec">Culture</button>
         </Link>
-        <Link to="/dynasty">
-          <button className="tec">Dynasty</button>
-        </Link>
+       
         <Link to="/religion">
           <button className="tec">Religion</button>
         </Link>
@@ -46,7 +44,7 @@ export default function Regionhead() {
           <button className="tec">Dress Code</button>
         </Link>
         <Link to="/region">
-          <button className="tec">Region & State</button>
+          <button className="tec btnactive">Region & State</button>
         </Link>
       </div>
     </section>

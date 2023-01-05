@@ -44,7 +44,7 @@ export default function Romance() {
           <button className="tec">Short-Story</button>
         </Link>
         <Link to="/romance">
-          <button className="tec">Romance</button>
+          <button className="tec btnactive">Romance</button>
         </Link>
         <Link to="/fiction">
           <button className="tec">Fiction</button>

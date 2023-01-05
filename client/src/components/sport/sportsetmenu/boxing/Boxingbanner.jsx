@@ -6,20 +6,7 @@ import Footer from "../../../footer/Footer";
 // import { TimelineLite, Power2 } from "gsap";
 
 export default function Boxingbanner() {
-  // let container = useRef(null);
-  // let image = useRef(null);
-  // let imageReveal = CSSRulePlugin.getRule(".hansoetn:after");
-
-  // const tl = new TimelineLite();
-
-  // useEffect(() => {
-  //   tl.to(container, 1, { css: { visibility: "visible" } }).to(
-  //     imageReveal,
-  //     1.4,
-  //     { width: "0%", ease: Power2.easeInOut }
-  //   );
-  // });
-
+ 
   return (
     <section>
       <div className="mainetn">

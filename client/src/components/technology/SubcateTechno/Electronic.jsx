@@ -9,7 +9,6 @@ import "../technology.css"
 
 export default function Electronic() {
   return (
-    
     <section className="container technology">
       <Box sx={{ marginButtom: "10px" }}>
         <Breadcrumbs
@@ -33,18 +32,16 @@ export default function Electronic() {
         textTransform="uppercase"
         sx={{ marginTop: "10px" }}
       >
-        Technology
+        Electronics
       </Typography>
       <div className="Catabutton">
         <Link to="/computer">
           <button className="tec">Computer</button>
         </Link>
         <Link to="/electronic">
-          <button className="tec">Electronics</button>
+          <button className="tec btnactive">Electronics</button>
         </Link>
-        <Link to="/innovation">
-          <button className="tec">Innovation</button>
-        </Link>
+       
         <Link to="/smartphone">
           <button className="tec">Smartphone</button>
         </Link>
@@ -52,7 +49,6 @@ export default function Electronic() {
           <button className="tec">Software</button>
         </Link>
       </div>
-   
     </section>
   );
 }

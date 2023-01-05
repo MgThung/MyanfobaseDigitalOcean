@@ -38,12 +38,7 @@ const Lifestyleheader = () => {
           <Link to="/Luxury">
             <button className="tec">Luxury</button>
           </Link>
-          <Link to="/Family">
-            <button className="tec">Family</button>
-          </Link>
-          <Link to="/Modern">
-            <button className="tec">Modern</button>
-          </Link>
+         
         </div>
         <Typography
           variant="body1"
