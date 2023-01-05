@@ -573,3 +573,15 @@ form.sign-up-form {
   animation: 0.75s cubic-bezier(0.2, 0.68, 0.18, 1.08) 0.12s infinite normal
     both running react-spinners-PulseLoader-pulse;
 }
+
+.Climbingloader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8rem;
+  width: 100%;
+  height: 13vh;
+  margin-bottom: 1rem;
+}
+.loadingcircle {
+}

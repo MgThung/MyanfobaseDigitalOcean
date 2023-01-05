@@ -53,9 +53,15 @@ export default function Sportheader() {
           align={"justify"}
           sx={{ marginTop: "18px", color: "#777" }}
         >
-          Modern technology has become a total phenomenon for civilization, the
-          defining force of a new social order in which efficiency is no longer
-          an option but a necessity imposed on all human activity.
+          Sport is good for your physical and mental health. They also help
+         
+         
+         
+         
+          develop leadership skills and equip them with the ability to set goals
+          and build character. Participating in sports can lead to higher
+          self-esteem and better social interaction. It also helps students have
+          a positive outlook on life.
         </Typography>
       </section>
     </>

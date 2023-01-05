@@ -42,7 +42,6 @@ const Theader = () => {
           <Link to="/mountains">
             <button className="tec">Mountains</button>
           </Link>
-          
         </div>
         <Typography
           variant="body1"
@@ -51,12 +50,11 @@ const Theader = () => {
           align={"justify"}
           sx={{ marginTop: "18px", color: "#777" }}
         >
-          Modern technology has become a total phenomenon for civilization, the
-          defining force of a new social order in which efficiency is no longer
-          an option but a necessity imposed on all human activity.
-          tttttttttttttt ttttttttttttttttttttttt
-          ttttttttttttttttttttttttttttttttttttt
-          tttttttttttttttttttttttttttttttttttttttttttttttttttttt
+          Traveling is important in life because it will open you up to a new
+          way of living and being. You will experience new connections with
+          people and places and immerse in different cultures, which can help
+          widen your perspective. So much learning and personal growth can come
+          from traveling
         </Typography>
       </section>
     </>
