@@ -36,7 +36,7 @@ export default function Biology() {
           <button className="tec">Astronomy</button>
         </Link>
         <Link to="/biology">
-          <button className="tec">Biology</button>
+          <button className="tec btnactive">Biology</button>
         </Link>
 
         <Link to="/earthscience">

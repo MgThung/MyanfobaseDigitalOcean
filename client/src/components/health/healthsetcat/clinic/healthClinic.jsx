@@ -35,7 +35,7 @@ export default function HealthClinic() {
           <button className="tec">Info Doctor</button>
         </Link>
         <Link to="/healthclinic">
-          <button className="tec">Clinic</button>
+          <button className="tec btnactive">Clinic</button>
         </Link>
         <Link to="/yoga">
           <button className="tec">Yoga</button>

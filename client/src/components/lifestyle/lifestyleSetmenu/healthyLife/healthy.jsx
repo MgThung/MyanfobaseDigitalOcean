@@ -36,17 +36,12 @@ export default function HealthyLife() {
           <button className="tec">Exercise</button>
         </Link>
         <Link to="/healthylife">
-          <button className="tec">Healthy Life</button>
+          <button className="tec btnactive">Healthy Life</button>
         </Link>
         <Link to="/Luxury">
           <button className="tec">Luxury</button>
         </Link>
-        <Link to="/Family">
-          <button className="tec">Family</button>
-        </Link>
-        <Link to="/Modern">
-          <button className="tec">Modern</button>
-        </Link>
+       
       </div>
     </section>
   );

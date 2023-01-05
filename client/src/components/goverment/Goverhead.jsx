@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 import "../travelling/theader.css";
 import "../technology/technology.css";
 import "./gover.css";
@@ -39,9 +38,6 @@ export default function Goverhead() {
           </Link>
           <Link to="/police_station">
             <button className="tec">Police Station</button>
-          </Link>
-          <Link to="/leader">
-            <button className="tec">Leader</button>
           </Link>
 
           <Link to="/passport">

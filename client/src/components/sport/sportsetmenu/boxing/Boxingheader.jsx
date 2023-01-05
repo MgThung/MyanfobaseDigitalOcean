@@ -38,7 +38,7 @@ export default function Boxingheader() {
           <button className="tec">football</button>
         </Link>
         <Link to="/boxing">
-          <button className="tec">boxing</button>
+          <button className="tec btnactive">boxing</button>
         </Link>
         <Link to="/chess">
           <button className="tec">chess</button>
@@ -50,7 +50,6 @@ export default function Boxingheader() {
           <button className="tec">gamming</button>
         </Link>
       </div>
-     
     </section>
   );
 }

@@ -38,11 +38,9 @@ export default function Smartphone() {
         <Link to="/electronic">
           <button className="tec">Electronics</button>
         </Link>
-        <Link to="/innovation">
-          <button className="tec">Innovation</button>
-        </Link>
+       
         <Link to="/smartphone">
-          <button className="tec">Smartphone</button>
+          <button className="tec btnactive">Smartphone</button>
         </Link>
         <Link to="/software">
           <button className="tec">Software</button>

@@ -35,11 +35,9 @@ export default function Culhead() {
 
       <div className="button">
         <Link to="/culture">
-          <button className="tec">Culture</button>
+          <button className="tec btnactive">Culture</button>
         </Link>
-        <Link to="/dynasty">
-          <button className="tec">Dynasty</button>
-        </Link>
+
         <Link to="/religion">
           <button className="tec">Religion</button>
         </Link>
