@@ -35,7 +35,7 @@ export default function Artssheader() {
             <button className="tec">anime art</button>
           </Link>
           <Link to="/sketches">
-            <button className="tec">art sketches</button>
+            <button className="tec">sketches art</button>
           </Link>
           <Link to="/doodle">
             <button className="tec">doodle art</button>
@@ -51,9 +51,11 @@ export default function Artssheader() {
           align={"justify"}
           sx={{ marginTop: "18px", color: "#777" }}
         >
-          Modern technology has become a total phenomenon for civilization, the
-          defining force of a new social order in which efficiency is no longer
-          an option but a necessity imposed on all human activity.
+          The purpose of art is to produce thinking. The secret is not the
+          mechanics or technical skill that create art – but the process of
+          introspection and different levels of contemplation that generate it.
+          Once you learn to embrace this process, your creative potential is
+          limitless.
         </Typography>
       </section>
     </>

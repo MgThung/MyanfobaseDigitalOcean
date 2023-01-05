@@ -80,7 +80,7 @@ function ProRight() {
       <div key={user._id}>
         <div className="lastnewbar-title">
           <h2 className="capitalize">My Posts</h2>
-          <span className="lasttitleline Post-line"></span>
+          <span className="mypostunderline"></span>
         </div>
         <div className="sidebar">
           <div className="Profile-main">
@@ -180,7 +180,7 @@ function ProRight() {
                                   onClick={() => handleDelete(element._id)}
                                   className="DeleteP "
                                 >
-                                  <DeleteForeverIcon/>
+                                  <DeleteForeverIcon />
                                 </button>
                                 {dialog.isLoading && (
                                   <Dialog
@@ -195,7 +195,7 @@ function ProRight() {
                                 <Link to={`/update/${element._id}`}>
                                   <div className="tooltip1 topdel">Edit</div>
                                   <button className="EditPost">
-                                  <ModeEditIcon/>
+                                    <ModeEditIcon />
                                   </button>
                                 </Link>
                               </div>
@@ -213,7 +213,7 @@ function ProRight() {
               )
             ) : (
               <div>
-                <h3>You have not set any post</h3>
+                <h3>You have not set any post yet!</h3>
               </div>
             )}
           </div>

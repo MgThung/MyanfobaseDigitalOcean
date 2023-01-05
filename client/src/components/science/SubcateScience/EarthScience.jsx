@@ -40,7 +40,7 @@ export default function EarthScience() {
         </Link>
 
         <Link to="/earthscience">
-          <button className="tec">Earth science</button>
+          <button className="tec btnactive">Earth science</button>
         </Link>
         {/* <Link to="/mathematics">
             <button className="tec">Mathematics</button>

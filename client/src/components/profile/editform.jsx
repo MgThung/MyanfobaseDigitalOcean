@@ -66,7 +66,7 @@ const EditForm = () => {
       type: "email",
       placeholder: "email",
       errorMessage: "It should be a vaild email address!",
-      label: "email",
+      label: "E-mail",
       required: true,
     },
 
@@ -75,7 +75,7 @@ const EditForm = () => {
       name: "bio",
       type: "text",
       placeholder: "Bio",
-      label: "bio",
+      label: "Bio",
     },
     {
       id: 4,
@@ -89,7 +89,7 @@ const EditForm = () => {
       name: "address",
       type: "text",
       placeholder: "address",
-      label: "address",
+      label: "Address",
     },
     // {
     //   id: 7,
@@ -140,7 +140,7 @@ const EditForm = () => {
 
   return (
     <div className="editform">
-      <h3 className="editTitle">Edit your profile</h3>
+      <h3 className="editTitle">Edit Your Profile</h3>
       <form onSubmit={handleSubmit} className="formedit">
         <div className="formdiv">
           <div className=" userimgdiv">

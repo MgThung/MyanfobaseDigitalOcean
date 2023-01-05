@@ -41,7 +41,7 @@ export default function Chessheader() {
           <button className="tec">boxing</button>
         </Link>
         <Link to="/chess">
-          <button className="tec">chess</button>
+          <button className="tec btnactive">chess</button>
         </Link>
         <Link to="/cane">
           <button className="tec">cane ball</button>

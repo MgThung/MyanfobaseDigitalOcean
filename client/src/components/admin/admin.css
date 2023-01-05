@@ -13,7 +13,7 @@
 .adminimg {
   width: 100%;
   height: 100%;
-  margin-top: 7%;
+  display: block;
 }
 
 .postmanProfile1 {
@@ -30,7 +30,13 @@
 
 .admin-img {
   width: 90%;
-  height: 90%;
+  height: 140px;
+}
+.postmantop {
+  margin-top: 1rem;
+}
+.postcatetop {
+  margin-top: 0.5rem;
 }
 
 .admin-button .button1 {

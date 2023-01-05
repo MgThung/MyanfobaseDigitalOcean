@@ -17,7 +17,9 @@ const HomeHeader = () => {
         <div className="home-banner">
           <div className="home-banner-detail">
             <Typography
+              className="headertypo"
               variant="h1"
+            
               fontFamily="Heebo"
               fontWeight="bold"
               sx={{
@@ -25,7 +27,7 @@ const HomeHeader = () => {
                   xs: "30px",
                   sm: "50px",
                   md: "60px",
-                  lg: "85px",
+                  lg: "90px",
                 },
               }}
             >
@@ -45,14 +47,9 @@ const HomeHeader = () => {
             <div className="banner-botton">
               <h2>Welcome to Myanmar</h2>
               <p>
-                {/* Myanmar is an unexplored natural and cultural wonder that offers
-                one of the best authentic experiences for the traveller to Asia.
-                From the snow-covered rugged Himalayas in the north to the
-                pristine deep blue waters in the south, Myanmar is a land
-                blessed and abundant. */}
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form.
-             
+                Have a great day and be healthy. We wish you to get a lot of
+                knowledge, pleasure and latest information by visiting our
+                Website.
               </p>
             </div>
           </div>

@@ -50,7 +50,7 @@ export default function Poetry() {
           <button className="tec">Fiction</button>
         </Link>
         <Link to="/poetry">
-          <button className="tec">Poetry</button>
+          <button className="tec btnactive">Poetry</button>
         </Link>
       </div>
     </section>

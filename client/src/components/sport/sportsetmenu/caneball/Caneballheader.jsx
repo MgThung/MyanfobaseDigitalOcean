@@ -44,7 +44,7 @@ export default function Caneballheader() {
           <button className="tec">chess</button>
         </Link>
         <Link to="/cane">
-          <button className="tec">cane ball</button>
+          <button className="tec btnactive">cane ball</button>
         </Link>
         <Link to="/gamming">
           <button className="tec">gamming</button>

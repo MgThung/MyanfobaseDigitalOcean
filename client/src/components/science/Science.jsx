@@ -40,9 +40,7 @@ export default function Science() {
           <Link to="/earthscience">
             <button className="tec">Earth science</button>
           </Link>
-          {/* <Link to="/mathematics">
-            <button className="tec">Mathematics</button>
-          </Link> */}
+        
           <Link to="/plants">
             <button className="tec">Plants</button>
           </Link>
@@ -58,9 +56,7 @@ export default function Science() {
           align={"justify"}
           sx={{ marginTop: "18px", color: "#777" }}
         >
-          Modern technology has become a total phenomenon for civilization, the
-          defining force of a new social order in which efficiency is no longer
-          an option but a necessity imposed on all human activity.
+          Scientific knowledge allows us to develop new technologies, solve practical problems, and make informed decisions — both individually and collectively. Because its products are so useful, the process of science is intertwined with those applications: New scientific knowledge may lead to new applications.
         </Typography>
       </section>
     </>

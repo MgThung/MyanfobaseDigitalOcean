@@ -53,7 +53,7 @@ const Savepost = () => {
     <div>
       <div className="savenewbar-title">
         <h2 className="capitalize">Save Posts</h2>
-        <span className="savetitleline Post-line"></span>
+        <span className="SavepostUnderline"></span>
       </div>
       <div className="savenewbar-body sidebar1">
         {favData.length !== 0 ? (
@@ -96,8 +96,8 @@ const Savepost = () => {
             );
           })
         ) : (
-          <div>
-            <h4>No Save posts data Here!</h4>
+          <div className="nosavePost">
+            <h4>No Save posts data Here !</h4>
           </div>
         )}
       </div>

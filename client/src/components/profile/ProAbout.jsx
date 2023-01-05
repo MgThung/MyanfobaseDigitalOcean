@@ -34,24 +34,43 @@ const ProAbout = () => {
             <Typography
               gutterBottom
               variant="h3"
+              fontWeight={550}
+              color="#585353"
               sx={{
                 fontSize: {
                   xs: "2.5rem",
                   sm: "3rem",
                   md: "2rem",
-                  lg: "2.5rem",
+                  lg: "2.3rem",
                 },
               }}
               component="div"
             >
               About Profile
             </Typography>
-            <Typography variant="h5">{user.username}</Typography>
-            <Typography variant="body1">{user.bio} </Typography>
-            <Typography variant="body1">{user.email}</Typography>
-            <Typography variant="body1">{user.bod}</Typography>
-            <Typography variant="body1">{user.gender}</Typography>
-            <Typography variant="body1">{user.address}</Typography>
+            <Typography variant="h6" color="#444141" fontWeight={600}>
+              <span className="aboutName">Name : </span>
+              {user.username}
+            </Typography>
+            <Typography variant="body1">
+              <span className="aboutName">Bio : </span> {user.bio}{" "}
+            </Typography>
+            <Typography variant="body1">
+              {" "}
+              <span className="aboutName">Gmail : </span> {user.email}
+            </Typography>
+            <Typography variant="body1">
+              {" "}
+              <span className="aboutName">DOB : </span> {user.bod}
+            </Typography>
+            <Typography variant="body1">
+              {" "}
+              <span className="aboutName">Gender : </span> {user.gender}
+            </Typography>
+            <Typography variant="body1">
+              {" "}
+              <span className="aboutName">Address :</span> {user.address}
+            </Typography>
           </CardContent>
         </Card>
       </Box>

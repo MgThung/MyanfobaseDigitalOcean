@@ -42,7 +42,7 @@ export default function Hfoods() {
           <button className="tec">Yoga</button>
         </Link>
         <Link to="/hfoods">
-          <button className="tec">Healthy Foods</button>
+          <button className="tec btnactive">Healthy Foods</button>
         </Link>
         <Link to="/medicine">
           <button className="tec">medicine</button>

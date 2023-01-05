@@ -17,20 +17,20 @@ export default function Sketchesheader() {
             <Typography>Home</Typography>
           </Link>
           <Link to="/arts" className="link1" fontSize="25px">
-            <Typography>arts</Typography>
+            <Typography>Arts</Typography>
           </Link>
-          <Typography>art sketches</Typography>
+          <Typography>Sketches art </Typography>
         </Breadcrumbs>
       </Box>
       <div className="sectop">
-        <h1>Arts</h1>
+        <h1>Sketches arts</h1>
       </div>
       <div className="Catabutton">
         <Link to="/anime">
           <button className="tec">anime art</button>
         </Link>
         <Link to="/sketches">
-          <button className="tec btnactive">art sketches</button>
+          <button className="tec btnactive">sketches art</button>
         </Link>
         <Link to="/doodle">
           <button className="tec">doodle art</button>

@@ -45,7 +45,7 @@ export default function Medicine() {
           <button className="tec">Healthy Foods</button>
         </Link>
         <Link to="/medicine">
-          <button className="tec">medicine</button>
+          <button className="tec btnactive">medicine</button>
         </Link>
       </div>
     </section>

@@ -32,7 +32,7 @@ export default function Astronomy() {
       </Typography>
       <div className="Catabutton">
         <Link to="/astronomy">
-          <button className="tec">Astronomy</button>
+          <button className="tec btnactive">Astronomy</button>
         </Link>
         <Link to="/biology">
           <button className="tec">Biology</button>

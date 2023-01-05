@@ -3,6 +3,7 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import "./educationleftright.css";
 import Moment from "react-moment";
 import { Box, Grid } from "@mui/material";
+import Spinner from "../login/Spinner";
 export default function EducationRight(props) {
   const getCateData = props.getData;
   const category = "Education";
@@ -47,8 +48,9 @@ export default function EducationRight(props) {
               );
             })
           ) : (
-            <div>
-              <h4>Loading...!</h4>
+            <div className="wrapper">
+              {/* <h4>Loading...!</h4> */}
+              <Spinner />
             </div>
           )}
         </Grid>

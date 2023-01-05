@@ -33,7 +33,7 @@ export default function Computer() {
       </Typography>
       <div className="Catabutton">
         <Link to="/computer">
-          <button className="tec">Computer</button>
+          <button className="tec btnactive">Computer</button>
         </Link>
         <Link to="/electronic">
           <button className="tec">Electronics</button>

@@ -33,7 +33,7 @@ export default function Infodoctor() {
       </Typography>
       <div className="Catabutton">
         <Link to="/infodoctor">
-          <button className="tec">Info Doctor</button>
+          <button className="tec btnactive">Info Doctor</button>
         </Link>
         <Link to="/healthclinic">
           <button className="tec">Clinic</button>

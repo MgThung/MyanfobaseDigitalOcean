@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 import "../travelling/theader.css";
 import "../technology/technology.css";
 import "./gover.css";
@@ -40,9 +39,6 @@ export default function Goverhead() {
           <Link to="/police_station">
             <button className="tec">Police Station</button>
           </Link>
-          <Link to="/leader">
-            <button className="tec">Leader</button>
-          </Link>
 
           <Link to="/passport">
             <button className="tec">Passport</button>
@@ -58,9 +54,11 @@ export default function Goverhead() {
           align={"justify"}
           sx={{ marginTop: "18px", color: "#777" }}
         >
-          Modern technology has become a total phenomenon for civilization, the
-          defining force of a new social order in which efficiency is no longer
-          an option but a necessity imposed on all human activity.
+          Governments provide the parameters for everyday behavior for citizens,
+          protect them from outside interference, and often provide for their
+          well-being and happiness.In the last few centuries, some economists
+          and thinkers have advocated government control over some aspects of
+          the economy.
         </Typography>
       </section>
     </>

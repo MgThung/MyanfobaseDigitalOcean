@@ -38,12 +38,6 @@ const Lifestyleheader = () => {
           <Link to="/Luxury">
             <button className="tec">Luxury</button>
           </Link>
-          <Link to="/Family">
-            <button className="tec">Family</button>
-          </Link>
-          <Link to="/Modern">
-            <button className="tec">Modern</button>
-          </Link>
         </div>
         <Typography
           variant="body1"
@@ -52,9 +46,10 @@ const Lifestyleheader = () => {
           align={"justify"}
           sx={{ marginTop: "18px", color: "#777" }}
         >
-          Modern technology has become a total phenomenon for civilization, the
-          defining force of a new social order in which efficiency is no longer
-          an option but a necessity imposed on all human activity.
+          A healthy lifestyle is important for everyone. When we look after our
+          physical health, we feel better too – fitter, more relaxed and better
+          able to cope with things. This is especially important when you have a
+          mental illness.
         </Typography>
       </section>
     </>
