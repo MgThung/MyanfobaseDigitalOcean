@@ -46,6 +46,7 @@
     "react-spinners": "^0.13.7",
     "react-toastify": "^9.0.8",
     "redux": "^4.2.0",
+    "scripts": "^0.1.0",
     "select": "^1.1.2",
     "styled-components": "^5.3.5",
     "swiper": "^8.2.3",
