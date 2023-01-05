@@ -39,14 +39,20 @@ const HomeHeader = () => {
                   placeholder="Search in here...."
                   id="searchinput"
                 />
-                <SearchIcon className="searchiconbanner"/>
+                <SearchIcon className="searchiconbanner" />
               </Link>
             </div>
             <div className="banner-botton">
-              <h2>Welcome to our Page</h2>
+              <h2>Welcome to Myanmar</h2>
               <p>
+                {/* Myanmar is an unexplored natural and cultural wonder that offers
+                one of the best authentic experiences for the traveller to Asia.
+                From the snow-covered rugged Himalayas in the north to the
+                pristine deep blue waters in the south, Myanmar is a land
+                blessed and abundant. */}
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered alteration in some form.
+             
               </p>
             </div>
           </div>
