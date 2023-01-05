@@ -35,7 +35,7 @@ export default function Goverhead() {
           <Link to="/culture">
             <button className="tec">Culture</button>
           </Link>
-        
+
           <Link to="/religion">
             <button className="tec">Religion</button>
           </Link>
@@ -54,9 +54,10 @@ export default function Goverhead() {
           align={"justify"}
           sx={{ marginTop: "18px", color: "#777" }}
         >
-          Modern technology has become a total phenomenon for civilization, the
-          defining force of a new social order in which efficiency is no longer
-          an option but a necessity imposed on all human activity.
+          Studying history helps us understand how events in the past made
+          things the way they are today. With lessons from the past, we not only
+          learn about ourselves and how we came to be, but also develop the
+          ability to avoid mistakes and create better paths for our societies.
         </Typography>
       </section>
     </>

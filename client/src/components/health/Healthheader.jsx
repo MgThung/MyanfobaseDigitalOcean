@@ -52,9 +52,13 @@ const HealthHeader = () => {
           align={"justify"}
           sx={{ marginTop: "18px", color: "#777" }}
         >
-          Modern technology has become a total phenomenon for civilization, the
-          defining force of a new social order in which efficiency is no longer
-          an option but a necessity imposed on all human activity.
+          “Time and health are two precious assets that we don't recognize and
+          appreciate until they have been depleted.” Having good health is
+          directly related to leading a productive life. The functionality of
+          the body is interconnected between various organs. Keeping the organs
+          healthy is essential for proper functioning. As health is the state of
+          physical, mental and social well-being, having good health is
+          important.
         </Typography>
       </section>
     </>

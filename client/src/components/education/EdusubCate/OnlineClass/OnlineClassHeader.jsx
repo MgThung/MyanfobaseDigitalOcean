@@ -37,14 +37,13 @@ export default function OnlineClassHeader() {
           <Link to="/university">
             <button className="tec">University & Collage</button>
           </Link>
-          
+
           <Link to="/private">
-            <button className="tec">Private School</button>
+            <button className="tec">Schools</button>
           </Link>
           <Link to="/online">
             <button className="tec btnactive">Online Class</button>
           </Link>
-         
         </div>
       </section>
     </>

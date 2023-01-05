@@ -160,3 +160,7 @@
 .postTrav_info #Businesshover:hover {
   color: var(--business-bg);
 }
+
+.profileName {
+  color: red;
+}

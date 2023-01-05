@@ -13,20 +13,17 @@ export default function Paintingbanner() {
         </Grid>
         <Grid item xs={12} sm={6} md={6}>
           <div className="artpara">
-            <h1>Chagall, Master Drawings</h1>
+            <h1>Colorful, Painting Art</h1>
             <div className="datepara">
               <p>
-                FEBRUARY 27-MAY 28, 2018 <br />
-                On view at The Met First Avenue <br />
-                in Gallery 209
+                APRIAL - 15, 2098 <br />
+                On Margot Note Consulting LLC <br />
+                Artmajeur Online Art Gallery
               </p>
             </div>
 
             <div className="companypara">
-              <p>
-                Accompained by a catalogue and <br />
-                an Audio Guide
-              </p>
+              <p>Painting by Tran Tuan | Artmajeur</p>
             </div>
           </div>
         </Grid>
@@ -34,5 +31,3 @@ export default function Paintingbanner() {
     </section>
   );
 }
-
-

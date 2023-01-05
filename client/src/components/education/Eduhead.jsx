@@ -34,14 +34,13 @@ export default function Eduhead() {
           <Link to="/university">
             <button className="tec">University & Collage</button>
           </Link>
-      
+
           <Link to="/private">
-            <button className="tec">Private School</button>
+            <button className="tec">Schools</button>
           </Link>
           <Link to="/online">
             <button className="tec">Online Class</button>
           </Link>
-         
         </div>
         <Typography
           variant="body1"
@@ -50,9 +49,7 @@ export default function Eduhead() {
           align={"justify"}
           sx={{ marginTop: "18px", color: "#777" }}
         >
-          Modern technology has become a total phenomenon for civilization, the
-          defining force of a new social order in which efficiency is no longer
-          an option but a necessity imposed on all human activity.
+          Education provides stability in life, and it's something that no one can ever take away from you. By being well-educated and holding a college degree, you increase your chances for better career opportunities and open up new doors for yourself.
         </Typography>
       </section>
     </>
