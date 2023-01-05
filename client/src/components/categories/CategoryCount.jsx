@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, memo } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import Spinner from "../login/Spinner";
 
-export default function CategoryCount() {
+export default memo(function CategoryCount() {
   const [categories, setCategories] = useState("");
   const { posts } = useSelector((state) => state.posts);
 
@@ -140,8 +140,6 @@ export default function CategoryCount() {
                             >
                               <div className="per-cate" key={indexdata}>
                                 <div>
-                                  {console.log("data iss", data)}
-                                  {console.log("cate count iss", cate.count)}
                                   <div key={indexdata} className="cate-image">
                                     <img src={data.cateimage} alt="" />
                                   </div>
@@ -175,7 +173,7 @@ export default function CategoryCount() {
       </section>
     </>
   );
-}
+});
 
 // return (
 //   <SwiperSlide className="cate-swiper" key={index}>
