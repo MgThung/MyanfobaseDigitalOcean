@@ -1,14 +1,14 @@
 import React from "react";
-import FadeLoader from "react-spinners/FadeLoader";
+import PulseLoader from "react-spinners/PulseLoader";
 import "./login.css";
 
-export default function Spinner() {
+export default function SpinnerPlus() {
   return (
     <div className="">
-      <FadeLoader
-        color="#345fbf"
+      <PulseLoader
+        color="#e2e5eb"
         // loading={loading}
-        className="spinnerLogin"
+        className="SpinnerPlus"
         size={20}
         aria-label="Loading Spinner"
         data-testid="loader"

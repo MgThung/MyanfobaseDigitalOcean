@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import Moment from "react-moment";
 import "./homelifestyle.css";
 import { Box, Container, Grid } from "@mui/material";
+import Spinner from '../login/Spinner'
 
 export default function Lifestylenew() {
   const [getCateData, setCateData] = useState("");
@@ -127,7 +128,8 @@ export default function Lifestylenew() {
                   })
                 ) : (
                   <div>
-                    <h4>There has No Data or Loading !</h4>
+                    <Spinner />
+                    {/* <h4>There has No Data or Loading !</h4> */}
                   </div>
                 )}
               </div>
@@ -135,7 +137,8 @@ export default function Lifestylenew() {
           </Grid>
         ) : (
           <div>
-            <h4> Loading !</h4>
+            <Spinner />
+            {/* <h4>There has no posts here!</h4> */}
           </div>
         )}
         {/* </Container> */}

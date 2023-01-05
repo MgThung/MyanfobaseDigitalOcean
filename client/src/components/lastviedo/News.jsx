@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Moment from "react-moment";
 import "./lastnews.css";
 import { Container, Grid, Box } from "@mui/material";
+import Spinner from "../login/Spinner";
 const News = () => {
   const [lastposts, setLastPosts] = useState("");
   const [visible, setVisible] = useState(4);
@@ -109,8 +110,8 @@ const News = () => {
             }
           })
         ) : (
-          <div>
-            <h4>Loading ....</h4>
+          <div className="newspart">
+            <Spinner />
           </div>
         )}
         <button onClick={showMore} className="btn btnlast">

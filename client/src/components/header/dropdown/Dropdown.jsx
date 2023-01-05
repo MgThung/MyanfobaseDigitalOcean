@@ -1,10 +1,11 @@
 import React, { useState, memo } from "react";
 import { Link } from "react-router-dom";
+import SpinnerPlus from "../../login/SpinnerPlus";
 
 import "./dropdown.css";
 
 const Dropdown = memo((props) => {
-  const { user, categories } = props;
+  const { user, categories, isLoading } = props;
 
   const [dropdown, setDropdown] = useState(false);
 
@@ -28,8 +29,9 @@ const Dropdown = memo((props) => {
           );
         })
       ) : (
-        <div>
-          <h5>Loading...</h5>
+        <div className="catgitems">
+          <SpinnerPlus />
+          {/* <h5>Loading...</h5> */}
         </div>
       )}
       {user !== null && user.isAdmin === true ? (

@@ -6,6 +6,7 @@ import EducationLeft from "./EducationLeft";
 import EducationRight from "./EducationRight";
 import "./trainingClass.css";
 import { Box, Grid } from "@mui/material";
+import Spinner from "../login/Spinner";
 
 export default function TrainingClass() {
   const [getCateData, setCateData] = useState("");
@@ -34,9 +35,9 @@ export default function TrainingClass() {
         <div className="classTop ">
           <Grid container direction="row" spacing={2} marginBottom={2}>
             {getCateData.length !== 0 ? (
-              getCateData.slice(0, 2).map((data,index) => {
+              getCateData.slice(0, 2).map((data, index) => {
                 return (
-                  <Grid item lg={6} md={6} key={index} >
+                  <Grid item lg={6} md={6} key={index}>
                     <article className="homeclass1">
                       <div className="classimg">
                         <img
@@ -83,8 +84,9 @@ export default function TrainingClass() {
                 );
               })
             ) : (
-              <div>
-                <h4>Loading...</h4>
+              <div className="homeclass1">
+                {/* <h4>Loading...</h4> */}
+                <Spinner />
               </div>
             )}
           </Grid>

@@ -263,6 +263,7 @@ export default memo(function Header() {
                       user={user}
                       categories={categories && categories}
                       className="dropdownWrap"
+                      isLoading={isLoading}
                     />
                   )}
                 </div>

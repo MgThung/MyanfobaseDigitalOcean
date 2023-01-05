@@ -18,8 +18,13 @@
 }
 
 .firstdesc p {
-  padding-bottom: 4rem;
+  padding-bottom: 0.5rem;
   font-size: 18px;
+}
+.firstdesc pre {
+  padding-bottom: 2rem;
+  font-size: 1rem;
+  padding-left: 2rem;
 }
 
 .firstdesc p::first-letter {

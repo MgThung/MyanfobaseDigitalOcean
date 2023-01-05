@@ -1,5 +1,6 @@
 import React, { Suspense } from "react";
 import HomeHeader from "../../components/homeheadercompo/Homeheader";
+import FadeLoader from "react-spinners/FadeLoader";
 
 import "./home.css";
 const LastNews = React.lazy(() =>
@@ -16,6 +17,20 @@ const HomeEducation = React.lazy(() =>
 // const Categorieslider = React.lazy(() =>
 //   import("../../components/categories/Categorieslider")
 // );
+const SpinnerFade = () => {
+  return (
+    <div>
+      <FadeLoader
+        color="#345fbf"
+        // loading={loading}
+        size={100}
+        aria-label="Loading Spinner"
+        data-testid="loader"
+      />
+    </div>
+  );
+};
+
 const CategoryCount = React.lazy(() =>
   import("../../components/categories/CategoryCount")
 );
@@ -23,21 +38,21 @@ const Home = () => {
   return (
     <div className="HomePageDiv">
       <HomeHeader />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<SpinnerFade />}>
         <LastNews />
       </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<SpinnerFade />}>
         <Homelifestyle />
       </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<SpinnerFade />}>
         <HomeEducation />
       </Suspense>
       {/* <Suspense fallback={<div>Loading...</div>}>
         <Viedo />
       </Suspense> */}
-      <Suspense fallback={<div>Loading...</div>}>
-      {/* <Categorieslider /> */}
-      <CategoryCount />
+      <Suspense fallback={<SpinnerFade />}>
+        {/* <Categorieslider /> */}
+        <CategoryCount />
       </Suspense>
     </div>
   );

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import "./homeheader.css";
 import { Box, Container, Grid, Typography } from "@mui/material";
+import Spinner from "../login/Spinner";
 
 export default function PopularHome() {
   const [lastposts, setLastPosts] = useState("");
@@ -259,8 +260,8 @@ export default function PopularHome() {
           </Box>
         </div>
       ) : (
-        <div>
-          <h4>Loading..!</h4>
+        <div className="popular-body container">
+          <Spinner />
         </div>
       )}
     </>
