@@ -7,7 +7,7 @@ import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
 export default function Cartoonheader() {
   return (
-    <section>
+    <section className="container enter">
       <Box sx={{ marginButtom: "10px" }}>
         <Breadcrumbs
           color={"#747474"}
@@ -30,7 +30,7 @@ export default function Cartoonheader() {
         textTransform="uppercase"
         sx={{ marginTop: "10px" }}
       >
-        Entertainment
+        Cartoon
       </Typography>
       <div className="Catabutton">
         <Link to="/korean">
@@ -42,17 +42,8 @@ export default function Cartoonheader() {
         <Link to="/cartoon">
           <button className="tec btnactive">cartoon</button>
         </Link>
-        <Link to="/cinema">
-          <button className="tec">cinema</button>
-        </Link>
         <Link to="/music">
           <button className="tec">music</button>
-        </Link>
-        <Link to="/asian">
-          <button className="tec">asian</button>
-        </Link>
-        <Link to="/myanmar">
-          <button className="tec">myanmar</button>
         </Link>
       </div>
       <Typography

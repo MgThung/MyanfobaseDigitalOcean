@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { Breadcrumbs, Stack } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
-import "../../technology/technology.css";
 import "../../travelling/theader.css";
+import "../../technology/technology.css";
+
 
 export default function Poetry() {
   return (

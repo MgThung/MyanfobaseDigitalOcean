@@ -2,13 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../technology/technology.css";
 import "./science.css";
-import "../technology/technology.css";
 import { Box, Breadcrumbs, Typography, Stack } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 export default function Science() {
   return (
     <>
-      <section className="technology">
+      <section className="container technology">
         <Box sx={{ marginButtom: "10px" }}>
           <Breadcrumbs
             color={"#747474"}
@@ -37,9 +36,7 @@ export default function Science() {
           <Link to="/biology">
             <button className="tec">Biology</button>
           </Link>
-          <Link to="/chemistry">
-            <button className="tec">Chemistry</button>
-          </Link>
+         
           <Link to="/earthscience">
             <button className="tec">Earth science</button>
           </Link>
@@ -49,9 +46,7 @@ export default function Science() {
           <Link to="/plants">
             <button className="tec">Plants</button>
           </Link>
-          <Link to="/physics">
-            <button className="tec">Physics</button>
-          </Link>
+        
           <Link to="/mammals">
             <button className="tec">Mammals</button>
           </Link>

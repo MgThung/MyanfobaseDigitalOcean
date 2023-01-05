@@ -2,24 +2,25 @@ import React from "react";
 import Animebanner from "../../components/artss/artsetmenu/anime/Animebanner";
 import Animeheader from "../../components/artss/artsetmenu/anime/Animeheader";
 import ArtssMain from "../../components/artss/ArtssMain";
-import ArtssPopular from "../../components/artss/ArtssPopular";
 import Latestbar from "../../components/catepagerightbar/Latestbar";
+import PopularNews from "../../components/catepagerightbar/PopularNews";
+import { Grid } from "@mui/material";
 
 export default function Animepage() {
   return (
     <>
+      <Animeheader />
+      <Animebanner />
       <section className="container">
-        <Animeheader />
-        <Animebanner />
-      </section>
-      <section className="container">
-        <div className="artbody">
-          <ArtssMain category={"Anime-Art"} />
-          <div className="allRightBar">
-            <ArtssPopular />
+        <Grid my={2} container>
+          <Grid item xs={12} xl={8.4} md={8.4}>
+            <ArtssMain category={"Anime-Art"} />
+          </Grid>
+          <Grid item xs={12} xl={3.6} md={3.6}>
+            <PopularNews />
             <Latestbar />
-          </div>
-        </div>
+          </Grid>
+        </Grid>
       </section>
     </>
   );

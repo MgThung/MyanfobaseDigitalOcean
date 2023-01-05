@@ -9,6 +9,16 @@ import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import { themeContext } from "./Context";
 import { useContext } from "react";
+import UniversityPage from "./pages/education/University";
+import PrivateSchoolPage from "./pages/education/Private";
+import OnlineClassPage from "./pages/education/Online";
+
+
+import ConsumerPage from "./pages/business/Consumer";
+import IndustrialPage from "./pages/business/industrial";
+import JewelryPage from "./pages/business/Jewelery";
+
+import TradingPage from "./pages/business/Trading";
 
 const AddCategoriesPage = React.lazy(() =>
   import("./pages/categories/AddCategoriesPage")
@@ -71,12 +81,10 @@ const ShortstoryPage = React.lazy(() =>
 const PostformPage = React.lazy(() => import("./pages/post/PostformPage"));
 const AstronomyPage = React.lazy(() => import("./pages/science/AstronomyPage"));
 const BilologyPage = React.lazy(() => import("./pages/science/BilologyPage"));
-const ChemistryPage = React.lazy(() => import("./pages/science/ChemistryPage"));
 const EarthSciencePage = React.lazy(() =>
   import("./pages/science/EarthSciencePage")
 );
 const MammalsPage = React.lazy(() => import("./pages/science/MammalsPage"));
-const PhysicsPage = React.lazy(() => import("./pages/science/PhysicsPage"));
 const PlantsPage = React.lazy(() => import("./pages/science/PlantsPage"));
 const SciencePage = React.lazy(() => import("./pages/science/SciencePage"));
 const Boxingpage = React.lazy(() => import("./pages/sport/Boxingpage"));
@@ -624,14 +632,7 @@ function App() {
             </React.Suspense>
           }
         />
-        <Route
-          path="/chemistry"
-          element={
-            <React.Suspense fallback="Loading....">
-              <ChemistryPage />
-            </React.Suspense>
-          }
-        />
+
         <Route
           path="/earthscience"
           element={
@@ -648,14 +649,7 @@ function App() {
             </React.Suspense>
           }
         />
-        <Route
-          path="/physics"
-          element={
-            <React.Suspense fallback="Loading....">
-              <PhysicsPage />
-            </React.Suspense>
-          }
-        />
+
         <Route
           path="/mammals"
           element={
@@ -765,10 +759,68 @@ function App() {
           }
         />
         <Route
+          path="/university"
+          element={
+            <React.Suspense fallback="Loading....">
+              <UniversityPage />
+            </React.Suspense>
+          }
+        />
+        <Route
+          path="/private"
+          element={
+            <React.Suspense fallback="Loading....">
+              <PrivateSchoolPage />
+            </React.Suspense>
+          }
+        />
+        <Route
+          path="/online"
+          element={
+            <React.Suspense fallback="Loading....">
+              <OnlineClassPage />
+            </React.Suspense>
+          }
+        />
+
+     
+        <Route
           path="/yoga"
           element={
             <React.Suspense fallback="Loading....">
               <Yogapage />
+            </React.Suspense>
+          }
+        />
+        <Route
+          path="/consumer"
+          element={
+            <React.Suspense fallback="Loading....">
+              <ConsumerPage />
+            </React.Suspense>
+          }
+        />
+        <Route
+          path="/industrial"
+          element={
+            <React.Suspense fallback="Loading....">
+              <IndustrialPage />
+            </React.Suspense>
+          }
+        />
+        <Route
+          path="/gems"
+          element={
+            <React.Suspense fallback="Loading....">
+              <JewelryPage />
+            </React.Suspense>
+          }
+        />
+        <Route
+          path="/tranding"
+          element={
+            <React.Suspense fallback="Loading....">
+              <TradingPage />
             </React.Suspense>
           }
         />

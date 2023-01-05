@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Box, Breadcrumbs, Typography, Stack } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
-import "../../technology/technology.css"
-import "../../travelling/theader.css"
+import "../../technology/technology.css";
+import "../../travelling/theader.css";
 
 export default function Blogger() {
   return (
@@ -38,7 +38,7 @@ export default function Blogger() {
           <button className="tec">Make-up</button>
         </Link>
         <Link to="/Blogger">
-          <button className="tec">Beauty Blogger</button>
+          <button className="tec btnactive">Beauty Blog</button>
         </Link>
         <Link to="/skincare">
           <button className="tec">Skin care</button>
@@ -50,7 +50,6 @@ export default function Blogger() {
           <button className="tec">Beauty Salon</button>
         </Link>
       </div>
-     
     </section>
   );
 }

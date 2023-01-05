@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../technology/technology.css";
 import "../travelling/theader.css"
+import "../technology/technology.css";
 import "./literature.css";
 import { Box, Container, Grid, Typography} from "@mui/material";
 import {  Breadcrumbs, Stack } from "@mui/material";

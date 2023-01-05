@@ -39,13 +39,13 @@ export default function BeautyClinic() {
           <button className="tec">Make-up</button>
         </Link>
         <Link to="/Blogger">
-          <button className="tec">Beauty Blogger</button>
+          <button className="tec">Beauty Blog</button>
         </Link>
         <Link to="/skincare">
           <button className="tec">Skin care</button>
         </Link>
         <Link to="/beautyclinic">
-          <button className="tec">Beauty Clinic</button>
+          <button className="tec btnactive">Beauty Clinic</button>
         </Link>
         <Link to="/salon">
           <button className="tec">Beauty Salon</button>

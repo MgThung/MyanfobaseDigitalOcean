@@ -6,7 +6,7 @@ import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
 export default function Sketchesheader() {
   return (
-    <section className="technology">
+    <section className="container technology">
       <Box sx={{ marginButtom: "10px" }}>
         <Breadcrumbs
           color={"#747474"}
@@ -35,9 +35,6 @@ export default function Sketchesheader() {
         <Link to="/doodle">
           <button className="tec">doodle art</button>
         </Link>
-        <Link to="/surreat">
-          <button className="tec">surreat art</button>
-        </Link>
         <Link to="/painting">
           <button className="tec">painting</button>
         </Link>
@@ -45,4 +42,3 @@ export default function Sketchesheader() {
     </section>
   );
 }
-

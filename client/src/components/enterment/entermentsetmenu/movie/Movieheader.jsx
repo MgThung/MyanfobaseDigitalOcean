@@ -7,7 +7,7 @@ import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
 export default function Movieheader() {
   return (
-    <section>
+    <section className="container enter">
       <Box sx={{ marginButtom: "10px" }}>
         <Breadcrumbs
           color={"#747474"}
@@ -31,7 +31,7 @@ export default function Movieheader() {
         textTransform="uppercase"
         sx={{ marginTop: "10px" }}
       >
-        Entertainment
+        Movie
       </Typography>
       <div className="Catabutton">
         <Link to="/korean">
@@ -41,19 +41,10 @@ export default function Movieheader() {
           <button className="tec btnactive">movie</button>
         </Link>
         <Link to="/cartoon">
-          <button className="tec">cartoon</button>
-        </Link>
-        <Link to="/cinema">
-          <button className="tec">cinema</button>
+          <button className="tec ">cartoon</button>
         </Link>
         <Link to="/music">
           <button className="tec">music</button>
-        </Link>
-        <Link to="/asian">
-          <button className="tec">asian</button>
-        </Link>
-        <Link to="/myanmar">
-          <button className="tec">myanmar</button>
         </Link>
       </div>
       <Typography
@@ -70,7 +61,3 @@ export default function Movieheader() {
     </section>
   );
 }
-
-
-
-

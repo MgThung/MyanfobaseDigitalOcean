@@ -9,8 +9,7 @@ export default memo(function DetailMustRead(props) {
   const category = props.category;
   Moment.globalFormat = "DD MMM YYYY";
   const [getCateData, setCateData] = useState([]);
-  console.log("get Categorey data", getCateData);
-  console.log("get Categorey categoryis ", category);
+
   const getAlldata = async () => {
     const reqdata = await fetch(
       // `https://desolate-hollows-16342.herokuapp.com/api/postcate/${category}`
@@ -51,7 +50,7 @@ export default memo(function DetailMustRead(props) {
                     <div className="tec-mustread-img1">
                       <img src={data.files[0].filePath} alt="" />
                     </div>
-                    {console.log("data", data)}
+
                     <Link to={`/${data.cateName}`}>
                       <button className={`Tecmust-button cate${data.cateName}`}>
                         {data.cateName}

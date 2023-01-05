@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../../../travelling/theader.css"
 // import "../../../technology/technology.css";
 import "../../sportbanner.css";
 import { Box, Breadcrumbs, Typography, Stack } from "@mui/material";
@@ -7,7 +8,7 @@ import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
 export default function Boxingheader() {
   return (
-    <section className="mainetn1">
+    <section className="container travel">
       <Box sx={{ marginButtom: "10px" }}>
         <Breadcrumbs
           color={"#747474"}
@@ -30,14 +31,14 @@ export default function Boxingheader() {
         textTransform="uppercase"
         sx={{ marginTop: "10px" }}
       >
-        Sport
+        Boxing
       </Typography>
       <div className="Catabutton">
         <Link to="/football">
           <button className="tec">football</button>
         </Link>
         <Link to="/boxing">
-          <button className="tec btnactive">boxing</button>
+          <button className="tec">boxing</button>
         </Link>
         <Link to="/chess">
           <button className="tec">chess</button>
@@ -49,17 +50,7 @@ export default function Boxingheader() {
           <button className="tec">gamming</button>
         </Link>
       </div>
-      <Typography
-        variant="body1"
-        fontFamily={("Open Sans", "Open Sans Regular", "sans - serif")}
-        fontStyle={"italic"}
-        align={"justify"}
-        sx={{ marginTop: "18px", color: "#777" }}
-      >
-        Modern technology has become a total phenomenon for civilization, the
-        defining force of a new social order in which efficiency is no longer an
-        option but a necessity imposed on all human activity.
-      </Typography>
+     
     </section>
   );
 }
