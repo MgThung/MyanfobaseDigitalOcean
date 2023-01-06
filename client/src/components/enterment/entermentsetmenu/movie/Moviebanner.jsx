@@ -1,6 +1,7 @@
 import React from "react";
 import "../../entermentbanner.css";
 import { Grid } from "@mui/material";
+import GradeIcon from "@mui/icons-material/Grade";
 
 // import CSSRulePlugin from "gsap/CSSRulePlugin";
 // import { TimelineLite, Power2 } from "gsap";
@@ -31,44 +32,78 @@ export default function Moviebanner() {
         <Grid item xs={5.5} sm={3.7}>
           <div className="firstetn">
             <div className="hansoetn">
-              <img src="./images/entertainment/korera/business.jpg" alt="" />
+              <img src="./images/entertainment/jurassic.jpg" alt="" />
             </div>
 
             <div className="hansoetn_P">
+              <span className="movieName">Jurassic World</span>
+              <br></br>
               <p className="paragraph">
-                Seo Hyun Jin, Hwang In Yeop & more star in an intriguing group
-                poster for ‘Why Her’ The SBS drama is set to premiere soon!
+                A theme park showcasing genetically-engineered dinosaurs turns
+                into a nightmare for its tourists when one of the dinosaurs
+                escapes its enclosure. An ex-military animal expert steps up to
+                save the day.
               </p>
+              <br></br>
+              <span className="castName">
+                Cast by Chris Pratt, Bryce Dallas Howard
+              </span>
+              <br></br>
+              <span className="ratingenterBanner">
+                <GradeIcon className="iconstar" />
+                Rating 8.4
+              </span>
             </div>
           </div>
         </Grid>
         <Grid item xs={5.5} sm={3.7}>
           <div className="secetn">
             <div className="moneyheist">
-              <img src="./images/entertainment/korera/start-up.jpg" alt="" />
+              <img src="./images/entertainment/movie/endgame.jpg" alt="" />
             </div>
             <div className="moneyheist_P">
-              <p>
-                Seo Hyun Jin, Hwang In Yeop & more star in an intriguing <br />{" "}
-                group poster for ‘Why Her’ The SBS drama is set
-                <br /> to premiere soon!
+              <span className="movieName">End Game(2019)</span>
+              <br></br>
+              <p className="paragraph">
+                After Thanos, an intergalactic warlord, disintegrates half of
+                the universe, the Avengers must reunite and assemble again to
+                reinvigorate their trounced allies and restore balance.
               </p>
+              <br></br>
+              <span className="castName">
+                Cast by Robert Downey, Chris Evans,Scarlett,Chris, Mark Ruffalo,
+                Jeremy Renner
+              </span>
+              <br></br>
+              <span className="ratingenterBanner">
+                <GradeIcon className="iconstar" />
+                Rating 8.4
+              </span>
             </div>
           </div>
         </Grid>
         <Grid item xs={6} sm={3.7}>
           <div className="thirdetn">
             <div className="jurassic">
-              <img
-                src="./images/entertainment/korera/hotel_del_luna.jpg"
-                alt=""
-              />
+              <img src="./images/entertainment/movie/movie22.jpg" alt="" />
             </div>
             <div className="jurassic_P">
-              <p>
-                Seo Hyun Jin, Hwang In Yeop & more star in an intriguing group
-                poster for ‘Why Her’ The SBS drama is set to premiere soon!
+              <span className="movieName">Ouija</span>
+              <br></br>
+              <p className="paragraph">
+                When Debbie is found dead after playing with an Ouija board, her
+                best friend, Laine, decides to communicate with her using the
+                board. Things go awry when she contacts an evil spirit instead.
               </p>
+              <br></br>
+              <span className="castName">
+                Cast by Daren Kagasoff, Olivia Cooke
+              </span>
+              <br></br>
+              <span className="ratingenterBanner">
+                <GradeIcon className="iconstar" />
+                Rating 6
+              </span>
             </div>
           </div>
         </Grid>

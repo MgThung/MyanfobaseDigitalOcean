@@ -12,8 +12,8 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 
 export default function Footer() {
   return (
-    <div className="footerdiv">
-      
+    <>
+      <section>
         <footer className="FooterColor">
           {/* <div className="FooterDiv"> */}
           <Box>
@@ -272,7 +272,7 @@ export default function Footer() {
           </p>
           {/* </div> */}
         </footer>
-      
-    </div>
+      </section>
+    </>
   );
 }

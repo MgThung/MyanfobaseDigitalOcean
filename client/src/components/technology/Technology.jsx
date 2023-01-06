@@ -48,7 +48,7 @@ export default function Technology() {
           <Link to="/electronic">
             <button className="tec">Electronics</button>
           </Link>
-         
+
           <Link to="/smartphone">
             <button className="tec">Smartphone</button>
           </Link>
@@ -88,15 +88,15 @@ export default function Technology() {
                     <Typography
                       className="literaturecolor"
                       variant="h4"
-                      color="white"
+                      fontWeight="bold"
                     >
-                      How to Mark yourself 'Safe' on Socials Media
+                      Top 10 Trending Technologies in 2023{" "}
                     </Typography>
                     <p>
-                      Modern technology has become a total phenomenon for
-                      civilization, the defining force of a new social order in
-                      which efficiency is no longer an option but a necessity
-                      imposed on all human activity.
+                      1.AI and Machine Learning 2.Cybersecurity 3.METAVERSE
+                      4.Devops 5.Full Stack Development 6.Blockchain 7.CLOUD
+                      Computing 8.HyperAutomation 9.Data Science Business
+                      10.Intelligence
                     </p>
                   </div>
                 </div>
@@ -115,12 +115,15 @@ export default function Technology() {
                         </div>
                         <div className="robotpara">
                           <button className="cateTechnology">Technology</button>
+                          <br></br>
                           <Typography
                             className="literaturecolor"
-                            variant="h4"
+                            variant="p"
                             color="white"
+                            fontWeight="bold"
                           >
-                            Corsair HS80 RGB Wirless Gaming Headset Review
+                            The iPhone 15 models will likely be released in
+                            September 2023.
                           </Typography>
                         </div>
                       </div>
