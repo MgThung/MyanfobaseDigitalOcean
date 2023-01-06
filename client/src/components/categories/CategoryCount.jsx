@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, memo } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import Spinner from "../login/Spinner";
 
-export default function CategoryCount() {
+export default memo(function CategoryCount() {
   const [categories, setCategories] = useState("");
   const { posts } = useSelector((state) => state.posts);
 
@@ -129,35 +129,42 @@ export default function CategoryCount() {
             {categories.length !== 0 ? (
               categories.map((cate, index) => {
                 return (
-                  <SwiperSlide className="cate-swiper" key={index}>
-                    <div className="per-cate" key={index}>
-                      <div>
-                        {/* {console.log("cate id", cate._id)} */}
-                        {images.map((data, index) => {
-                          if (data.id == cate._id)
-                            return (
-                              <div key={index} className="cate-image">
-                                <img src={data.cateimage} alt="" />
+                  <>
+                    {images.map((data, indexdata) => {
+                      return (
+                        <>
+                          {data.id == cate._id ? (
+                            <SwiperSlide
+                              className="cate-swiper"
+                              key={indexdata}
+                            >
+                              <div className="per-cate" key={indexdata}>
+                                <div>
+                                  <div key={indexdata} className="cate-image">
+                                    <img src={data.cateimage} alt="" />
+                                  </div>
+                                </div>
+                                <div className="swiperbody">
+                                  <h3>{data.id}</h3>
+                                  <h5>{cate.count} Articles</h5>
+
+                                  <Link to={data.id}>
+                                    <span>C</span>heck Here
+                                  </Link>
+                                </div>
                               </div>
-                            );
-                        })}
-                      </div>
-
-                      <div className="swiperbody">
-                        <h3>{cate._id}</h3>
-                        <h5>{cate.count} Articles</h5>
-
-                        <Link to={cate._id}>
-                          <span>C</span>heck Here
-                        </Link>
-                      </div>
-                    </div>
-                  </SwiperSlide>
+                            </SwiperSlide>
+                          ) : (
+                            ""
+                          )}
+                        </>
+                      );
+                    })}
+                  </>
                 );
               })
             ) : (
               <div>
-                {/* <h4>Loading....</h4> */}
                 <Spinner />
               </div>
             )}
@@ -166,4 +173,31 @@ export default function CategoryCount() {
       </section>
     </>
   );
-}
+});
+
+// return (
+//   <SwiperSlide className="cate-swiper" key={index}>
+//     <div className="per-cate" key={index}>
+//       <div>
+//         {/* {console.log("cate id", cate._id)} */}
+//         {images.map((data, index) => {
+//           if (data.id == cate._id)
+//             return (
+//               <div key={index} className="cate-image">
+//                 <img src={data.cateimage} alt="" />
+//               </div>
+//             );
+//         })}
+//       </div>
+
+//       <div className="swiperbody">
+//         <h3>{cate._id}</h3>
+//         <h5>{cate.count} Articles</h5>
+
+//         <Link to={cate._id}>
+//           <span>C</span>heck Here
+//         </Link>
+//       </div>
+//     </div>
+//   </SwiperSlide>
+// );
