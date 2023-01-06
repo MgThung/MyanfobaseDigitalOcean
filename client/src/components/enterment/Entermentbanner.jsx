@@ -1,6 +1,7 @@
 import React from "react";
 import "./entermentbanner.css";
 import { Grid } from "@mui/material";
+import GradeIcon from "@mui/icons-material/Grade";
 // import CSSRulePlugin from "gsap/CSSRulePlugin";
 // import { TimelineLite, Power2 } from "gsap";
 
@@ -34,10 +35,22 @@ export default function Entermentbanner() {
             </div>
 
             <div className="hansoetn_P">
+              <span className="movieName">Shooting Star</span>
+              <br></br>
               <p className="paragraph">
-                Seo Hyun Jin, Hwang In Yeop & more star in an intriguing group
-                poster for ‘Why Her’ The SBS drama is set to premiere soon!
+                The romantic love story of top star Gong Tae-sung sharing a
+                love-hate relationship with Oh Han-byul, the PR team leader of
+                his management agency `Starforce Entertainment'.
               </p>
+              <br></br>
+              <span className="castName">
+                Cast by Kim Young-dae, Lee Sung-kyung
+              </span>
+              <br></br>
+              <span className="ratingenterBanner">
+                <GradeIcon className="iconstar" />
+                Rating 8.4
+              </span>
             </div>
           </div>
         </Grid>
@@ -47,11 +60,22 @@ export default function Entermentbanner() {
               <img src="./images/entertainment/moneyheist.jpg" alt="" />
             </div>
             <div className="moneyheist_P">
-              <p>
-                Seo Hyun Jin, Hwang In Yeop & more star in an intriguing <br />{" "}
-                group poster for ‘Why Her’ The SBS drama is set
-                <br /> to premiere soon!
+              <span className="movieName">Money Heist</span>
+              <br></br>
+              <p className="paragraph">
+                Thieves overtake the mint of a unified Korea, trapping hostages
+                inside; the police must stop the thieves as well as the shadowy
+                mastermind behind the heist.
               </p>
+              <br></br>
+              <span className="castName">
+                Cast by Jeon Jong-seo, Ji hoon Kim
+              </span>
+              <br></br>
+              <span className="ratingenterBanner">
+                <GradeIcon className="iconstar" />
+                Rating 5.5
+              </span>
             </div>
           </div>
         </Grid>
@@ -61,10 +85,23 @@ export default function Entermentbanner() {
               <img src="./images/entertainment/jurassic.jpg" alt="" />
             </div>
             <div className="jurassic_P">
-              <p>
-                Seo Hyun Jin, Hwang In Yeop & more star in an intriguing group
-                poster for ‘Why Her’ The SBS drama is set to premiere soon!
+              <span className="movieName">Jurassic World</span>
+              <br></br>
+              <p className="paragraph">
+                A theme park showcasing genetically-engineered dinosaurs turns
+                into a nightmare for its tourists when one of the dinosaurs
+                escapes its enclosure. An ex-military animal expert steps up to
+                save the day.
               </p>
+              <br></br>
+              <span className="castName">
+                Cast by Chris Pratt, Bryce Dallas Howard
+              </span>
+              <br></br>
+              <span className="ratingenterBanner">
+                <GradeIcon className="iconstar" />
+                Rating 8.4
+              </span>
             </div>
           </div>
         </Grid>
