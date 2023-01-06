@@ -13,7 +13,7 @@ export default function Sidebar(props) {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   const [currentPage, setcurrentPage] = useState(1);
-  const [itemPerPage, setitemPerPage] = useState(5);
+  const [itemPerPage, setitemPerPage] = useState(8);
   const [getCateData, setCateData] = useState([]);
 
   const category = props.category;
