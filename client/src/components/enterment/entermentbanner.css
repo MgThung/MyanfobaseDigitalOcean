@@ -185,6 +185,33 @@ ul {
 .enter {
   padding-top: 6rem;
 }
+
+/* label */
+.hansoetn_P .paragraph,
+.moneyheist_P .paragraph,
+.jurassic_P .paragraph {
+  font-size: 1rem;
+  width: 80%;
+  color: #fff;
+ 
+}
+.hansoetn_P .movieName,
+.moneyheist_P .movieName,
+.jurassic_P .movieName {
+  font-size: 1.1rem;
+  font-weight: bold;
+ 
+}
+.hansoetn_P .castName,
+.moneyheist_P .castName,
+.jurassic_P .castName{
+   color: aquamarine;
+   text-align: center;
+}
+.iconstar{
+  color: goldenrod;
+  margin-bottom: 5px;
+}
 @media screen and (max-width: 600px) {
   .thirdetn {
     display: none;

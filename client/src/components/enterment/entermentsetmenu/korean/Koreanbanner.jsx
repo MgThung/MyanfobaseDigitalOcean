@@ -55,8 +55,9 @@
 
 import React from "react";
 import "../../entermentbanner.css";
-// import "./entermentbanner.css";
 import { Grid } from "@mui/material";
+import GradeIcon from "@mui/icons-material/Grade";
+
 // import CSSRulePlugin from "gsap/CSSRulePlugin";
 // import { TimelineLite, Power2 } from "gsap";
 
@@ -90,10 +91,23 @@ export default function Koreanbanner() {
             </div>
 
             <div className="hansoetn_P">
+              <span className="movieName">Shooting Star</span>
+              <br></br>
               <p className="paragraph">
-                Seo Hyun Jin, Hwang In Yeop & more star in an intriguing group
-                poster for ‘Why Her’ The SBS drama is set to premiere soon!
+                In disguise as her friend, Ha-ri shows up on a blind date to
+                scare away her friend's prospective suitor. However, plans go
+                awry when he turns out to be Ha-ri's CEO and he makes a
+                proposal.
               </p>
+              <br></br>
+              <span className="castName">
+                Cast by Choi Byung-Chan, Kim Se-jeong
+              </span>
+              <br></br>
+              <span className="ratingenterBanner">
+                <GradeIcon className="iconstar" />
+                Rating 8.7
+              </span>
             </div>
           </div>
         </Grid>
@@ -103,28 +117,46 @@ export default function Koreanbanner() {
               <img src="./images/entertainment/korera/start-up.jpg" alt="" />
             </div>
             <div className="moneyheist_P">
-              <p>
-                Seo Hyun Jin, Hwang In Yeop & more star in an intriguing <br />{" "}
-                group poster for ‘Why Her’ The SBS drama is set
-                <br /> to premiere soon!
+              <span className="movieName">Start-Up</span>
+              <br></br>
+              <p className="paragraph">
+                Seo Dal Mi has dreams of becoming Korea's own Steve Jobs, and
+                with her genius first love, an investor, and a business insider
+                by her side, her dream may be closer than she thinks.
               </p>
+              <br></br>
+              <span className="castName">Cast by Kim Seon-ho, Bae Suzy</span>
+              <br></br>
+              <span className="ratingenterBanner">
+                <GradeIcon className="iconstar" />
+                Rating 8.1
+              </span>
             </div>
           </div>
         </Grid>
         <Grid item xs={6} sm={3.7}>
           <div className="thirdetn">
             <div className="jurassic">
-           
               <img
                 src="./images/entertainment/korera/hotel_del_luna.jpg"
                 alt=""
               />
             </div>
             <div className="jurassic_P">
-              <p>
-                Seo Hyun Jin, Hwang In Yeop & more star in an intriguing group
-                poster for ‘Why Her’ The SBS drama is set to premiere soon!
+              <span className="movieName">Hotel Del Luna</span>
+              <br></br>
+              <p className="paragraph">
+                Hotel del Luna is a 2019 South Korean television series,
+                starring Lee Ji-eun and Yeo Jin-goo as the owner and manager,
+                respectively, of the eponymous hotel that caters only to ghosts.
               </p>
+              <br></br>
+              <span className="castName">Cast by Yeo Jin-goo, IU</span>
+              <br></br>
+              <span className="ratingenterBanner">
+                <GradeIcon className="iconstar" />
+                Rating 8.7
+              </span>
             </div>
           </div>
         </Grid>
