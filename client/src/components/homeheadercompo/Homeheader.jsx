@@ -19,7 +19,6 @@ const HomeHeader = () => {
             <Typography
               className="headertypo"
               variant="h1"
-            
               fontFamily="Heebo"
               fontWeight="bold"
               sx={{
@@ -74,8 +73,9 @@ const HomeHeader = () => {
         {/* <div className="popular-p">
           <Popularslider />
         </div> */}
+
+        <PopularHome />
       </section>
-      <PopularHome />
     </>
   );
 };
