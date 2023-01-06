@@ -29,6 +29,8 @@
   --health-bg: rgb(60 211 134);
   --lifestyles-bg: rgb(163, 184, 250);
   --education-bg: rgb(144, 240, 18);
+  
+  --container-width-xl: 100%;
   --container-width-lg: 80%;
   --container-width-md: 90%;
   --container-width-sm: 96%;

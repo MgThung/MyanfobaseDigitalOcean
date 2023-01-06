@@ -119,11 +119,10 @@
   border-top: black 3px solid;
 }
 
-/* .popular-header {
-  display: grid;
-  grid-template-columns: 20% 80%;
-  max-width: 1600px;
-} */
+.popular-header {
+  
+  max-width: 2000px;
+}
 .popular-now-line {
   display: block;
   width: 11.5rem;
