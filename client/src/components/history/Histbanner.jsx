@@ -112,7 +112,7 @@ export default function Histbanner() {
         <Grid item xs={6} sm={6} md={3}>
           <div className="ban-travel">
             <div className="t_imagediv">
-              <img src="./images/history/knight.jpg" alt="" />
+              <img src="./images/history/history44.jpg" alt="" />
             </div>
             <div className="t-info">
               <div className="t-content">

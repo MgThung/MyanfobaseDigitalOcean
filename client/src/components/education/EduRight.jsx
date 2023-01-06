@@ -4,7 +4,7 @@ import LatestArticle from "../catepagerightbar/LatestArticle";
 import PopularNews from "../catepagerightbar/PopularNews";
 import StaySocial from "../catepagerightbar/StaySocial";
 import Subscribeform from "../catepagerightbar/Subscribeform";
-import Edulast from "./Edulast";
+
 
 export default function EduRight({ getAllposts }) {
   return (

@@ -78,7 +78,7 @@ export default function Technology() {
                   <div className="tech-firstphoto">
                     <img
                       className="fbphoto"
-                      src="./images/literature/literaturebanner1.jpg"
+                      src="./images/literature/techlest.jpg"
                       alt=""
                     />
                   </div>
@@ -109,7 +109,7 @@ export default function Technology() {
                         <div className="tecsecdiv-firstphoto">
                           <img
                             className="robotphoto"
-                            src="./images/literature/literaturebanner2.jpg"
+                            src="./images/literature/iphone.png"
                             alt=""
                           />
                         </div>
