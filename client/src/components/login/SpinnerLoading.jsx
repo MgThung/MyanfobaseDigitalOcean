@@ -13,6 +13,7 @@ export default function SpinnerLoading() {
         aria-label="Loading Spinner"
         data-testid="loader"
       />
+      {/* <h5 className="loadingspin1">Loading</h5> */}
     </div>
   );
 }

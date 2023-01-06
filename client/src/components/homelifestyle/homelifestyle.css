@@ -264,6 +264,11 @@
 /* .sponsered-3 h3:hover {
   color: #8f43d5;
 } */
+/* style */
+.css-19r6kue-MuiContainer-root {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
 
 @media screen and (max-width: 1200px) {
   .honey-1 {
