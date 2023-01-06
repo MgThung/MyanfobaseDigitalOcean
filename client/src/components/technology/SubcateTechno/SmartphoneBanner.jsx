@@ -6,7 +6,7 @@ export default function SmartphoneBanner() {
       <section className="container catebannerImg">
         <div className="leftBanner">
           <div className="catebanner1">
-            <img src="./images/technology/smartphone/smartphonebanner1.jpg" />
+            <img src="./images/technology/smartphone/smartphone1.jpeg" />
           </div>
           <article className="bannerPara">
             <button className="cateTechnology">Technology</button>
@@ -20,7 +20,7 @@ export default function SmartphoneBanner() {
         </div>
         <div className="rightBanner">
           <div className="catebanner2">
-            <img src="./images/technology/smartphone/smartphonebanner2.jpg" />
+            <img src="./images/technology/smartphone/smartphone3.jpg" />
           </div>
           <article className="bannerPara">
             <button className="cateTechnology">Technology</button>
