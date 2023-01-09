@@ -4,20 +4,26 @@ import "./language.css";
 
 const options = [
   {
-    label: <img className="labalimg" src="./images/homeimgs/englang.jpg" />,
+    label: (
+      <img className="labalimg" src="./images/homeimgs/englang.jpg" alt="" />
+    ),
     english: "english",
     value: "english",
   },
   {
-    label: <img className="labalimg" src="./images/homeimgs/myanmarlang.jpg" />,
+    label: (
+      <img
+        className="labalimg"
+        src="./images/homeimgs/myanmarlang.jpg"
+        alt=""
+      />
+    ),
     english: "myanmar",
     value: "myanmar",
   },
 ];
 
-function onChangeInput(value) {
-
-}
+function onChangeInput(value) {}
 export default function Language() {
   return (
     <div>

@@ -70,7 +70,7 @@ export default memo(function Header() {
                 sx={{ margin: "auto", alignItems: "center", height: "6rem" }}
               >
                 <Grid item xs={5} sm={8} className="headerGrid">
-                  <Link to="/" className="nav-logo">
+                  <Link to="/" className="nav-logo" name="nav-logo">
                     <img src="./images/homeimgs/logo2.png" alt="" />
                   </Link>
                 </Grid>
