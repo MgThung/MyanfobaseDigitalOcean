@@ -108,7 +108,7 @@ export default function Literature() {
                           <div className="tecsecdiv-firstphoto">
                             <img
                               className="robotphoto"
-                              src="./images/literature/literaturebanner2.jpg"
+                              src="./images/technology/lit44.jpg"
                               alt=""
                             />
                           </div>

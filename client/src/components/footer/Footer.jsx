@@ -245,7 +245,7 @@ export default function Footer() {
                     </Grid>
                   </Box>
                   {/* <Box p={0.5}>Student Discount</Box> */}
-                  <div>
+                  {/* <div>
                     <ul className="fotpayment">
                       <li>
                         <img src="./images/homeimgs/kpay.png" alt="" />
@@ -260,7 +260,7 @@ export default function Footer() {
                         <img src="./images/homeimgs/ayapay.jpg" alt="" />
                       </li>
                     </ul>
-                  </div>
+                  </div> */}
                 </Grid>
               </Grid>
             </Container>

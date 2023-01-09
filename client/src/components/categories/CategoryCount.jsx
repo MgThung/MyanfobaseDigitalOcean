@@ -49,7 +49,7 @@ export default memo(function CategoryCount() {
     },
     {
       id: "Literature",
-      cateimage: "./images/categoryimages/literature.jpg",
+      cateimage: "./images/categoryimages/literaturebanner1.jpg",
     },
     {
       id: "Lifestyles",

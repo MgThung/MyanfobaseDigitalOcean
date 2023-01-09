@@ -38,9 +38,7 @@ export default function Computer() {
         <Link to="/electronic">
           <button className="tec">Electronics</button>
         </Link>
-        <Link to="/innovation">
-          <button className="tec">Innovation</button>
-        </Link>
+     
         <Link to="/smartphone">
           <button className="tec">Smartphone</button>
         </Link>
