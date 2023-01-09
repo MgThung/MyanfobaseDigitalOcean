@@ -10,11 +10,6 @@ import { FiLock, FiMail } from "react-icons/fi";
 import { Stack, TextField } from "@mui/material";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import VisibilityIcon from "@mui/icons-material/Visibility";
-import SinginInput from "./singinInput";
-import PersonIcon from "@mui/icons-material/Person";
-import EmailIcon from "@mui/icons-material/Email";
-import LockIcon from "@mui/icons-material/Lock";
-import "./singinInput";
 
 const ErrorShow = (prop) => {
   return (
@@ -37,29 +32,6 @@ const LoginCompo = () => {
 
   const [show, setShow] = useState(false);
   const [comfirmpwshow, setComfirmpwshow] = useState(false);
-
-  const singinInputs = [
-    {
-      id: 1,
-      type: "text",
-      name: "username",
-      placeholder: "Username",
-      pattern: "^[a-zA-Z0-9 ]{3,16}$",
-      errorMessage:
-        "Username should be 3-16 characters and shouldn't include any special character!",
-      required: true,
-      icon: <PersonIcon />,
-    },
-    {
-      id: 2,
-      type: "email",
-      name: "Email",
-      placeholder: "email",
-      errorMessage: "It should be a vaild email address!",
-      required: true,
-      icon: <EmailIcon />,
-    },
-  ];
 
   const handleShow = () => {
     setShow(!show);
@@ -233,22 +205,28 @@ const LoginCompo = () => {
             {/* <!-- for sign up --> */}
             <form action="" className="sign-up-form" onSubmit={onSubmit}>
               <h2 className="titlt">Sign Up</h2>
+              <div className="input-field">
+                <i className="fas fa-user"></i>
 
-              {singinInputs.map((input, index) => (
-                <div className="input-field" key={index}>
-                  {/* <i className="fas fa-user"></i> */}
+                <input
+                  type="text"
+                  pattern="^[a-zA-Z0-9 ]{3,16}$"
+                  placeholder="Username"
+                  name="username"
+                  id="username"
+                  required
+                  focused={focused.toString()}
+                  onBlur={handleFocus}
+                  ref={usernameref}
+                  // onChange={onChange}
+                />
+                <span className="msgforUsername">
+                  Username should be 3-16 characters and shouldn't include any
+                  special character!
+                </span>
+              </div>
 
-                  <SinginInput
-                    key={input.id}
-                    {...input}
-                    id="username"
-                    refs={usernameref}
-                    // onChange={onChange}
-                  />
-                </div>
-              ))}
-
-              {/* <div className="input-field">
+              <div className="input-field">
                 <i className="fas fa-envelope"></i>
                 <input
                   type="email"
@@ -265,10 +243,9 @@ const LoginCompo = () => {
                 <span className="msgforEmail">
                   It should be a vaild email address!
                 </span>
-              </div> */}
-
+              </div>
               <div className="input-field">
-                <LockIcon className="seciconSingup" />
+                <i className="fas fa-lock"></i>
                 <input
                   type={show ? "text" : "password"}
                   id="password"
@@ -290,7 +267,7 @@ const LoginCompo = () => {
                 </span>
               </div>
               <div className="input-field">
-                <LockIcon className="seciconSingup" />
+                <i className="fas fa-lock"></i>
                 <input
                   type={comfirmpwshow ? "text" : "password"}
                   placeholder="Confirm Password"
