@@ -129,10 +129,10 @@ export default memo(function CategoryCount() {
             {categories.length !== 0 ? (
               categories.map((cate, index) => {
                 return (
-                  <>
+                  <div key={index}>
                     {images.map((data, indexdata) => {
                       return (
-                        <>
+                        <div key={indexdata}>
                           {data.id == cate._id ? (
                             <SwiperSlide
                               className="cate-swiper"
@@ -157,10 +157,10 @@ export default memo(function CategoryCount() {
                           ) : (
                             ""
                           )}
-                        </>
+                        </div>
                       );
                     })}
-                  </>
+                  </div>
                 );
               })
             ) : (
