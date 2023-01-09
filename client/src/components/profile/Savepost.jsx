@@ -59,8 +59,8 @@ const Savepost = () => {
         {favData.length !== 0 ? (
           favData.map((data, index) => {
             return (
-              <>
-                <div className="article-save" key={index}>
+              <div key={index}>
+                <div className="article-save">
                   <div className="savenewimg">
                     <img
                       src={data.files}
@@ -92,7 +92,7 @@ const Savepost = () => {
                     </div>
                   </div>
                 </div>
-              </>
+              </div>
             );
           })
         ) : (
