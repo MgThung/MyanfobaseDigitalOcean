@@ -130,7 +130,7 @@ const EditForm = () => {
     formData.append("address", values.address);
     formData.append("token", userToken.token);
     for (let i = 0; i < values.profilePicture.length; i++) {
-      formData.append("files", values.profilePicture[i]);
+      formData.append("profilePicture", values.profilePicture[i]);
     }
     // const resultData = Object.fromEntries(formData.entries(id));
     // console.log("form data transform is", formData);
