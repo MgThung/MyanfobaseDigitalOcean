@@ -39,7 +39,7 @@ export default function SponserContent() {
 
       <div className="sponsered-3">
         <div className="foodies-photo">
-          <img src="images/homeimgs/natural.jpg" alt="" />
+          <img src="images/homeimgs/bestcoverage.jpg" alt="" />
         </div>
         <div className="sponserAll">
           <p>Cosmetic Pics That Prove Jennifer is a Timeless Beauty</p>

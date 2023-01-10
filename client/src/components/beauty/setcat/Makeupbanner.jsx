@@ -119,7 +119,7 @@ export default function Makeupbanner() {
                     <Grid item lg={12}>
                       <div className="secrow-thirddiv">
                         <div className="natural-img">
-                          <img src="./images/homeimgs/natural.jpg" alt="" />
+                          <img src="./images/homeimgs/primer.jpg" alt="" />
                         </div>
                         <div className="natural-p">
                           <div className="natural-para">
