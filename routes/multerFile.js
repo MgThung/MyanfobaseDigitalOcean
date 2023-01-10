@@ -1,5 +1,6 @@
 const multer = require("multer");
-const multerS3 = require("multer-s3");
+// const multerS3 = require("multer-s3");
+const multerS3 = require("multer-sharp-s3");
 const aws = require("aws-sdk");
 const { S3_ENDPOINT, BUCKET_NAME } = process.env;
 console.log("image file are", S3_ENDPOINT, BUCKET_NAME);
@@ -12,15 +13,22 @@ const s3 = new aws.S3({
 const storageposts = multerS3({
   s3,
   dirname: "/",
-  bucket: `${BUCKET_NAME}/uploads`,
-  acl: "public-read",
+  Bucket: `${BUCKET_NAME}/uploads`,
+  ACL: "public-read",
+  resize: {
+    width: 850,
+    height: 700,
+  },
+  max: true,
   limits: { fileSize: 1024 * 1024 * 5 }, //  allowed only 5 MB files
+  // limits: Imagelimit(file), //  allowed only 5 MB files
   metadata: (req, file, cb) => {
     cb(null, {
       fieldname: file.fieldname,
     });
   },
-  key: (req, file, cb) => {
+
+  Key: (req, file, cb) => {
     cb(
       null,
       new Date().toISOString().replace(/:/g, "-") + "-" + file.originalname
@@ -31,15 +39,21 @@ const storageposts = multerS3({
 const storageprofile = multerS3({
   s3,
   dirname: "/",
-  bucket: `${BUCKET_NAME}/uploadProfile`,
-  acl: "public-read",
+  Bucket: `${BUCKET_NAME}/uploadProfile`,
+  ACL: "public-read",
+  resize: {
+    width: 250,
+    height: 250,
+  },
+  max: true,
   limits: { fileSize: 1024 * 1024 * 5 }, //  allowed only 5 MB files
   metadata: (req, file, cb) => {
     cb(null, {
       fieldname: file.fieldname,
     });
   },
-  key: (req, file, cb) => {
+
+  Key: (req, file, cb) => {
     cb(
       null,
       new Date().toISOString().replace(/:/g, "-") + "-" + file.originalname
@@ -68,5 +82,5 @@ const upload = multer({
 const uploadprofile = multer({
   storage: storageprofile,
   fileFilter: filefilter,
-}).single("files");
+}).single("profilePicture");
 module.exports = { upload, s3, uploadprofile };

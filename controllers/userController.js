@@ -8,6 +8,7 @@ const path = require("path");
 const PostModel = require("../models/Posts");
 const UserVerification = require("../models/UserVerification");
 const aws = require("aws-sdk");
+
 const { S3_ENDPOINT, BUCKET_NAME } = process.env;
 
 const spacesEndpoint = new aws.Endpoint(S3_ENDPOINT);
@@ -435,6 +436,9 @@ const getAlluser = async (req, res, next) => {
 const updateUser = asyncHandler(async (req, res) => {
   const { username, email, dob, gender, address, bio, token } = req.body;
   const profilePicture = req.file;
+  // console.log("profile picture is", profilePicture);
+  // console.log("key is", profilePicture.key);
+  // console.log("req .body is", req.body);
   const id = req.user.id;
 
   // console.log("user profile picture", profilePicture);
@@ -449,7 +453,7 @@ const updateUser = asyncHandler(async (req, res) => {
   if (profilePicture !== undefined && profilePicture !== []) {
     const file = {
       fileName: profilePicture.key,
-      filePath: profilePicture.location,
+      filePath: profilePicture.Location,
       fileType: profilePicture.mimetype,
       fileSize: fileSizeFormatter(profilePicture.size, 2),
     };
@@ -475,11 +479,14 @@ const updateUser = asyncHandler(async (req, res) => {
     ? console.log("new user is updated without new profile image")
     : userDetail.profilePicture.map(async (data, index) => {
         //for aws pic delete
+        const reqfileName = data.fileName;
+        const imgName = reqfileName.replace("uploadProfile/", "");
+
         return (
           await s3
             .deleteObject({
               Bucket: `${BUCKET_NAME}/uploadProfile`,
-              Key: data.fileName,
+              Key: imgName,
             })
             .promise(),
           (err) => {
@@ -489,6 +496,7 @@ const updateUser = asyncHandler(async (req, res) => {
             return console.log("file is deleted successully");
           }
         );
+
         // return fs.unlink(path.join(mainPath, data.filePath), (err) => {
         //   if (err) {
         //     console.log("error occur", err);
