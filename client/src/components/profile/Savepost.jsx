@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import axios from "axios";
+import BookmarkIcon from "@mui/icons-material/Bookmark";
 import "./profile.css";
 const Savepost = () => {
   const { user } = useSelector((state) => state.auth);
@@ -87,7 +88,7 @@ const Savepost = () => {
                         onClick={() => RemoveFav(data.postId)}
                         className="DeleteS Delcolor"
                       >
-                        <i class="uil uil-bookmark">remove</i>
+                        remove
                       </div>
                     </div>
                   </div>
