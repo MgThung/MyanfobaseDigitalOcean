@@ -151,7 +151,6 @@
   text-transform: uppercase;
 }
 
-
 ol,
 ul {
   padding-left: 0rem;
@@ -193,26 +192,27 @@ ul {
   font-size: 1rem;
   width: 80%;
   color: #fff;
- 
 }
 .hansoetn_P .movieName,
 .moneyheist_P .movieName,
 .jurassic_P .movieName {
   font-size: 1.1rem;
   font-weight: bold;
- 
 }
 .hansoetn_P .castName,
 .moneyheist_P .castName,
-.jurassic_P .castName{
-   color: aquamarine;
-   text-align: center;
+.jurassic_P .castName {
+  color: aquamarine;
+  text-align: center;
 }
-.iconstar{
+.iconstar {
   color: goldenrod;
   margin-bottom: 5px;
 }
 @media screen and (max-width: 600px) {
+  .enter {
+    padding-top: 5.5rem;
+  }
   .thirdetn {
     display: none;
   }
@@ -239,5 +239,20 @@ ul {
 @media screen and (min-width: 1050px) and (max-width: 1450px) {
   .css-sr5gqk-MuiGrid-root {
     gap: 2.2rem;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .enter {
+    padding-top: 7.5rem;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 900px) {
+  .enter {
+    padding-top: 7.5rem;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .enter {
+    padding-top: 7rem;
   }
 }

@@ -77,7 +77,7 @@ export default function Literature() {
                     <div className="tech-firstphoto">
                       <img
                         className="fbphoto"
-                        src="./images/literature/literaturebanner1.jpg"
+                        src="./images/literature/litera1.jpg"
                         alt=""
                       />
                     </div>
@@ -89,13 +89,13 @@ export default function Literature() {
                         variant="h4"
                         color="white"
                       >
-                        How to Mark yourself 'Safe' on Socials Media
+                        Myanmar Literature
                       </Typography>
                       <p>
-                        Modern technology has become a total phenomenon for
-                        civilization, the defining force of a new social order
-                        in which efficiency is no longer an option but a
-                        necessity imposed on all human activity.
+                        From the fifteenth century up to the nineteenth
+                        century,Palm-lead and folded-paper liteature became
+                        common.Such works were filled with Buddhist piety and
+                        courtly refinement of language.
                       </p>
                     </div>
                   </div>
@@ -108,7 +108,7 @@ export default function Literature() {
                           <div className="tecsecdiv-firstphoto">
                             <img
                               className="robotphoto"
-                              src="./images/literature/literaturebanner2.jpg"
+                              src="./images/literature/litera2.jpg"
                               alt=""
                             />
                           </div>
@@ -121,7 +121,8 @@ export default function Literature() {
                               variant="h4"
                               color="white"
                             >
-                              Corsair HS80 RGB Wirless Gaming Headset Review
+                              "Glass Palace" trnaslator wins Myanmar National
+                              Literature Award!
                             </Typography>
                           </div>
                         </div>
@@ -131,7 +132,7 @@ export default function Literature() {
                           <div className="tec-lastbannerphotos">
                             <img
                               className="airbudphoto"
-                              src="./images/science/sciencebanner11.jpg"
+                              src="./images/literature/litera3.jpg"
                               alt=""
                             />
                           </div>
@@ -144,7 +145,7 @@ export default function Literature() {
                               variant="h4"
                               color="white"
                             >
-                              Corsair HS80 RGB Wirless Gaming Headset Review
+                              Literature Roundtable Held At Pathein University
                             </Typography>
                           </div>
                         </div>

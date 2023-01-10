@@ -59,7 +59,10 @@ export default memo(function Header() {
       <AppBar
         position="fixed"
         z-index="999"
-        style={{ backgroundColor: "#15568e", padding: "0 30px" }}
+        style={{
+          backgroundColor: "#15568e",
+          padding: { xs: "0 10px", sm: "0 15px", md: "0 30px" },
+        }}
       >
         <Toolbar color="#15568e">
           {isMatch ? (
@@ -67,7 +70,7 @@ export default memo(function Header() {
               <Grid
                 container
                 my={2}
-                sx={{ margin: "auto", alignItems: "center", height: "6rem" }}
+                sx={{ margin: "auto", alignItems: "center" }}
               >
                 <Grid item xs={5} sm={8} className="headerGrid">
                   <Link to="/" className="nav-logo">
@@ -85,9 +88,9 @@ export default memo(function Header() {
                         sx={{
                           color: "white",
                           border: "2px solid white",
-                          padding: "5px 10px",
+                          padding: { xs: "3px 7px", sm: "5px 10px" },
                           borderRadius: "4px",
-                          fontSize: "12px",
+                          fontSize: { xs: "10px", sm: "12px" },
                           "&:hover": {
                             backgroundColor: "rgb(255, 174, 0)",
                             color: "black",
