@@ -150,6 +150,10 @@
   font-size: 1.56rem;
   margin-top: 0.5rem;
 }
+
+.bignewtitle{
+  margin-top: .5rem;
+}
 .popular-secnew h4,
 .popular-thirdnew h4,
 .popular-fouthnew h4 {

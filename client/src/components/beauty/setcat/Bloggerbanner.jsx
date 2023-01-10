@@ -22,16 +22,14 @@ export default function Bloggerbanner() {
                         </div>
                         <div className="blogger-para">
                           <div className="blogger-p">
-                            <h4>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit.{" "}
-                            </h4>
+                            <h4>May Oo (Make-up artist)</h4>
                             <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Velit iusto deserunt fuga nam soluta quae
-                              suscipit incidunt, consectetur totam tenetur modi
-                              illo neque! Voluptas cupiditate reiciendis
-                              consectetur? Unde, expedita saepe.
+                              May Oo is a Burmese make-up artist and LGBTQ+
+                              rights activist. He was named in The Myanmar Times
+                              "Top 10 Make-up artists" list in 2018. During the
+                              2021 Myanmar coup d'état, May Oo became one of the
+                              most prominent revolutionaries of Myanmar's ruling
+                              military junta.
                             </p>
                           </div>
                         </div>
