@@ -22,16 +22,14 @@ export default function Beautybanner() {
                         </div>
                         <div className="blogger-para">
                           <div className="blogger-p">
-                            <h4>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit.{" "}
-                            </h4>
+                            <h4>May Oo (Make-up artist)</h4>
                             <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Velit iusto deserunt fuga nam soluta quae
-                              suscipit incidunt, consectetur totam tenetur modi
-                              illo neque! Voluptas cupiditate reiciendis
-                              consectetur? Unde, expedita saepe.
+                              May Oo is a Burmese make-up artist and LGBTQ+
+                              rights activist. He was named in The Myanmar Times
+                              "Top 10 Make-up artists" list in 2018. During the
+                              2021 Myanmar coup d'état, May Oo became one of the
+                              most prominent revolutionaries of Myanmar's ruling
+                              military junta.
                             </p>
                           </div>
                         </div>
@@ -50,7 +48,11 @@ export default function Beautybanner() {
                               </div>
                               <div className="skin-p">
                                 <div className="skincare-para">
-                                  <h4>Lorem ipsum dolor sit amet.</h4>
+                                  <h4>
+                                    5 Home Remedies for Glowing Skin 1.Coconut
+                                    oil. 2.Aloe vera. 3.Moisturize. 4.Sunscreen.
+                                    5.Cleanse.
+                                  </h4>
                                 </div>
                               </div>
                             </div>
@@ -59,13 +61,16 @@ export default function Beautybanner() {
                             <div className="firstrow-thirddiv">
                               <div className="makeup-img">
                                 <img
-                                  src="./images/homeimgs/makeup.jpg"
+                                  src="./images/homeimgs/actress.jpg"
                                   alt=""
                                 />
                               </div>
                               <div className="makeup-p">
                                 <div className="makeup-para">
-                                  <h4>Lorem ipsum dolor sit amet.</h4>
+                                  <h4>
+                                    Margot Robbie (Top 1 Attractive actress in
+                                    World)
+                                  </h4>
                                 </div>
                               </div>
                             </div>
@@ -86,13 +91,16 @@ export default function Beautybanner() {
                             <div className="secrow-firstdiv">
                               <div className="beauty-img">
                                 <img
-                                  src="./images/homeimgs/beauty-salon.jpg"
+                                  src="./images/homeimgs/bestskincare.jpg"
                                   alt=""
                                 />
                               </div>
                               <div className="beauty-p">
                                 <div className="beauty-para">
-                                  <h4>Lorem ipsum dolor sit amet.</h4>
+                                  <h4>
+                           GLOSSIER The best
+                                    Skincare Set 2022
+                                  </h4>
                                 </div>
                               </div>
                             </div>
@@ -107,7 +115,10 @@ export default function Beautybanner() {
                               </div>
                               <div className="clinic-p">
                                 <div className="clinic-para">
-                                  <h4>Lorem ipsum dolor sit amet.</h4>
+                                  <h4>
+                                    Best Skin Clinic | Yangon, Myanmar | My Aura
+                                    Aesthetic
+                                  </h4>
                                 </div>
                               </div>
                             </div>
@@ -118,12 +129,13 @@ export default function Beautybanner() {
                     <Grid item lg={12}>
                       <div className="secrow-thirddiv">
                         <div className="natural-img">
-                          <img src="./images/homeimgs/natural.jpg" alt="" />
+                          <img src="./images/homeimgs/t8.jpg" alt="" />
                         </div>
                         <div className="natural-p">
                           <div className="natural-para">
                             <h4 className="animate__fadeOut">
-                              Lorem ipsum dolor sit amet.
+                              T8 Hair Design(Kyaik Waing Pagoda Road Yangon,
+                              Myanmar)
                             </h4>
                           </div>
                         </div>

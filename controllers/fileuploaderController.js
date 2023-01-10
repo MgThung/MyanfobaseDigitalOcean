@@ -23,7 +23,7 @@ const multipleFileUpload = async (req, res, next) => {
       const file = {
         fileName: element.key,
         // filePath: element.path,
-        filePath: element.location,
+        filePath: element.Location,
         fileType: element.mimetype,
         fileSize: fileSizeFormatter(element.size, 2),
       };
@@ -179,7 +179,7 @@ const updatepost = asyncHandler(async (req, res) => {
   files.forEach((element) => {
     const file = {
       fileName: element.key,
-      filePath: element.location,
+      filePath: element.Location,
       fileType: element.mimetype,
       fileSize: fileSizeFormatter(element.size, 2),
     };
@@ -201,11 +201,14 @@ const updatepost = asyncHandler(async (req, res) => {
       })
     : postDetail.files.map(async (data) => {
         /* for aws image file delete */
+        const reqfileName = data.fileName;
+        const imgName = reqfileName.replace("uploads/", "");
+
         return (
           await s3
             .deleteObject({
               Bucket: `${BUCKET_NAME}/uploads`,
-              Key: data.fileName,
+              Key: imgName,
             })
             .promise(),
           (err) => {
@@ -338,11 +341,14 @@ const deletepost = async (req, res) => {
       ? console.log("file is empty file")
       : result.files.map(async (data) => {
           /* for aws image file delete */
+          const reqfileName = data.fileName;
+          const imgName = reqfileName.replace("uploads/", "");
+
           return (
             await s3
               .deleteObject({
                 Bucket: `${BUCKET_NAME}/uploads`,
-                Key: data.fileName,
+                Key: imgName,
               })
               .promise(),
             (err) => {
@@ -352,6 +358,7 @@ const deletepost = async (req, res) => {
               return console.log("file is deleted successully");
             }
           );
+
           // return fs.unlink(path.join(mainPath, data.filePath), (err) => {
           // return fs.unlink(path.join(data.filePath), (err) => {
           //   if (err) {

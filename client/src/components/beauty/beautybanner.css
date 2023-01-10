@@ -1,19 +1,10 @@
-.beauty-firstrow {
-  /* display: grid;
-  grid-template-rows: 70% 30%; */
-  /* height: 40rem; */
-}
+
   
 .beauty-banner {
-  /* display: grid;
-  grid-template-columns: 70% 30%; */
-  /* height: 40rem; */
+  
   width: 100%;
 }
-/* .low-photos {
-  display: grid;
-  grid-template-columns: 50% 50%;
-} */
+
 
 .firstrow-firstdiv .blogger-img {
   width: 100%;
@@ -206,14 +197,10 @@
   font-size: 18px;
 }
 .ban-secrow {
-  /* display: grid;
-  grid-template-rows: 70% 30%; */
+  
   height: 40rem;
 }
-.seccol-firstdiv {
-  /* display: grid;
-  grid-template-rows: 50% 50%; */
-}
+
 
 
 @media screen and (max-width: 1200px) {

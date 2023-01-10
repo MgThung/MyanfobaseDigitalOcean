@@ -82,25 +82,22 @@ form.sign-up-form {
   width: 100%;
   height: 55px;
   background-color: #e7dfdf;
-  display: grid;
-  grid-template-columns: 10% 90%;
   margin: 10px 0;
   border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
   padding: 0 0.4rem;
-  margin-top: 1rem;
 }
 
 .inputemailPass {
   border-radius: 55px;
 }
 
-.input-field .seciconSingup {
+.input-field i {
   text-align: center;
   line-height: 55px;
   color: #726363;
-  font-size: 1.5rem;
-  margin-left: 0.5rem;
-  margin-top: 1rem;
+  font-size: 1.1rem;
 }
 
 .input-field input {
@@ -111,78 +108,11 @@ form.sign-up-form {
   font-weight: 600;
   font-size: 1.1rem;
   color: #333;
-
-  margin-left: 0.5rem;
 }
 
 .input-field input::placeholder {
   color: #aaa;
   font-weight: 500;
-}
-.singinInputs input::placeholder {
-  color: #aaa;
-  font-weight: 500;
-}
-
-/* chue  */
-
-.input-field span {
-  padding: 3px 0px 3px 10px;
-  color: red;
-  width: 700px;
-  display: none;
-  margin-top: 1rem;
-}
-.input-field input:invalid[focused="true"] ~ span {
-  display: block;
-}
-
-.input-field input:invalid[focused="true"] {
-  border: none;
-}
-
-.singinInputs {
-  /* position: relative;
-  width: 380px;
-  background-color: #e7dfdf;
-  border-radius: 55px;
-  height: 55px;
-  margin-top: 1.2rem;
-  margin-bottom: .5rem; */
-}
-
-.singinInputs input {
-  background: none;
-  outline: none;
-  border: none;
-  line-height: 1;
-  font-weight: 500;
-  font-size: 1.1rem;
-  color: #333;
-
-  margin-top: 1rem;
-  margin-left: 3rem;
-}
-
-.singinInputs span {
-  padding: 8px 0px 3px 10px;
-  color: red;
-  width: 700px;
-  display: none;
-}
-.singinInputs input:invalid[focused="true"] ~ span {
-  display: block;
-}
-
-.singinInputs input:invalid[focused="true"] {
-  border: none;
-}
-
-.iconSingup {
-  position: absolute;
-  left: 1rem;
-  top: 0.7rem;
-  color: #726363;
 }
 
 .logbtn {
@@ -343,6 +273,7 @@ form.sign-up-form {
   color: #f50d42;
 }
 
+
 /* password show hide and textfield  */
 .singinemail {
   width: 300px;
@@ -350,7 +281,7 @@ form.sign-up-form {
   border-radius: 55px;
 }
 .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
-  border-radius: 55px;
+  border-radius: 55px !important;
 }
 
 .passwordshow {
@@ -368,6 +299,169 @@ form.sign-up-form {
   top: 0.7rem;
 }
 
+@media screen and (max-width: 820px) {
+  .login-con {
+    max-height: 800px;
+    height: 100vh;
+  }
+
+  .login-con:before {
+    width: 1500px;
+    height: 1000px;
+    left: 30%;
+    bottom: 60%;
+    transform: translateX(-50%);
+    right: initial;
+    top: initial;
+    transition: 2s ease-in-out;
+  }
+
+  .signin-signup {
+    width: 100%;
+    left: 50%;
+    top: 95%;
+    transform: translate(-50%, -100%);
+    transition: 1s 0.8s ease-in-out;
+  }
+
+  .panels-con {
+    /* background-color: green;
+        z-index: 10; */
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+  }
+
+  .panel {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2.5rem 8%;
+  }
+
+  .panel .login-content {
+    padding-right: 15%;
+    transition: 0.9s 0.8s ease-in-out;
+  }
+
+  .panel h3 {
+    font-size: 1.2rem;
+  }
+
+  .panel p {
+    font-size: 0.7rem;
+    padding: 0.5rem 0;
+  }
+
+  .logbtn.logbtn.transparent {
+    width: 110px;
+    height: 35px;
+    font-size: 0.7rem;
+  }
+
+  .image {
+    width: 200px;
+    transition: 0.9s 0.6s ease-in-out;
+  }
+
+  .left-panel {
+    grid-row: 1 / 2;
+  }
+
+  .right-panel {
+    grid-row: 3 / 4;
+  }
+
+  .right-panel .login-content,
+  .right-panel .image {
+    transform: translateX(0px);
+  }
+
+  .right-panel .login-content,
+  .right-panel .image {
+    transform: translateY(300px);
+  }
+
+  .login-con.signupmode:before {
+    transform: translate(-50%, 100%);
+    bottom: 32%;
+    right: initial;
+  }
+
+  .login-con.signupmode .left-panel .image,
+  .login-con.signupmode .left-panel .login-content {
+    transform: translateY(-300px);
+  }
+
+  .login-con.signupmode .signin-signup {
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  form {
+    padding: 0 1.5rem;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .panel .lgoin-content {
+    padding: 0.5rem 1rem;
+  }
+
+  .login-con:before {
+    bottom: 72%;
+    left: 50%;
+  }
+
+  .login-con.signupmode:before {
+    bottom: 28%;
+    left: 50%;
+  }
+}
+
+/* chue  */
+
+.input-field .singupusermsg {
+  padding: 3px 0px 3px 10px;
+  color: red;
+  width: 700px;
+  display: none;
+}
+.input-field input:invalid[focused="true"] ~ span {
+  display: block;
+}
+
+.input-field input:invalid[focused="true"] {
+  border: none;
+}
+.input-field .msgforUsername {
+  padding: 3px 0px 3px 10px;
+  color: red;
+  width: 700px;
+  display: none;
+}
+.input-field .msgforEmail {
+  padding: 3px 0px 3px 10px;
+  color: red;
+  width: 700px;
+  display: none;
+}
+.input-field .msgforPassword {
+  padding: 3px 0px 3px 10px;
+  color: red;
+  width: 700px;
+  display: none;
+}
+.input-field .msgforcomfirmps {
+  padding: 3px 0px 3px 10px;
+  color: red;
+  width: 700px;
+  display: none;
+}
 @media screen and (max-width: 820px) {
   .login-con {
     max-height: 800px;
@@ -584,4 +678,7 @@ form.sign-up-form {
   margin-bottom: 1rem;
 }
 .loadingcircle {
+}
+.loadingspin1 {
+  margin-left: 3rem;
 }

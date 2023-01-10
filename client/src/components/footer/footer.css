@@ -6,12 +6,8 @@ ul li {
   color: white;
   padding-bottom: 0.5rem;
 }
-.FooterDiv {
-  padding: 0rem 4rem;
-}
-/* .footertitle {
-  padding: 2rem 0 1.5rem 0;
-} */
+
+
 .spiderImg img {
   width: 150px;
   height: 150px;
@@ -91,10 +87,7 @@ ul li {
 .footercolor{
   color: white;
 }
-.footerdiv{
-  margin-top: 2rem;
 
-}
 .footercolor:hover{
   color: white;
 }

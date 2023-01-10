@@ -29,6 +29,8 @@
   --health-bg: rgb(60 211 134);
   --lifestyles-bg: rgb(163, 184, 250);
   --education-bg: rgb(144, 240, 18);
+  
+  --container-width-xl: 100%;
   --container-width-lg: 80%;
   --container-width-md: 90%;
   --container-width-sm: 96%;
@@ -367,7 +369,7 @@ dl {
   padding-left: 0 !important;
 }
 .sidebar {
-  height: calc(100vh - 50px);
+  /* height: calc(100vh - 50px); */
   overflow-y: scroll;
   position: sticky;
   top: 50px;
@@ -410,6 +412,19 @@ dl {
 
 [data-theme="dark"] {
   --background: black;
+}
+@media screen and (min-width: 600px) {
+  .css-1ekb41w {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .css-1ekb41w {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
 }
 
 @media screen and (max-width: 600px) {

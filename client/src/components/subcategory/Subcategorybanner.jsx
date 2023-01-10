@@ -6,29 +6,29 @@ export default function Subcategorybanner() {
     <section className="container catebannerImg">
       <div className="leftBanner">
         <div className="catebanner1">
-          <img src="./images/technology/computerpage/computerbanner1.jpg" />
+          <img src="./images/technology/computerpage/hp360.jpg" />
         </div>
         <article className="bannerPara">
-          <button className="cateTechnology">Technology</button>
-          <h4>How to Mark yourself 'Safe' on Socials Media</h4>
+          <button className="cateTechnology">Computer</button>
+          <h4>HP latest Modern </h4>
           <p className="leftparaText">
-            Modern technology has become a total phenomenon for civilization,
-            the defining force of a new social order in which efficiency is no
-            longer an option but a necessity imposed on all human activity.
+            HP Spectre x360 laptops are HP Presence qualified with a 5MP camera,
+            Auto Frame, Backlight Adjustment, AI Noise Reduction and Dynamic
+            voice levelling to make you look and sound your best.{" "}
           </p>
         </article>
       </div>
       <div className="rightBanner">
         <div className="catebanner2">
-          <img src="./images/technology/computerpage/computerbanner2.jpg" />
+          <img src="./images/technology/computerpage/macbook.jpg" />
         </div>
         <article className="bannerPara">
-          <button className="cateTechnology">Technology</button>
-          <h4>How to Mark yourself 'Safe' on Socials Media</h4>
+          <button className="cateTechnology">Computer</button>
+          <h4>MacBook Pro 13-inch - Apple</h4>
           <p className="rightparaText">
-            Modern technology has become a total phenomenon for civilization,
-            the defining force of a new social order in which efficiency is no
-            longer an option but a necessity imposed on all human activity.
+            The 13-inch MacBook Pro is supercharged by M2. It's our most
+            portable pro laptop with all-day battery life and a gorgeous Retina
+            display.13-inch MacBook Pro laptop supercharged by M2 chip. 
           </p>
         </article>
       </div>

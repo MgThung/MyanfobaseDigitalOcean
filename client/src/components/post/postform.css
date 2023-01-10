@@ -14,7 +14,7 @@
 .firstdesc h2 {
   padding-top: 2rem;
   text-align: center;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   font-weight: bold;
 }
 
@@ -22,19 +22,18 @@
   padding-bottom: 0.5rem;
   font-size: 18px;
   text-align: center;
- font-style: italic;
- color: rgb(82, 81, 81);
+  font-style: italic;
+  color: rgb(82, 81, 81);
 }
 .firstdesc pre {
   padding-bottom: 2rem;
   padding-top: 1rem;
   font-size: 1rem;
-    text-align: center;
-    font-weight: bold;
-    font-family: "Heebo";
-     font-style: italic;
-color: rgb(135, 23, 23);
-
+  text-align: center;
+  font-weight: bold;
+  font-family: "Heebo";
+  font-style: italic;
+  color: rgb(135, 23, 23);
 }
 
 .firstdesc p::first-letter {
@@ -125,6 +124,7 @@ textarea::-webkit-scrollbar {
   display: block;
   width: 180px;
   height: 200px;
+  object-fit: cover;
 }
 .imgShow {
   width: 100%;

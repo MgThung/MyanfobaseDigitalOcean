@@ -40,17 +40,15 @@ const Home = () => {
       <HomeHeader />
       <Suspense fallback={<SpinnerFade />}>
         <LastNews />
-      </Suspense>
-      <Suspense fallback={<SpinnerFade />}>
+
         <Homelifestyle />
-      </Suspense>
-      <Suspense fallback={<SpinnerFade />}>
+
         <HomeEducation />
-      </Suspense>
-      {/* <Suspense fallback={<div>Loading...</div>}>
+
+        {/* <Suspense fallback={<div>Loading...</div>}>
         <Viedo />
       </Suspense> */}
-      <Suspense fallback={<SpinnerFade />}>
+
         {/* <Categorieslider /> */}
         <CategoryCount />
       </Suspense>

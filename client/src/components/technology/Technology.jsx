@@ -48,7 +48,7 @@ export default function Technology() {
           <Link to="/electronic">
             <button className="tec">Electronics</button>
           </Link>
-         
+
           <Link to="/smartphone">
             <button className="tec">Smartphone</button>
           </Link>
@@ -78,7 +78,7 @@ export default function Technology() {
                   <div className="tech-firstphoto">
                     <img
                       className="fbphoto"
-                      src="./images/literature/literaturebanner1.jpg"
+                      src="./images/literature/techlest.jpg"
                       alt=""
                     />
                   </div>
@@ -88,15 +88,15 @@ export default function Technology() {
                     <Typography
                       className="literaturecolor"
                       variant="h4"
-                      color="white"
+                      fontWeight="bold"
                     >
-                      How to Mark yourself 'Safe' on Socials Media
+                      Top 10 Trending Technologies in 2023{" "}
                     </Typography>
                     <p>
-                      Modern technology has become a total phenomenon for
-                      civilization, the defining force of a new social order in
-                      which efficiency is no longer an option but a necessity
-                      imposed on all human activity.
+                      1.AI and Machine Learning 2.Cybersecurity 3.METAVERSE
+                      4.Devops 5.Full Stack Development 6.Blockchain 7.CLOUD
+                      Computing 8.HyperAutomation 9.Data Science Business
+                      10.Intelligence
                     </p>
                   </div>
                 </div>
@@ -109,18 +109,22 @@ export default function Technology() {
                         <div className="tecsecdiv-firstphoto">
                           <img
                             className="robotphoto"
-                            src="./images/literature/literaturebanner2.jpg"
+                            src="./images/literature/iphone.png"
                             alt=""
                           />
                         </div>
                         <div className="robotpara">
                           <button className="cateTechnology">Technology</button>
+                          <br></br>
                           <Typography
                             className="literaturecolor"
-                            variant="h4"
+                            variant="p"
+                            fontSize="1rem"
                             color="white"
+                            fontWeight="bold"
                           >
-                            Corsair HS80 RGB Wirless Gaming Headset Review
+                            The iPhone 15 models will likely be released in
+                            September 2023.
                           </Typography>
                         </div>
                       </div>
@@ -130,18 +134,22 @@ export default function Technology() {
                         <div className="tec-lastbannerphotos">
                           <img
                             className="airbudphoto"
-                            src="./images/science/sciencebanner11.jpg"
+                            src="./images/science/hp.jpg"
                             alt=""
                           />
                         </div>
                         <div className="airbudpara">
                           <button className="cateTechnology">Technology</button>
+                          <br></br>
                           <Typography
                             className="literaturecolor"
-                            variant="h4"
+                            variant="p"
+                            fontSize="1rem"
                             color="white"
+                            fontWeight="bold"
                           >
-                            Corsair HS80 RGB Wirless Gaming Headset Review
+                            The best HP laptop for most people is "HP Spectre
+                            x360 14-inch"
                           </Typography>
                         </div>
                       </div>

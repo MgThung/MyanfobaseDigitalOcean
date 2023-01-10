@@ -15,6 +15,7 @@ const {
 // const { upload, profileImgs } = require("./imageRoute");
 const { uploadprofile } = require("./multerFile");
 const { protect } = require("../middleware/authMiddleware");
+const sharp = require("sharp");
 router.post("/", registerUser);
 router.post("/login", loginUser);
 router.get("/me", protect, getMe);

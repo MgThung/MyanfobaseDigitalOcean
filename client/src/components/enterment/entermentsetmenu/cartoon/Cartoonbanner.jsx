@@ -2,6 +2,8 @@ import React from "react";
 import "../../entermentbanner.css";
 // import "./entermentbanner.css";
 import { Grid } from "@mui/material";
+import GradeIcon from "@mui/icons-material/Grade";
+
 // import CSSRulePlugin from "gsap/CSSRulePlugin";
 // import { TimelineLite, Power2 } from "gsap";
 
@@ -21,7 +23,6 @@ export default function Cartoonbanner() {
   // });
 
   return (
-   
     <section className="mainetn1">
       <Grid
         my={3}
@@ -39,10 +40,20 @@ export default function Cartoonbanner() {
             </div>
 
             <div className="hansoetn_P">
+              <span className="movieName">LUCA</span>
+              <br></br>
               <p className="paragraph">
-                Seo Hyun Jin, Hwang In Yeop & more star in an intriguing group
-                poster for ‘Why Her’ The SBS drama is set to premiere soon!
+                Luca, a sea monster, befriends Alberto, another one of his kind
+                who takes him on a land adventure. He experiences an exciting
+                summer while keeping his parents in the dark.
               </p>
+              <br></br>
+              <span className="castName">Director by Enrico Casarosa</span>
+              <br></br>
+              <span className="ratingenterBanner">
+                <GradeIcon className="iconstar" />
+                Rating 7.4
+              </span>
             </div>
           </div>
         </Grid>
@@ -55,11 +66,20 @@ export default function Cartoonbanner() {
               />
             </div>
             <div className="moneyheist_P">
-              <p>
-                Seo Hyun Jin, Hwang In Yeop & more star in an intriguing <br />{" "}
-                group poster for ‘Why Her’ The SBS drama is set
-                <br /> to premiere soon!
+              <span className="movieName">Ferdinand</span>
+              <br></br>
+              <p className="paragraph">
+                A soft-hearted bull, Ferdinand, escapes from Casa del Toro after
+                his father does not return from the bullfight. However, due to a
+                turn of events, he is taken back to the place he escaped from.
               </p>
+              <br></br>
+              <span className="castName">Director by Carlos Saldanha</span>
+              <br></br>
+              <span className="ratingenterBanner">
+                <GradeIcon className="iconstar" />
+                Rating 7.1
+              </span>
             </div>
           </div>
         </Grid>
@@ -69,10 +89,22 @@ export default function Cartoonbanner() {
               <img src="./images/entertainment/cartoon/barbie.jpg" alt="" />
             </div>
             <div className="jurassic_P">
-              <p>
-                Seo Hyun Jin, Hwang In Yeop & more star in an intriguing group
-                poster for ‘Why Her’ The SBS drama is set to premiere soon!
+              <span className="movieName">The Priness and the frog</span>
+              <br></br>
+              <p className="paragraph">
+                A young waitress, Tiana, embarks on a hilarious adventure after
+                her fateful kiss with a frog prince who cannot wait to be human
+                again.
               </p>
+              <br></br>
+              <span className="castName">
+                Director by John Musker, Ron Clements
+              </span>
+              <br></br>
+              <span className="ratingenterBanner">
+                <GradeIcon className="iconstar" />
+                Rating 8.5
+              </span>
             </div>
           </div>
         </Grid>

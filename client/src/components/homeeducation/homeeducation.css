@@ -2,15 +2,15 @@
   max-width: 1600px;
 }
 .educationHOme {
-  max-width: 98%;
+  max-width: 100%;
 }
 /* .edusection {
   display: grid;
   grid-template-columns: 70% 30%;
   gap: 2rem;
 } */
-.titleEducation  {
-font-family: 'Heebo', sans-serif;
+.titleEducation {
+  font-family: "Heebo", sans-serif;
   margin-bottom: 0;
   line-height: 1.4 !important;
 }

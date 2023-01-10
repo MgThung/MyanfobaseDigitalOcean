@@ -12,7 +12,7 @@
 
 .sponsered-1,
 .sponsered-2,
-.sponsered-3{
+.sponsered-3 {
   margin-bottom: 1rem;
 }
 
@@ -34,6 +34,7 @@
 .foodies-photo img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .sponserAll p {
@@ -60,16 +61,16 @@
   margin-left: 0.6rem;
 }
 @media screen and (max-width: 1200px) {
-.beauty-photo,
-.phone-photo,
-.foodies-photo {
-  height: 200px;
-}
+  .beauty-photo,
+  .phone-photo,
+  .foodies-photo {
+    height: 200px;
+  }
 }
 @media screen and (max-width: 600px) {
-.beauty-photo,
-.phone-photo,
-.foodies-photo {
-  height: 120px;
-}
+  .beauty-photo,
+  .phone-photo,
+  .foodies-photo {
+    height: 120px;
+  }
 }

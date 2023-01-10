@@ -43,7 +43,6 @@ const userDetailData = async (token) => {
 //update user data Login user
 const updateUserData = async (postData, token) => {
   const resultData = Object.fromEntries(postData.entries());
-
   const id = resultData.id;
 
   const config = {
