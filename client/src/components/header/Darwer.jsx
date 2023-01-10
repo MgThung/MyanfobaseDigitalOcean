@@ -17,7 +17,10 @@ import Dropdown from "./dropdown/Dropdown";
 import { useSelector, useDispatch } from "react-redux";
 import { logout, reset } from "../../features/auth/authSlice";
 import MenuIcon from "@mui/icons-material/Menu";
+import SearchIcon from "@mui/icons-material/Search";
+import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import LanguageIcon from "@mui/icons-material/Language";
+import House from "@mui/icons-material/House";
 const pages = ["Products", "Services", "ABoutUs", "ContactUs"];
 const DrawerComp = () => {
   const dispatch = useDispatch();
@@ -46,7 +49,7 @@ const DrawerComp = () => {
                 <ListItemIcon>
                   <ListItemAvatar>
                     <Avatar>
-                      <i className="uil uil-home"></i>
+                      <House/>
                     </Avatar>
                   </ListItemAvatar>
                 </ListItemIcon>
@@ -61,7 +64,7 @@ const DrawerComp = () => {
                 <ListItemIcon>
                   <ListItemAvatar>
                     <Avatar>
-                      <i className="uil uil-search"></i>
+                      <SearchIcon/>
                     </Avatar>
                   </ListItemAvatar>
                 </ListItemIcon>
@@ -79,7 +82,7 @@ const DrawerComp = () => {
               <ListItemIcon>
                 <ListItemAvatar>
                   <Avatar>
-                    <i className="uil uil-list-ul"></i>
+                    <MenuIcon/>
                   </Avatar>
                 </ListItemAvatar>
               </ListItemIcon>
@@ -100,7 +103,7 @@ const DrawerComp = () => {
                 <ListItemIcon>
                   <ListItemAvatar>
                     <Avatar>
-                      <i className="uil uil-plus-circle"></i>
+                      <AddCircleOutlineIcon/>
                     </Avatar>
                   </ListItemAvatar>
                 </ListItemIcon>
