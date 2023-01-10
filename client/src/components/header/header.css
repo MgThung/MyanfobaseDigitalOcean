@@ -6,7 +6,7 @@
   padding: 0;
 }
 .nav-logo img {
-  width: 90px;
+  width: 100px;
   height: 80px;
   display: block;
   object-fit: cover;
@@ -255,13 +255,13 @@ a .hoverclor:hover {
     margin-left: 20%;
   }
   .nav-logo img {
-    width: 80px;
+    width: 90px;
     height: 70px;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 900px) {
   .nav-logo img {
-    width: 80px;
+    width: 90px;
     height: 70px;
   }
   .headerGrid {

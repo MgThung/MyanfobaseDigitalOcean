@@ -1,7 +1,5 @@
-
-  
 .beauty-banner {
-   width: 100%;
+  width: 100%;
 }
 
 .firstrow-firstdiv .blogger-img {
@@ -117,6 +115,10 @@
   color: white;
   background: linear-gradient(7deg, #970cbca3 0%, #31e4ffb5 100%);
 }
+.blogger-p h4 {
+  font-size: 20px;
+  line-height: 1.5;
+}
 .secrow-firstdiv:hover .beauty-p {
   color: #fff;
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff,
@@ -195,18 +197,16 @@
   font-size: 1.125rem;
 }
 
-
-
 @media screen and (max-width: 1200px) {
-  .ban-secrow{
+  .ban-secrow {
     display: none;
   }
 }
 @media screen and (max-width: 600px) {
-  .blogger-p p{
+  .blogger-p p {
     display: none;
   }
   .firstrow-firstdiv .blogger-img {
-  height: 20rem;
-}
+    height: 20rem;
+  }
 }

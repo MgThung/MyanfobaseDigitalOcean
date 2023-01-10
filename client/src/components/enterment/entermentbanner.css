@@ -211,6 +211,9 @@ ul {
   margin-bottom: 5px;
 }
 @media screen and (max-width: 600px) {
+  .enter {
+    padding-top: 5.5rem;
+  }
   .thirdetn {
     display: none;
   }
@@ -237,5 +240,20 @@ ul {
 @media screen and (min-width: 1050px) and (max-width: 1450px) {
   .css-sr5gqk-MuiGrid-root {
     gap: 2.2rem;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .enter {
+    padding-top: 7.5rem;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 900px) {
+  .enter {
+    padding-top: 7.5rem;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .enter {
+    padding-top: 7rem;
   }
 }

@@ -16,24 +16,12 @@ export default function HfoodsBanner() {
                     <Grid item lg={12} md={12}>
                       <div className="firstrow-firstdiv">
                         <div className="blogger-img">
-                          <img
-                            src="./images/homeimgs/May-Oo-Makeup-7.jpg"
-                            alt=""
-                          />
+                          <img src="./images/health/food1.jpg" alt="" />
                         </div>
                         <div className="blogger-para">
                           <div className="blogger-p">
-                            <h4>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit.{" "}
-                            </h4>
-                            <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Velit iusto deserunt fuga nam soluta quae
-                              suscipit incidunt, consectetur totam tenetur modi
-                              illo neque! Voluptas cupiditate reiciendis
-                              consectetur? Unde, expedita saepe.
-                            </p>
+                            <h4>7 Best Foods For Diabetic Nerve Health</h4>
+                            <p></p>
                           </div>
                         </div>
                       </div>
@@ -44,14 +32,11 @@ export default function HfoodsBanner() {
                           <Grid item lg={6} md={6} xs={12}>
                             <div className="firstrow-secdiv">
                               <div className="skincare-img">
-                                <img
-                                  src="./images/homeimgs/skincare.jpg"
-                                  alt=""
-                                />
+                                <img src="./images/health/food2.jpg" alt="" />
                               </div>
                               <div className="skin-p">
                                 <div className="skincare-para">
-                                  <h4>Lorem ipsum dolor sit amet.</h4>
+                                  <h4>1,2,3 healthy food</h4>
                                 </div>
                               </div>
                             </div>
@@ -59,14 +44,14 @@ export default function HfoodsBanner() {
                           <Grid item lg={6} md={6} xs={12}>
                             <div className="firstrow-thirddiv">
                               <div className="makeup-img">
-                                <img
-                                  src="./images/homeimgs/makeup.jpg"
-                                  alt=""
-                                />
+                                <img src="./images/health/food3.jpg" alt="" />
                               </div>
                               <div className="makeup-p">
                                 <div className="makeup-para">
-                                  <h4>Lorem ipsum dolor sit amet.</h4>
+                                  <h4>
+                                    Organic Ocean,smoothies,vegan
+                                    healthy,healthy food
+                                  </h4>
                                 </div>
                               </div>
                             </div>
@@ -86,14 +71,14 @@ export default function HfoodsBanner() {
                           <Grid item lg={12}>
                             <div className="secrow-firstdiv">
                               <div className="beauty-img">
-                                <img
-                                  src="./images/homeimgs/beauty-salon.jpg"
-                                  alt=""
-                                />
+                                <img src="./images/health/food4.jpg" alt="" />
                               </div>
                               <div className="beauty-p">
                                 <div className="beauty-para">
-                                  <h4>Lorem ipsum dolor sit amet.</h4>
+                                  <h4>
+                                    Why Healthy Eating Doesn't Have to be
+                                    Expensive
+                                  </h4>
                                 </div>
                               </div>
                             </div>
@@ -101,14 +86,11 @@ export default function HfoodsBanner() {
                           <Grid item lg={12}>
                             <div className="secrow-secdiv">
                               <div className="clinic-img">
-                                <img
-                                  src="./images/homeimgs/skin-clinic.jpg"
-                                  alt=""
-                                />
+                                <img src="./images/health/food5.jpg" alt="" />
                               </div>
                               <div className="clinic-p">
                                 <div className="clinic-para">
-                                  <h4>Lorem ipsum dolor sit amet.</h4>
+                                  <h4>COOK COOKING Oil</h4>
                                 </div>
                               </div>
                             </div>
@@ -119,13 +101,11 @@ export default function HfoodsBanner() {
                     <Grid item lg={12}>
                       <div className="secrow-thirddiv">
                         <div className="natural-img">
-                          <img src="./images/homeimgs/natural.jpg" alt="" />
+                          <img src="./images/health/food6.jpg" alt="" />
                         </div>
                         <div className="natural-p">
                           <div className="natural-para">
-                            <h4 className="animate__fadeOut">
-                              Lorem ipsum dolor sit amet.
-                            </h4>
+                            <h4 className="animate__fadeOut">လက်ဖက်သုပ်</h4>
                           </div>
                         </div>
                       </div>
