@@ -12,11 +12,12 @@ export default function Waterbanner() {
           </div>
           <article className="bannerPara">
             <button className="cateTravel ">Travel</button>
-            <h4>How to Mark yourself 'Safe' on Socials Media</h4>
+            <h4>Dee Dote Falls</h4>
             <p className="leftparaText">
-              Modern technology has become a total phenomenon for civilization,
-              the defining force of a new social order in which efficiency is no
-              longer an option but a necessity imposed on all human activity.
+              Famed for having mineral-rich, bright blue waters, Dee Dote (Dee
+              Doke) Falls are a relatively new spot to waterfall hop. Situated
+              about an hour’s drive from Mandalay and a two-hour motorbike ride
+              from Pyin Oo Lwin in the Shan Highlands,
             </p>
           </article>
         </div>
@@ -26,11 +27,13 @@ export default function Waterbanner() {
           </div>
           <article className="bannerPara">
             <button className="cateTravel ">Travel</button>
-            <h4>How to Mark yourself 'Safe' on Socials Media</h4>
+            <h4>Kyaiktiyo Falls</h4>
             <p className="rightparaText">
-              Modern technology has become a total phenomenon for civilization,
-              the defining force of a new social order in which efficiency is no
-              longer an option but a necessity imposed on all human activity.
+              There’s more to Kyaiktiyo than a golden rock. Step away from the
+              mountaintop bustle and head down to Kyaiktiyo (Kyaik Htee Yoe)
+              Falls. It’s a good three to four-hour hike there and back. Expect
+              to pass by many stands selling anything from drinks to orchids
+              while trekking.
             </p>
           </article>
         </div>

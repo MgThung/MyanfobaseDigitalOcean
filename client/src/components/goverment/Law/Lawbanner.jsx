@@ -11,7 +11,7 @@ export default function Lawbanner() {
           </div>
           <article className="bannerPara">
             <button className="cateGovernment">Government</button>
-            <h4>How to Mark yourself 'Safe' on Socials Media</h4>
+            <h4>Sorry Our Country(Myanmar) haven't any law yet!!!!</h4>
             <p className="leftparaText">
               Modern technology has become a total phenomenon for civilization,
               the defining force of a new social order in which efficiency is no
@@ -25,11 +25,12 @@ export default function Lawbanner() {
           </div>
           <article className="bannerPara">
             <button className="cateGovernment">Government</button>
-            <h4>How to Mark yourself 'Safe' on Socials Media</h4>
+            <h4>The 48 Laws of Power - National Library Board Singapore</h4>
             <p className="rightparaText">
-              Modern technology has become a total phenomenon for civilization,
-              the defining force of a new social order in which efficiency is no
-              longer an option but a necessity imposed on all human activity.
+           The 48 Laws of Power is a
+              non-fiction book by American author Robert Greene. The book is a
+              New York Times bestseller, selling over 1.2 million copies in the
+              United States.
             </p>
           </article>
         </div>
