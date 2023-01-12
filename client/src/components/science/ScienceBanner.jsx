@@ -15,25 +15,27 @@ export default function ScienceBanner() {
                   <div className="tech-firstphoto">
                     <img
                       className="fbphoto"
-                      src="./images/literature/literaturebanner1.jpg"
+                      src="./images/science/science1.jpg"
                       alt=""
                     />
                   </div>
                   <div className="firstpara">
-                    <button className="cateLiterature">Literature</button>
+                    <button className="cateScience">science</button>
 
                     <Typography
                       className="literaturecolor"
                       variant="h4"
                       color="white"
                     >
-                      How to Mark yourself 'Safe' on Socials Media
+                      Myanmar - Science and technology
                     </Typography>
                     <p>
-                      Modern technology has become a total phenomenon for
-                      civilization, the defining force of a new social order in
-                      which efficiency is no longer an option but a necessity
-                      imposed on all human activity.
+                      Scientific research is conducted by the private Burma
+                      Research Society, founded in 1910, and by the government's
+                      Central Research Organization, consisting of various
+                      departments of the state ministries. Four institutes
+                      conduct research in applied sciences, medicine, and atomic
+                      energy.
                     </p>
                   </div>
                 </div>
@@ -46,18 +48,18 @@ export default function ScienceBanner() {
                         <div className="tecsecdiv-firstphoto">
                           <img
                             className="robotphoto"
-                            src="./images/literature/literaturebanner2.jpg"
+                            src="./images/science/science2.jpg"
                             alt=""
                           />
                         </div>
                         <div className="robotpara">
-                          <button className="cateLiterature">Literature</button>
+                          <button className="cateScience">science</button>
                           <Typography
                             className="literaturecolor"
                             variant="h4"
                             color="white"
                           >
-                            Corsair HS80 RGB Wirless Gaming Headset Review
+                            Medicine Laboratory
                           </Typography>
                         </div>
                       </div>
@@ -72,7 +74,7 @@ export default function ScienceBanner() {
                           />
                         </div>
                         <div className="airbudpara">
-                          <button className="cateLiterature">Literature</button>
+                          <button className="cateScience">science</button>
                           <Typography
                             className="literaturecolor"
                             variant="h4"
