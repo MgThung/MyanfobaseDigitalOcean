@@ -5,6 +5,8 @@ import Language from "./dropdown/Language";
 import { useSelector, useDispatch } from "react-redux";
 import { logout, reset } from "../../features/auth/authSlice";
 import LogoutIcon from "@mui/icons-material/Logout";
+import PersonIcon from "@mui/icons-material/Person";
+import EditIcon from "@mui/icons-material/Edit";
 import HouseIcon from "@mui/icons-material/House";
 import AdminPanelSettingsIcon from "@mui/icons-material/AdminPanelSettings";
 import SearchIcon from "@mui/icons-material/Search";
@@ -73,7 +75,7 @@ export default memo(function Header() {
                 sx={{ margin: "auto", alignItems: "center" }}
               >
                 <Grid item xs={5} sm={8} className="headerGrid">
-                  <Link to="/" className="nav-logo">
+                  <Link to="/" className="nav-logo" name="nav-logo">
                     <img src="./images/homeimgs/logo2.png" alt="" />
                   </Link>
                 </Grid>
@@ -150,12 +152,12 @@ export default memo(function Header() {
                               <h3>{user.username}</h3>
                               <ul>
                                 <DropdownItem
-                                  data={LogoutIcon}
+                                  data={<PersonIcon />}
                                   text={"My Profile"}
                                   pathLink={"/profile"}
                                 />
                                 <DropdownItem
-                                  data={"fa-solid fa-user-pen"}
+                                  data={<EditIcon />}
                                   text={"Edit Profile"}
                                   pathLink={"/editprofile"}
                                 />
@@ -386,12 +388,12 @@ export default memo(function Header() {
                         <h3>{user.username}</h3>
                         <ul>
                           <DropdownItem
-                            data={"fa-solid fa-user"}
+                            data={<PersonIcon />}
                             text={"My Profile"}
                             pathLink={"/profile"}
                           />
                           <DropdownItem
-                            data={"fa-solid fa-user-pen"}
+                            data={<EditIcon />}
                             text={"Edit Profile"}
                             pathLink={"/editprofile"}
                           />
@@ -429,7 +431,8 @@ const DropdownItem = memo((props) => {
   return (
     <li className="dropdownItem">
       {/* <img src={props.img}></img> */}
-      <i className={props.data}></i>
+      {/* <i className={props.data}></i> */}
+      {props.data}
 
       <Link to={`${props.pathLink}`}>{props.text}</Link>
     </li>

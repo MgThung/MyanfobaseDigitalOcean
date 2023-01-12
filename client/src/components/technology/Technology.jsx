@@ -78,7 +78,7 @@ export default function Technology() {
                   <div className="tech-firstphoto">
                     <img
                       className="fbphoto"
-                      src="./images/literature/literaturebanner1.jpg"
+                      src="./images/literature/techlest.jpg"
                       alt=""
                     />
                   </div>
@@ -109,7 +109,7 @@ export default function Technology() {
                         <div className="tecsecdiv-firstphoto">
                           <img
                             className="robotphoto"
-                            src="./images/literature/literaturebanner2.jpg"
+                            src="./images/literature/iphone.png"
                             alt=""
                           />
                         </div>
@@ -119,6 +119,7 @@ export default function Technology() {
                           <Typography
                             className="literaturecolor"
                             variant="p"
+                            fontSize="1rem"
                             color="white"
                             fontWeight="bold"
                           >
@@ -133,18 +134,22 @@ export default function Technology() {
                         <div className="tec-lastbannerphotos">
                           <img
                             className="airbudphoto"
-                            src="./images/science/sciencebanner11.jpg"
+                            src="./images/science/hp.jpg"
                             alt=""
                           />
                         </div>
                         <div className="airbudpara">
                           <button className="cateTechnology">Technology</button>
+                          <br></br>
                           <Typography
                             className="literaturecolor"
-                            variant="h4"
+                            variant="p"
+                            fontSize="1rem"
                             color="white"
+                            fontWeight="bold"
                           >
-                            Corsair HS80 RGB Wirless Gaming Headset Review
+                            The best HP laptop for most people is "HP Spectre
+                            x360 14-inch"
                           </Typography>
                         </div>
                       </div>

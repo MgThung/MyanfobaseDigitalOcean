@@ -27,7 +27,7 @@ export default function PopularHome() {
   return (
     <>
       {lastposts && lastposts.length !== 0 ? (
-        <div className="popular-body container">
+        <div className="popular-body">
           <Box>
             <div className="first-grid">
               <Container maxWidth="xl">

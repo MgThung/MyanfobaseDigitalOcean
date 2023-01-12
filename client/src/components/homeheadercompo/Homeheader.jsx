@@ -74,8 +74,9 @@ const HomeHeader = () => {
         {/* <div className="popular-p">
           <Popularslider />
         </div> */}
-      </section>
-      <PopularHome />
+    
+        <PopularHome />
+          </section>
     </>
   );
 };

@@ -1,7 +1,7 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Bowlby+One&family=Ultra&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 .header {
   background-color: rgb(209, 213, 212);
@@ -12,11 +12,11 @@
   padding-top: 0rem;
   margin-bottom: 1rem;
 }
-.headertypo{
+.headertypo {
   color: #043062eb;
 }
-.home-banner-detail h3{
- color:#b3461aed ;
+.home-banner-detail h3 {
+  color: #b3461aed;
   letter-spacing: 3px;
 }
 .header-nav {
@@ -58,11 +58,10 @@
   text-align: center;
 }
 .home-banner-detail h1 {
-
   font-family: "Heebo", serif;
   color: #043062eb;
- letter-spacing: 3px;
- font-weight: bold;
+  letter-spacing: 3px;
+  font-weight: bold;
   padding-top: 3rem;
 }
 .home-banner-detail h3 {
@@ -90,7 +89,7 @@
   font-size: 1.3rem;
   background-color: transparent;
 }
-.searchiconbanner{
+.searchiconbanner {
   position: absolute;
   top: 2.1rem;
   right: 1rem;
@@ -119,11 +118,9 @@
   border-top: black 3px solid;
 }
 
-/* .popular-header {
-  display: grid;
-  grid-template-columns: 20% 80%;
-  max-width: 1600px;
-} */
+.popular-header {
+  max-width: 2000px;
+}
 .popular-now-line {
   display: block;
   width: 11.5rem;
@@ -149,10 +146,13 @@
   color: white;
 }
 
-
 .popular-bignew h4 {
   font-size: 1.56rem;
   margin-top: 0.5rem;
+}
+
+.bignewtitle{
+  margin-top: .5rem;
 }
 .popular-secnew h4,
 .popular-thirdnew h4,
@@ -362,6 +362,11 @@
 }
 .populartitle-black {
   color: black;
+}
+/* style */
+.css-19r6kue-MuiContainer-root {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
 
 @media screen and (max-width: 600px) {
