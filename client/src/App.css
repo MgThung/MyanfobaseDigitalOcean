@@ -124,7 +124,7 @@ h5 {
   font-size: 0.9rem;
   font-weight: 500;
   color: white;
-  padding: 1px 8px;
+  padding: 3px 8px;
   text-transform: capitalize;
 }
 .cateTechnology,
@@ -136,7 +136,7 @@ h5 {
   font-size: 0.9rem;
   font-weight: 500;
   color: white;
-  padding: 1px 8px;
+  padding: 3px 8px;
   text-transform: capitalize;
 }
 .cateHistory,
@@ -146,7 +146,7 @@ h5 {
 .cateRegions {
   background-color: var(--history-bg);
   text-transform: capitalize;
-  padding: 1px 8px;
+  padding: 3px 8px;
   font-size: 0.9rem;
   font-weight: 500;
   color: white;
@@ -159,7 +159,7 @@ h5 {
   background-color: var(--travel-bg);
   font-weight: 500;
   color: white;
-  padding: 1px 8px;
+  padding: 3px 8px;
   font-size: 0.9rem;
   text-transform: capitalize;
 }
@@ -171,7 +171,7 @@ h5 {
   background-color: var(--business-bg);
   font-weight: 500;
   color: white;
-  padding: 1px 8px;
+  padding: 3px 8px;
   font-size: 0.9rem;
   text-transform: capitalize;
 }
@@ -185,7 +185,7 @@ h5 {
   text-transform: capitalize;
   font-weight: 500;
   color: #fff;
-  padding: 1px 8px;
+  padding: 3px 8px;
   font-size: 0.9rem;
 }
 .cateHealth,
@@ -198,7 +198,7 @@ h5 {
   text-transform: capitalize;
   font-weight: 500;
   color: white;
-  padding: 1px 8px;
+  padding: 3px 8px;
   font-size: 0.9rem;
 }
 .cateGovernment,
@@ -210,7 +210,7 @@ h5 {
   font-size: 0.9rem;
   font-weight: 500;
   color: white;
-  padding: 1px 8px;
+  padding: 3px 8px;
   text-transform: capitalize;
 }
 .cateScience,
@@ -223,7 +223,7 @@ h5 {
   font-size: 0.9rem;
   font-weight: 500;
   color: white;
-  padding: 1px 12px;
+  padding: 3px 12px;
   text-transform: capitalize;
 }
 .cateLiterature,
@@ -236,7 +236,7 @@ h5 {
   text-transform: capitalize;
   font-weight: 500;
   color: white;
-  padding: 1px 8px;
+  padding: 3px 8px;
   font-size: 0.9rem;
 }
 .cateSports,
@@ -249,7 +249,7 @@ h5 {
   text-transform: capitalize;
   font-weight: 500;
   color: white;
-  padding: 1px 8px;
+  padding: 3px 8px;
   font-size: 0.9rem;
 }
 .cateLifestyles,
@@ -260,7 +260,7 @@ h5 {
   text-transform: capitalize;
   font-weight: 500;
   color: white;
-  padding: 1px 8px;
+  padding: 3px 8px;
   font-size: 0.9rem;
 }
 .cateArts,
@@ -272,7 +272,7 @@ h5 {
   text-transform: capitalize;
   font-weight: 500;
   color: white;
-  padding: 1px 8px;
+  padding: 3px 8px;
   font-size: 0.9rem;
 }
 .cateEducation,
@@ -283,7 +283,7 @@ h5 {
   text-transform: capitalize;
   font-weight: 500;
   color: white;
-  padding: 1px 8px;
+  padding: 3px 8px;
   font-size: 0.9rem;
 }
 

@@ -72,7 +72,7 @@ export default memo(function Header() {
                 sx={{ margin: "auto", alignItems: "center", height: "6rem" }}
               >
                 <Grid item xs={5} sm={8} className="headerGrid">
-                  <Link to="/" className="nav-logo" name="nav-logo">
+                  <Link to="/home" className="nav-logo" name="nav-logo">
                     <img src="./images/homeimgs/logo2.png" alt="" />
                   </Link>
                 </Grid>
@@ -149,13 +149,12 @@ export default memo(function Header() {
                               <h3>{user.username}</h3>
                               <ul>
                                 <DropdownItem
-                                
-                                  data={<PersonIcon/>}
+                                  data={<PersonIcon />}
                                   text={"My Profile"}
                                   pathLink={"/profile"}
                                 />
                                 <DropdownItem
-                                  data={<EditIcon/>}
+                                  data={<EditIcon />}
                                   text={"Edit Profile"}
                                   pathLink={"/editprofile"}
                                 />
@@ -202,43 +201,54 @@ export default memo(function Header() {
                 <Link to="/" className="nav-logo">
                   <img src="./images/homeimgs/logo2.png" alt="" />
                 </Link>
-                <Link to="/" className="flex hoverclor navli">
-                  <Typography
-                    variant="h6"
-                    color="white"
-                    fontSize={17}
-                    marginBottom={4}
+                <Link to="/" className="hoverclor navli">
+                  <Grid
+                    container
+                    direction="row"
+                    className="flexicons"
+                    paddingTop={2.5}
                   >
-                    <HouseIcon />
-                  </Typography>
-                  <Typography
-                    className="homehome"
-                    variant="h6"
-                    color="white"
-                    fontSize={17}
-                    paddingTop={1}
-                  >
-                    Home
-                  </Typography>
+                    <Grid item xs={5}>
+                      <Typography variant="h6" color="white" fontSize={17}>
+                        <HouseIcon />
+                      </Typography>
+                    </Grid>
+                    <Grid item xs={7}>
+                      <Typography
+                        className="homehome"
+                        variant="h6"
+                        color="white"
+                        fontSize={17}
+                      >
+                        Home
+                      </Typography>
+                    </Grid>
+                  </Grid>
                   {/* <span className="capitalize">Home</span> */}
                 </Link>
-                <Link to="/search" className="flex hoverclor navli">
-                  <Typography
-                    variant="h6"
-                    color="white"
-                    fontSize={17}
-                    marginBottom={4}
+                <Link to="/search" className=" hoverclor navli">
+                  <Grid
+                    container
+                    direction="row"
+                    className="flexicons"
+                    paddingTop={2.5}
                   >
-                    <SearchIcon />
-                  </Typography>
-                  <Typography
-                    variant="h6"
-                    color="white"
-                    fontSize={17}
-                    paddingTop={0.4}
-                  >
-                    Search
-                  </Typography>
+                    <Grid item xs={4}>
+                      <Typography
+                        variant="h6"
+                        color="white"
+                        fontSize={17}
+                        paddingTop={0.1}
+                      >
+                        <SearchIcon />
+                      </Typography>
+                    </Grid>
+                    <Grid item xs={8}>
+                      <Typography variant="h6" color="white" fontSize={17}>
+                        Search
+                      </Typography>
+                    </Grid>
+                  </Grid>
                   {/* <span className="capitalize">Search</span> */}
                 </Link>
                 <div
@@ -246,19 +256,24 @@ export default memo(function Header() {
                   onMouseOver={() => setDropdown(true)}
                   onMouseLeave={() => setDropdown(false)}
                 >
-                  <div className="flex hoverclor">
-                    <Typography variant="h6" color="white" fontSize={17}>
-                      <ListIcon />
-                    </Typography>
-                    <Typography
-                      variant="h6"
-                      color="white"
-                      fontSize={17}
-                      paddingTop={0.3}
+                  <div className=" hoverclor">
+                    <Grid
+                      container
+                      direction="row"
+                      className="flexicons"
+                      paddingTop={2.5}
                     >
-                      Menu
-                    </Typography>
-
+                      <Grid item xs={6}>
+                        <Typography variant="h6" color="white" fontSize={17}>
+                          <ListIcon />
+                        </Typography>
+                      </Grid>
+                      <Grid item xs={6}>
+                        <Typography variant="h6" color="white" fontSize={17}>
+                          Menu
+                        </Typography>
+                      </Grid>
+                    </Grid>
                     {/* <span className="capitalize">Menu</span> */}
                   </div>
                   {dropdown && (
@@ -271,18 +286,24 @@ export default memo(function Header() {
                   )}
                 </div>
                 {user && user._id !== null ? (
-                  <Link to="/post" className="flex hoverclor navli">
-                    <Typography variant="h6" color="white" fontSize={17}>
-                      <AddCircleOutlineIcon />
-                    </Typography>
-                    <Typography
-                      variant="h6"
-                      color="white"
-                      fontSize={17}
-                      paddingTop={0.4}
+                  <Link to="/post" className=" hoverclor navli">
+                    <Grid
+                      container
+                      direction="row"
+                      className="flexicons"
+                      paddingTop={2.5}
                     >
-                      Post
-                    </Typography>
+                      <Grid item xs={6}>
+                        <Typography variant="h6" color="white" fontSize={17}>
+                          <AddCircleOutlineIcon />
+                        </Typography>
+                      </Grid>
+                      <Grid item xs={6}>
+                        <Typography variant="h6" color="white" fontSize={17}>
+                          Post
+                        </Typography>
+                      </Grid>
+                    </Grid>
                     {/* <span className="capitalize">Post</span> */}
                   </Link>
                 ) : (
@@ -290,7 +311,7 @@ export default memo(function Header() {
                 )}
 
                 {user !== null && user.isAdmin === true ? (
-                  <Link to="/admin" className="flex hoverclor navli">
+                  <Link to="/admin" className="flexicons hoverclor navli">
                     <Typography variant="subtitle1" color="white" fontSize={17}>
                       <AdminPanelSettingsIcon />
                     </Typography>
@@ -332,7 +353,7 @@ export default memo(function Header() {
                 {/* <button className="subscribebtn">Subscribe</button> */}
 
                 <div className="language">
-                  <Language label="choose an language" />
+                  <Language labels="choose an language" />
                 </div>
                 {user !== null && user.login === true ? (
                   <>
@@ -386,12 +407,12 @@ export default memo(function Header() {
                         <h3>{user.username}</h3>
                         <ul>
                           <DropdownItem
-                            data={<PersonIcon/>}
+                            data={<PersonIcon />}
                             text={"My Profile"}
                             pathLink={"/profile"}
                           />
                           <DropdownItem
-                            data={<EditIcon/>}
+                            data={<EditIcon />}
                             text={"Edit Profile"}
                             pathLink={"/editprofile"}
                           />

@@ -41,7 +41,7 @@ const Dropdown = memo((props) => {
             className="nav-item"
             onClick={() => setDropdown(false)}
           >
-            <h5 className="colorRed">Add Categories</h5>
+            <h5 className="colorRed">Add Categoriess</h5>
           </Link>
         </li>
       ) : (
