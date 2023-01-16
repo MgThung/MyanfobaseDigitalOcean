@@ -1,10 +1,6 @@
 import React, { Suspense } from "react";
 import HomeHeader from "../../components/homeheadercompo/Homeheader";
 import FadeLoader from "react-spinners/FadeLoader";
-// import LastNews from "../../components/lastviedo/LastNews";
-// import Homelifestyle from "../../components/homelifestyle/Homelifestyle";
-// import HomeEducation from "../../components/homeeducation/homeEducation";
-// import CategoryCount from "../../components/categories/CategoryCount";
 
 import "./home.css";
 const LastNews = React.lazy(() =>
@@ -45,16 +41,8 @@ const Home = () => {
 
         <HomeEducation />
 
-
         <CategoryCount />
       </Suspense>
-      {/* <LastNews /> */}
-
-      {/* <Homelifestyle /> */}
-
-      {/* <HomeEducation /> */}
-
-      {/* <CategoryCount /> */}
     </div>
   );
 };
