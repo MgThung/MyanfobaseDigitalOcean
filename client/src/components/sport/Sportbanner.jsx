@@ -32,11 +32,11 @@ export default function Sportbanner() {
           <Grid item xs={5.5} sm={3.7}>
             <div className="firstetn">
               <div className="hansoetn">
-                <img src="./images/sport/sport5.avif" alt="" />
+                <img src="./images/sport/sport2.jpg" alt="" />
               </div>
 
               <div className="hansoetn_P">
-                <p className="paragraph">How to get more kick power!</p>
+                <p className="paragraph">Playing Badminton with together</p>
               </div>
             </div>
           </Grid>

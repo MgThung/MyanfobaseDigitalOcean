@@ -17,22 +17,18 @@ export default function Skinbanner() {
                       <div className="firstrow-firstdiv">
                         <div className="blogger-img">
                           <img
-                            src="./images/homeimgs/May-Oo-Makeup-7.jpg"
+                            src="./images/homeimgs/scrub.jpg"
                             alt=""
                           />
                         </div>
                         <div className="blogger-para">
                           <div className="blogger-p">
-                            <h4>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit.{" "}
-                            </h4>
+                            <h4>Rub but Gentle Body Polish</h4>
                             <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Velit iusto deserunt fuga nam soluta quae
-                              suscipit incidunt, consectetur totam tenetur modi
-                              illo neque! Voluptas cupiditate reiciendis
-                              consectetur? Unde, expedita saepe.
+                              ခုလိုဆောင်းရာသီမှာ ငပျင်းလေးတွေအတွက်ဆို ကွက်တိပေါ့
+                              ။ 3 in 1 လို Scrubတိုက်ရုံးပဲလေ ….
+                              ရေဆေးချလိုက်တာနဲ့ အသားက အိအိစိုစိုလေး Baby
+                              Skinအတိုင်းပဲ တကယ် ။
                             </p>
                           </div>
                         </div>
@@ -51,7 +47,11 @@ export default function Skinbanner() {
                               </div>
                               <div className="skin-p">
                                 <div className="skincare-para">
-                                  <h4>Lorem ipsum dolor sit amet.</h4>
+                                  <h4>
+                                    whatever how old are you?
+                                    <br></br>
+                                    You must do Skin care!
+                                  </h4>
                                 </div>
                               </div>
                             </div>
@@ -59,14 +59,16 @@ export default function Skinbanner() {
                           <Grid item lg={6} md={6} xs={12}>
                             <div className="firstrow-thirddiv">
                               <div className="makeup-img">
-                                <img
-                                  src="./images/homeimgs/makeup.jpg"
-                                  alt=""
-                                />
+                                <img src="./images/homeimgs/skin.jpg" alt="" />
                               </div>
                               <div className="makeup-p">
                                 <div className="makeup-para">
-                                  <h4>Lorem ipsum dolor sit amet.</h4>
+                                  <h4>
+                                    ညဘက်အိပ်ခါနီး skin care ကြပါ cleansing water
+                                    ,facial foam , toner , essences , serum ,
+                                    moisture , eye cream Night cream (or)
+                                    sleeping mask , lip mask ❤️
+                                  </h4>
                                 </div>
                               </div>
                             </div>
@@ -87,13 +89,17 @@ export default function Skinbanner() {
                             <div className="secrow-firstdiv">
                               <div className="beauty-img">
                                 <img
-                                  src="./images/homeimgs/beauty-salon.jpg"
+                                  src="./images/homeimgs/cleaner.jpg"
                                   alt=""
                                 />
                               </div>
                               <div className="beauty-p">
                                 <div className="beauty-para">
-                                  <h4>Lorem ipsum dolor sit amet.</h4>
+                                  <h4>
+                                    Skin Care Steps တွေထဲမှာ အရေးကြီးဆုံး step
+                                    <br></br>
+                                    Cleansing Step
+                                  </h4>
                                 </div>
                               </div>
                             </div>
@@ -102,13 +108,17 @@ export default function Skinbanner() {
                             <div className="secrow-secdiv">
                               <div className="clinic-img">
                                 <img
-                                  src="./images/homeimgs/skin-clinic.jpg"
+                                  src="./images/homeimgs/biooil.jpg"
                                   alt=""
                                 />
                               </div>
                               <div className="clinic-p">
                                 <div className="clinic-para">
-                                  <h4>Lorem ipsum dolor sit amet.</h4>
+                                  <h4>
+                                    Lotion နဲ့လဲ တွဲလိမ်းပြီး
+                                    အသားကြည်ကြည်စိုစိုလေးဖြစ်လို့ အသုံးများလာတဲ့
+                                    Bio oil လေး
+                                  </h4>
                                 </div>
                               </div>
                             </div>
@@ -119,12 +129,13 @@ export default function Skinbanner() {
                     <Grid item lg={12}>
                       <div className="secrow-thirddiv">
                         <div className="natural-img">
-                          <img src="./images/homeimgs/natural.jpg" alt="" />
+                          <img src="./images/homeimgs/jmsolution.jpg" alt="" />
                         </div>
                         <div className="natural-p">
                           <div className="natural-para">
                             <h4 className="animate__fadeOut">
-                              Lorem ipsum dolor sit amet.
+                              Budget cleansing water (or) JM solution Derma Care
+                              Centella Cleansing Water 💦{" "}
                             </h4>
                           </div>
                         </div>

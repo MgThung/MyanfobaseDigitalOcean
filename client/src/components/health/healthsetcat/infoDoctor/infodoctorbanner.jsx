@@ -16,23 +16,18 @@ export default function InfodoctorBanner() {
                     <Grid item lg={12} md={12}>
                       <div className="firstrow-firstdiv">
                         <div className="blogger-img">
-                          <img
-                            src="./images/homeimgs/May-Oo-Makeup-7.jpg"
-                            alt=""
-                          />
+                          <img src="./images/health/uzaw.jpg" alt="" />
                         </div>
                         <div className="blogger-para">
                           <div className="blogger-p">
-                            <h4>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit.{" "}
-                            </h4>
+                            <h4>Dr. U Zaw Wai Soe</h4>
                             <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Velit iusto deserunt fuga nam soluta quae
-                              suscipit incidunt, consectetur totam tenetur modi
-                              illo neque! Voluptas cupiditate reiciendis
-                              consectetur? Unde, expedita saepe.
+                              Burmese orthopaedics surgeon, physician, and
+                              professor who currently serves as the acting Union
+                              Minister for the Ministry of Labour, Immigration
+                              and Population, the Ministry of Education, and the
+                              Ministry of Health and Sports since 2 March 2021,
+                              appointed by the CRPH.
                             </p>
                           </div>
                         </div>
@@ -45,13 +40,13 @@ export default function InfodoctorBanner() {
                             <div className="firstrow-secdiv">
                               <div className="skincare-img">
                                 <img
-                                  src="./images/homeimgs/skincare.jpg"
+                                  src="./images/health/infoDoc1.jpg"
                                   alt=""
                                 />
                               </div>
                               <div className="skin-p">
                                 <div className="skincare-para">
-                                  <h4>Lorem ipsum dolor sit amet.</h4>
+                                  <h4>Dr. Tun Hla (BDS,DDS) Senior Doctor</h4>
                                 </div>
                               </div>
                             </div>
@@ -60,13 +55,16 @@ export default function InfodoctorBanner() {
                             <div className="firstrow-thirddiv">
                               <div className="makeup-img">
                                 <img
-                                  src="./images/homeimgs/makeup.jpg"
+                                  src="./images/health/infoDoc2.jpg"
                                   alt=""
                                 />
                               </div>
                               <div className="makeup-p">
                                 <div className="makeup-para">
-                                  <h4>Lorem ipsum dolor sit amet.</h4>
+                                  <h4>
+                                    IHH Group's $70m Parkway Hospital project in
+                                    Myanmar hits roadblock
+                                  </h4>
                                 </div>
                               </div>
                             </div>
@@ -87,13 +85,16 @@ export default function InfodoctorBanner() {
                             <div className="secrow-firstdiv">
                               <div className="beauty-img">
                                 <img
-                                  src="./images/homeimgs/beauty-salon.jpg"
+                                  src="./images/health/infoDoc3.jpg"
                                   alt=""
                                 />
                               </div>
                               <div className="beauty-p">
                                 <div className="beauty-para">
-                                  <h4>Lorem ipsum dolor sit amet.</h4>
+                                  <h4>
+                                    Dr. Zaw Win Htay (Plastic & Cosmetic
+                                    Surgeon)
+                                  </h4>
                                 </div>
                               </div>
                             </div>
@@ -108,7 +109,7 @@ export default function InfodoctorBanner() {
                               </div>
                               <div className="clinic-p">
                                 <div className="clinic-para">
-                                  <h4>Lorem ipsum dolor sit amet.</h4>
+                                  <h4>We can treat for your beautiful!</h4>
                                 </div>
                               </div>
                             </div>
@@ -119,12 +120,13 @@ export default function InfodoctorBanner() {
                     <Grid item lg={12}>
                       <div className="secrow-thirddiv">
                         <div className="natural-img">
-                          <img src="./images/homeimgs/natural.jpg" alt="" />
+                          <img src="./images/health/infoDoc4.jpg" alt="" />
                         </div>
                         <div className="natural-p">
                           <div className="natural-para">
                             <h4 className="animate__fadeOut">
-                              Lorem ipsum dolor sit amet.
+                              Dr.Aye Moe Thu Ma headed a much-needed medical
+                              mission to her native Myanmar
                             </h4>
                           </div>
                         </div>

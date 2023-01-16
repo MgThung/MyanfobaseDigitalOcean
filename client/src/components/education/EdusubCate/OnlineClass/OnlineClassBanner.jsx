@@ -7,27 +7,27 @@ export default function OnlineClassBanner() {
       <section>
         <div className="busingallery container">
           <img
-            src="./images/education/edu1.png"
+            src="./images/education/online1.jpg"
             alt=""
             className="gallery gallery1"
           />
           <img
-            src="./images/education/edu5.jpg"
+            src="./images/education/online2.jpg"
             alt=""
             className="gallery gallery2"
           />
           <img
-            src="./images/education/edu2.png"
+            src="./images/education/online3.jpg"
             alt=""
             className="gallery gallery3"
           />
           <img
-            src="./images/education/edu3.jpg"
+            src="./images/education/online4.jpg"
             alt=""
             className="gallery gallery4"
           />
           <img
-            src="./images/education/edu4.jpg"
+            src="./images/education/online5.jpg"
             alt=""
             className="gallery gallery5"
           />

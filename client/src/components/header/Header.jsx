@@ -61,7 +61,10 @@ export default memo(function Header() {
       <AppBar
         position="fixed"
         z-index="999"
-        style={{ backgroundColor: "#15568e", padding: "0 30px" }}
+        style={{
+          backgroundColor: "#15568e",
+          padding: { xs: "0 10px", sm: "0 15px", md: "0 30px" },
+        }}
       >
         <Toolbar color="#15568e">
           {isMatch ? (
@@ -69,14 +72,14 @@ export default memo(function Header() {
               <Grid
                 container
                 my={2}
-                sx={{ margin: "auto", alignItems: "center", height: "6rem" }}
+                sx={{ margin: "auto", alignItems: "center" }}
               >
-                <Grid item xs={5} sm={8} className="headerGrid">
-                  <Link to="/" className="nav-logo" name="nav-logo">
+                <Grid item xs={5} sm={6} className="headerGrid">
+                  <Link to="/home" className="nav-logo" name="nav-logo">
                     <img src="./images/homeimgs/logo2.png" alt="" />
                   </Link>
                 </Grid>
-                <Grid item xs={7} sm={4} className="headerGrid">
+                <Grid item xs={7} sm={6} className="headerGrid">
                   <Grid
                     container
                     my={3}
@@ -87,9 +90,9 @@ export default memo(function Header() {
                         sx={{
                           color: "white",
                           border: "2px solid white",
-                          padding: "5px 10px",
+                          padding: { xs: "3px 7px", sm: "5px 10px" },
                           borderRadius: "4px",
-                          fontSize: "12px",
+                          fontSize: { xs: "10px", sm: "12px" },
                           "&:hover": {
                             backgroundColor: "rgb(255, 174, 0)",
                             color: "black",
@@ -149,13 +152,12 @@ export default memo(function Header() {
                               <h3>{user.username}</h3>
                               <ul>
                                 <DropdownItem
-                                
-                                  data={<PersonIcon/>}
+                                  data={<PersonIcon />}
                                   text={"My Profile"}
                                   pathLink={"/profile"}
                                 />
                                 <DropdownItem
-                                  data={<EditIcon/>}
+                                  data={<EditIcon />}
                                   text={"Edit Profile"}
                                   pathLink={"/editprofile"}
                                 />
@@ -176,8 +178,9 @@ export default memo(function Header() {
                               variant="h6"
                               color="white"
                               fontSize={17}
+                             padding={{xs:"0 1rem",sm:"0"}} 
                             >
-                              <LogoutIcon />
+                              <LogoutIcon className="login-icon" />
                               Login
                             </Typography>
                             {/* <span className="capitalize">Login</span> */}
@@ -202,43 +205,54 @@ export default memo(function Header() {
                 <Link to="/" className="nav-logo">
                   <img src="./images/homeimgs/logo2.png" alt="" />
                 </Link>
-                <Link to="/" className="flex hoverclor navli">
-                  <Typography
-                    variant="h6"
-                    color="white"
-                    fontSize={17}
-                    marginBottom={4}
+                <Link to="/" className="hoverclor navli">
+                  <Grid
+                    container
+                    direction="row"
+                    className="flexicons"
+                    paddingTop={2.5}
                   >
-                    <HouseIcon />
-                  </Typography>
-                  <Typography
-                    className="homehome"
-                    variant="h6"
-                    color="white"
-                    fontSize={17}
-                    paddingTop={1}
-                  >
-                    Home
-                  </Typography>
+                    <Grid item xs={5}>
+                      <Typography variant="h6" color="white" fontSize={17}>
+                        <HouseIcon />
+                      </Typography>
+                    </Grid>
+                    <Grid item xs={7}>
+                      <Typography
+                        className="homehome"
+                        variant="h6"
+                        color="white"
+                        fontSize={17}
+                      >
+                        Home
+                      </Typography>
+                    </Grid>
+                  </Grid>
                   {/* <span className="capitalize">Home</span> */}
                 </Link>
-                <Link to="/search" className="flex hoverclor navli">
-                  <Typography
-                    variant="h6"
-                    color="white"
-                    fontSize={17}
-                    marginBottom={4}
+                <Link to="/search" className=" hoverclor navli">
+                  <Grid
+                    container
+                    direction="row"
+                    className="flexicons"
+                    paddingTop={2.5}
                   >
-                    <SearchIcon />
-                  </Typography>
-                  <Typography
-                    variant="h6"
-                    color="white"
-                    fontSize={17}
-                    paddingTop={0.4}
-                  >
-                    Search
-                  </Typography>
+                    <Grid item xs={4}>
+                      <Typography
+                        variant="h6"
+                        color="white"
+                        fontSize={17}
+                        paddingTop={0.1}
+                      >
+                        <SearchIcon />
+                      </Typography>
+                    </Grid>
+                    <Grid item xs={8}>
+                      <Typography variant="h6" color="white" fontSize={17}>
+                        Search
+                      </Typography>
+                    </Grid>
+                  </Grid>
                   {/* <span className="capitalize">Search</span> */}
                 </Link>
                 <div
@@ -246,19 +260,29 @@ export default memo(function Header() {
                   onMouseOver={() => setDropdown(true)}
                   onMouseLeave={() => setDropdown(false)}
                 >
-                  <div className="flex hoverclor">
-                    <Typography variant="h6" color="white" fontSize={17}>
-                      <ListIcon />
-                    </Typography>
-                    <Typography
-                      variant="h6"
-                      color="white"
-                      fontSize={17}
-                      paddingTop={0.3}
+                  <div className=" hoverclor">
+                    <Grid
+                      container
+                      direction="row"
+                      className="flexicons"
+                      paddingTop={2.5}
                     >
-                      Menu
-                    </Typography>
-
+                      <Grid item xs={6}>
+                        <Typography
+                          variant="h6"
+                          color="white"
+                          fontSize={17}
+                          paddingTop={0.2}
+                        >
+                          <ListIcon />
+                        </Typography>
+                      </Grid>
+                      <Grid item xs={6}>
+                        <Typography variant="h6" color="white" fontSize={17}>
+                          Menu
+                        </Typography>
+                      </Grid>
+                    </Grid>
                     {/* <span className="capitalize">Menu</span> */}
                   </div>
                   {dropdown && (
@@ -271,18 +295,29 @@ export default memo(function Header() {
                   )}
                 </div>
                 {user && user._id !== null ? (
-                  <Link to="/post" className="flex hoverclor navli">
-                    <Typography variant="h6" color="white" fontSize={17}>
-                      <AddCircleOutlineIcon />
-                    </Typography>
-                    <Typography
-                      variant="h6"
-                      color="white"
-                      fontSize={17}
-                      paddingTop={0.4}
+                  <Link to="/post" className=" hoverclor navli">
+                    <Grid
+                      container
+                      direction="row"
+                      className="flexicons"
+                      paddingTop={2.5}
                     >
-                      Post
-                    </Typography>
+                      <Grid item xs={6}>
+                        <Typography
+                          variant="h6"
+                          color="white"
+                          fontSize={17}
+                          paddingTop={0.1}
+                        >
+                          <AddCircleOutlineIcon />
+                        </Typography>
+                      </Grid>
+                      <Grid item xs={6}>
+                        <Typography variant="h6" color="white" fontSize={17}>
+                          Post
+                        </Typography>
+                      </Grid>
+                    </Grid>
                     {/* <span className="capitalize">Post</span> */}
                   </Link>
                 ) : (
@@ -290,13 +325,32 @@ export default memo(function Header() {
                 )}
 
                 {user !== null && user.isAdmin === true ? (
-                  <Link to="/admin" className="flex hoverclor navli">
-                    <Typography variant="subtitle1" color="white" fontSize={17}>
-                      <AdminPanelSettingsIcon />
-                    </Typography>
-                    <Typography variant="subtitle1" color="white" fontSize={17}>
-                      Admin
-                    </Typography>
+                  <Link to="/admin" className=" hoverclor navli">
+                    <Grid
+                      container
+                      direction="row"
+                      className="flexicons"
+                      paddingTop={2.5}
+                    >
+                      <Grid item xs={5}>
+                        <Typography
+                          variant="subtitle1"
+                          color="white"
+                          fontSize={17}
+                        >
+                          <AdminPanelSettingsIcon />
+                        </Typography>
+                      </Grid>
+                      <Grid item xs={7}>
+                        <Typography
+                          variant="subtitle1"
+                          color="white"
+                          fontSize={17}
+                        >
+                          Admin
+                        </Typography>
+                      </Grid>
+                    </Grid>
 
                     {/* <span className="capitalize">Admin</span> */}
                   </Link>
@@ -332,45 +386,53 @@ export default memo(function Header() {
                 {/* <button className="subscribebtn">Subscribe</button> */}
 
                 <div className="language">
-                  <Language label="choose an language" />
+                  <Language labels="choose an language" />
                 </div>
                 {user !== null && user.login === true ? (
                   <>
                     <div className="dorpmenu-container">
                       <div className="login" onClose={() => setOpen(false)}>
-                        <div className="profile-img">
-                          {user.profilePicture === [] ||
-                          user.profilePicture[0] === "" ||
-                          user.profilePicture.length === 0 ? (
-                            <Link to={"/profile"}>
-                              <img
-                                src="./images/userprofile/defaultuserprofile.png"
-                                alt=""
+                        <Grid container direction="row">
+                          <Grid item xs={8}>
+                            <div className="profile-img">
+                              {user.profilePicture === [] ||
+                              user.profilePicture[0] === "" ||
+                              user.profilePicture.length === 0 ? (
+                                <Link to={"/profile"}>
+                                  <img
+                                    src="./images/userprofile/defaultuserprofile.png"
+                                    alt=""
+                                  />
+                                </Link>
+                              ) : (
+                                <Link to={"/profile"}>
+                                  <img
+                                    src={user.profilePicture[0].filePath}
+                                    // src={`http://localhost:8080/${user.profilePicture[0].filePath}`}
+                                    alt=""
+                                  />
+                                </Link>
+                              )}
+                            </div>
+                          </Grid>
+                          <Grid item xs={4}>
+                            <IconButton
+                              sx={{
+                                color: "white",
+                                marginLeft: "auto",
+                                width: "1.5em",
+                              }}
+                              onClick={() => {
+                                setOpen(!open);
+                              }}
+                            >
+                              <MenuIcon
+                                color="white"
+                                sx={{ fontSize: "25px", marginTop: ".3rem" }}
                               />
-                            </Link>
-                          ) : (
-                            <Link to={"/profile"}>
-                              <img
-                                src={user.profilePicture[0].filePath}
-                                // src={`http://localhost:8080/${user.profilePicture[0].filePath}`}
-                                alt=""
-                              />
-                            </Link>
-                          )}
-                        </div>
-                        <IconButton
-                          sx={{
-                            color: "white",
-                            marginLeft: "auto",
-                            width: "1.5em",
-                            height: "1.5em",
-                          }}
-                          onClick={() => {
-                            setOpen(!open);
-                          }}
-                        >
-                          <MenuIcon color="white" sx={{ fontSize: "25px" }} />
-                        </IconButton>
+                            </IconButton>
+                          </Grid>
+                        </Grid>
                         {/* <i
                       id="loginsetting"
                       class="fa-solid fa-bars"
@@ -386,12 +448,12 @@ export default memo(function Header() {
                         <h3>{user.username}</h3>
                         <ul>
                           <DropdownItem
-                            data={<PersonIcon/>}
+                            data={<PersonIcon />}
                             text={"My Profile"}
                             pathLink={"/profile"}
                           />
                           <DropdownItem
-                            data={<EditIcon/>}
+                            data={<EditIcon />}
                             text={"Edit Profile"}
                             pathLink={"/editprofile"}
                           />
@@ -399,7 +461,12 @@ export default memo(function Header() {
 
                           <li className="dropdownItem">
                             <LogoutIcon />{" "}
-                            <button onClick={onLogout}>Logout</button>
+                            <button
+                              onClick={onLogout}
+                              className="logoutbuttonheader"
+                            >
+                              Logout
+                            </button>
                           </li>
                         </ul>
                       </div>
@@ -407,10 +474,16 @@ export default memo(function Header() {
                   </>
                 ) : (
                   <>
-                    <Link to="/login" className="login">
+                    <Link to="/login">
                       <Typography variant="h6" color="white" fontSize={17}>
-                        <LogoutIcon />
-                        Login
+                        <Grid container direction="row">
+                          <Grid item xs={5}>
+                            <LogoutIcon />
+                          </Grid>
+                          <Grid item xs={7}>
+                            Login
+                          </Grid>
+                        </Grid>
                       </Typography>
                       {/* <span className="capitalize">Login</span> */}
                     </Link>

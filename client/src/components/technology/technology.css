@@ -202,8 +202,26 @@ ul {
   color: var(--technology-bg);
   transition: all 0.3s ease-in-out;
 }
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .technology {
+    padding-top: 7.5rem;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 900px) {
+  .technology {
+    padding-top: 7.5rem;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .technology {
+    padding-top: 7rem;
+  }
+}
 
 @media screen and (max-width: 600px) {
+  .technology {
+    padding-top: 5.5rem;
+  }
   .firstpara p {
     display: none;
   }

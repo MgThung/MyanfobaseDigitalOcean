@@ -32,9 +32,11 @@ const Goverbanner = () => {
                     fontSize: { xs: "9px", sm: "10px", md: "12px", lg: "14px" },
                   }}
                 >
-                  One of the most beautiful beaches in Myanmar. Already stand as
-                  a famous tourist attraction from Myanmar. Can easily fly by
-                  domestic flights and seafoods are ...
+                  Aung San Suu Kyi AC is a Burmese politician, diplomat, author,
+                  and a 1991 Nobel Peace Prize laureate who served as State
+                  Counsellor of Myanmar and Minister of Foreign Affairs from
+                  2016 to 2021.<br></br>Born: 19 June 1945 (age 77 years),
+                  <br></br>Education: SOAS University of London (1985–1987),
                 </Typography>
               </div>
             </div>
@@ -66,9 +68,10 @@ const Goverbanner = () => {
                     fontSize: { xs: "9px", sm: "10px", md: "12px", lg: "14px" },
                   }}
                 >
-                  Kyauk Kalap is located in the middle of a pretty artificial
-                  lake and basically consists of a large piece of dramatic rock,
-                  atop which is a scenic pagoda.
+                  ဒေါ်အောင်ဆန်းစုကြည်ကို လွှတ်ရန်၊ စစ်တပ်၏ အကြမ်းဖက်မှုများ
+                  ရပ်တန့်ရန် အပါအဝင် ကုလ လုံခြုံရေးကောင်စီ ၏ ဆုံးဖြတ်ချက်များ
+                  စစ်ကောင်စီ မလိုက်နာလျှင် အရေးယူမှုများ ရှိလာနိုင်ဟု သံအမတ်ကြီး
+                  ဦးကျော်မိုးထွန်း ပြောဆို
                 </Typography>
               </div>
             </div>
@@ -101,9 +104,10 @@ const Goverbanner = () => {
                     fontSize: { xs: "9px", sm: "10px", md: "12px", lg: "14px" },
                   }}
                 >
-                  Hkakabo Razi is believed to be Myanmar's highest mountain. The
-                  5,881-meter (19,295 ft)-tall mountain is the highest mountain
-                  in Southeast Asia as well.
+                  Dr Sasa, is a Chin medical doctor, philanthropist and civil
+                  society activist[3] who currently serves as the Minister of
+                  International Cooperation in the cabinet of National Unity
+                  Government.
                 </Typography>
               </div>
             </div>
@@ -135,11 +139,8 @@ const Goverbanner = () => {
                     fontSize: { xs: "9px", sm: "10px", md: "12px", lg: "14px" },
                   }}
                 >
-                  Bagan is an ancient city and a UNESCO World Heritage Site in
-                  the Mandalay Region of Myanmar From the 9th to 13th centuries,
-                  the city was the capital of the Bagan Kingdom, the first
-                  kingdom that unified the regions that would later constitute
-                  Myanmar.
+                  The People of Myanmar Have Rejected the Generals. ASEAN and
+                  the World Must Do so as Well
                 </Typography>
               </div>
             </div>

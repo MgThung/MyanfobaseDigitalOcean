@@ -1,6 +1,7 @@
 import React from "react";
 import "../../../enterment/entermentbanner.css";
-
+import "../../sportbanner.css";
+import { Grid } from "@mui/material";
 // import CSSRulePlugin from "gsap/CSSRulePlugin";
 // import { TimelineLite, Power2 } from "gsap";
 
@@ -20,46 +21,50 @@ export default function Footballbanner() {
   // });
 
   return (
-    <section>
-      <div className="mainetn">
-        <div className="firstetn">
-          <div className="hansoetn">
-            <img src="./images/sport/football/football1.avif" alt="" />
-          </div>
+    <section className="mainetn1">
+      <Grid
+        my={3}
+        container
+        sx={{ margin: "auto", width: "100%", gap: "3rem" }}
+        rowSpacing={3}
+      >
+        <Grid item xs={5.5} sm={3.7}>
+          <div className="firstetn">
+            <div className="hansoetn">
+              <img src="./images/sport/football1.jpg" alt="" />
+            </div>
 
-          <div className="hansoetn_P">
-            {/* <p className="paragraph">
-              Seo Hyun Jin, Hwang In Yeop & more star in an intriguing group
-              poster for ‘Why Her’ The SBS drama is set to premiere soon!
-            </p> */}
+            <div className="hansoetn_P">
+              <p className="paragraph">
+                MYNMAR <br /> WE ARE READY WITH FULL CHARGING
+              </p>
+            </div>
           </div>
-        </div>
-
-        <div className="secetn">
-          <div className="moneyheist">
-            <img src="./images/sport/football/football2.jpg" alt="" />
+        </Grid>
+        <Grid item xs={5.5} sm={3.7}>
+          <div className="secetn">
+            <div className="moneyheist">
+              <img src="./images/sport/football3.jpg" alt="" />
+            </div>
+            <div className="moneyheist_P">
+              <p>
+                Lionel Messi <br />
+                The Best Model Football Player!
+              </p>
+            </div>
           </div>
-          <div className="moneyheist_P">
-            {/* <p>
-              Seo Hyun Jin, Hwang In Yeop & more star in an intriguing <br />{" "}
-              group poster for ‘Why Her’ The SBS drama is set
-              <br /> to premiere soon!
-            </p> */}
+        </Grid>
+        <Grid item xs={6} sm={3.7}>
+          <div className="thirdetn">
+            <div className="jurassic">
+              <img src="./images/sport/football2.jpg" alt="" />
+            </div>
+            <div className="jurassic_P">
+              <p>Myanmar Women Can Play!</p>
+            </div>
           </div>
-        </div>
-
-        <div className="thirdetn">
-          <div className="jurassic">
-            <img src="./images/sport/football/football3.jpg" alt="" />
-          </div>
-          <div className="jurassic_P">
-            {/* <p>
-              Seo Hyun Jin, Hwang In Yeop & more star in an intriguing group
-              poster for ‘Why Her’ The SBS drama is set to premiere soon!
-            </p> */}
-          </div>
-        </div>
-      </div>
+        </Grid>
+      </Grid>
     </section>
   );
 }

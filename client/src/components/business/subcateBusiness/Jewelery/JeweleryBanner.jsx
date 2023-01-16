@@ -1,37 +1,36 @@
 import React from "react";
-import "../../../subcategory/subcategy.css";
+import "../../business.css";
 
 export default function JeweleryBanner() {
   return (
     <>
-      <section className="catebannerImg container">
-        <div className="leftBanner">
-          <div className="catebanner1">
-            <img src="./images/government/law/law1.jpg" alt="" />
-          </div>
-          <article className="bannerPara">
-            <button className="cateGovernment">Government</button>
-            <h4>How to Mark yourself 'Safe' on Socials Media</h4>
-            <p className="leftparaText">
-              Modern technology has become a total phenomenon for civilization,
-              the defining force of a new social order in which efficiency is no
-              longer an option but a necessity imposed on all human activity.
-            </p>
-          </article>
-        </div>
-        <div className="rightBanner">
-          <div className="catebanner2">
-            <img src="./images/government/law/law2.jpg" alt="" />
-          </div>
-          <article className="bannerPara">
-            <button className="cateGovernment">Government</button>
-            <h4>How to Mark yourself 'Safe' on Socials Media</h4>
-            <p className="rightparaText">
-              Modern technology has become a total phenomenon for civilization,
-              the defining force of a new social order in which efficiency is no
-              longer an option but a necessity imposed on all human activity.
-            </p>
-          </article>
+      <section>
+        <div className="busingallery container">
+          <img
+            src="./images/business/gem1.jpg"
+            alt=""
+            className="gallery gallery1"
+          />
+          <img
+            src="./images/business/gem2.jpg"
+            alt=""
+            className="gallery gallery2"
+          />
+          <img
+            src="./images/business/gem3.jpg"
+            alt=""
+            className="gallery gallery3"
+          />
+          <img
+            src="./images/business/gem5.jpg"
+            alt=""
+            className="gallery gallery4"
+          />
+          <img
+            src="./images/business/gem4.jpg"
+            alt=""
+            className="gallery gallery5"
+          />
         </div>
       </section>
     </>

@@ -6,29 +6,33 @@ export default function EarthScienceBanner() {
     <section className="container catebannerImg">
       <div className="leftBanner">
         <div className="catebanner1">
-          <img src="./images/science/earthscience/earthsciencebanner1.jpg" />
+          <img src="./images/science/earthscience1.jpg" />
         </div>
         <article className="bannerPara">
-          <button className="cateScience">Science</button>
-          <h4>How to Mark yourself 'Safe' on Socials Media</h4>
+          <button className="cateScience">earth-science</button>
+          <h4>What is Earth Science</h4>
           <p className="leftparaText">
-            Modern technology has become a total phenomenon for civilization,
-            the defining force of a new social order in which efficiency is no
-            longer an option but a necessity imposed on all human activity.
+            Earth science or geoscience includes all fields of natural science
+            related to the planet Earth. This is a branch of science dealing
+            with the physical, chemical, and biological complex constitutions
+            and synergistic linkages of Earth's four spheres, namely biosphere,
+            hydrosphere, atmosphere, and geosphere.
           </p>
         </article>
       </div>
       <div className="rightBanner">
         <div className="catebanner2">
-          <img src="./images/science/earthscience/earthsciencebanner2.jpeg" />
+          <img src="./images/science/earthscience2.jpg" />
         </div>
         <article className="bannerPara">
-          <button className="cateScience">Science</button>
-          <h4>How to Mark yourself 'Safe' on Socials Media</h4>
+          <button className="cateScience">earth-science</button>
+          <h4>New Report Analyzes Myanmar Geology</h4>
           <p className="rightparaText">
-            Modern technology has become a total phenomenon for civilization,
-            the defining force of a new social order in which efficiency is no
-            longer an option but a necessity imposed on all human activity.
+            Getech recently released an in-depth report aimed at providing
+            insight into the geology of Myanmar and the surrounding regions.
+            Exploration teams who have access to this report are expected to
+            benefit from understanding the tectonic and geological evolution of
+            Myanmar and the constraints ...
           </p>
         </article>
       </div>

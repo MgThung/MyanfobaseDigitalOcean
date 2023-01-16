@@ -12,11 +12,12 @@ const Beabanner = () => {
           </div>
           <article className="bannerPara">
             <button className="cateTravel ">Travel</button>
-            <h4>How to Mark yourself 'Safe' on Socials Media</h4>
+            <h4>Chaung Thar Beach</h4>
             <p className="leftparaText">
-              Modern technology has become a total phenomenon for civilization,
-              the defining force of a new social order in which efficiency is no
-              longer an option but a necessity imposed on all human activity.
+              Chaungtha (Burmese: ချောင်းသာ) is a town and beach resort located
+              in Ayeyarwady Region, Myanmar. Chaungtha Beach, as it is more
+              commonly known, is about 5 hours' drive away from Yangon, and is a
+              popular resort with Yangonites from October to April.
             </p>
           </article>
         </div>
@@ -25,12 +26,14 @@ const Beabanner = () => {
             <img src="./images/travel/beach/beach2.jpg" alt="" />
           </div>
           <article className="bannerPara">
-            <button className="cateTravel ">Travel</button>
+            <button className="cateTravel ">Myeik island</button>
             <h4>How to Mark yourself 'Safe' on Socials Media</h4>
             <p className="rightparaText">
-              Modern technology has become a total phenomenon for civilization,
-              the defining force of a new social order in which efficiency is no
-              longer an option but a necessity imposed on all human activity.
+              Myeik (also known as Mergui Archipelago) is a group of islands
+              located in the Southern region of Myanmar on the Andaman Sea.It
+              comprises more than 800 pristine islands. These untouched islands
+              are renowned for their pristine white-sand beaches and diverse
+              marine life.
             </p>
           </article>
         </div>

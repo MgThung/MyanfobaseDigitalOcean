@@ -41,14 +41,16 @@ export default function Bloggerbanner() {
                           <Grid item lg={6} md={6} xs={12}>
                             <div className="firstrow-secdiv">
                               <div className="skincare-img">
-                                <img
-                                  src="./images/homeimgs/skincare.jpg"
-                                  alt=""
-                                />
+                                <img src="./images/homeimgs/nail.jpg" alt="" />
                               </div>
                               <div className="skin-p">
                                 <div className="skincare-para">
-                                  <h4>Lorem ipsum dolor sit amet.</h4>
+                                  <h4>
+                                    2500 နဲ့ 😱 Gel ဆက်လို့ရမဲ့ ဆိုင်လေး...💓
+                                    <br></br>
+                                    ၃၆လမ်း၊ ၇၃ နဲ့ ၇၄ ကြား၊ မန်းတလေးမြို့
+                                    <br></br>☎ 09409076662
+                                  </h4>
                                 </div>
                               </div>
                             </div>
@@ -57,13 +59,13 @@ export default function Bloggerbanner() {
                             <div className="firstrow-thirddiv">
                               <div className="makeup-img">
                                 <img
-                                  src="./images/homeimgs/makeup.jpg"
+                                  src="./images/homeimgs/suncream.jpg"
                                   alt=""
                                 />
                               </div>
                               <div className="makeup-p">
                                 <div className="makeup-para">
-                                  <h4>Lorem ipsum dolor sit amet.</h4>
+                                  <h4>Lebelage Skincare က Suncream အသစ်</h4>
                                 </div>
                               </div>
                             </div>
@@ -84,13 +86,18 @@ export default function Bloggerbanner() {
                             <div className="secrow-firstdiv">
                               <div className="beauty-img">
                                 <img
-                                  src="./images/homeimgs/beauty-salon.jpg"
+                                  src="./images/homeimgs/hairbam.jpg"
                                   alt=""
                                 />
                               </div>
                               <div className="beauty-p">
                                 <div className="beauty-para">
-                                  <h4>Lorem ipsum dolor sit amet.</h4>
+                                  <h4>
+                                    ပြောင်းဖူးမွေး လိုဆံပင်တွေကိုတောင်မှ
+                                    ပြန်ကောင်းလာနိုင်တယ်ဆိုပြီးပြောနေကြတဲ့
+                                    <br></br>
+                                    YVES ROCHER Hair Blam
+                                  </h4>
                                 </div>
                               </div>
                             </div>
@@ -99,13 +106,17 @@ export default function Bloggerbanner() {
                             <div className="secrow-secdiv">
                               <div className="clinic-img">
                                 <img
-                                  src="./images/homeimgs/skin-clinic.jpg"
+                                  src="./images/homeimgs/lacome.png"
                                   alt=""
                                 />
                               </div>
                               <div className="clinic-p">
                                 <div className="clinic-para">
-                                  <h4>Lorem ipsum dolor sit amet.</h4>
+                                  <h4>
+                                    LANCÔME Tonique Comfort Toner
+                                    <br></br>
+                                    Dry skin တွေအတွက် Toner ကောင်းကောင်း
+                                  </h4>
                                 </div>
                               </div>
                             </div>
@@ -116,12 +127,13 @@ export default function Bloggerbanner() {
                     <Grid item lg={12}>
                       <div className="secrow-thirddiv">
                         <div className="natural-img">
-                          <img src="./images/homeimgs/natural.jpg" alt="" />
+                          <img src="./images/homeimgs/dryserum.jpg" alt="" />
                         </div>
                         <div className="natural-p">
                           <div className="natural-para">
                             <h4 className="animate__fadeOut">
-                              Lorem ipsum dolor sit amet.
+                              ဂျိုင်းချွေးနံ့ထွက်သူတွေ /
+                              ဂျိုင်းအသားညစ်သူတွေအတွက် Vaseline Dry Serum
                             </h4>
                           </div>
                         </div>

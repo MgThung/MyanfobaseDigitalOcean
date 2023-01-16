@@ -16,23 +16,16 @@ export default function MedicineBanner() {
                     <Grid item lg={12} md={12}>
                       <div className="firstrow-firstdiv">
                         <div className="blogger-img">
-                          <img
-                            src="./images/homeimgs/May-Oo-Makeup-7.jpg"
-                            alt=""
-                          />
+                          <img src="./images/health/medicine1.jpg" alt="" />
                         </div>
                         <div className="blogger-para">
                           <div className="blogger-p">
-                            <h4>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit.{" "}
-                            </h4>
+                            <h4>FAME Pharmaceutical Industry</h4>
                             <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Velit iusto deserunt fuga nam soluta quae
-                              suscipit incidunt, consectetur totam tenetur modi
-                              illo neque! Voluptas cupiditate reiciendis
-                              consectetur? Unde, expedita saepe.
+                              All FAME products are manufactured in our own
+                              factory in Yangon since January, 2002. FAME has
+                              been producing capsules, caplets, tablets, powder,
+                              cream and liquid forms.
                             </p>
                           </div>
                         </div>
@@ -45,13 +38,13 @@ export default function MedicineBanner() {
                             <div className="firstrow-secdiv">
                               <div className="skincare-img">
                                 <img
-                                  src="./images/homeimgs/skincare.jpg"
+                                  src="./images/health/medicine2.jpg"
                                   alt=""
                                 />
                               </div>
                               <div className="skin-p">
                                 <div className="skincare-para">
-                                  <h4>Lorem ipsum dolor sit amet.</h4>
+                                  <h4>Tranditional Medicine</h4>
                                 </div>
                               </div>
                             </div>
@@ -60,13 +53,13 @@ export default function MedicineBanner() {
                             <div className="firstrow-thirddiv">
                               <div className="makeup-img">
                                 <img
-                                  src="./images/homeimgs/makeup.jpg"
+                                  src="./images/health/medicine3.jpg"
                                   alt=""
                                 />
                               </div>
                               <div className="makeup-p">
                                 <div className="makeup-para">
-                                  <h4>Lorem ipsum dolor sit amet.</h4>
+                                  <h4>Natural Medicines in Myanmar</h4>
                                 </div>
                               </div>
                             </div>
@@ -87,13 +80,13 @@ export default function MedicineBanner() {
                             <div className="secrow-firstdiv">
                               <div className="beauty-img">
                                 <img
-                                  src="./images/homeimgs/beauty-salon.jpg"
+                                  src="./images/health/medicine4.jpg"
                                   alt=""
                                 />
                               </div>
                               <div className="beauty-p">
                                 <div className="beauty-para">
-                                  <h4>Lorem ipsum dolor sit amet.</h4>
+                                  <h4>Lu PanTaw Padamyar herb medicine</h4>
                                 </div>
                               </div>
                             </div>
@@ -102,13 +95,15 @@ export default function MedicineBanner() {
                             <div className="secrow-secdiv">
                               <div className="clinic-img">
                                 <img
-                                  src="./images/homeimgs/skin-clinic.jpg"
+                                  src="./images/health/medicine5.jpg"
                                   alt=""
                                 />
                               </div>
                               <div className="clinic-p">
                                 <div className="clinic-para">
-                                  <h4>Lorem ipsum dolor sit amet.</h4>
+                                  <h4>
+                                    Nature-Q10 (Cardiovascular health support)
+                                  </h4>
                                 </div>
                               </div>
                             </div>
@@ -119,12 +114,12 @@ export default function MedicineBanner() {
                     <Grid item lg={12}>
                       <div className="secrow-thirddiv">
                         <div className="natural-img">
-                          <img src="./images/homeimgs/natural.jpg" alt="" />
+                          <img src="./images/health/medicine6.jpg" alt="" />
                         </div>
                         <div className="natural-p">
                           <div className="natural-para">
                             <h4 className="animate__fadeOut">
-                              Lorem ipsum dolor sit amet.
+                              Tranditional drug shop
                             </h4>
                           </div>
                         </div>

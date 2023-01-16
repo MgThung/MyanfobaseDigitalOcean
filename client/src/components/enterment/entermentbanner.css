@@ -211,6 +211,9 @@ ul {
   margin-bottom: 5px;
 }
 @media screen and (max-width: 600px) {
+  .enter {
+    padding-top: 5.5rem;
+  }
   .thirdetn {
     display: none;
   }
@@ -238,4 +241,28 @@ ul {
   .css-sr5gqk-MuiGrid-root {
     gap: 2.2rem;
   }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .enter {
+    padding-top: 7.5rem;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 900px) {
+  .enter {
+    padding-top: 7.5rem;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .enter {
+    padding-top: 7rem;
+  }
+
+.css-1a26c2i {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: inherit !important;
+  margin: auto;
+  width: 100%;
+  gap: 3rem;
+}
 }
