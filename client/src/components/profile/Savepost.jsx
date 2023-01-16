@@ -75,7 +75,7 @@ const Savepost = () => {
                       className={`colorBlack ${data.cateName}hover`}
                     >
                       <h4 className="colorh4">
-                        {data.title.substring(0, 50)}...
+                        {data.title.substring(0, 40)}...
                       </h4>
                     </Link>
                     <div className="savenewbuttondate">

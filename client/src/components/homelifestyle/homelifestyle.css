@@ -50,10 +50,13 @@
 }
 .Lifeline1 {
   display: block;
-  width: 11.875rem;
+  width: 14rem;
   height: 2px;
   background-color: #f18510;
   margin-bottom: 1rem;
+}
+.homelifestylesmall{
+  font-size: 16px;
 }
 .photo-ex1 {
   width: 100%;
@@ -97,9 +100,7 @@
   gap: 1rem; */
 }
 
-.honey-paragraph h5 {
-  font-size: 14px;
-}
+
 .honey-paragraph h4:hover {
   color: var(--lifestyles-bg);
 }

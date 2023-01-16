@@ -116,9 +116,9 @@ export default function Lifestylenew() {
                                   to={`/${category}/${data._id}`}
                                   className={`colorBlack ${category}hover`}
                                 >
-                                  <h4>{data.title.substring(0, 30)}...</h4>
+                                  <h5 className="homelifestylesmall">{data.title.substring(0, 30)}...</h5>
                                 </Link>
-                                <p>{data.description.substring(0, 110)}...</p>
+                                <p>{data.description.substring(0, 90)}...</p>
                               </div>
                             </Grid>
                           </Grid>

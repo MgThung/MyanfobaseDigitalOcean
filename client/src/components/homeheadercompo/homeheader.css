@@ -388,4 +388,12 @@
   .banner-botton {
     display: none;
   }
+
+  .home-banner-detail h1 {
+  
+  padding-top: 0rem;
+}
+.home-banner-detail h3 {
+   display: none;
+}
 }
