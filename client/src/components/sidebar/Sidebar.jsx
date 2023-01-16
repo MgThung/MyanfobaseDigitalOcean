@@ -185,10 +185,10 @@ export default function Sidebar(props) {
                               id={`${category}hover`}
                             >
                               <h4 className="colorh4">
-                                {data.title.substring(0, 80)}...
+                                {data.title.substring(0, 70)}...
                               </h4>
                             </Link>
-                            <p>{data.description.substring(0, 100)}...</p>
+                            <p>{data.description.substring(0, 90)}...</p>
                             <div className="postbuttom">
                               <div className="postman">
                                 <div className="postmanProfile">

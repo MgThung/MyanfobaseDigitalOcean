@@ -26,8 +26,8 @@
   gap: 1rem;
 }
 .postmanProfile {
-  width: 30px;
-  height: 30px;
+  width: 30px !important;
+  height: 30px !important;
 }
 .postmanProfile img {
   display: block;
@@ -163,5 +163,5 @@
 }
 
 .profileName {
-  color: red;
+  color: rgb(136, 5, 5);
 }

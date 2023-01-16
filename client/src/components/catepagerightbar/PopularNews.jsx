@@ -26,7 +26,7 @@ export default function PopularNews(props) {
       <div className="lastArt">
         <div className="lastnewbar-title">
           <h2>The Most Popular News</h2>
-          <span className="lasttitleline"></span>
+          <span className="Popularunderline"></span>
         </div>
 
         <div className="lastnewbar-body sidebar1">
