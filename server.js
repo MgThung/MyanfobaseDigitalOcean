@@ -7,6 +7,7 @@ const passport = require("passport");
 const cors = require("cors");
 require("./models/User");
 const PostModel = require("./models/Posts");
+const compression = require("compression");
 
 const bodyParser = require("body-parser");
 require("./services/passport");
@@ -24,6 +25,7 @@ mongoose.connect(keys.mongoURI, {
 }); //
 
 // fileRoutes(app);
+
 app.use(express.static(path.join(__dirname, "/client/build")));
 
 app.use(cors());
@@ -35,6 +37,9 @@ app.use(
   "/uploadProfile",
   express.static(path.join(__dirname, "uploadProfile"))
 );
+//compress all responses
+app.use(compression());
+
 app.use("/api", fileRoutes.routes, favRoutes.routes);
 app.use("/api/users", require("./routes/userRoutes"));
 app.use("/api/category", require("./routes/categoryRoute"));
