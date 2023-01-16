@@ -73,7 +73,7 @@ export default memo(function CategoryCount() {
     },
     {
       id: "Business",
-      cateimage: "./images/categoryimages/business.jpeg",
+      cateimage: "./images/categoryimages/business.jpg",
     },
   ];
 

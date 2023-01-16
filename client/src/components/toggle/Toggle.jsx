@@ -26,7 +26,7 @@ function Toggle() {
         // onClick={handleClick}
         style={darkMode ? { right: "2px" } : { left: "2px" }}
       ></div>
-      <h5>DarkMode</h5>
+      <p>DarkMode</p>
     </div>
   );
 }

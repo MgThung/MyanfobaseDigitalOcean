@@ -146,3 +146,38 @@
 .postTrav_info p {
   margin-bottom: 0;
 }
+@media screen and (max-width: 900px) {
+  .postTrav_info {
+    width: 100%;
+  }
+  .Trav-main {
+    gap: 0rem;
+  }
+  .sidebar {
+    height: calc(150vh - 50px);
+  }
+  .sidebar1 {
+    height: calc(90vh - 50px);
+  }
+}
+@media screen and (max-width: 600px) {
+  .Travel1 {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    width: 20%;
+  }
+  .Trav-main {
+    gap: 0rem;
+  }
+  .sidebar {
+    height: calc(200vh - 50px);
+    top: 50px;
+  }
+  .postTrav_info {
+    width: 100%;
+  }
+  .Trav_img {
+    padding: 0 2rem;
+  }
+}

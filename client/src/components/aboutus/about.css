@@ -1,6 +1,6 @@
-.top {
+/* .top {
   margin-top: 3rem;
-}
+} */
 
 .about_sec_para {
   margin-top: 2rem;
@@ -118,7 +118,6 @@
 }
 
 .about_body_firstpara h3 {
-
   font-family: "AvantGarde Bold", Sans-serif;
   font-size: 22px;
   font-weight: 700;
@@ -134,7 +133,6 @@
 }
 
 .about_body_secpara h3 {
-
   font-family: "AvantGarde Bold", Sans-serif;
   font-size: 22px;
   font-weight: 700;
@@ -241,14 +239,14 @@
   margin-top: 20px;
 }
 .fbicon:hover {
-  color: #3b5998 ;
+  color: #3b5998;
 }
 .googleicon {
   margin-left: 19px;
   font-size: 20px;
   color: white;
 }
-.googleicon:hover{
+.googleicon:hover {
   color: #50c7c7;
 }
 .instaicon {
@@ -256,8 +254,8 @@
   font-size: 20px;
   color: white;
 }
-.instaicon:hover{
-  color:   #cd486b;
+.instaicon:hover {
+  color: #cd486b;
 }
 .githiub {
   margin-left: 20px;

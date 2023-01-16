@@ -16,13 +16,16 @@
   margin-right: 7.7rem;
   margin-left: -2px;
 }
-.toggle h5 {
+.toggle p {
+  font-size: 15px;
   /* margin-left: 2.7rem; */
-  margin-left: 43px;
+  margin-left: 50px;
   transition: all 500ms;
   /* color: black; */
-  color: #555555;
   background-color: transparent;
+}
+.toggle p:hover{
+  color: red;
 }
 .toggle > * {
   width: 1rem;

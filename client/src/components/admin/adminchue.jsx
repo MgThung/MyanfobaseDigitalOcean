@@ -1,10 +1,8 @@
 import { Link, useNavigate } from "react-router-dom";
-import Table from "react-bootstrap/Table";
-import Nav from "react-bootstrap/Nav";
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import { deletePost, getPosts, reset } from "../../features/posts/postSlice";
+import "./admin.css"
 
 export default function AdminChue() {
   const navigate = useNavigate();
@@ -39,7 +37,7 @@ export default function AdminChue() {
   return (
     <>
       
-      <div>
+      <div className="wholeadmin">
         <div className="admin-title">
           <h1>ADMIN PAGE</h1>
         </div>
@@ -55,26 +53,24 @@ export default function AdminChue() {
         </Link>
 
         {/* block user */}
-        <div className="user-list">
+        {/* <div className="user-list">
           <h3>USERS LIST </h3>(Active, Tem - block, Per - block)
-        </div>
+        </div> */}
 
-        <div className="search-user">
+        {/* <div className="search-user">
           <input
             className="inner-searchuser"
             type="text"
             placeholder="Search in here...."
           />
-        </div>
+        </div> */}
 
-        <Table striped bordered hover size="sm" className="block-table">
+        {/* <Table striped bordered hover size="sm" className="block-table">
           <thead>
             <tr>
               <th>User Name</th>
               <th>
-                {/* Type
-                  <i class="uil uil-angle-down"></i> */}
-
+                
                 <Nav>
                   <NavDropdown
                     className="type-dropdown"
@@ -92,9 +88,7 @@ export default function AdminChue() {
                       Tem - block
                     </NavDropdown.Item>
 
-                    {/* <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item> */}
+                  
                   </NavDropdown>
                 </Nav>
               </th>
@@ -128,7 +122,7 @@ export default function AdminChue() {
               </td>
             </tr>
           </tbody>
-        </Table>
+        </Table> */}
       </div>
     </>
   );
