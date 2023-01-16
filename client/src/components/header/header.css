@@ -80,10 +80,8 @@
   align-items: center;
   /* gap: 0.5rem; */
 }
-.flex {
-  display: flex;
-  align-items: center;
-  gap: 5px;
+.flexicons {
+ 
   height: 4.5rem;
 }
 a .hoverclor:hover {

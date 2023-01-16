@@ -96,15 +96,15 @@ export default function Detailbanner(props) {
             .slice(1, postDetail.files.length)
             .map((data, index) => {
               return (
-                <>
-                  <Grid item xs={12} sm={5.8} md={3.8} key={index}>
+                <div key={index}>
+                  <Grid item xs={12} sm={5.8} md={3.8} >
                     <img
                       className="imgbanner"
                       src={data.filePath}
                       alt="detailimage 2"
                     />
                   </Grid>
-                </>
+                </div>
               );
             })}
       </Grid>
