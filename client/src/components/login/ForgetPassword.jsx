@@ -75,12 +75,13 @@ const ForgetPassword = () => {
         email,
         redirectUrl,
       };
+      // axios
+      //   .post("http://localhost:8080/api/users/requestPasswordReset", userData)
       axios
-        .post("http://localhost:8080/api/users/requestPasswordReset", userData)
-        // .post(
-        //   "https://www.myanfobase.com/api/users/requestPasswordReset",
-        //   userData
-        // )
+        .post(
+          "https://www.myanfobase.com/api/users/requestPasswordReset",
+          userData
+        )
         .then(() => {
           showResult(true);
         })
