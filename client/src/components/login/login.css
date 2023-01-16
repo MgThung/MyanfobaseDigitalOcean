@@ -93,9 +93,10 @@ form.sign-up-form {
   border-radius: 55px;
 }
 
-.input-field i {
+.inputlock {
+  margin-top: 1rem;
+  margin-left: .5rem;
   text-align: center;
-  line-height: 55px;
   color: #726363;
   font-size: 1.1rem;
 }

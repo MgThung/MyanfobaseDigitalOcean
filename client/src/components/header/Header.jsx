@@ -264,7 +264,12 @@ export default memo(function Header() {
                       paddingTop={2.5}
                     >
                       <Grid item xs={6}>
-                        <Typography variant="h6" color="white" fontSize={17}>
+                        <Typography
+                          variant="h6"
+                          color="white"
+                          fontSize={17}
+                          paddingTop={0.2}
+                        >
                           <ListIcon />
                         </Typography>
                       </Grid>
@@ -294,7 +299,12 @@ export default memo(function Header() {
                       paddingTop={2.5}
                     >
                       <Grid item xs={6}>
-                        <Typography variant="h6" color="white" fontSize={17}>
+                        <Typography
+                          variant="h6"
+                          color="white"
+                          fontSize={17}
+                          paddingTop={0.1}
+                        >
                           <AddCircleOutlineIcon />
                         </Typography>
                       </Grid>
@@ -311,13 +321,32 @@ export default memo(function Header() {
                 )}
 
                 {user !== null && user.isAdmin === true ? (
-                  <Link to="/admin" className="flexicons hoverclor navli">
-                    <Typography variant="subtitle1" color="white" fontSize={17}>
-                      <AdminPanelSettingsIcon />
-                    </Typography>
-                    <Typography variant="subtitle1" color="white" fontSize={17}>
-                      Admin
-                    </Typography>
+                  <Link to="/admin" className=" hoverclor navli">
+                    <Grid
+                      container
+                      direction="row"
+                      className="flexicons"
+                      paddingTop={2.5}
+                    >
+                      <Grid item xs={5}>
+                        <Typography
+                          variant="subtitle1"
+                          color="white"
+                          fontSize={17}
+                        >
+                          <AdminPanelSettingsIcon />
+                        </Typography>
+                      </Grid>
+                      <Grid item xs={7}>
+                        <Typography
+                          variant="subtitle1"
+                          color="white"
+                          fontSize={17}
+                        >
+                          Admin
+                        </Typography>
+                      </Grid>
+                    </Grid>
 
                     {/* <span className="capitalize">Admin</span> */}
                   </Link>
@@ -359,39 +388,48 @@ export default memo(function Header() {
                   <>
                     <div className="dorpmenu-container">
                       <div className="login" onClose={() => setOpen(false)}>
-                        <div className="profile-img">
-                          {user.profilePicture === [] ||
-                          user.profilePicture[0] === "" ||
-                          user.profilePicture.length === 0 ? (
-                            <Link to={"/profile"}>
-                              <img
-                                src="./images/userprofile/defaultuserprofile.png"
-                                alt=""
+                        <Grid container direction="row">
+                          <Grid item xs={8}>
+                            <div className="profile-img">
+                              {user.profilePicture === [] ||
+                              user.profilePicture[0] === "" ||
+                              user.profilePicture.length === 0 ? (
+                                <Link to={"/profile"}>
+                                  <img
+                                    src="./images/userprofile/defaultuserprofile.png"
+                                    alt=""
+                                  />
+                                </Link>
+                              ) : (
+                                <Link to={"/profile"}>
+                                  <img
+                                    src={user.profilePicture[0].filePath}
+                                    // src={`http://localhost:8080/${user.profilePicture[0].filePath}`}
+                                    alt=""
+                                  />
+                                </Link>
+                              )}
+                            </div>
+                          </Grid>
+                          <Grid item xs={4}>
+                            <IconButton
+                              sx={{
+                                color: "white",
+                                marginLeft: "auto",
+                                width: "1.5em",
+                              }}
+                              onClick={() => {
+                                setOpen(!open);
+                              }}
+                            >
+                              <MenuIcon
+                                color="white"
+                                  sx={{ fontSize: "25px", marginTop: ".3rem" }}
+                                  
                               />
-                            </Link>
-                          ) : (
-                            <Link to={"/profile"}>
-                              <img
-                                src={user.profilePicture[0].filePath}
-                                // src={`http://localhost:8080/${user.profilePicture[0].filePath}`}
-                                alt=""
-                              />
-                            </Link>
-                          )}
-                        </div>
-                        <IconButton
-                          sx={{
-                            color: "white",
-                            marginLeft: "auto",
-                            width: "1.5em",
-                            height: "1.5em",
-                          }}
-                          onClick={() => {
-                            setOpen(!open);
-                          }}
-                        >
-                          <MenuIcon color="white" sx={{ fontSize: "25px" }} />
-                        </IconButton>
+                            </IconButton>
+                          </Grid>
+                        </Grid>
                         {/* <i
                       id="loginsetting"
                       class="fa-solid fa-bars"
@@ -428,10 +466,16 @@ export default memo(function Header() {
                   </>
                 ) : (
                   <>
-                    <Link to="/login" className="login">
+                    <Link to="/login">
                       <Typography variant="h6" color="white" fontSize={17}>
-                        <LogoutIcon />
-                        Login
+                        <Grid container direction="row">
+                          <Grid item xs={5}>
+                            <LogoutIcon />
+                          </Grid>
+                          <Grid item xs={7}>
+                            Login
+                          </Grid>
+                        </Grid>
                       </Typography>
                       {/* <span className="capitalize">Login</span> */}
                     </Link>

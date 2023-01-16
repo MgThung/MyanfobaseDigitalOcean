@@ -10,6 +10,13 @@ import { FiLock, FiMail } from "react-icons/fi";
 import { Stack, TextField } from "@mui/material";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import VisibilityIcon from "@mui/icons-material/Visibility";
+import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import GoogleIcon from "@mui/icons-material/Google";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import LockIcon from "@mui/icons-material/Lock";
+import PersonIcon from "@mui/icons-material/Person";
+import EmailIcon from "@mui/icons-material/Email";
 
 const ErrorShow = (prop) => {
   return (
@@ -184,19 +191,19 @@ const LoginCompo = () => {
               <p className="social-text">Or Sign in with social platforms</p>
               <div className="social-media">
                 <a href="#" className="social-icon">
-                  <i className="fab fa-facebook-f"></i>
+                  <FacebookOutlinedIcon />
                 </a>
                 <a href="#" className="social-icon">
-                  <i className="fab fa-twitter"></i>
+                  <TwitterIcon />
                 </a>
                 <a
                   href="https://www.myanfobase.com/auth/google"
                   className="social-icon"
                 >
-                  <i className="fab fa-google"></i>
+                  <GoogleIcon />
                 </a>
                 <a href="#" className="social-icon">
-                  <i className="fab fa-linkedin-in"></i>
+                  <LinkedInIcon />
                 </a>
               </div>
             </form>
@@ -206,8 +213,7 @@ const LoginCompo = () => {
             <form action="" className="sign-up-form" onSubmit={onSubmit}>
               <h2 className="titlt">Sign Up</h2>
               <div className="input-field">
-                <i className="fas fa-user"></i>
-
+                <PersonIcon className="inputlock" />
                 <input
                   type="text"
                   pattern="^[a-zA-Z0-9 ]{3,16}$"
@@ -227,7 +233,7 @@ const LoginCompo = () => {
               </div>
 
               <div className="input-field">
-                <i className="fas fa-envelope"></i>
+                <EmailIcon className="inputlock" />{" "}
                 <input
                   type="email"
                   placeholder="Email"
@@ -245,7 +251,7 @@ const LoginCompo = () => {
                 </span>
               </div>
               <div className="input-field">
-                <i className="fas fa-lock"></i>
+                <LockIcon className="inputlock" />
                 <input
                   type={show ? "text" : "password"}
                   id="password"
@@ -267,7 +273,7 @@ const LoginCompo = () => {
                 </span>
               </div>
               <div className="input-field">
-                <i className="fas fa-lock"></i>
+                <LockIcon className="inputlock" />
                 <input
                   type={comfirmpwshow ? "text" : "password"}
                   placeholder="Confirm Password"
@@ -292,16 +298,16 @@ const LoginCompo = () => {
               <p className="social-text">Or Sign Up with social platforms</p>
               <div className="social-media">
                 <a href="#" className="social-icon">
-                  <i className="fab fa-facebook-f"></i>
+                  <FacebookOutlinedIcon />
                 </a>
                 <a href="#" className="social-icon">
-                  <i className="fab fa-twitter"></i>
+                  <TwitterIcon />{" "}
                 </a>
                 <a href="#" className="social-icon">
-                  <i className="fab fa-google"></i>
+                  <GoogleIcon />{" "}
                 </a>
                 <a href="#" className="social-icon">
-                  <i className="fab fa-linkedin-in"></i>
+                  <LinkedInIcon />{" "}
                 </a>
               </div>
             </form>

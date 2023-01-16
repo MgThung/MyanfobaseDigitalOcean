@@ -91,10 +91,7 @@ a .hoverclor:hover {
 .dorpmenu-container {
   position: relative;
 }
-.login {
-  display: flex;
-  align-items: center;
-}
+
 #dropdown-menu {
   position: absolute;
   top: 62px;

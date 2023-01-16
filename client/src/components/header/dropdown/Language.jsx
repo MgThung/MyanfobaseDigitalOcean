@@ -4,19 +4,18 @@ import "./language.css";
 
 const options = [
   {
-    labels: (
+    label: (
       <img className="labalimg" src="./images/homeimgs/englang.jpg" alt="" />
     ),
     english: "english",
     value: "english",
   },
   {
-    labels: (
+    label: (
       <img
         className="labalimg"
         src="./images/homeimgs/myanmarlang.jpg"
         alt=""
-      
       />
     ),
     english: "myanmar",
