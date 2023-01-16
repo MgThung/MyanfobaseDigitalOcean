@@ -75,8 +75,8 @@ span.headerline {
 }
 .profileName {
   font-size: 15px;
-  font-weight: 500;
-  color: red;
+  font-weight: 600;
+  color: rgb(136, 5, 5);
   margin: 0 25px 0 10px;
 }
 
