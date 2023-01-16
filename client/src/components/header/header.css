@@ -6,7 +6,7 @@
   padding: 0;
 }
 .nav-logo img {
-  width: 90px;
+  width: 100px;
   height: 80px;
   display: block;
   object-fit: cover;
@@ -224,11 +224,11 @@ color: red;
   font-weight: 500;
   color: #555;
 }
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
   .login {
     margin-left: 40%;
   }
-}
+} */
 
 @media screen and (max-width: 600px) {
   #dropdown-menu::before {
@@ -255,18 +255,24 @@ color: red;
     margin-left: 20%;
   }
   .nav-logo img {
-    width: 80px;
+    width: 90px;
     height: 70px;
+  }
+   .login-icon{
+    display: none !important;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 900px) {
   .nav-logo img {
-    width: 80px;
+    width: 90px;
     height: 70px;
   }
   .headerGrid {
     height: 100%;
     padding: 2% 0;
+  }
+  .login-icon{
+    display: none !important;
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1000px) {

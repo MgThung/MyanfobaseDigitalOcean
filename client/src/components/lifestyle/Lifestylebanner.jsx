@@ -8,22 +8,22 @@ export default function Lifestylebanner() {
       <Grid my={4} container sx={{ margin: "0px" }}>
         <Grid item xs={6} sm={4} md={3}>
           <div className="lifebanner-img">
-            <img src="../images/homeimgs/lifestyleban1.jpg" alt="" />
+            <img src="../images/lifestyle/life1.jpg" alt="" />
           </div>
         </Grid>
         <Grid item xs={6} sm={4} md={3}>
           <div className="lifebanner-img">
-            <img src="../images/homeimgs/lifestyleban2.jpg" alt="" />
+            <img src="../images/lifestyle/life2.jpg" alt="" />
           </div>
         </Grid>
         <Grid item xs={6} sm={4} md={3}>
           <div className="lifebanner-img lifebanner-img1">
-            <img src="../images/homeimgs/lifestyleban3.jpg" alt="" />
+            <img src="../images/lifestyle/life3.jpg" alt="" />
           </div>
         </Grid>
         <Grid item xs={6} sm={4} md={3}>
           <div className="lifebanner-img lifebanner-img2">
-            <img src="../images/homeimgs/lifestyleban4.jpg" alt="" />
+            <img src="../images/lifestyle/life4.jpg" alt="" />
           </div>
         </Grid>
       </Grid>

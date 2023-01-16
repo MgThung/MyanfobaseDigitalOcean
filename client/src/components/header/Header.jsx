@@ -61,7 +61,10 @@ export default memo(function Header() {
       <AppBar
         position="fixed"
         z-index="999"
-        style={{ backgroundColor: "#15568e", padding: "0 30px" }}
+        style={{
+          backgroundColor: "#15568e",
+          padding: { xs: "0 10px", sm: "0 15px", md: "0 30px" },
+        }}
       >
         <Toolbar color="#15568e">
           {isMatch ? (
@@ -69,14 +72,14 @@ export default memo(function Header() {
               <Grid
                 container
                 my={2}
-                sx={{ margin: "auto", alignItems: "center", height: "6rem" }}
+                sx={{ margin: "auto", alignItems: "center" }}
               >
-                <Grid item xs={5} sm={8} className="headerGrid">
+                <Grid item xs={5} sm={6} className="headerGrid">
                   <Link to="/home" className="nav-logo" name="nav-logo">
                     <img src="./images/homeimgs/logo2.png" alt="" />
                   </Link>
                 </Grid>
-                <Grid item xs={7} sm={4} className="headerGrid">
+                <Grid item xs={7} sm={6} className="headerGrid">
                   <Grid
                     container
                     my={3}
@@ -87,9 +90,9 @@ export default memo(function Header() {
                         sx={{
                           color: "white",
                           border: "2px solid white",
-                          padding: "5px 10px",
+                          padding: { xs: "3px 7px", sm: "5px 10px" },
                           borderRadius: "4px",
-                          fontSize: "12px",
+                          fontSize: { xs: "10px", sm: "12px" },
                           "&:hover": {
                             backgroundColor: "rgb(255, 174, 0)",
                             color: "black",
@@ -175,8 +178,9 @@ export default memo(function Header() {
                               variant="h6"
                               color="white"
                               fontSize={17}
+                             padding={{xs:"0 1rem",sm:"0"}} 
                             >
-                              <LogoutIcon />
+                              <LogoutIcon className="login-icon" />
                               Login
                             </Typography>
                             {/* <span className="capitalize">Login</span> */}
