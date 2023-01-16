@@ -27,7 +27,7 @@
 .profileName1 {
   font-size: 0.93rem;
   font-weight: 500;
-  color: red;
+  color: rgb(136, 5, 5);
   margin: 0 25px 0 10px;
 }
 /* .profileName1:hover {

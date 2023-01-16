@@ -15,20 +15,20 @@
   --background-sec: #0d0c0d;
 
   --background-main: #fff;
-  --entertainment-bg: rgb(245, 188, 213, 0.948);
+  --entertainment-bg: rgba(232, 24, 114, 0.948);
   --technology-bg: rgb(211 153 7);
   --beauty-bg: rgb(211 128 166);
   --history-bg: rgb(163 69 28);
   --government-bg: rgb(159 65 136);
-  --science-bg: rgb(29 210 221 / 78%);
+  --science-bg: rgba(14, 116, 122, 0.78);
   --travel-bg: rgb(116, 104, 213);
   --business-bg: rgb(225, 76, 76);
   --sports-bg: rgb(36, 9, 9, 0.94);
   --arts-bg: rgb(12, 47, 105);
   --literature-bg: rgb(131 106 55);
-  --health-bg: rgb(60 211 134);
-  --lifestyles-bg: rgb(163, 184, 250);
-  --education-bg: rgb(144, 240, 18);
+  --health-bg: rgb(173, 27, 56);
+  --lifestyles-bg: rgb(59, 10, 112);
+  --education-bg: rgb(22, 106, 11);
   
   --container-width-xl: 100%;
   --container-width-lg: 80%;
@@ -124,7 +124,7 @@ h5 {
   font-size: 0.9rem;
   font-weight: 500;
   color: white;
-  padding: 1px 8px;
+  padding: 3px 8px;
   text-transform: capitalize;
 }
 .cateTechnology,
@@ -136,7 +136,7 @@ h5 {
   font-size: 0.9rem;
   font-weight: 500;
   color: white;
-  padding: 1px 8px;
+  padding: 3px 8px;
   text-transform: capitalize;
 }
 .cateHistory,
@@ -146,7 +146,7 @@ h5 {
 .cateRegions {
   background-color: var(--history-bg);
   text-transform: capitalize;
-  padding: 1px 8px;
+  padding: 3px 8px;
   font-size: 0.9rem;
   font-weight: 500;
   color: white;
@@ -159,7 +159,7 @@ h5 {
   background-color: var(--travel-bg);
   font-weight: 500;
   color: white;
-  padding: 1px 8px;
+  padding: 3px 8px;
   font-size: 0.9rem;
   text-transform: capitalize;
 }
@@ -171,7 +171,7 @@ h5 {
   background-color: var(--business-bg);
   font-weight: 500;
   color: white;
-  padding: 1px 8px;
+  padding: 3px 8px;
   font-size: 0.9rem;
   text-transform: capitalize;
 }
@@ -185,7 +185,7 @@ h5 {
   text-transform: capitalize;
   font-weight: 500;
   color: #fff;
-  padding: 1px 8px;
+  padding: 3px 8px;
   font-size: 0.9rem;
 }
 .cateHealth,
@@ -198,7 +198,7 @@ h5 {
   text-transform: capitalize;
   font-weight: 500;
   color: white;
-  padding: 1px 8px;
+  padding: 3px 8px;
   font-size: 0.9rem;
 }
 .cateGovernment,
@@ -210,7 +210,7 @@ h5 {
   font-size: 0.9rem;
   font-weight: 500;
   color: white;
-  padding: 1px 8px;
+  padding: 3px 8px;
   text-transform: capitalize;
 }
 .cateScience,
@@ -223,7 +223,7 @@ h5 {
   font-size: 0.9rem;
   font-weight: 500;
   color: white;
-  padding: 1px 12px;
+  padding: 3px 12px;
   text-transform: capitalize;
 }
 .cateLiterature,
@@ -236,7 +236,7 @@ h5 {
   text-transform: capitalize;
   font-weight: 500;
   color: white;
-  padding: 1px 8px;
+  padding: 3px 8px;
   font-size: 0.9rem;
 }
 .cateSports,
@@ -249,7 +249,7 @@ h5 {
   text-transform: capitalize;
   font-weight: 500;
   color: white;
-  padding: 1px 8px;
+  padding: 3px 8px;
   font-size: 0.9rem;
 }
 .cateLifestyles,
@@ -260,7 +260,7 @@ h5 {
   text-transform: capitalize;
   font-weight: 500;
   color: white;
-  padding: 1px 8px;
+  padding: 3px 8px;
   font-size: 0.9rem;
 }
 .cateArts,
@@ -272,7 +272,7 @@ h5 {
   text-transform: capitalize;
   font-weight: 500;
   color: white;
-  padding: 1px 8px;
+  padding: 3px 8px;
   font-size: 0.9rem;
 }
 .cateEducation,
@@ -283,7 +283,7 @@ h5 {
   text-transform: capitalize;
   font-weight: 500;
   color: white;
-  padding: 1px 8px;
+  padding: 3px 8px;
   font-size: 0.9rem;
 }
 

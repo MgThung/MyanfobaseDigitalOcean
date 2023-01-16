@@ -256,4 +256,13 @@ ul {
   .enter {
     padding-top: 7rem;
   }
+
+.css-1a26c2i {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: inherit !important;
+  margin: auto;
+  width: 100%;
+  gap: 3rem;
+}
 }
