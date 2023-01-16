@@ -41,7 +41,7 @@ export default memo(function CategoryCount() {
     },
     {
       id: "History",
-      cateimage: "./images/categoryimages/1history.jpg",
+      cateimage: "./images/categoryimages/history.jpg",
     },
     {
       id: "Health",
@@ -53,7 +53,7 @@ export default memo(function CategoryCount() {
     },
     {
       id: "Lifestyles",
-      cateimage: "./images/categoryimages/1lifestyle.jpg",
+      cateimage: "./images/categoryimages/lifestyle.jpg",
     },
     {
       id: "Science",

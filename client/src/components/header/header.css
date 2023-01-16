@@ -91,7 +91,12 @@ a .hoverclor:hover {
 .dorpmenu-container {
   position: relative;
 }
-
+.logoutbuttonheader{
+  font-size: 15px;
+}
+.logoutbuttonheader:hover{
+color: red;
+}
 #dropdown-menu {
   position: absolute;
   top: 62px;
