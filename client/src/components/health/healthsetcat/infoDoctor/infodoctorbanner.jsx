@@ -109,7 +109,7 @@ export default function InfodoctorBanner() {
                               </div>
                               <div className="clinic-p">
                                 <div className="clinic-para">
-                                  <h4>Lorem ipsum dolor sit amet.</h4>
+                                  <h4>We can treat for your beautiful!</h4>
                                 </div>
                               </div>
                             </div>
@@ -120,12 +120,13 @@ export default function InfodoctorBanner() {
                     <Grid item lg={12}>
                       <div className="secrow-thirddiv">
                         <div className="natural-img">
-                          <img src="./images/homeimgs/natural.jpg" alt="" />
+                          <img src="./images/health/infoDoc4.jpg" alt="" />
                         </div>
                         <div className="natural-p">
                           <div className="natural-para">
                             <h4 className="animate__fadeOut">
-                              Lorem ipsum dolor sit amet.
+                              Dr.Aye Moe Thu Ma headed a much-needed medical
+                              mission to her native Myanmar
                             </h4>
                           </div>
                         </div>

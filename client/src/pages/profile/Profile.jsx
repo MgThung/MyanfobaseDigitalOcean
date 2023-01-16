@@ -16,7 +16,7 @@ import Savepost from "../../components/profile/Savepost";
 export default function Profile() {
   const navigate = useNavigate();
   const { user } = useSelector((state) => state.auth);
-  const [value, setValue] = useState("1");
+  const [value, setValue] = useState("mypost");
   const handleChange = (e, newvalue) => {
     setValue(newvalue);
   };

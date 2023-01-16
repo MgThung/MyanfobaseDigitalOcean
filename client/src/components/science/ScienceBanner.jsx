@@ -69,7 +69,7 @@ export default function ScienceBanner() {
                         <div className="tec-lastbannerphotos">
                           <img
                             className="airbudphoto"
-                            src="./images/science/sciencebanner11.jpg"
+                            src="./images/science/science3.jpg"
                             alt=""
                           />
                         </div>
@@ -80,7 +80,7 @@ export default function ScienceBanner() {
                             variant="h4"
                             color="white"
                           >
-                            Corsair HS80 RGB Wirless Gaming Headset Review
+                            MYANMAR-ASIA-JAPAN-AEROSPACE-SATELLITE-ECONOMY
                           </Typography>
                         </div>
                       </div>
