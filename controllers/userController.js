@@ -521,8 +521,7 @@ const updateUser = asyncHandler(async (req, res) => {
       },
     }
   );
-  // console.log("file array is", filesArray[0].filePath);
-  // console.log("file array is", filesArray[0].filePath);
+  
 
   await PostModel.updateMany(
     { user: id },
