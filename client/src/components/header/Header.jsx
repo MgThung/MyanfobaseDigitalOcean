@@ -424,8 +424,7 @@ export default memo(function Header() {
                             >
                               <MenuIcon
                                 color="white"
-                                  sx={{ fontSize: "25px", marginTop: ".3rem" }}
-                                  
+                                sx={{ fontSize: "25px", marginTop: ".3rem" }}
                               />
                             </IconButton>
                           </Grid>
@@ -458,7 +457,12 @@ export default memo(function Header() {
 
                           <li className="dropdownItem">
                             <LogoutIcon />{" "}
-                            <button onClick={onLogout}>Logout</button>
+                            <button
+                              onClick={onLogout}
+                              className="logoutbuttonheader"
+                            >
+                              Logout
+                            </button>
                           </li>
                         </ul>
                       </div>
