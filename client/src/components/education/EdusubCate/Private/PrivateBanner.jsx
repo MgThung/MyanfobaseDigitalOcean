@@ -7,27 +7,27 @@ export default function PrivateBanner() {
       <section>
         <div className="busingallery container">
           <img
-            src="./images/education/edu1.png"
+            src="./images/education/school1.jpg"
             alt=""
             className="gallery gallery1"
           />
           <img
-            src="./images/education/edu5.jpg"
+            src="./images/education/school2.jpg"
             alt=""
             className="gallery gallery2"
           />
           <img
-            src="./images/education/edu2.png"
+            src="./images/education/school3.jpg"
             alt=""
             className="gallery gallery3"
           />
           <img
-            src="./images/education/edu3.jpg"
+            src="./images/education/school5.jpg"
             alt=""
             className="gallery gallery4"
           />
           <img
-            src="./images/education/edu4.jpg"
+            src="./images/education/school4.jpg"
             alt=""
             className="gallery gallery5"
           />

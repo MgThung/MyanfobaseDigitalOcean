@@ -16,23 +16,24 @@ export default function YogaBanner() {
                     <Grid item lg={12} md={12}>
                       <div className="firstrow-firstdiv">
                         <div className="blogger-img">
-                          <img
-                            src="./images/homeimgs/May-Oo-Makeup-7.jpg"
-                            alt=""
-                          />
+                          <img src="./images/health/yogo1.jpg" alt="" />
                         </div>
                         <div className="blogger-para">
                           <div className="blogger-p">
                             <h4>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit.{" "}
+                              Yogo trip Myanmar: trip to the country of smiles
                             </h4>
                             <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Velit iusto deserunt fuga nam soluta quae
-                              suscipit incidunt, consectetur totam tenetur modi
-                              illo neque! Voluptas cupiditate reiciendis
-                              consectetur? Unde, expedita saepe.
+                              You will live in your own skin as the combination
+                              of “ traveling doing yoga ” enriches your
+                              experience, making this adventure unique and
+                              unrepeatable. <br />
+                              It doesn't matter if you haven't practiced yoga
+                              before, this trip is a perfect excuse to get
+                              started. In the event that you are a yoga regular,
+                              you will love the experience of continuing to
+                              practice it while traveling in unique places and
+                              places.
                             </p>
                           </div>
                         </div>
@@ -44,14 +45,11 @@ export default function YogaBanner() {
                           <Grid item lg={6} md={6} xs={12}>
                             <div className="firstrow-secdiv">
                               <div className="skincare-img">
-                                <img
-                                  src="./images/homeimgs/skincare.jpg"
-                                  alt=""
-                                />
+                                <img src="./images/health/yogo3.jpg" alt="" />
                               </div>
                               <div className="skin-p">
                                 <div className="skincare-para">
-                                  <h4>Lorem ipsum dolor sit amet.</h4>
+                                  <h4>A Home for Om:Yoga</h4>
                                 </div>
                               </div>
                             </div>
@@ -59,14 +57,11 @@ export default function YogaBanner() {
                           <Grid item lg={6} md={6} xs={12}>
                             <div className="firstrow-thirddiv">
                               <div className="makeup-img">
-                                <img
-                                  src="./images/homeimgs/makeup.jpg"
-                                  alt=""
-                                />
+                                <img src="./images/health/yogo2.jpg" alt="" />
                               </div>
                               <div className="makeup-p">
                                 <div className="makeup-para">
-                                  <h4>Lorem ipsum dolor sit amet.</h4>
+                                  <h4>Green Organic Fram Yoga Retreat</h4>
                                 </div>
                               </div>
                             </div>
@@ -86,14 +81,11 @@ export default function YogaBanner() {
                           <Grid item lg={12}>
                             <div className="secrow-firstdiv">
                               <div className="beauty-img">
-                                <img
-                                  src="./images/homeimgs/beauty-salon.jpg"
-                                  alt=""
-                                />
+                                <img src="./images/health/yogo4.jpg" alt="" />
                               </div>
                               <div className="beauty-p">
                                 <div className="beauty-para">
-                                  <h4>Lorem ipsum dolor sit amet.</h4>
+                                  <h4>Yoga Teacher</h4>
                                 </div>
                               </div>
                             </div>
@@ -101,14 +93,11 @@ export default function YogaBanner() {
                           <Grid item lg={12}>
                             <div className="secrow-secdiv">
                               <div className="clinic-img">
-                                <img
-                                  src="./images/homeimgs/skin-clinic.jpg"
-                                  alt=""
-                                />
+                                <img src="./images/health/yogo5.jpg" alt="" />
                               </div>
                               <div className="clinic-p">
                                 <div className="clinic-para">
-                                  <h4>Lorem ipsum dolor sit amet.</h4>
+                                  <h4>Yangon Yoga House</h4>
                                 </div>
                               </div>
                             </div>
@@ -119,12 +108,13 @@ export default function YogaBanner() {
                     <Grid item lg={12}>
                       <div className="secrow-thirddiv">
                         <div className="natural-img">
-                          <img src="./images/homeimgs/natural.jpg" alt="" />
+                          <img src="./images/health/yogo6.jpg" alt="" />
                         </div>
                         <div className="natural-p">
                           <div className="natural-para">
                             <h4 className="animate__fadeOut">
-                              Lorem ipsum dolor sit amet.
+                              Unravelling the benefits of yoga with one of
+                              Yangon's best known yogis-Jessica Mudditt
                             </h4>
                           </div>
                         </div>

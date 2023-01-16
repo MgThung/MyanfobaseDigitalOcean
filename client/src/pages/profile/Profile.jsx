@@ -16,7 +16,7 @@ import Savepost from "../../components/profile/Savepost";
 export default function Profile() {
   const navigate = useNavigate();
   const { user } = useSelector((state) => state.auth);
-  const [value, setValue] = useState("1");
+  const [value, setValue] = useState("mypost");
   const handleChange = (e, newvalue) => {
     setValue(newvalue);
   };
@@ -46,18 +46,18 @@ export default function Profile() {
                 onChange={handleChange}
                 aria-label="lab API tabs example"
               >
-                <Tab label="My Post" value="1" />
-                <Tab label="About Profile" value="2" />
-                <Tab label="Save Post" value="3" />
+                <Tab label="My Post" value="mypost" />
+                <Tab label="About Profile" value="aboutprofile" />
+                <Tab label="Save Post" value="savepost" />
               </TabList>
             </Box>
-            <TabPanel value="1">
+            <TabPanel value="mypost">
               <ProRight />
             </TabPanel>
-            <TabPanel value="2">
+            <TabPanel value="aboutprofile">
               <ProAbout />
             </TabPanel>
-            <TabPanel value="3">
+            <TabPanel value="savepost">
               <Savepost />
             </TabPanel>
           </TabContext>

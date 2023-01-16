@@ -18,4 +18,22 @@
   .t_imagediv {
     height: 15rem;
   }
+  .travel {
+    padding-top: 5.5rem;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .travel {
+    padding-top: 7.5rem;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 900px) {
+  .travel {
+    padding-top: 7.5rem;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .travel {
+    padding-top: 7rem;
+  }
 }
