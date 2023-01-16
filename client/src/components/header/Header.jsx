@@ -71,7 +71,7 @@ export default memo(function Header() {
                 my={2}
                 sx={{ margin: "auto", alignItems: "center", height: "6rem" }}
               >
-                <Grid item xs={5} sm={8} className="headerGrid">
+                <Grid item xs={5} sm={8} className="headerGrid" name="header2">
                   <Link to="/" className="nav-logo" name="nav-logo">
                     <img src="./images/homeimgs/logo2.png" alt="" />
                   </Link>
@@ -149,13 +149,12 @@ export default memo(function Header() {
                               <h3>{user.username}</h3>
                               <ul>
                                 <DropdownItem
-                                
-                                  data={<PersonIcon/>}
+                                  data={<PersonIcon />}
                                   text={"My Profile"}
                                   pathLink={"/profile"}
                                 />
                                 <DropdownItem
-                                  data={<EditIcon/>}
+                                  data={<EditIcon />}
                                   text={"Edit Profile"}
                                   pathLink={"/editprofile"}
                                 />
@@ -386,12 +385,12 @@ export default memo(function Header() {
                         <h3>{user.username}</h3>
                         <ul>
                           <DropdownItem
-                            data={<PersonIcon/>}
+                            data={<PersonIcon />}
                             text={"My Profile"}
                             pathLink={"/profile"}
                           />
                           <DropdownItem
-                            data={<EditIcon/>}
+                            data={<EditIcon />}
                             text={"Edit Profile"}
                             pathLink={"/editprofile"}
                           />
