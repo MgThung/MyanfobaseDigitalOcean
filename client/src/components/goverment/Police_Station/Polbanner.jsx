@@ -11,11 +11,10 @@ export default function Polbanner() {
           </div>
           <article className="bannerPara">
             <button className="cateGovernment">Government</button>
-            <h4>How to Mark yourself 'Safe' on Socials Media</h4>
+            <h4> Sanchaung Police Station </h4>
             <p className="leftparaText">
-              Modern technology has become a total phenomenon for civilization,
-              the defining force of a new social order in which efficiency is no
-              longer an option but a necessity imposed on all human activity.
+              Police station R43Q+2M7, Myay Nee Kone ward, San Khyaung Tsp
+              <br></br> Open 24 hours ·<br></br> +95 1 535 905
             </p>
           </article>
         </div>
@@ -25,12 +24,12 @@ export default function Polbanner() {
           </div>
           <article className="bannerPara">
             <button className="cateGovernment">Government</button>
-            <h4>How to Mark yourself 'Safe' on Socials Media</h4>
+            <h4>The Head of Section of the Traffic Police</h4>
             <p className="rightparaText">
-              Modern technology has become a total phenomenon for civilization,
-              the defining force of a new social order in which efficiency is no
-              longer an option but a necessity imposed on all human activity.
-            </p>
+             Police station
+R5F3+5G7, Kabar Aye Pagoda Rd<br></br>
+              Open 24 hours <br></br> +95 9 540 9030
+              </p>
           </article>
         </div>
       </section>

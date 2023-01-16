@@ -32,9 +32,10 @@ export default function Histbanner() {
                     fontSize: { xs: "9px", sm: "10px", md: "12px", lg: "14px" },
                   }}
                 >
-                  One of the most beautiful beaches in Myanmar. Already stand as
-                  a famous tourist attraction from Myanmar. Can easily fly by
-                  domestic flights and seafoods are ...
+                  Alaungpaya was the founder of the Konbaung Dynasty of Burma.
+                  By the time of his death from illness during his campaign in
+                  Siam, this former chief of a small village in Upper Burma had
+                  unified Burma,
                 </Typography>
               </div>
             </div>
@@ -66,9 +67,11 @@ export default function Histbanner() {
                     fontSize: { xs: "9px", sm: "10px", md: "12px", lg: "14px" },
                   }}
                 >
-                  Kyauk Kalap is located in the middle of a pretty artificial
-                  lake and basically consists of a large piece of dramatic rock,
-                  atop which is a scenic pagoda.
+                  Anawrahta Minsaw was the founder of the Pagan Empire.
+                  Considered the father of the Burmese nation, Anawrahta turned
+                  a small principality in the dry zone of Upper Burma into the
+                  first Burmese Empire that formed the basis of modern-day
+                  Burma.
                 </Typography>
               </div>
             </div>
@@ -101,9 +104,10 @@ export default function Histbanner() {
                     fontSize: { xs: "9px", sm: "10px", md: "12px", lg: "14px" },
                   }}
                 >
-                  Hkakabo Razi is believed to be Myanmar's highest mountain. The
-                  5,881-meter (19,295 ft)-tall mountain is the highest mountain
-                  in Southeast Asia as well.
+                  Bayinnaung Kyawhtin Nawrahta was king of the Toungoo Dynasty
+                  of Myanmar from 1550 to 1581. During his 31-year reign, which
+                  has been called the "greatest explosion of human energy ever
+                  seen in Burma"
                 </Typography>
               </div>
             </div>
@@ -135,11 +139,11 @@ export default function Histbanner() {
                     fontSize: { xs: "9px", sm: "10px", md: "12px", lg: "14px" },
                   }}
                 >
-                  Bagan is an ancient city and a UNESCO World Heritage Site in
-                  the Mandalay Region of Myanmar From the 9th to 13th centuries,
-                  the city was the capital of the Bagan Kingdom, the first
-                  kingdom that unified the regions that would later constitute
-                  Myanmar.
+                  A knight is a person granted an honorary title of knighthood
+                  by a head of state or representative for service to the
+                  monarch, the church or the country, especially in a military
+                  capacity. Knighthood finds origins in the Greek hippeis and
+                  hoplite and Roman eques and centurion of classical antiquity.
                 </Typography>
               </div>
             </div>

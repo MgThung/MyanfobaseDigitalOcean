@@ -10,12 +10,11 @@ export default function Regionbanner() {
             <img src="./images/history/region/region1.jpg" alt="" />
           </div>
           <article className="bannerPara">
-            <button className="cateHistory">history</button>
-            <h4>How to Mark yourself 'Safe' on Socials Media</h4>
+            <button className="cateHistory">Region</button>
+            <h4>Region and state in Myanmar</h4>
             <p className="leftparaText">
-              Modern technology has become a total phenomenon for civilization,
-              the defining force of a new social order in which efficiency is no
-              longer an option but a necessity imposed on all human activity.
+              ကရင်ပြည်နယ်|မကွေးတိုင်းဒေသကြီ:|ဧရာဝတီတိုင်းဒေသကြီး|ပဲခူးတိုင်းဒေသကြီး|ချင်းပြည်နယ်|ကချင်ပြည်နယ်|ကယားပြည်နယ်|မန္တလေးတိုင်းဒေသကြီး|မွန်ပြည်နယ်|နေပြည်တော်
+              ပြည်ထောင်စုနယ်မြေ|ရခိုင်ပြည်နယ်|စစ်ကိုင်းတိုင်းဒေသကြီး|ရှမ်းပြည်နယ်|တနင်္သာရီတိုင်းဒေသကြီး|ရန်ကုန်တိုင်းဒေသကြီး
             </p>
           </article>
         </div>
@@ -24,12 +23,13 @@ export default function Regionbanner() {
             <img src="./images/history/region/region2.jpg" alt="" />
           </div>
           <article className="bannerPara">
-            <button className="cateHistory">History</button>
-            <h4>How to Mark yourself 'Safe' on Socials Media</h4>
+            <button className="cateHistory">Region</button>
+            <h4>The capital city of Myanmar</h4>
             <p className="rightparaText">
-              Modern technology has become a total phenomenon for civilization,
-              the defining force of a new social order in which efficiency is no
-              longer an option but a necessity imposed on all human activity.
+              Nay Pyi Taw, (Burmese: “Abode of Kings”) also spelled Nay Pyi Daw
+              or Naypyidaw, city, capital of Myanmar (Burma). Nay Pyi Taw was
+              built in the central basin of Myanmar in the early 21st century to
+              serve as the country's new administrative centre.
             </p>
           </article>
         </div>
