@@ -74,12 +74,12 @@ export default memo(function Header() {
                 my={2}
                 sx={{ margin: "auto", alignItems: "center" }}
               >
-                <Grid item xs={5} sm={8} className="headerGrid">
+                <Grid item xs={5} sm={6} className="headerGrid">
                   <Link to="/home" className="nav-logo" name="nav-logo">
                     <img src="./images/homeimgs/logo2.png" alt="" />
                   </Link>
                 </Grid>
-                <Grid item xs={7} sm={4} className="headerGrid">
+                <Grid item xs={7} sm={6} className="headerGrid">
                   <Grid
                     container
                     my={3}
@@ -178,8 +178,9 @@ export default memo(function Header() {
                               variant="h6"
                               color="white"
                               fontSize={17}
+                             padding={{xs:"0 1rem",sm:"0"}} 
                             >
-                              <LogoutIcon />
+                              <LogoutIcon className="login-icon" />
                               Login
                             </Typography>
                             {/* <span className="capitalize">Login</span> */}

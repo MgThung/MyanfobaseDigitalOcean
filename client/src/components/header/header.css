@@ -219,11 +219,11 @@ a .hoverclor:hover {
   font-weight: 500;
   color: #555;
 }
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
   .login {
     margin-left: 40%;
   }
-}
+} */
 
 @media screen and (max-width: 600px) {
   #dropdown-menu::before {
@@ -253,6 +253,9 @@ a .hoverclor:hover {
     width: 90px;
     height: 70px;
   }
+   .login-icon{
+    display: none !important;
+  }
 }
 @media screen and (min-width: 600px) and (max-width: 900px) {
   .nav-logo img {
@@ -262,6 +265,9 @@ a .hoverclor:hover {
   .headerGrid {
     height: 100%;
     padding: 2% 0;
+  }
+  .login-icon{
+    display: none !important;
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1000px) {
