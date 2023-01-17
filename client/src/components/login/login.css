@@ -134,6 +134,7 @@ form.sign-up-form {
 }
 
 .social-text {
+  color: black;
   padding: 0.7rem 0;
   font-size: 1rem;
 }
@@ -286,6 +287,7 @@ form.sign-up-form {
 }
 
 .passwordshow {
+  color: #333;
   position: absolute;
   right: 1rem;
   top: 0.7rem;
@@ -464,6 +466,9 @@ form.sign-up-form {
   width: 700px;
   display: none;
 }
+.color_forgetpass{
+  color: black;
+}
 @media screen and (max-width: 820px) {
   .login-con {
     max-height: 800px;
@@ -494,6 +499,7 @@ form.sign-up-form {
     padding: 0 0.4rem;
   }
   .social-text {
+   
     padding: 0rem 0;
     font-size: 0.8rem;
   }

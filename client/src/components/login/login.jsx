@@ -182,7 +182,7 @@ const LoginCompo = () => {
               </Stack>
               <input type="submit" value="Login" className="logbtn solid" />
               {errormessage ? <ErrorShow errormessage={errormessage} /> : ""}
-              <p>
+              <p className="color_forgetpass">
                 Forget Password?
                 <Link to="/forgetpassword">
                   <span> reset it</span>
