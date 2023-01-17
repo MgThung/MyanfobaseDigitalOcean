@@ -52,7 +52,7 @@ export default function LatestArticle(props) {
                         to={`/${data.cateName}/${data._id}`}
                         className={`colorBlack ${data.cateName}hover`}
                       >
-                        <h4>{data.title.substring(0, 50)}...</h4>
+                        <h4>{data.title.substring(0, 40)}...</h4>
                       </Link>
                       <div className="lastnewbuttondate">
                         <Link to={`/${data.cateName}`}>

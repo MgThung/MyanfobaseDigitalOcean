@@ -1,24 +1,20 @@
 import React, { Suspense } from "react";
 import HomeHeader from "../../components/homeheadercompo/Homeheader";
 import FadeLoader from "react-spinners/FadeLoader";
-import LastNews from "../../components/lastviedo/LastNews";
-import Homelifestyle from "../../components/homelifestyle/Homelifestyle";
-import HomeEducation from "../../components/homeeducation/homeEducation";
-import CategoryCount from "../../components/categories/CategoryCount";
 
 import "./home.css";
-// const LastNews = React.lazy(() =>
-//   import("../../components/lastviedo/LastNews")
-// );
-// const Homelifestyle = React.lazy(() =>
-//   import("../../components/homelifestyle/Homelifestyle")
-// );
-// const HomeEducation = React.lazy(() =>
-//   import("../../components/homeeducation/homeEducation")
-// );
-// const CategoryCount = React.lazy(() =>
-//   import("../../components/categories/CategoryCount")
-// );
+const LastNews = React.lazy(() =>
+  import("../../components/lastviedo/LastNews")
+);
+const Homelifestyle = React.lazy(() =>
+  import("../../components/homelifestyle/Homelifestyle")
+);
+const HomeEducation = React.lazy(() =>
+  import("../../components/homeeducation/homeEducation")
+);
+const CategoryCount = React.lazy(() =>
+  import("../../components/categories/CategoryCount")
+);
 
 const SpinnerFade = () => {
   return (
@@ -38,23 +34,15 @@ const Home = () => {
   return (
     <div className="HomePageDiv">
       <HomeHeader />
-      {/* <Suspense fallback={<SpinnerFade />}>
+      <Suspense fallback={<SpinnerFade />}>
         <LastNews />
 
         <Homelifestyle />
 
         <HomeEducation />
 
-
         <CategoryCount />
-      </Suspense> */}
-      <LastNews />
-
-      <Homelifestyle />
-
-      <HomeEducation />
-
-      <CategoryCount />
+      </Suspense>
     </div>
   );
 };

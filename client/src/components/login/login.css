@@ -95,7 +95,7 @@ form.sign-up-form {
 
 .inputlock {
   margin-top: 1rem;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
   text-align: center;
   color: #726363;
   font-size: 1.1rem;
@@ -275,7 +275,6 @@ form.sign-up-form {
   color: #f50d42;
 }
 
-
 /* password show hide and textfield  */
 .singinemail {
   width: 300px;
@@ -283,6 +282,9 @@ form.sign-up-form {
   border-radius: 55px;
 }
 .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+  border-radius: 55px !important;
+}
+.css-1v4ccyo {
   border-radius: 55px !important;
 }
 
@@ -295,7 +297,6 @@ form.sign-up-form {
 
 .singinpassword {
   position: relative;
-  
 }
 .singuppassword {
   position: absolute;

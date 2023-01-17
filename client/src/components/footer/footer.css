@@ -7,10 +7,14 @@ ul li {
   padding-bottom: 0.5rem;
 }
 
+.spiderImg  {
+ width: 50%;
+ height: 7.5rem;
+}
 
 .spiderImg img {
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  height: 100%;
 }
 
 .footerWapper {
