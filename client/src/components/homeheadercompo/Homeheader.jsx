@@ -45,7 +45,7 @@ const HomeHeader = () => {
               </Link>
             </div>
             <div className="banner-botton">
-              <h2>Welcome to our Page</h2>
+              <h2>Welcome to Myanmar</h2>
               <p>
                 Have a great day and be healthy. We wish you to get a lot of
                 knowledge, pleasure and latest information by visiting our
